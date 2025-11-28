@@ -36,7 +36,7 @@ README.md
 
 ---
 
-## 🚀 How It Works
+##  How It Works
 
 1. The API receives a **public file URL** (PDF or PNG/JPG).
 2. The file is downloaded temporarily.
@@ -55,7 +55,7 @@ README.md
 
 ---
 
-## 🧪 API Endpoints
+##  API Endpoints
 
 ### Health Check  
 **GET /** 
@@ -99,7 +99,7 @@ README.md
 
 ---
 
-## ▶️ Running Locally
+##  Running Locally
 
 1. **Create virtual environment**
 
@@ -127,7 +127,7 @@ uvicorn src.api:app --host 0.0.0.0 --port 8000
 
 ---
 
-## 🌐 Making API Public for Datathon
+##  Making API Public for Datathon
 
 Run:
 
@@ -149,7 +149,7 @@ https://dax-implemental-onie.ngrok-free.dev/api/v1/hackrx/run
 
 ---
 
-## 📝 Submission Notes (for portal)
+##  Submission Notes (for portal)
 
 ```
 This API processes multi-page bills using OCR and returns structured item data, totals, and page-level classifications as per the HackRx specification.
@@ -160,7 +160,7 @@ Collaborator added: hackrxbot
 
 ---
 
-## 👤 About the Developer
+##  About the Developer
 
 I'm Keshav Kumar Singh, currently pursuing Mechanical Engineering at BITS Pilani, Hyderabad Campus.
 

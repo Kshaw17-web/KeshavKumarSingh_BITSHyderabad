@@ -1,22 +1,8 @@
-# Python / FastAPI
-__pycache__/
-*.py[cod]
-*.sqlite3
-
-# Virtual environments
 venv/
-.venv/
-
-# OS / tooling
-.DS_Store
-Thumbs.db
-
-# Logs / temp
-logs/*.log
-*.tmp
-
-# Results artifacts
-results/*.zip
-results/*.json
-results/smoke_*.txt
-
+__pycache__/
+ocr_outputs/
+*.png
+*.pdf
+*.jpg
+*.jpeg
+*.log

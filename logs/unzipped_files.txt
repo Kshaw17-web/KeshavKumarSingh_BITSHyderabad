@@ -1,0 +1,21 @@
+﻿
+
+    Directory: C:\datathon_work\data\raw
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+d-----        26-11-2025     01:40                datathon_upload_bundle                                               
+
+
+    Directory: C:\datathon_work\data\raw\datathon_upload_bundle
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----        26-11-2025     01:03         109273 portal_about.png.png                                                 
+-a----        26-11-2025     01:03        1420280 portal_home.png.png                                                  
+-a----        26-11-2025     00:47         130184 Sample_Document 1.pdf                                                
+-a----        26-11-2025     00:48         355320 Sample_Document 3.pdf                                                
+
+

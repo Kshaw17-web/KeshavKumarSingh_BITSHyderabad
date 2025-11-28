@@ -1,0 +1,33 @@
+﻿
+FullName                                                                        Length 
+--------                                                                        ------ 
+C:\datathon_work\data\raw\datathon_upload_bundle                                       
+C:\datathon_work\data\raw\training_samples                                             
+C:\datathon_work\data\raw\Sample_Document 1.pdf                                 130184 
+C:\datathon_work\data\raw\Sample_Document 1.pdf_ready.txt                       22     
+C:\datathon_work\data\raw\Sample_Document 3.pdf                                 355320 
+C:\datathon_work\data\raw\Sample_Document 3.pdf_ready.txt                       22     
+C:\datathon_work\data\raw\datathon_upload_bundle\portal_about.png.png           109273 
+C:\datathon_work\data\raw\datathon_upload_bundle\portal_home.png.png            1420280
+C:\datathon_work\data\raw\datathon_upload_bundle\Sample Document 1.pdf          130184 
+C:\datathon_work\data\raw\datathon_upload_bundle\SAmple Document 2.pdf          74628  
+C:\datathon_work\data\raw\datathon_upload_bundle\Sample Document 3.pdf          355320 
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES                            
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_1.pdf  923986 
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_10.pdf 227534 
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_11.pdf 366802 
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_12.pdf 2233444
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_13.pdf 1482810
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_14.pdf 744842 
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_15.pdf 1000488
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_2.pdf  1236315
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_3.pdf  324429 
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_4.pdf  797362 
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_5.pdf  1426466
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_6.pdf  1714735
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_7.pdf  401629 
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_8.pdf  735279 
+C:\datathon_work\data\raw\training_samples\TRAINING_SAMPLES\train_sample_9.pdf  316388 
+
+
+

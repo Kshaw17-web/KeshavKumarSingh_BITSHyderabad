@@ -1,0 +1,241 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "PMRNo. : IPD No.",
+            "item_amount": 33.0,
+            "item_rate": 36.0,
+            "item_quantity": 9.0
+          },
+          {
+            "item_name": "A SINGLE A/C",
+            "item_amount": 19250.0,
+            "item_rate": 7.0,
+            "item_quantity": 2750.0
+          },
+          {
+            "item_name": "Consultant Charges",
+            "item_amount": 8400.0,
+            "item_rate": 7.0,
+            "item_quantity": 1200.0
+          },
+          {
+            "item_name": "DR VAMSHI NAGENDRA // // DR VENU GOPAL // //",
+            "item_amount": 2400.0,
+            "item_rate": 2.0,
+            "item_quantity": 1200.0
+          },
+          {
+            "item_name": "§ DR DEVASANI SRINIVASA",
+            "item_amount": 1500.0,
+            "item_rate": 1.0,
+            "item_quantity": 1500.0
+          },
+          {
+            "item_name": "lap & Radiology",
+            "item_amount": 300.0,
+            "item_rate": 1.0,
+            "item_quantity": 300.0
+          },
+          {
+            "item_name": "BLEEDING TIME & CLOTTING TIME // // ; X-RAY CHEST PA VIEW // //",
+            "item_amount": 300.0,
+            "item_rate": 1.0,
+            "item_quantity": 300.0
+          },
+          {
+            "item_name": "HBSAG // = // SERUM ELECTROLYTES ( NA+, K+, CL- ) // //",
+            "item_amount": 1.0,
+            "item_rate": 450.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": ", & TSH // // ELECTRO CARDIOGRAM (ECG) // //",
+            "item_amount": 1.0,
+            "item_rate": 200.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "COMPLETE BLOOD PICTURE // // COMPLETE URINE EXAMINATION // //",
+            "item_amount": 1.0,
+            "item_rate": 100.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "SERUM CREATININE // //",
+            "item_amount": 1.0,
+            "item_rate": 200.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "UREA",
+            "item_amount": 1.0,
+            "item_rate": 200.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "IP. No. : Admission Date",
+            "item_amount": 33.0,
+            "item_rate": 36.0,
+            "item_quantity": 9.0
+          },
+          {
+            "item_name": "~ a Bill Date",
+            "item_amount": 0.0,
+            "item_rate": 58.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "— wut Namie : Discharge Date",
+            "item_amount": 22.0,
+            "item_rate": 38.0,
+            "item_quantity": 11.0
+          },
+          {
+            "item_name": "Relative Name",
+            "item_amount": 3.0,
+            "item_rate": 3.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Dr.Speciality ‘",
+            "item_amount": 3.0,
+            "item_rate": 3.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD GROUPING & RH TYPING",
+            "item_amount": 400.0,
+            "item_rate": 1.0,
+            "item_quantity": 400.0
+          },
+          {
+            "item_name": "Meo HCV",
+            "item_amount": 0.0,
+            "item_rate": 50.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "D ECHO // // SERUM ELECTROLYTES ( NA+, K+ , CL- ) // //",
+            "item_amount": 550.0,
+            "item_rate": 1.0,
+            "item_quantity": 550.0
+          },
+          {
+            "item_name": "SERUM ELECTROLYTES ( NA+, K+, CL-) // // SERUM CALCIUM // //",
+            "item_amount": 350.0,
+            "item_rate": 1.0,
+            "item_quantity": 350.0
+          },
+          {
+            "item_name": "SERUM SODIUM // // SERUM AMMONIA // //",
+            "item_amount": 1300.0,
+            "item_rate": 1.0,
+            "item_quantity": 1300.0
+          },
+          {
+            "item_name": "X-RAY PELVIS // //",
+            "item_amount": 350.0,
+            "item_rate": 1.0,
+            "item_quantity": 350.0
+          },
+          {
+            "item_name": "Procedures Charges",
+            "item_amount": 500.0,
+            "item_rate": 1.0,
+            "item_quantity": 500.0
+          },
+          {
+            "item_name": "a ADMISSION.",
+            "item_amount": 10150.0,
+            "item_rate": 7.0,
+            "item_quantity": 1450.0
+          },
+          {
+            "item_name": "FOLEYS CATHETER // // ANAESTHETIST // //",
+            "item_amount": 0.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "C ARM CHARGES // // SURGEON // //",
+            "item_amount": 25000.0,
+            "item_rate": 1.0,
+            "item_quantity": 25000.0
+          },
+          {
+            "item_name": "OXYGEN // // | IMPLANTS // //",
+            "item_amount": 925.0,
+            "item_rate": 71.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "OT // // _ NEBULISATION // //",
+            "item_amount": 600.0,
+            "item_rate": 4.0,
+            "item_quantity": 150.0
+          },
+          {
+            "item_name": "GRBS // // .F",
+            "item_amount": 150.0,
+            "item_rate": 1.0,
+            "item_quantity": 150.0
+          }
+        ]
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "",
+            "item_amount": 2025.0,
+            "item_rate": 10.0,
+            "item_quantity": 21.0
+          },
+          {
+            "item_name": "",
+            "item_amount": 33.0,
+            "item_rate": 36.0,
+            "item_quantity": 9.0
+          },
+          {
+            "item_name": "Bill Date",
+            "item_amount": 0.0,
+            "item_rate": 58.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "Discharge Date",
+            "item_amount": 22.0,
+            "item_rate": 38.0,
+            "item_quantity": 11.0
+          },
+          {
+            "item_name": "Paid Amount ‘",
+            "item_amount": 185000.0,
+            "item_rate": 185000.0,
+            "item_quantity": 1.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 35
+  }
+}

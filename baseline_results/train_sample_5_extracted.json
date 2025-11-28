@@ -1,0 +1,217 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "MODULAR CUP",
+            "item_amount": 43.0,
+            "item_rate": 43.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "IMTERNAL HEAD +",
+            "item_amount": 1.5,
+            "item_rate": 1.5,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "UNCEMENTED FEMORAL STEM",
+            "item_amount": 16500.0,
+            "item_rate": 1650.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "7500.00 44500.00",
+            "item_amount": 44500.0,
+            "item_rate": 7500.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "HUNDRED TWENTY FIVE ONLY.",
+            "item_amount": 68500.0,
+            "item_rate": 68500.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "68500.00",
+            "item_amount": 68500.0,
+            "item_rate": 68500.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "CAUTION",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "the product.",
+            "item_amount": 24.0,
+            "item_rate": 12.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": ") Subject te Jurisdiction only",
+            "item_amount": 3.0,
+            "item_rate": 3.0,
+            "item_quantity": 1.0
+          }
+        ]
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Reg No. MRN Number: BILL ba-_. .",
+            "item_amount": 46.0,
+            "item_rate": 10.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "sf FOLEY CATHETER",
+            "item_amount": 349.0,
+            "item_rate": 1.0,
+            "item_quantity": 349.0
+          },
+          {
+            "item_name": "NEOMOL IV TL / NS EURO ML a TASOE /",
+            "item_amount": 98.48,
+            "item_rate": 1.0,
+            "item_quantity": 98.48
+          },
+          {
+            "item_name": "SAFE PORT RL ML os = RRC /",
+            "item_amount": 64.89,
+            "item_rate": 4.0,
+            "item_quantity": 64.89
+          },
+          {
+            "item_name": "CEZOSAL",
+            "item_amount": 1822.0,
+            "item_rate": 2.0,
+            "item_quantity": 1.5
+          },
+          {
+            "item_name": "INJECTION Vv / a) INJ PANTAKIND MG. = = AIQX / $",
+            "item_amount": 113.0,
+            "item_rate": 2.0,
+            "item_quantity": 6.5
+          },
+          {
+            "item_name": "JUSTIN-AQ INJ = BDWOAIA / OMNIVAN ML =) EM /",
+            "item_amount": 29.04,
+            "item_rate": 2.0,
+            "item_quantity": 14.52
+          },
+          {
+            "item_name": "OMNIVAN ML <i GM /",
+            "item_amount": 125.84,
+            "item_rate": 4.0,
+            "item_quantity": 31.46
+          },
+          {
+            "item_name": "“",
+            "item_amount": 198.0,
+            "item_rate": 4.0,
+            "item_quantity": 198.0
+          },
+          {
+            "item_name": "Iv FIX on CF / a VEIN-O LINE CM ae KA/",
+            "item_amount": 347.0,
+            "item_rate": 2.0,
+            "item_quantity": 347.0
+          },
+          {
+            "item_name": "381.46 0.18",
+            "item_amount": 0.18,
+            "item_rate": 381.46,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Prepared By. Reception System Print~",
+            "item_amount": 4.0,
+            "item_rate": 38.0,
+            "item_quantity": 13.0
+          }
+        ]
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "~ _. MRN Number",
+            "item_amount": 12.0,
+            "item_rate": 5.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "CEZOSAL",
+            "item_amount": 6.0,
+            "item_rate": 27.0,
+            "item_quantity": 18221.0
+          },
+          {
+            "item_name": "INJECTION / i",
+            "item_amount": 628.0,
+            "item_rate": 28.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "CEZOSAL",
+            "item_amount": 8.0,
+            "item_rate": 7.0,
+            "item_quantity": 18221.0
+          },
+          {
+            "item_name": "INJECTION Vi / PANTAKIND MG INJ a AIQY /",
+            "item_amount": 57.48,
+            "item_rate": 1.0,
+            "item_quantity": 57.48
+          },
+          {
+            "item_name": "JUSTIN-AQ INT =} BDWAIA / PROPORT NS ML ca] PTNSAE/",
+            "item_amount": 191.68,
+            "item_rate": 4.0,
+            "item_quantity": 47.92
+          },
+          {
+            "item_name": "OMNIVAN ML = GM / ,",
+            "item_amount": 92.0,
+            "item_rate": 62.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "a wf OMNIVAN",
+            "item_amount": 72.0,
+            "item_rate": 1.0,
+            "item_quantity": 72.0
+          },
+          {
+            "item_name": "TETANUS TOXOID INJ ba = C / TRULON SN - = C /",
+            "item_amount": 259.0,
+            "item_rate": 1.0,
+            "item_quantity": 259.0
+          },
+          {
+            "item_name": "Printed Date.",
+            "item_amount": 5.0,
+            "item_rate": 38.0,
+            "item_quantity": 13.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 31
+  }
+}

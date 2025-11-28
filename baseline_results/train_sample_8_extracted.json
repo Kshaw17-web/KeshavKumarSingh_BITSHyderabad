@@ -1,0 +1,49 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "} ~-=) r. No.: : _ Date...Y",
+            "item_amount": 4.0,
+            "item_rate": 4.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Order NO.",
+            "item_amount": 7.0,
+            "item_rate": 3.5,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "E.&.",
+            "item_amount": 1.0,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          },
+          {
+            "item_name": ". Interest @% per annum will be charged if bill is not paid within days. l . Wo can not accept anv olaim of shartane accentable after despatch of goods.",
+            "item_amount": 3.0,
+            "item_rate": 7.0,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": ". All Disputes Subject . Medicine, sold will neither be ~.~... -.- _ ; . art: (ae",
+            "item_amount": 1.0,
+            "item_rate": 6.0,
+            "item_quantity": 4.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 5
+  }
+}

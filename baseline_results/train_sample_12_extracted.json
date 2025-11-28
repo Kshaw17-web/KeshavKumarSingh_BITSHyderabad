@@ -1,0 +1,1201 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Admission Date",
+            "item_amount": 17.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 294.4,
+            "item_rate": 320.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER.",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 147.2,
+            "item_rate": 160.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 147.2,
+            "item_rate": 160.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 147.2,
+            "item_rate": 160.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 147.2,
+            "item_rate": 160.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 294.4,
+            "item_rate": 320.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "LUMBAR PUNCTURE",
+            "item_amount": 920.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER.",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER.",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SUGAR BY GLUCOMETER",
+            "item_amount": 73.6,
+            "item_rate": 80.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "VASCULAR CLARIS NON STICK FORCEP",
+            "item_amount": 460.0,
+            "item_rate": 500.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "WARMING MATTRESS",
+            "item_amount": 690.0,
+            "item_rate": 750.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "FLOW SENSOR (FABIAN VENTILATOR)(Dr. Tushar Parikh)",
+            "item_amount": 460.0,
+            "item_rate": 500.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "FLOW SENSOR (FABIAN VENTILATOR)(Dr. Tushar Parikh)",
+            "item_amount": 460.0,
+            "item_rate": 500.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "BLOOD GROUPING",
+            "item_amount": 92.0,
+            "item_rate": 100.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "BLOOD GROUPING - NAT",
+            "item_amount": 92.0,
+            "item_rate": 100.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "FRESH FROZEN PLASMA (WITHOUT REPLACE)",
+            "item_amount": 828.0,
+            "item_rate": 900.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 33.0,
+            "item_rate": 6.6,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "Printed On",
+            "item_amount": 14.0,
+            "item_rate": 16.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Admission Date",
+            "item_amount": 17.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 1214.4,
+            "item_rate": 1320.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "ADVANCED VENTILATION (BEAR",
+            "item_amount": 2760.0,
+            "item_rate": 3000.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 303.6,
+            "item_rate": 330.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "ADVANCED VENTILATION (BEAR",
+            "item_amount": 2760.0,
+            "item_rate": 3000.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "ADVANCED VENTILATION (BEAR",
+            "item_amount": 2760.0,
+            "item_rate": 3000.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 1214.4,
+            "item_rate": 1320.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "ADVANCED VENTILATION (BEAR",
+            "item_amount": 2760.0,
+            "item_rate": 3000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ADVANCED VENTILATION (BEAR",
+            "item_amount": 2760.0,
+            "item_rate": 3000.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 1214.4,
+            "item_rate": 1320.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "ADVANCED VENTILATION (BEAR",
+            "item_amount": 2760.0,
+            "item_rate": 3000.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 1214.4,
+            "item_rate": 1320.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "ADVANCED VENTILATION (BEAR",
+            "item_amount": 2760.0,
+            "item_rate": 3000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 1214.4,
+            "item_rate": 1320.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "CONVENTIONAL VENTILATOR",
+            "item_amount": 1840.0,
+            "item_rate": 2000.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 1214.4,
+            "item_rate": 1320.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "CONVENTIONAL VENTILATOR",
+            "item_amount": 1840.0,
+            "item_rate": 2000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 910.8,
+            "item_rate": 990.0,
+            "item_quantity": 3.0
+          },
+          {
+            "item_name": "CONVENTIONAL VENTILATOR",
+            "item_amount": 1840.0,
+            "item_rate": 2000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 303.6,
+            "item_rate": 330.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 303.6,
+            "item_rate": 330.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "CONVENTIONAL VENTILATOR",
+            "item_amount": 1840.0,
+            "item_rate": 2000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SINGLE CHANNEL MONITOR (NICU)",
+            "item_amount": 322.0,
+            "item_rate": 350.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SYRINGE/ INFUSION PUMP",
+            "item_amount": 607.2,
+            "item_rate": 660.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "Chara too EP DONOR HUMAN MILK) PROCESSING",
+            "item_amount": 276.0,
+            "item_rate": 300.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Chace nee DONOR HUMAN MILK) PROCESSING",
+            "item_amount": 276.0,
+            "item_rate": 300.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "CONVENTIONAL VENTILATOR",
+            "item_amount": 1840.0,
+            "item_rate": 2000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 33.0,
+            "item_rate": 4.12,
+            "item_quantity": 8.0
+          },
+          {
+            "item_name": "Printed On",
+            "item_amount": 14.0,
+            "item_rate": 16.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Admission Date",
+            "item_amount": 17.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "BLOOD SET ( ROMSON )",
+            "item_amount": 237.05,
+            "item_rate": 237.05,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SET ( ROMSON )",
+            "item_amount": 237.05,
+            "item_rate": 237.05,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD SET ( ROMSON )",
+            "item_amount": 237.05,
+            "item_rate": 237.05,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BABY MASSAGE",
+            "item_amount": 124.58,
+            "item_rate": 124.58,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "STERILE WATER FOR INJECTIONS",
+            "item_amount": 4.0,
+            "item_rate": 7.77,
+            "item_quantity": 3.0
+          },
+          {
+            "item_name": "IP",
+            "item_amount": 1.77,
+            "item_rate": 29.0,
+            "item_quantity": 545068.0
+          },
+          {
+            "item_name": "STERILE WATER FOR INJECTIONS",
+            "item_amount": 4.0,
+            "item_rate": 107.61,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "IP",
+            "item_amount": 107.61,
+            "item_rate": 1.0,
+            "item_quantity": 28.0
+          },
+          {
+            "item_name": "AQUAPLUS NS",
+            "item_amount": 90.0,
+            "item_rate": 44.0,
+            "item_quantity": 44.9
+          },
+          {
+            "item_name": "DEXTROSE",
+            "item_amount": 4.0,
+            "item_rate": 37.36,
+            "item_quantity": 500.0
+          },
+          {
+            "item_name": "AMANTA",
+            "item_amount": 17.58,
+            "item_rate": 1.0,
+            "item_quantity": 37.36
+          },
+          {
+            "item_name": "KENADION",
+            "item_amount": 17.58,
+            "item_rate": 27.0,
+            "item_quantity": 503.0
+          },
+          {
+            "item_name": "DEXTROSE",
+            "item_amount": 37.36,
+            "item_rate": 500.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "AMANTA",
+            "item_amount": 37.36,
+            "item_rate": 1.0,
+            "item_quantity": 28.0
+          },
+          {
+            "item_name": "DEXTROSE",
+            "item_amount": 74.72,
+            "item_rate": 500.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "AMANTA",
+            "item_amount": 74.72,
+            "item_rate": 2.0,
+            "item_quantity": 28.0
+          },
+          {
+            "item_name": "STERILE WATER FOR INJECTIONS",
+            "item_amount": 107.61,
+            "item_rate": 107.61,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "IP",
+            "item_amount": 107.61,
+            "item_rate": 1.0,
+            "item_quantity": 28.0
+          },
+          {
+            "item_name": "AQUAPLUS NS",
+            "item_amount": 44.9,
+            "item_rate": 44.9,
+            "item_quantity": 27.0
+          },
+          {
+            "item_name": "AMINOVEN INFANT",
+            "item_amount": 672.0,
+            "item_rate": 672.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SMOFLIPID",
+            "item_amount": 32.81,
+            "item_rate": 1.0,
+            "item_quantity": 1098.0
+          },
+          {
+            "item_name": "MULTIMIN",
+            "item_amount": 32.81,
+            "item_rate": 26.0,
+            "item_quantity": 63.0
+          },
+          {
+            "item_name": "DEXTROSE",
+            "item_amount": 37.36,
+            "item_rate": 500.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "AMANTA",
+            "item_amount": 37.36,
+            "item_rate": 28.0,
+            "item_quantity": 30250779.0
+          },
+          {
+            "item_name": "AMINOVEN INFANT",
+            "item_amount": 672.0,
+            "item_rate": 672.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SMOFLIPID",
+            "item_amount": 1098.0,
+            "item_rate": 1098.0,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 33.0,
+            "item_rate": 3.3,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "Printed On",
+            "item_amount": 14.0,
+            "item_rate": 16.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "4",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Admission Date",
+            "item_amount": 17.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "POLYVOL PRO",
+            "item_amount": 678.76,
+            "item_rate": 14516.0,
+            "item_quantity": 150.0
+          },
+          {
+            "item_name": "POLYMED",
+            "item_amount": 678.76,
+            "item_rate": 2.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "INTRACATH NO",
+            "item_amount": 339.38,
+            "item_rate": 13.05,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "NEON",
+            "item_amount": 339.38,
+            "item_rate": 2.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "WEL) LINE S",
+            "item_amount": 406.25,
+            "item_rate": 1.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "Rn SYRINGE lee.",
+            "item_amount": 96.0,
+            "item_rate": 96.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "DISPO SYRINGE SML WITHOUT",
+            "item_amount": 57.0,
+            "item_rate": 57.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NEED(HMD)",
+            "item_amount": 57.0,
+            "item_rate": 6.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "SYRINGE W/O NEEDLE",
+            "item_amount": 160.0,
+            "item_rate": 2.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "SYRINGE W/O NEED S",
+            "item_amount": 159.37,
+            "item_rate": 19937.0,
+            "item_quantity": 29.0
+          },
+          {
+            "item_name": "SURGEON CAP DELUX (SUCT)",
+            "item_amount": 20.0,
+            "item_rate": 20.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "FACE MASK STERILE REGAL",
+            "item_amount": 8.0,
+            "item_rate": 8.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "beanie",
+            "item_amount": 8.0,
+            "item_rate": 2.0,
+            "item_quantity": 28.0
+          },
+          {
+            "item_name": "STERILE GLOVES",
+            "item_amount": 65.0,
+            "item_rate": 89.0,
+            "item_quantity": 77282979.0
+          },
+          {
+            "item_name": "ise Gst) GLOVES",
+            "item_amount": 79.0,
+            "item_rate": 979.0,
+            "item_quantity": 79.0
+          },
+          {
+            "item_name": "EXAMINATION NITRILE GLOVES",
+            "item_amount": 32.34,
+            "item_rate": 32.34,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "PENGUIN(",
+            "item_amount": 32.34,
+            "item_rate": 1.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "URINE BAG (PAED.)(ROMSON) UPAE _",
+            "item_amount": 148.0,
+            "item_rate": 148.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "sce CATHETER NO.",
+            "item_amount": 70.0,
+            "item_rate": 70.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD LANCETS(EASY CARE)BLAN",
+            "item_amount": 14.96,
+            "item_rate": 14.96,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "FRIENDS UNDER PAD CARE",
+            "item_amount": 206.25,
+            "item_rate": 206.25,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "creer",
+            "item_amount": 206.25,
+            "item_rate": 1.0,
+            "item_quantity": 220.0
+          },
+          {
+            "item_name": "TEDDY BABY DIAPER NEW BORN os/",
+            "item_amount": 10.0,
+            "item_rate": 953.13,
+            "item_quantity": 25313.0
+          },
+          {
+            "item_name": "INTRACATH NO",
+            "item_amount": 169.69,
+            "item_rate": 6.53,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "NCO",
+            "item_amount": 937.5,
+            "item_rate": 9379.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "TUBERCULIN SYRINGE |ee.",
+            "item_amount": 48.0,
+            "item_rate": 48.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 33.0,
+            "item_rate": 2.2,
+            "item_quantity": 15.0
+          },
+          {
+            "item_name": "Printed On",
+            "item_amount": 14.0,
+            "item_rate": 16.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "5",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Admission Date",
+            "item_amount": 17.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "Consulting Doctor Admission No i",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "DISPO SYRINGE",
+            "item_amount": 56.25,
+            "item_rate": 5.62,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "NEED(HMD)",
+            "item_amount": 56.25,
+            "item_rate": 5.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "SYRINGE W/O NEEDLE",
+            "item_amount": 80.0,
+            "item_rate": 1.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "NEEDLE NO.",
+            "item_amount": 4.88,
+            "item_rate": 4.88,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "INFANT FEEDING TUBE",
+            "item_amount": 63.0,
+            "item_rate": 63.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NO.",
+            "item_amount": 63.0,
+            "item_rate": 1.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "FACE MASK STERILE REGAL",
+            "item_amount": 8.0,
+            "item_rate": 8.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ELASTIC",
+            "item_amount": 8.0,
+            "item_rate": 2.0,
+            "item_quantity": 28.0
+          },
+          {
+            "item_name": "TEGADERM",
+            "item_amount": 116.25,
+            "item_rate": 116.25,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "STERILE GLOVES",
+            "item_amount": 65.0,
+            "item_rate": 88.0,
+            "item_quantity": 81.0
+          },
+          {
+            "item_name": "STERILE GLOVES",
+            "item_amount": 7.0,
+            "item_rate": 181.86,
+            "item_quantity": 181.86
+          },
+          {
+            "item_name": "EXAMINATION NITRILE GLOVES",
+            "item_amount": 32.34,
+            "item_rate": 32.34,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "PENGUIN(",
+            "item_amount": 32.34,
+            "item_rate": 1.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "MICROPORE SURGICAL TAPE",
+            "item_amount": 1.0,
+            "item_rate": 126.5,
+            "item_quantity": 126.5
+          },
+          {
+            "item_name": "POLYVOL PRO",
+            "item_amount": 339.0,
+            "item_rate": 14516.0,
+            "item_quantity": 150.0
+          },
+          {
+            "item_name": "POLYMED",
+            "item_amount": 339.0,
+            "item_rate": 1.0,
+            "item_quantity": 29.0
+          },
+          {
+            "item_name": "URINE BAG (PAED.)(ROMSON) UPAE",
+            "item_amount": 4.0,
+            "item_rate": 74.0,
+            "item_quantity": 74.0
+          },
+          {
+            "item_name": "tu TH",
+            "item_amount": 252.56,
+            "item_rate": 252.56,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "sca CATHETER NO.",
+            "item_amount": 48.0,
+            "item_rate": 569.0,
+            "item_quantity": 48.0
+          },
+          {
+            "item_name": "BLOOD LANCETS(EASY CARE) BLAN",
+            "item_amount": 11.22,
+            "item_rate": 11.22,
+            "item_quantity": 3.0
+          },
+          {
+            "item_name": "FRIENDS UNDER PAD CARE",
+            "item_amount": 206.25,
+            "item_rate": 1.0,
+            "item_quantity": 220.0
+          },
+          {
+            "item_name": "GLYCERINE",
+            "item_amount": 80.0,
+            "item_rate": 80.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "STERILE GLOVES",
+            "item_amount": 7.0,
+            "item_rate": 86.0,
+            "item_quantity": 181.0
+          },
+          {
+            "item_name": "INTRACATH NO",
+            "item_amount": 339.38,
+            "item_rate": 13.05,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "NEONOVA",
+            "item_amount": 339.38,
+            "item_rate": 2.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "INTRACATH NO",
+            "item_amount": 169.69,
+            "item_rate": 6.53,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "NEONOVA",
+            "item_amount": 169.69,
+            "item_rate": 1.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "VEIN O LINE $",
+            "item_amount": 10.0,
+            "item_rate": 419.0,
+            "item_quantity": 419.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 33.0,
+            "item_rate": 1.65,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "Printed On",
+            "item_amount": 14.0,
+            "item_rate": 16.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "6",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Admission Date",
+            "item_amount": 2025.0,
+            "item_rate": 11.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "Drugs/Surgical/Consumables (WEL) LINE S",
+            "item_amount": 937.5,
+            "item_rate": 90.0,
+            "item_quantity": 937.0
+          },
+          {
+            "item_name": "BN SYRINGE",
+            "item_amount": 96.0,
+            "item_rate": 9.0,
+            "item_quantity": 96.0
+          },
+          {
+            "item_name": "DISPO SYRINGE SML WITHOUT",
+            "item_amount": 47.5,
+            "item_rate": 47.5,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NEEDAIMD)",
+            "item_amount": 47.5,
+            "item_rate": 5.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "DISPO SYRINGE",
+            "item_amount": 45.0,
+            "item_rate": 4.5,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "NEED(HMD)",
+            "item_amount": 45.0,
+            "item_rate": 4.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "SYRINGE W/O NEEDLE",
+            "item_amount": 160.0,
+            "item_rate": 2.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "TEGADERM",
+            "item_amount": 116.25,
+            "item_rate": 116.25,
+            "item_quantity": 27.0
+          },
+          {
+            "item_name": "STERILE GLOVES",
+            "item_amount": 65.0,
+            "item_rate": 18188.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "STERILE GLOVES",
+            "item_amount": 7.0,
+            "item_rate": 979.79,
+            "item_quantity": 79.0
+          },
+          {
+            "item_name": "EXAMINATION NITRILE GLOVES",
+            "item_amount": 32.34,
+            "item_rate": 32.34,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "PENGUIN(",
+            "item_amount": 32.34,
+            "item_rate": 1.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "POLYVOL PRO",
+            "item_amount": 339.38,
+            "item_rate": 14516.0,
+            "item_quantity": 150.0
+          },
+          {
+            "item_name": "POLYMED",
+            "item_amount": 339.38,
+            "item_rate": 1.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "URINE BAG (PAED.)(ROMSON) UPAE",
+            "item_amount": 111.0,
+            "item_rate": 111.0,
+            "item_quantity": 3.0
+          },
+          {
+            "item_name": "sce CATHETER NO.",
+            "item_amount": 94.0,
+            "item_rate": 31.0,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "sca CATHETER NO.",
+            "item_amount": 48.0,
+            "item_rate": 569.0,
+            "item_quantity": 48.0
+          },
+          {
+            "item_name": "BLOOD LANCETS(EASY CARE)BLAN",
+            "item_amount": 7.48,
+            "item_rate": 7.48,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "TEDDY BABY DIAPER NEW BORN H",
+            "item_amount": 10.0,
+            "item_rate": 953.43,
+            "item_quantity": 25313.0
+          },
+          {
+            "item_name": "SPECICAN",
+            "item_amount": 937.5,
+            "item_rate": 9379.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "BN SYRINGE",
+            "item_amount": 4.0,
+            "item_rate": 9.0,
+            "item_quantity": 48.0
+          },
+          {
+            "item_name": "DISPO SYRINGE",
+            "item_amount": 10.72,
+            "item_rate": 5.36,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "NEEDCIMD)",
+            "item_amount": 10.72,
+            "item_rate": 2.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "DISPO SYRINGE SML WITHOUT",
+            "item_amount": 47.5,
+            "item_rate": 47.5,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NEEDAIMD)",
+            "item_amount": 47.5,
+            "item_rate": 5.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "DISPO SYRINGE",
+            "item_amount": 50.0,
+            "item_rate": 12509.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 33.0,
+            "item_rate": 1.57,
+            "item_quantity": 21.0
+          },
+          {
+            "item_name": "Printed On",
+            "item_amount": 14.0,
+            "item_rate": 16.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 101
+  }
+}

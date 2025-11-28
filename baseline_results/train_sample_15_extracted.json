@@ -1,0 +1,1021 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "iP.No. Date of Discharge",
+            "item_amount": 31.0,
+            "item_rate": 12.0,
+            "item_quantity": 2028.0
+          },
+          {
+            "item_name": "ADMISSION CHARGES",
+            "item_amount": 280.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "0.00 250.00",
+            "item_amount": 250.0,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          },
+          {
+            "item_name": "WARD CHARGES",
+            "item_amount": 4800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// «= NICU / NICU",
+            "item_amount": 4800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NICU © // NICU",
+            "item_amount": 4800.09,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NICU © = NICU ,",
+            "item_amount": 4800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NICU",
+            "item_amount": 4800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "toriti",
+            "item_amount": 4800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NICU // PRIVATE WARD",
+            "item_amount": 3200.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// PRIVATE WARD , , —-, // PRIVATE WARD , ©",
+            "item_amount": 3200.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "0.00 62,400.00",
+            "item_amount": 62400.0,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          },
+          {
+            "item_name": "NURSING CHARGES",
+            "item_amount": 1200.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NURSING CHARGES. - NICU // NURSING CHARGES. - NICU —",
+            "item_amount": 1200.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NURSING CHARGES. - NICU // NURSING CHARGES, - NICU",
+            "item_amount": 1200.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NURSING CHARGES. - NICU",
+            "item_amount": 1200.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Pagel of",
+            "item_amount": 21.0,
+            "item_rate": 21.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Printed On",
+            "item_amount": 52.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "/ NURSING CHARGES. - NICU // NURSING CHARGES. - NICU",
+            "item_amount": 1200.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ NURSING CHARGES, - NICU NURSING CHARGES. - NICU ,",
+            "item_amount": 1200.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NURSING CHARGES. - PRIVATE WARD / NURSING CHARGES. - PRIVATE WARD ,",
+            "item_amount": 0.0,
+            "item_rate": 800.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NURSING CHARGES. - PRIVATE WARD , ©",
+            "item_amount": 15600.0,
+            "item_rate": 0.0,
+            "item_quantity": 800.0
+          },
+          {
+            "item_name": "MINOR PROCEDURE",
+            "item_amount": 0.0,
+            "item_rate": 250.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// RYLES TUBE INSERTION , // Umbilical Line/PICC Insertion",
+            "item_amount": 6660.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// RYLES TUBE INSERTION // IV CANNULISATION",
+            "item_amount": 280.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// RYLES TUBE INSERTION , // IV CANNULISATION ,",
+            "item_amount": 0.0,
+            "item_rate": 250.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// Double Occupancy / Attender Stay , // Double Occupancy / Attender Stay",
+            "item_amount": 2500.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// IV CANNULISATION , // Double Occupancy / Attender Stay , ,",
+            "item_amount": 2500.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "=",
+            "item_amount": 16069.0,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          },
+          {
+            "item_name": "LABORATORY",
+            "item_amount": 180.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// COMPLETE BLOOD COUNT(CBC) , ,",
+            "item_amount": 360.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "tHt",
+            "item_amount": 1320.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 52.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "LP.No. Date of Discharge +",
+            "item_amount": 31.0,
+            "item_rate": 12.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "Boctor",
+            "item_amount": 2.0,
+            "item_rate": 2.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Payer Name",
+            "item_amount": 240.0,
+            "item_rate": 9.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// CRP ; C-REACTIVE PROTEIN ~—- , , / RENAL FUNCTION TEST (RFT) = ,",
+            "item_amount": 720.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "WINV BLOOD CULTURE AND SENSITIVITY = M / THYROXINE FREE ( FT ) ,",
+            "item_amount": 600.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// THYROID STIMULATING HORMONE // COMPLETE BLOOD COUNT(CC) ,",
+            "item_amount": 0.0,
+            "item_rate": 360.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// CRP ; C-REACTIVE PROTEIN , // URINE FOR KOH MOUNT",
+            "item_amount": 600.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// CRP ; C-REACTIVE PROTEIN ~—- // PLATELET COUNT - BLOOD ,",
+            "item_amount": 0.0,
+            "item_rate": 240.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// OCCULT BLOOD - STOOL // COMPLETE BLOOD COUNT(CC) ,",
+            "item_amount": 0.0,
+            "item_rate": 380.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// CRP ; C-REACTIVE PROTEIN // CRP ; C-REACTIVE PROTEIN ,",
+            "item_amount": 0.0,
+            "item_rate": 600.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// PLATELET COUNT - BLOOD , // COMPLETE BLOOD COUNT(CC}",
+            "item_amount": 360.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// CRP ; C-REACTIVE PROTEIN =",
+            "item_amount": 11160.0,
+            "item_rate": 0.0,
+            "item_quantity": 600.0
+          },
+          {
+            "item_name": "RADIOLOGY",
+            "item_amount": 420.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// X-RAY CHEST AP // D ECHO CARDIOGRAPHY , , , =",
+            "item_amount": 1600.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// X-RAY CHEST AP",
+            "item_amount": 480.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 1.52,
+            "item_rate": 2025.0,
+            "item_quantity": 11.0
+          }
+        ]
+      },
+      {
+        "page_no": "4",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "LP.No. Date of Discharge",
+            "item_amount": 31.0,
+            "item_rate": 12.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "0.00 4,740.00",
+            "item_amount": 4740.0,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          },
+          {
+            "item_name": "DOCTOR VISITS",
+            "item_amount": 27000.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// PAEDIATRICS - IP DOCTOR VISIT eo © —§,, / _Auciology Consultation ©",
+            "item_amount": 680.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "0.00 32,850.00",
+            "item_amount": 32850.0,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          },
+          {
+            "item_name": "// DIETARY SERVICES - NICU © ( = / INTUBATION",
+            "item_amount": 2800.0,
+            "item_rate": 0.09,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "“VENTILATOR PER DAY // GRBS © =",
+            "item_amount": 110.0,
+            "item_rate": 9.0,
+            "item_quantity": 11000000.0
+          },
+          {
+            "item_name": "// MONITOR CHARGES, © = // SYRINGE PUMP =",
+            "item_amount": 450.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "nit",
+            "item_amount": 2400.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ GRBS = —- // GRBS , ,",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "GRBS = , / Critical Care Consumables ©",
+            "item_amount": 7150.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// Infection Preventive Measures (\\PM) = —§, // INTENSIVIST CHARGES © , ( ,",
+            "item_amount": 16500.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "GRBS © «= © itns «= GRES = p =",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1100090.0
+          },
+          {
+            "item_name": "// DIETARY SERVICES - NICU «= a.g ,",
+            "item_amount": 0.0,
+            "item_rate": 500.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 1.52,
+            "item_rate": 2025.0,
+            "item_quantity": 11.0
+          }
+        ]
+      },
+      {
+        "page_no": "5",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Payer Name",
+            "item_amount": 3.0,
+            "item_rate": 3.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// SYRINGE PUMP , // GRBS",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NEBULISATION // OXYGEN PER DAY = ,",
+            "item_amount": 0.0,
+            "item_rate": 2400.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// INITIAL ASSESSMENT CHARGES , $ / LINEN CHARGES ,",
+            "item_amount": 0.0,
+            "item_rate": 120.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// Ventilator Initiation , , // GRES",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NEBULISATION , , // GRBS",
+            "item_amount": 410.9,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NEBULISATION , , , / DIETARY SERVICES - NICU , ,",
+            "item_amount": 500.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GRES , , // NEBULISATION",
+            "item_amount": 600.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// MONITOR CHARGES. , ,",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "THt/",
+            "item_amount": 0.0,
+            "item_rate": 450.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ GRES , . // NEBULISATION",
+            "item_amount": 150.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GRBS , // GRBS ,",
+            "item_amount": 0.0,
+            "item_rate": 110.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GRES , // NEBULISATION ,",
+            "item_amount": 300.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// Noninvasive Ventilation (NIV) , // NEBULISATION ,",
+            "item_amount": 160.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// MONITOR CHARGES,",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page S of",
+            "item_amount": 1.52,
+            "item_rate": 2025.0,
+            "item_quantity": 11.0
+          }
+        ]
+      },
+      {
+        "page_no": "6",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "LP.No Date of Discharge |",
+            "item_amount": 31.0,
+            "item_rate": 12.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "pare DESCRIPTION ary, RATE pIscouNT aMouNr SCWPANY",
+            "item_amount": 2400.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// SYRINGE PUMP © , // = GRBS —",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "//“ NEBULISATION ©—- // DIETARY SERVICES - NICU == ,",
+            "item_amount": 0.0,
+            "item_rate": 500.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "+",
+            "item_amount": 300.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Noninvasive Ventilation (NIV) , // © GRBS. © ©=—",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NEBULISATION , © // NEBULISATION , ©",
+            "item_amount": 150.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ «= GRBS. ©=—- / «MONITOR CHARGES. ,",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// NEBULISATION // SYRINGE PUMP",
+            "item_amount": 450.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// DIETARY SERVICES - NICU , , // Non-invasive Ventilation (NIV)",
+            "item_amount": 4500.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// OXYGEN PER DAY —, // ATTENDING DELIVERY CHARGE ,",
+            "item_amount": 8000.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// RBS. © «©—S, // DIETARY SERVICES - NICU ©=—»",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GRBS © , © // MONITOR CHARGES, , ©",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// SYRINGE PUMP , © ©— // OXYGEN PER DAY",
+            "item_amount": 2400.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "«= GRBS / OXYGEN PER DAY",
+            "item_amount": 2400.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 1.52,
+            "item_rate": 2025.0,
+            "item_quantity": 11.0
+          }
+        ]
+      },
+      {
+        "page_no": "7",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Patent Phone Date of Admigsian ;",
+            "item_amount": 14.0,
+            "item_rate": 3.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "LP. No. Date of Discharge |",
+            "item_amount": 31.0,
+            "item_rate": 12.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "/ DIETARY SERVICES - NICU // GRBS",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "MONITOR CHARGES. , // OXYGEN PER DAY",
+            "item_amount": 2400.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// SYRINGE PUMP ,",
+            "item_amount": 450.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ST",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// DIETARY SERVICES - NICU , // GRBS , ,",
+            "item_amount": 0.0,
+            "item_rate": 220.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// MONITOR CHARGES. , // OXYGEN PER DAY",
+            "item_amount": 2400.0,
+            "item_rate": 6.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// SYRINGE PUMP , // GRBS",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GRBS , // GRES ,",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ MONITOR CHARGES. , // OXYGEN PER DAY",
+            "item_amount": 2600.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// SYRINGE PUMP. , , // DIETARY SERVICES - NICU ,",
+            "item_amount": 500.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GRES // GRBS , ,",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// OXYGEN PER HOUR // GRBS",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// MONITOR CHARGES, , , // SYRINGE PUMP , ,",
+            "item_amount": 0.0,
+            "item_rate": 450.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 2.0,
+            "item_rate": 0.29,
+            "item_quantity": 7.0
+          },
+          {
+            "item_name": "Printed On",
+            "item_amount": 1.52,
+            "item_rate": 2025.0,
+            "item_quantity": 11.0
+          }
+        ]
+      },
+      {
+        "page_no": "8",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "LP, No. : Date of Discharge ;",
+            "item_amount": 31.0,
+            "item_rate": 12.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "// GRBS , // MONITOR CHARGES.",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// OXYGEN PER DAY , , // GRBS",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GRBS NEBULISATION",
+            "item_amount": 300.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// DIETARY SERVICES - NICU // GRBS , ,",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// OIETARY SERVICES - PRIVATE WARD // infaction Preventive Measures (IPM)",
+            "item_amount": 600.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// WARD CONSUMABLES PER DAY // GRBS",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GRBS , , / GRABS",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ DIETARY SERVICES - PRIVATE WARD $ / GRBS ,",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ Oto-Acoustic Emission , // GABS",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GRBS // DIETARY SERVICES - PRIVATE WARD",
+            "item_amount": 500.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// GAS // VACCINATION",
+            "item_amount": 1800.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "0.00 122,900.00",
+            "item_amount": 122900.0,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          },
+          {
+            "item_name": "WARD CONSUMABLES",
+            "item_amount": 60.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 52.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "9",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "LP. No. Date of Discharge |.",
+            "item_amount": 31.0,
+            "item_rate": 12.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "// “DISPOSABLE SYRINGE SML HMD © = VASOF IX .G «",
+            "item_amount": 875.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "~— clm // ‘DISPOSABLE SYRINGE ML KMD =",
+            "item_amount": 24.38,
+            "item_rate": 0.9,
+            "item_quantity": 0.9
+          },
+          {
+            "item_name": "// DISPOSABLE SYRINGE ML «ET TUBE , (CUFFED) , =",
+            "item_amount": 182.81,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// “EXAMINATION GLOVES MEDIUM // INFANT FEEDING TUBE SIZE",
+            "item_amount": 122.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "KLICK CLAMP ( // LEUKOSAND CM\"a/ M",
+            "item_amount": 166.9,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// POWDER FREE GLOVES « , «( // «SUCTION CATHETER (,",
+            "item_amount": 82.0,
+            "item_rate": 227.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// SURGICAL BLADE , , // THREE WAY STOP COCK © «",
+            "item_amount": 482.81,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ UNDER PAD , p ©=—-, // VEINOLINE ,",
+            "item_amount": 211.88,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ ~—- VEINOLLINE M",
+            "item_amount": 364.74,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ruviies «ORE RCD LORE",
+            "item_amount": 20.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// DISPOSABLE SYRINGE ML HMD (",
+            "item_amount": 12.18,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "+",
+            "item_amount": 9.37,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "“DISPOSABLE SYRINGE ML HMD / “EXAMINATION GLOVES MEDIUM © o.ce",
+            "item_amount": 26.12,
+            "item_rate": 0.0,
+            "item_quantity": 14.06
+          },
+          {
+            "item_name": "tine",
+            "item_amount": 56.16,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Paged of",
+            "item_amount": 1.52,
+            "item_rate": 2025.0,
+            "item_quantity": 11.0
+          }
+        ]
+      },
+      {
+        "page_no": "10",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "IP.No. Dats of Discharge +",
+            "item_amount": 31.0,
+            "item_rate": 12.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "MRN Speciality",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ «=—« DISPOSABLE SYRINGE ML HMD / -‘OISPOSABLE SYRINGE ML KMD ,",
+            "item_amount": 10.3,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ ~~“ EXAMINATION GLOVES MEDIUM © , , , // APRON (PLASTIC) ,",
+            "item_amount": 0.0,
+            "item_rate": 45.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// «DISPOSABLE SYRINGE ML HMO , «EXAMINATION GLOVES MEDIUM , «= ,",
+            "item_amount": 20.0,
+            "item_rate": 281.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// +s INFANT FEEDING TUBE SIZE «, ‘TISSUE PAPER C FOLD",
+            "item_amount": 65.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// «DISPOSABLE SYRINGE SMLHMD / «POWDER FREE GLOVES , ©",
+            "item_amount": 113.44,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SLOOD LANCET",
+            "item_amount": 40.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ “DISPOSABLE SYRINGE ML HMD , “EXAMINATION GLOVES MEDIUM ©",
+            "item_amount": 24.36,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BABY WIPES 'S ©. / “DEXTROSE %",
+            "item_amount": 36.72,
+            "item_rate": 0.9,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// © INJEK MIGIO.SMLINJ // NS TOML ©",
+            "item_amount": 42.0,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "// PHENOBARBITONE-INJ *MLIAMP. ( , / - TEDDYY BABY DIAPER SS (NEW BORN) © , ©",
+            "item_amount": 140.62,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "/ WATER FOR INJ ML « // TROYHEP INJ ©",
+            "item_amount": 320.14,
+            "item_rate": 0.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 52.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 140
+  }
+}

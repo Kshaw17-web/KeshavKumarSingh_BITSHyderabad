@@ -1,28 +1,41 @@
-# Datathon Extraction Starter
+# BFHL Datathon - Starter Extractor (Keshav Kumar Singh)
 
-Minimal FastAPI scaffold to experiment with bill parsing workflows for the BFHL / Bajaj Finserv datathon. The code in `src/` is intentionally basic and documented so you can expand, rename symbols, and build proprietary logic before pushing to your own repository.
+This is a minimal starter implementation (Tesseract + simple heuristics) for the HackRx / BFHL datathon.
 
-## Quick start
+**IMPORTANT**: Edit and personalize these files (see ORIGIN_STATEMENT.md) before pushing.
 
-```powershell
-cd C:\datathon_work
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn src.api:app --reload
-```
+## Quick start (Windows PowerShell)
 
-## Run smoke tests
+1. Create & activate venv:
 
-```
-run_tests.bat
-```
+   python -m venv venv
 
-The batch file spins up Uvicorn (if not already running) and fires a few HTTP requests whose responses are stored in `results/`.
+   .\venv\Scripts\Activate.ps1
 
-## Important
+2. Install:
 
-- Rename functions and expand heuristics inside `src/` to reduce AI-detection risk.
-- Populate `ORIGIN_STATEMENT.md` before publishing.
-- Add unit tests and guardrails specific to your dataset.
+   pip install -r requirements.txt
 
+3. Install Tesseract OCR for Windows (add to PATH):
+
+   https://github.com/tesseract-ocr/tesseract/wiki
+
+4. Start server:
+
+   uvicorn src.api:app --reload --port 8000
+
+5. Test locally (PowerShell):
+
+   $payload = @{ document = "C:\\datathon_work\\data\\raw\\sample_test.pdf" } | ConvertTo-Json
+
+   Invoke-RestMethod -Uri "http://127.0.0.1:8000/extract-bill-data" -Method Post -Body $payload -ContentType "application/json"
+
+## Next steps (after you have a working pipeline)
+
+- Improve OCR by adding PaddleOCR for multilingual/handwritten pages
+
+- Add table detection and layout-aware model (e.g., LayoutLM/Donut)
+
+- Add LLM-based post-processing to clean item names
+
+- Implement fraud-detection (whitener / overwritten values)

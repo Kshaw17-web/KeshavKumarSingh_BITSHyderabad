@@ -1,0 +1,17 @@
+{
+  "file_stem": "train_sample_4",
+  "pages": [
+    {
+      "page_no": 1,
+      "image_path": "C:\\Users\\ksr20\\OneDrive\\Desktop\\BAJAJ FINSERV DATATHON\\ocr_outputs\\train_sample_4__p001.png",
+      "text_preview": "Lee\n\nBilkot Supply Inpatient Bill(Summary)\n\nCompany State :\n\nSI.No. Service Name Amount(Rs.)\n1 Consultation 2,650.00\n2 Drugs 1,702.93\n3 Investigations 3,000.00\n4 Medical Consumable 4,352.12\n5 Other Charges 2,475.00\n6 Procedures 700.00\n7 Room Rent 4,000.00\n8 Surgery 5 17,740.00\neee =\nGrand Total : ~ 36,620.05\nG. che Bill Amount ; 36,620.05\nDeposit : 10,000.00\nDiscount 3057.00\nTotal Discount : 3,057.00\nCompany Credit Limit ; 29,858.00\nNet Amount refunded to patient : -6,294.95\nNet Amount Paid by Company ; 29,858.00\n",
+      "full_text": "Lee\n\nBilkot Supply Inpatient Bill(Summary)\n\nCompany State :\n\nSI.No. Service Name Amount(Rs.)\n1 Consultation 2,650.00\n2 Drugs 1,702.93\n3 Investigations 3,000.00\n4 Medical Consumable 4,352.12\n5 Other Charges 2,475.00\n6 Procedures 700.00\n7 Room Rent 4,000.00\n8 Surgery 5 17,740.00\neee =\nGrand Total : ~ 36,620.05\nG. che Bill Amount ; 36,620.05\nDeposit : 10,000.00\nDiscount 3057.00\nTotal Discount : 3,057.00\nCompany Credit Limit ; 29,858.00\nNet Amount refunded to patient : -6,294.95\nNet Amount Paid by Company ; 29,858.00\n"
+    },
+    {
+      "page_no": 2,
+      "image_path": "C:\\Users\\ksr20\\OneDrive\\Desktop\\BAJAJ FINSERV DATATHON\\ocr_outputs\\train_sample_4__p002.png",
+      "text_preview": "Bill of Supply Inpatient Bill (Detailed)\n\nSI. Item Name Date Qty Unit Unit Price Amount(Rs.)\nNo.\n\nConsultation\n\n1 Nishchal 8/11/25 1.0 800.00 800.00\nAnand(General &\nLaproscopic Surgeon)\n(General Surgery)\n\n2. Nishchal 8/11/25 1.0 800.00 800.00\nAnand(General & =\nLaproscopic Surgeon)\n(General Surgery)\n\n3. Dietician Consultation* 8/11/25 1.0 250,.00~ 250.00\n19)\n\n4 Nishchal 9/11/25 1.0 800.00~ 800.00\nAnand(General &\nLaproscopic Surgeon)\n(General Surgery)\n\nSub Total : 2650.00 6 2,650.00\nDrugs & “\n\n5 DOLENTIA FAST 8/11/25 2.0Ampo 38.44 76.88\n75MG/1 ML INJ (Batch ules\nNo./ Lot No:\nC3DOL006 / DOE :\n30-",
+      "full_text": "Bill of Supply Inpatient Bill (Detailed)\n\nSI. Item Name Date Qty Unit Unit Price Amount(Rs.)\nNo.\n\nConsultation\n\n1 Nishchal 8/11/25 1.0 800.00 800.00\nAnand(General &\nLaproscopic Surgeon)\n(General Surgery)\n\n2. Nishchal 8/11/25 1.0 800.00 800.00\nAnand(General & =\nLaproscopic Surgeon)\n(General Surgery)\n\n3. Dietician Consultation* 8/11/25 1.0 250,.00~ 250.00\n19)\n\n4 Nishchal 9/11/25 1.0 800.00~ 800.00\nAnand(General &\nLaproscopic Surgeon)\n(General Surgery)\n\nSub Total : 2650.00 6 2,650.00\nDrugs & “\n\n5 DOLENTIA FAST 8/11/25 2.0Ampo 38.44 76.88\n75MG/1 ML INJ (Batch ules\nNo./ Lot No:\nC3DOL006 / DOE :\n30-06-27)\n6 MOXYNIC 1.2GM INJ 8/11/25 2.0Vial 151.31 302.62\n(Batch No./ Lot No:\nAQLO123 / DOE :\n31-07-27)\n\n"
+    }
+  ]
+}

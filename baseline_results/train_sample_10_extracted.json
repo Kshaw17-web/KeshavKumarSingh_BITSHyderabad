@@ -1,0 +1,391 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Valid Upto",
+            "item_amount": 2.0,
+            "item_rate": 0.67,
+            "item_quantity": 3.0
+          },
+          {
+            "item_name": ". . . From Date",
+            "item_amount": 2025.0,
+            "item_rate": 77.88,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "Interim Bill Bill of Supply ToDate",
+            "item_amount": 2025.0,
+            "item_rate": 106.58,
+            "item_quantity": 19.0
+          },
+          {
+            "item_name": "DoctorName_ : BillNo : INT",
+            "item_amount": 2043376.0,
+            "item_rate": 2043376.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Pectality Date",
+            "item_amount": 38.0,
+            "item_rate": 54.0,
+            "item_quantity": 13.0
+          },
+          {
+            "item_name": "Billing Type Authorization No: Admission Date",
+            "item_amount": 20.0,
+            "item_rate": 13.0,
+            "item_quantity": 14.0
+          },
+          {
+            "item_name": "TPA/Corporate(",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Consultation(",
+            "item_amount": 79750.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Equipment(",
+            "item_amount": 213250.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Invasive Procedures(",
+            "item_amount": 35720.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Investigations(",
+            "item_amount": 173010.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Medical Records(",
+            "item_amount": 600.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Non Invasive Procedure(",
+            "item_amount": 141120.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Nutritional and Functional Assessment Charges(",
+            "item_amount": 600.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "OT Charges(",
+            "item_amount": 115000.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "OT Consumables(",
+            "item_amount": 52517.96,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "OT Pharmacy(",
+            "item_amount": 2244.37,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Pharmacy Consumables(",
+            "item_amount": 334504.78,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Physiotherapy(",
+            "item_amount": 22500.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Professional Charges(",
+            "item_amount": 102500.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Profile(",
+            "item_amount": 131170.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Room Rent(",
+            "item_amount": 235800.0,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Ward Pharmacy(",
+            "item_amount": 569475.95,
+            "item_rate": 999311.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 90.0,
+            "item_rate": 90.0,
+            "item_quantity": 1.0
+          }
+        ]
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "BillNo: INT",
+            "item_amount": 2043376.0,
+            "item_rate": 2043376.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Service Amount",
+            "item_amount": 2209763.0,
+            "item_rate": 2209763.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Bill of Supply INT",
+            "item_amount": 2209763.0,
+            "item_rate": 2043376.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Authorization Amount(",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "To Pay",
+            "item_amount": 2209763.0,
+            "item_rate": 2209763.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Net Payable",
+            "item_amount": 2209763.0,
+            "item_rate": 2209763.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Outstanding Amount",
+            "item_amount": 720.0,
+            "item_rate": 0.0,
+            "item_quantity": 29.0
+          },
+          {
+            "item_name": "Disclaimer: *All the above dates indicated as Date & Time of the entry only Page",
+            "item_amount": 90.0,
+            "item_rate": 45.0,
+            "item_quantity": 2.0
+          }
+        ]
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Consultation(",
+            "item_amount": 19631.0,
+            "item_rate": 1.0,
+            "item_quantity": 999311.0
+          },
+          {
+            "item_name": "2 19631 3 19631",
+            "item_amount": 19631.0,
+            "item_rate": 3.0,
+            "item_quantity": 19631.0
+          },
+          {
+            "item_name": "4 19631 5 19631",
+            "item_amount": 19631.0,
+            "item_rate": 5.0,
+            "item_quantity": 19631.0
+          },
+          {
+            "item_name": "6 19631 7 19631",
+            "item_amount": 19631.0,
+            "item_rate": 7.0,
+            "item_quantity": 19631.0
+          },
+          {
+            "item_name": "8 19631 9 19631",
+            "item_amount": 19631.0,
+            "item_rate": 9.0,
+            "item_quantity": 19631.0
+          },
+          {
+            "item_name": "1019631 11 19631",
+            "item_amount": 19631.0,
+            "item_rate": 11.0,
+            "item_quantity": 1019631.0
+          },
+          {
+            "item_name": "1219631",
+            "item_amount": 1219631.0,
+            "item_rate": 1219631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BillNo: INT",
+            "item_amount": 2043376.0,
+            "item_rate": 2043376.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "RefTariff Dis( %) Amount(*)",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 1000.0,
+            "item_rate": 90.0,
+            "item_quantity": 3.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 46
+  }
+}

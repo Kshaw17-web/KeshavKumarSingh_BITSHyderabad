@@ -1,0 +1,1081 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "SNC.",
+            "item_amount": 3004.0,
+            "item_rate": 3004.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3004 3004",
+            "item_amount": 3004.0,
+            "item_rate": 3004.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3004 3004",
+            "item_amount": 3004.0,
+            "item_rate": 3004.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3004 9018",
+            "item_amount": 9018.0,
+            "item_rate": 3004.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3004 3002",
+            "item_amount": 3002.0,
+            "item_rate": 3004.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "|",
+            "item_amount": 3004.0,
+            "item_rate": 9018.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3004 3004",
+            "item_amount": 3004.0,
+            "item_rate": 3004.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "|",
+            "item_amount": 3004.0,
+            "item_rate": 3004.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3004 1 3004",
+            "item_amount": 3004.0,
+            "item_rate": 1.0,
+            "item_quantity": 3004.0
+          },
+          {
+            "item_name": "9018 3004",
+            "item_amount": 3004.0,
+            "item_rate": 9018.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BATCH",
+            "item_amount": 28.0,
+            "item_rate": 9.0,
+            "item_quantity": 355.0
+          },
+          {
+            "item_name": "/",
+            "item_amount": 27.0,
+            "item_rate": 4.0,
+            "item_quantity": 600.0
+          },
+          {
+            "item_name": "K",
+            "item_amount": 28.0,
+            "item_rate": 12.0,
+            "item_quantity": 20525.0
+          },
+          {
+            "item_name": "D",
+            "item_amount": 27.0,
+            "item_rate": 7.0,
+            "item_quantity": 2372509.0
+          },
+          {
+            "item_name": "BM",
+            "item_amount": 27.0,
+            "item_rate": 7.0,
+            "item_quantity": 2503.0
+          },
+          {
+            "item_name": "D",
+            "item_amount": 26.0,
+            "item_rate": 6.0,
+            "item_quantity": 892404.0
+          },
+          {
+            "item_name": "SN",
+            "item_amount": 27.0,
+            "item_rate": 2.0,
+            "item_quantity": 312292.0
+          },
+          {
+            "item_name": "D",
+            "item_amount": 26.0,
+            "item_rate": 9.0,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "T",
+            "item_amount": 28.0,
+            "item_rate": 4.0,
+            "item_quantity": 325009.0
+          },
+          {
+            "item_name": "PA",
+            "item_amount": 26.0,
+            "item_rate": 9.0,
+            "item_quantity": 24114.0
+          },
+          {
+            "item_name": "BMT",
+            "item_amount": 28.0,
+            "item_rate": 1.0,
+            "item_quantity": 2520087.0
+          },
+          {
+            "item_name": "MPF",
+            "item_amount": 26.0,
+            "item_rate": 11.0,
+            "item_quantity": 252125.0
+          },
+          {
+            "item_name": "A",
+            "item_amount": 27.0,
+            "item_rate": 1.0,
+            "item_quantity": 251087.0
+          },
+          {
+            "item_name": "SPA",
+            "item_amount": 27.0,
+            "item_rate": 7.0,
+            "item_quantity": 2501002281.0
+          },
+          {
+            "item_name": "LSOD",
+            "item_amount": 27.0,
+            "item_rate": 6.0,
+            "item_quantity": 4174.0
+          },
+          {
+            "item_name": "PTD",
+            "item_amount": 30.0,
+            "item_rate": 35.0,
+            "item_quantity": 5915.0
+          },
+          {
+            "item_name": "CSF",
+            "item_amount": 30.0,
+            "item_rate": 7.5,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "$",
+            "item_amount": 30.0,
+            "item_rate": 3.0,
+            "item_quantity": 102009.0
+          },
+          {
+            "item_name": "§",
+            "item_amount": 703.78,
+            "item_rate": 6.0,
+            "item_quantity": 8.08
+          },
+          {
+            "item_name": ",",
+            "item_amount": 21.92,
+            "item_rate": 0.0,
+            "item_quantity": 14.0
+          },
+          {
+            "item_name": "CANNULA",
+            "item_amount": 22.0,
+            "item_rate": 22.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "IV SET",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ERIDOT",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "FLUTECH",
+            "item_amount": 2.0,
+            "item_rate": 2.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ZONEG",
+            "item_amount": 1200.0,
+            "item_rate": 1200.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "EMESET",
+            "item_amount": 2.0,
+            "item_rate": 1.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "ESOMAN",
+            "item_amount": 40.0,
+            "item_rate": 40.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NEOMOL IV",
+            "item_amount": 100.0,
+            "item_rate": 100.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "MUCAINE MINT GEL",
+            "item_amount": 200.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ARISTOZY ME",
+            "item_amount": 200.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "APTIVATE SYP",
+            "item_amount": 200.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "OSOLAC",
+            "item_amount": 100.0,
+            "item_rate": 100.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NS",
+            "item_amount": 2.0,
+            "item_rate": 2.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "SML DS S",
+            "item_amount": 10.0,
+            "item_rate": 10.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "2.50 58.08 6.00 703.78",
+            "item_amount": 703.78,
+            "item_rate": 6.0,
+            "item_quantity": 58.08
+          },
+          {
+            "item_name": "9.00 0.00 14.00 21.92",
+            "item_amount": 21.92,
+            "item_rate": 14.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "PMS urder Date",
+            "item_amount": 105.0,
+            "item_rate": 105.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": ",",
+            "item_amount": 0.0,
+            "item_rate": 120.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3 1999.00 2 1999.00",
+            "item_amount": 1999.0,
+            "item_rate": 2.0,
+            "item_quantity": 1999.0
+          },
+          {
+            "item_name": "2 2450.00 3 13.35",
+            "item_amount": 13.35,
+            "item_rate": 3.0,
+            "item_quantity": 2450.0
+          },
+          {
+            "item_name": "2 430.00 3 522.00",
+            "item_amount": 522.0,
+            "item_rate": 3.0,
+            "item_quantity": 430.0
+          },
+          {
+            "item_name": "2 12.80 2 43.60",
+            "item_amount": 43.6,
+            "item_rate": 2.0,
+            "item_quantity": 12.8
+          },
+          {
+            "item_name": "4 1700.00 1 267.36",
+            "item_amount": 267.36,
+            "item_rate": 1.0,
+            "item_quantity": 1700.0
+          },
+          {
+            "item_name": ",",
+            "item_amount": 0.0,
+            "item_rate": 186.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": ",",
+            "item_amount": 100.2,
+            "item_rate": 2.0,
+            "item_quantity": 15.0
+          },
+          {
+            "item_name": "4 47.00 5 7.00",
+            "item_amount": 7.0,
+            "item_rate": 5.0,
+            "item_quantity": 47.0
+          },
+          {
+            "item_name": "3 10.00 3 15.00",
+            "item_amount": 15.0,
+            "item_rate": 3.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "§",
+            "item_amount": 120.0,
+            "item_rate": 5.0,
+            "item_quantity": 35.0
+          },
+          {
+            "item_name": "5997.00 12 3998.00 12",
+            "item_amount": 12.0,
+            "item_rate": 3998.0,
+            "item_quantity": 12.0
+          },
+          {
+            "item_name": "i)",
+            "item_amount": 12.0,
+            "item_rate": 40.05,
+            "item_quantity": 4900.0
+          },
+          {
+            "item_name": "$",
+            "item_amount": 5.0,
+            "item_rate": 1566.0,
+            "item_quantity": 12.0
+          },
+          {
+            "item_name": "25.60 12 87.20 12",
+            "item_amount": 12.0,
+            "item_rate": 87.2,
+            "item_quantity": 12.0
+          },
+          {
+            "item_name": "1700.00 12 267.36 12",
+            "item_amount": 12.0,
+            "item_rate": 267.36,
+            "item_quantity": 12.0
+          },
+          {
+            "item_name": "162.00 12 186.00 5",
+            "item_amount": 5.0,
+            "item_rate": 186.0,
+            "item_quantity": 12.0
+          },
+          {
+            "item_name": ",",
+            "item_amount": 28.0,
+            "item_rate": 200.4,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "188.00 5 35.00 5",
+            "item_amount": 5.0,
+            "item_rate": 35.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "30.00 5 45.00 5",
+            "item_amount": 5.0,
+            "item_rate": 45.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": ",",
+            "item_amount": 0.0,
+            "item_rate": 20.0,
+            "item_quantity": 19109.0
+          },
+          {
+            "item_name": "783.78 783.78",
+            "item_amount": 783.78,
+            "item_rate": 783.78,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "0.24 20677.00",
+            "item_amount": 20677.0,
+            "item_rate": 0.24,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "0.00 20677.00",
+            "item_amount": 20677.0,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          }
+        ]
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "D",
+            "item_amount": 2372509.0,
+            "item_rate": 2372509.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BM",
+            "item_amount": 2503.0,
+            "item_rate": 178.79,
+            "item_quantity": 14.0
+          },
+          {
+            "item_name": "D",
+            "item_amount": 892404.0,
+            "item_rate": 892404.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "$N",
+            "item_amount": 312292.0,
+            "item_rate": 312292.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "D",
+            "item_amount": 20.0,
+            "item_rate": 0.83,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "T",
+            "item_amount": 325009.0,
+            "item_rate": 619.0,
+            "item_quantity": 393.0
+          },
+          {
+            "item_name": "PA",
+            "item_amount": 24114.0,
+            "item_rate": 24114.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BMT",
+            "item_amount": 4.0,
+            "item_rate": 0.17,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "WLT",
+            "item_amount": 2501017092.0,
+            "item_rate": 24031.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "2501002281",
+            "item_amount": 2501002281.0,
+            "item_rate": 2501002281.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "LSOD",
+            "item_amount": 4174.0,
+            "item_rate": 4174.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "PTDS",
+            "item_amount": 915.0,
+            "item_rate": 915.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "$",
+            "item_amount": 102009.0,
+            "item_rate": 102009.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "2.50 6.00",
+            "item_amount": 6.0,
+            "item_rate": 2.5,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "9.00 14.00",
+            "item_amount": 14.0,
+            "item_rate": 1.56,
+            "item_quantity": 9.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 27.0,
+            "item_rate": 7.0,
+            "item_quantity": 27.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 27.0,
+            "item_rate": 2.0,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 26.0,
+            "item_rate": 8.0,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 26.0,
+            "item_rate": 9.0,
+            "item_quantity": 28.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 26.0,
+            "item_rate": 4.0,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 27.0,
+            "item_rate": 7.0,
+            "item_quantity": 27.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 30.0,
+            "item_rate": 5.0,
+            "item_quantity": 27.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 30.0,
+            "item_rate": 3.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "ERIDOT",
+            "item_amount": 1.5,
+            "item_rate": 1.5,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "FLUTECH",
+            "item_amount": 2.0,
+            "item_rate": 2.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ZONEG",
+            "item_amount": 1200.0,
+            "item_rate": 1200.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "EMESET",
+            "item_amount": 2.0,
+            "item_rate": 1.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "ESOMAN",
+            "item_amount": 40.0,
+            "item_rate": 40.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NEOMOL IV",
+            "item_amount": 100.0,
+            "item_rate": 100.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "DROTIN INJ",
+            "item_amount": 2.0,
+            "item_rate": 2.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NS LOOML",
+            "item_amount": 2.0,
+            "item_rate": 1.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "SML DS SML",
+            "item_amount": 10.0,
+            "item_rate": 1.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "3 1999.00 2 1999.00",
+            "item_amount": 1999.0,
+            "item_rate": 2.0,
+            "item_quantity": 1999.0
+          },
+          {
+            "item_name": "2 2450.00 3 13.35",
+            "item_amount": 13.35,
+            "item_rate": 3.0,
+            "item_quantity": 2450.0
+          },
+          {
+            "item_name": "2 430.00 3 522.00",
+            "item_amount": 522.0,
+            "item_rate": 3.0,
+            "item_quantity": 430.0
+          },
+          {
+            "item_name": "2 12.80 2 43.60",
+            "item_amount": 43.6,
+            "item_rate": 2.0,
+            "item_quantity": 12.8
+          },
+          {
+            "item_name": "4 1700.00 1 28.50",
+            "item_amount": 28.5,
+            "item_rate": 1.0,
+            "item_quantity": 1700.0
+          },
+          {
+            "item_name": "4 74.00 2 100.20",
+            "item_amount": 100.2,
+            "item_rate": 2.0,
+            "item_quantity": 74.0
+          },
+          {
+            "item_name": "3 47.00 5 7.00",
+            "item_amount": 7.0,
+            "item_rate": 5.0,
+            "item_quantity": 47.0
+          },
+          {
+            "item_name": ",",
+            "item_amount": 15.0,
+            "item_rate": 3.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "2.50 43.94 6.00 684.74",
+            "item_amount": 684.74,
+            "item_rate": 6.0,
+            "item_quantity": 43.94
+          },
+          {
+            "item_name": "9.00 0.00 14.00 21.92",
+            "item_amount": 21.92,
+            "item_rate": 14.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "$",
+            "item_amount": 12.0,
+            "item_rate": 0.0,
+            "item_quantity": 3998.0
+          },
+          {
+            "item_name": "4900.00 0 40.08 12",
+            "item_amount": 12.0,
+            "item_rate": 40.08,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "860.00 12 1566.00 5",
+            "item_amount": 5.0,
+            "item_rate": 1566.0,
+            "item_quantity": 12.0
+          },
+          {
+            "item_name": "25.60 12 87.20 12",
+            "item_amount": 12.0,
+            "item_rate": 87.2,
+            "item_quantity": 12.0
+          },
+          {
+            "item_name": "§",
+            "item_amount": 28.5,
+            "item_rate": 12.0,
+            "item_quantity": 1700.0
+          },
+          {
+            "item_name": "74.00 12 200.40 28",
+            "item_amount": 28.0,
+            "item_rate": 200.4,
+            "item_quantity": 12.0
+          },
+          {
+            "item_name": "141.00 5 35.00 5",
+            "item_amount": 5.0,
+            "item_rate": 35.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "30.00 5 45.00 5",
+            "item_amount": 5.0,
+            "item_rate": 45.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "48226.55 0.00",
+            "item_amount": 0.0,
+            "item_rate": 48226.55,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "750.60 750.60",
+            "item_amount": 750.6,
+            "item_rate": 750.6,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "0.25 19728.00",
+            "item_amount": 19728.0,
+            "item_rate": 0.25,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "0.00 49728.00",
+            "item_amount": 49728.0,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          }
+        ]
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "D",
+            "item_amount": 2372509.0,
+            "item_rate": 2372509.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BM",
+            "item_amount": 2503.0,
+            "item_rate": 178.79,
+            "item_quantity": 14.0
+          },
+          {
+            "item_name": "D",
+            "item_amount": 892404.0,
+            "item_rate": 892404.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "$N",
+            "item_amount": 312292.0,
+            "item_rate": 312292.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "D",
+            "item_amount": 20.0,
+            "item_rate": 0.83,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "T",
+            "item_amount": 325009.0,
+            "item_rate": 619.0,
+            "item_quantity": 393.0
+          },
+          {
+            "item_name": "PA",
+            "item_amount": 24114.0,
+            "item_rate": 24114.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BMT",
+            "item_amount": 4.0,
+            "item_rate": 0.17,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "DOBS",
+            "item_amount": 2501002281.0,
+            "item_rate": 2990.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "LSOD",
+            "item_amount": 4174.0,
+            "item_rate": 4174.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "PTDS",
+            "item_amount": 915.0,
+            "item_rate": 915.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "$",
+            "item_amount": 27.0,
+            "item_rate": 7.0,
+            "item_quantity": 102009.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 26.0,
+            "item_rate": 6.0,
+            "item_quantity": 27.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 26.0,
+            "item_rate": 9.0,
+            "item_quantity": 27.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 28.0,
+            "item_rate": 4.0,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 26.0,
+            "item_rate": 3.0,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 27.0,
+            "item_rate": 7.0,
+            "item_quantity": 26.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 30.0,
+            "item_rate": 5.0,
+            "item_quantity": 27.0
+          },
+          {
+            "item_name": "/ /",
+            "item_amount": 30.0,
+            "item_rate": 3.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "18.04 680.90",
+            "item_amount": 680.9,
+            "item_rate": 18.04,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "0.00 21.92",
+            "item_amount": 21.92,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          },
+          {
+            "item_name": "ERIDOT",
+            "item_amount": 1.5,
+            "item_rate": 1.5,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "FLUTECH",
+            "item_amount": 2.0,
+            "item_rate": 2.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ZONEG",
+            "item_amount": 1200.0,
+            "item_rate": 1200.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "EMESET",
+            "item_amount": 2.0,
+            "item_rate": 1.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "ESOMAN",
+            "item_amount": 40.0,
+            "item_rate": 40.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NEOMOL IV",
+            "item_amount": 100.0,
+            "item_rate": 100.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "DOLO",
+            "item_amount": 650.0,
+            "item_rate": 650.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "NS",
+            "item_amount": 2.0,
+            "item_rate": 2.0,
+            "item_quantity": 100.0
+          },
+          {
+            "item_name": "ML DS SML OML DS OML",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "Memo",
+            "item_amount": 1999.0,
+            "item_rate": 1999.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "4999.00 2450.00",
+            "item_amount": 2450.0,
+            "item_rate": 4999.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "13.35 430.00",
+            "item_amount": 430.0,
+            "item_rate": 13.35,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "§",
+            "item_amount": 12.8,
+            "item_rate": 0.58,
+            "item_quantity": 22.0
+          },
+          {
+            "item_name": "43.60 1700.00",
+            "item_amount": 1700.0,
+            "item_rate": 43.6,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "2.28 400.20",
+            "item_amount": 400.2,
+            "item_rate": 2.28,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "47.00 7.00",
+            "item_amount": 7.0,
+            "item_rate": 0.15,
+            "item_quantity": 47.0
+          },
+          {
+            "item_name": "10.00 15.00",
+            "item_amount": 15.0,
+            "item_rate": 1.5,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "5997.00 3998.00",
+            "item_amount": 3998.0,
+            "item_rate": 5997.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "4900.00 40.05",
+            "item_amount": 40.05,
+            "item_rate": 4900.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "860.00 522.00",
+            "item_amount": 522.0,
+            "item_rate": 860.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": ",",
+            "item_amount": 87.2,
+            "item_rate": 60.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "1700.00 2.28",
+            "item_amount": 2.28,
+            "item_rate": 1700.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "200.40 141.00",
+            "item_amount": 141.0,
+            "item_rate": 200.4,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "35.00 30.00",
+            "item_amount": 30.0,
+            "item_rate": 0.86,
+            "item_quantity": 35.0
+          },
+          {
+            "item_name": "30.00 12",
+            "item_amount": 12.0,
+            "item_rate": 0.4,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "0.00 720.86",
+            "item_amount": 720.86,
+            "item_rate": 0.0,
+            "item_quantity": 0.0
+          },
+          {
+            "item_name": "720.86 0.47",
+            "item_amount": 0.47,
+            "item_rate": 720.86,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "18569.00 0.00",
+            "item_amount": 0.0,
+            "item_rate": 18569.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "18569.00",
+            "item_amount": 18569.0,
+            "item_rate": 18569.0,
+            "item_quantity": 1.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 125
+  }
+}

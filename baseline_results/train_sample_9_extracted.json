@@ -1,0 +1,481 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "1319631 1419631",
+            "item_amount": 1419631.0,
+            "item_rate": 1319631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1519631 1619631",
+            "item_amount": 1619631.0,
+            "item_rate": 1519631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1719631 1819631",
+            "item_amount": 1819631.0,
+            "item_rate": 1719631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1919631 2019631",
+            "item_amount": 2019631.0,
+            "item_rate": 1919631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "2119631 2219631",
+            "item_amount": 2219631.0,
+            "item_rate": 2119631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "2319631 2419631",
+            "item_amount": 2419631.0,
+            "item_rate": 2319631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "2519631 2619631",
+            "item_amount": 2619631.0,
+            "item_rate": 2519631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "2719631",
+            "item_amount": 2719631.0,
+            "item_rate": 2719631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INT",
+            "item_amount": 2043376.0,
+            "item_rate": 2043376.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 1000.0,
+            "item_rate": 90.0,
+            "item_quantity": 4.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          }
+        ]
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "2819631 2919631",
+            "item_amount": 2919631.0,
+            "item_rate": 2819631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3019631 3119631",
+            "item_amount": 3119631.0,
+            "item_rate": 3019631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3219631 3319631",
+            "item_amount": 3319631.0,
+            "item_rate": 3219631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3419631 3519631",
+            "item_amount": 3519631.0,
+            "item_rate": 3419631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3619631 3719631",
+            "item_amount": 3719631.0,
+            "item_rate": 3619631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "3819631 3919631",
+            "item_amount": 3919631.0,
+            "item_rate": 3819631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "4019631 4119631",
+            "item_amount": 4119631.0,
+            "item_rate": 4019631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BillNo: INT",
+            "item_amount": 1000.0,
+            "item_rate": 2043376.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 90.0,
+            "item_rate": 18.0,
+            "item_quantity": 5.0
+          }
+        ]
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "jame",
+            "item_amount": 4219631.0,
+            "item_rate": 4219631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "4319631 4419631",
+            "item_amount": 4419631.0,
+            "item_rate": 4319631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "4519631 4619631",
+            "item_amount": 4619631.0,
+            "item_rate": 4519631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "4719631 4819631",
+            "item_amount": 4819631.0,
+            "item_rate": 4719631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "4919631 5019631",
+            "item_amount": 5019631.0,
+            "item_rate": 4919631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "5119631 5219631",
+            "item_amount": 5219631.0,
+            "item_rate": 5119631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "5319631 5419631",
+            "item_amount": 5419631.0,
+            "item_rate": 5319631.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "*All the above dates indicated as Date & Time of the entry only",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1.00 1.00",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BillNo: INT",
+            "item_amount": 0.0,
+            "item_rate": 1000.0,
+            "item_quantity": 2043376.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "() ()",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Page",
+            "item_amount": 1000.0,
+            "item_rate": 90.0,
+            "item_quantity": 6.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "1,000.00 1,000.00",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 1.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 32
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Or Name",
+            "item_amount": 4.0,
+            "item_rate": 4.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ESO",
+            "item_amount": 18.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "H | Glewnask|",
+            "item_amount": 4197.0,
+            "item_rate": 18240409.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "pate. \\",
+            "item_amount": 24.0,
+            "item_rate": 4.0,
+            "item_quantity": 6.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 4
+  }
+}

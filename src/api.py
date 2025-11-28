@@ -1,36 +1,129 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+import requests
+import uuid
+import os
 from pathlib import Path
 
-from src.extractor.pdf_to_images import pdf_to_images
-from src.extractor.parse_lines import extract_bill_lines
-from src.utils.validator import build_stub_payload, validate_payload
+# IMPORTANT: your local extractor import
+# Adjust if your folder is different (this is correct for src/extractor/bill_extractor.py)
+from extractor.bill_extractor import extract_bill_data
+
+app = FastAPI(
+    title="Bajaj Finserv Datathon API",
+    description="Public API for extracting bill details",
+    version="1.0"
+)
+
+# -------------------------------
+#   Request Model
+# -------------------------------
+class BillRequest(BaseModel):
+    document: str  # URL to bill image or pdf
 
 
-class ExtractRequest(BaseModel):
-    document: str
+# -------------------------------
+#   Helper: Download document
+# -------------------------------
+def download_to_temp(url: str) -> str:
+    """
+    Download the file from URL and save locally as a temp file.
+    Returns: path to downloaded file.
+    """
+    try:
+        response = requests.get(url, timeout=25)
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Failed to download document: {e}")
+
+    if response.status_code != 200:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unable to download document: HTTP {response.status_code}"
+        )
+
+    # Create temp directory
+    temp_dir = Path("temp_docs")
+    temp_dir.mkdir(exist_ok=True)
+
+    # Create temp filename
+    tmp_path = temp_dir / f"{uuid.uuid4()}.pdf"
+    tmp_path.write_bytes(response.content)
+
+    return str(tmp_path)
 
 
-app = FastAPI(title="Datathon Extraction Prototype")
+# -------------------------------
+#   Root & Health Check
+# -------------------------------
+@app.get("/")
+def root():
+    return {"status": "OK", "message": "Bajaj Datathon API running"}
 
 
+@app.get("/health")
+def health():
+    return {"health": "alive"}
+
+
+# -------------------------------
+#   MAIN ENDPOINT (for students)
+# -------------------------------
 @app.post("/extract-bill-data")
-def extract_bill_data(payload: ExtractRequest):
-    """
-    Extremely small FastAPI endpoint that routes a document path/URL through
-    placeholder extractor utilities. Replace bodies with your real logic.
-    """
-    source = Path(payload.document)
-    if not source.exists():
-        raise HTTPException(status_code=404, detail="Document not found on disk")
+def extract_bill(payload: BillRequest):
+    if not payload.document:
+        raise HTTPException(status_code=400, detail="Missing 'document' field")
 
-    # Convert to images should the caller pass a PDF.
-    page_images = pdf_to_images(source)
+    # Download URL file → temp file
+    local_file = download_to_temp(payload.document)
 
-    # Parse text via OCR + heuristics (see parse_lines for TODO notes).
-    parsed_items = extract_bill_lines(page_images)
+    try:
+        result = extract_bill_data(local_file)
+    except Exception as e:
+        if os.path.exists(local_file):
+            os.remove(local_file)
+        raise HTTPException(status_code=500, detail=f"Extraction failed: {e}")
 
-    response_body = build_stub_payload(parsed_items)
-    validate_payload(response_body)
-    return response_body
+    # Cleanup
+    if os.path.exists(local_file):
+        os.remove(local_file)
 
+    return {
+        "is_success": True,
+        "token_usage": {
+            "total_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 0
+        },
+        "data": result
+    }
+
+
+# -------------------------------
+#   HACKRX WEBHOOK ENDPOINT (required)
+# -------------------------------
+@app.post("/api/v1/hackrx/run")
+def hackrx_webhook(payload: BillRequest):
+    if not payload.document:
+        raise HTTPException(status_code=400, detail="Missing 'document' field")
+
+    local_file = download_to_temp(payload.document)
+
+    try:
+        result = extract_bill_data(local_file)
+    except Exception as e:
+        if os.path.exists(local_file):
+            os.remove(local_file)
+        raise HTTPException(status_code=500, detail=f"Extraction failed: {e}")
+
+    if os.path.exists(local_file):
+        os.remove(local_file)
+
+    return {
+        "is_success": True,
+        "token_usage": {
+            "total_tokens": 0,
+            "input_tokens": 0,
+            "output_tokens": 0
+        },
+        "data": result
+    }

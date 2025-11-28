@@ -1,0 +1,1309 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Guardian Name Admit Dt. & Time",
+            "item_amount": 21.31,
+            "item_rate": 2025.0,
+            "item_quantity": 19.0
+          },
+          {
+            "item_name": "Address Discharge Date +",
+            "item_amount": 13.12,
+            "item_rate": 2025.0,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "Charges",
+            "item_amount": 2025.0,
+            "item_rate": 101.25,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "Nov- | Accomodation Charges-Triage -Nov- | Accomodation Charges-ICU-G",
+            "item_amount": 2025.0,
+            "item_rate": 21.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "Nov- | Accomodation Charges-ICU-G",
+            "item_amount": 2025.0,
+            "item_rate": 92.05,
+            "item_quantity": 22.0
+          },
+          {
+            "item_name": "|",
+            "item_amount": 2025.0,
+            "item_rate": 84.38,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "Administrative MLC Charges (HSR) Medical Officer |",
+            "item_amount": 600.0,
+            "item_rate": 600.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ANAESTHESIA FEES Dr. Anesthesia & Critical Care z",
+            "item_amount": 7175.0,
+            "item_rate": 7175.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "ANAESTHESIA FEES Dr. Anesthesia & Critical Care",
+            "item_amount": 3438.75,
+            "item_rate": 3438.75,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLOOD BANK CHARGES =",
+            "item_amount": 2500.0,
+            "item_rate": 2500.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Packed Cell (NAT Tested)",
+            "item_amount": 2025.0,
+            "item_rate": 24.0,
+            "item_quantity": 2500.0
+          },
+          {
+            "item_name": "Nov- -Nov",
+            "item_amount": 2025.0,
+            "item_rate": 24.0,
+            "item_quantity": 2025.0
+          },
+          {
+            "item_name": "Nov- -Nov- | BLOOD BANK CHARGES /DRG/N",
+            "item_amount": 2500.0,
+            "item_rate": 2500.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Packed Cell (NAT Tested)",
+            "item_amount": 2500.0,
+            "item_rate": 2500.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Packed Cell (NAT Tested)",
+            "item_amount": 2500.0,
+            "item_rate": 2500.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "CT SCAN CHARGES",
+            "item_amount": 2025.0,
+            "item_rate": 19.0,
+            "item_quantity": 6900.0
+          },
+          {
+            "item_name": "CT Trauma Screening(Head+Chest+Abdomen)",
+            "item_amount": 10200.0,
+            "item_rate": 10200.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Peripheral Angio (Lower Limb)",
+            "item_amount": 10200.0,
+            "item_rate": 10200.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "DRESSING CHARGES",
+            "item_amount": 400.0,
+            "item_rate": 400.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Nov- | GNRO-Dressing Charges (Other)",
+            "item_amount": 400.0,
+            "item_rate": 400.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "DRESSING CONSUMABLE CHARGES",
+            "item_amount": 150.0,
+            "item_rate": 150.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Nov- | DRESSING CONSUMABLE CHARGES",
+            "item_amount": 150.0,
+            "item_rate": 150.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "EMERGENCY CHARGED (CT/MRI)",
+            "item_amount": 400.0,
+            "item_rate": 400.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Nov- | EMERGENCY CHARGES (CT/MRI)",
+            "item_amount": 300.0,
+            "item_rate": 300.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "IPD CONSUMABLE CHARGES",
+            "item_amount": 1797.56,
+            "item_rate": 1797.56,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BAG-URINE-ROMO",
+            "item_amount": 36.38,
+            "item_rate": 1.0,
+            "item_quantity": 50.0
+          },
+          {
+            "item_name": "GLOVES-SURGICAL",
+            "item_amount": 21.0,
+            "item_rate": 1.0,
+            "item_quantity": 152.0
+          },
+          {
+            "item_name": "INJ-EMESET",
+            "item_amount": 12.72,
+            "item_rate": 1.0,
+            "item_quantity": 162.0
+          },
+          {
+            "item_name": "INJ-JUSTIN-AQ",
+            "item_amount": 23.81,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-KABILYTE-FREEFLEX-SOOML",
+            "item_amount": 321.56,
+            "item_rate": 1.0,
+            "item_quantity": 789.0
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 747.0,
+            "item_rate": 1.0,
+            "item_quantity": 782.0
+          },
+          {
+            "item_name": "INJ-OFRAMAX",
+            "item_amount": 66.63,
+            "item_rate": 1.0,
+            "item_quantity": 18.0
+          },
+          {
+            "item_name": "INJ-PANTOCID-IV",
+            "item_amount": 53.89,
+            "item_rate": 1.0,
+            "item_quantity": 16.0
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON",
+            "item_amount": 43.4,
+            "item_rate": 1.0,
+            "item_quantity": 5065445.0
+          },
+          {
+            "item_name": "IV-SET-TRANS-FLOW G",
+            "item_amount": 19.5,
+            "item_rate": 1.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "JELLY-LOX",
+            "item_amount": 34.59,
+            "item_rate": 1.0,
+            "item_quantity": 1561.0
+          },
+          {
+            "item_name": "Printed by on",
+            "item_amount": 7.0,
+            "item_rate": 1.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Guardian Name Admit Dt. & Time",
+            "item_amount": 21.31,
+            "item_rate": 2025.0,
+            "item_quantity": 19.0
+          },
+          {
+            "item_name": "Address Discharge Date +",
+            "item_amount": 13.12,
+            "item_rate": 2025.0,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "TUBE-UNICONNECT-WITH-Y- XMYT",
+            "item_amount": 82.03,
+            "item_rate": 1.0,
+            "item_quantity": 250.0
+          },
+          {
+            "item_name": "CATHETER-FOLEYS",
+            "item_amount": 81.38,
+            "item_rate": 1.0,
+            "item_quantity": 101.0
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 13.07,
+            "item_rate": 1.0,
+            "item_quantity": 2410109.0
+          },
+          {
+            "item_name": "IV-FLUID-NS",
+            "item_amount": 62.24,
+            "item_rate": 1.0,
+            "item_quantity": 3060982.0
+          },
+          {
+            "item_name": "IV-FLUID-RL",
+            "item_amount": 120.7,
+            "item_rate": 2.0,
+            "item_quantity": 1138318.0
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON",
+            "item_amount": 267.22,
+            "item_rate": 267.22,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-EMESET",
+            "item_amount": 12.72,
+            "item_rate": 1.0,
+            "item_quantity": 162.0
+          },
+          {
+            "item_name": "INJ-PANTOCID-IV",
+            "item_amount": 53.89,
+            "item_rate": 1.0,
+            "item_quantity": 16.0
+          },
+          {
+            "item_name": "IV-FLUID-NS",
+            "item_amount": 37.24,
+            "item_rate": 1.0,
+            "item_quantity": 1068529.0
+          },
+          {
+            "item_name": "IV-FLUID-RL-SOOML-NON-PVC",
+            "item_amount": 95.0,
+            "item_rate": 184.0,
+            "item_quantity": 184.95
+          },
+          {
+            "item_name": "INJ-METROGYL-IV-SOOMG",
+            "item_amount": 22.05,
+            "item_rate": 1.0,
+            "item_quantity": 250.0
+          },
+          {
+            "item_name": "INJ-AMIKAMAC",
+            "item_amount": 122.1,
+            "item_rate": 2.0,
+            "item_quantity": 18253290.0
+          },
+          {
+            "item_name": "IV-FLUID-DNS",
+            "item_amount": 787.8,
+            "item_rate": 787.8,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 747.0,
+            "item_rate": 1.0,
+            "item_quantity": 782.0
+          },
+          {
+            "item_name": "IV-FLUID-DNS",
+            "item_amount": 3937.64,
+            "item_rate": 3937.64,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-EMESET",
+            "item_amount": 38.16,
+            "item_rate": 3.0,
+            "item_quantity": 162.0
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 2241.0,
+            "item_rate": 3.0,
+            "item_quantity": 782.0
+          },
+          {
+            "item_name": "INJ-METROGYL-IV-SOOMG",
+            "item_amount": 66.15,
+            "item_rate": 3.0,
+            "item_quantity": 250.0
+          },
+          {
+            "item_name": "INJ-RANTAC-SOMG",
+            "item_amount": 13.61,
+            "item_rate": 2.0,
+            "item_quantity": 22412.0
+          },
+          {
+            "item_name": "INJ-STAFCURE",
+            "item_amount": 723.74,
+            "item_rate": 2.0,
+            "item_quantity": 18252410.0
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON",
+            "item_amount": 43.4,
+            "item_rate": 1.0,
+            "item_quantity": 5065445.0
+          },
+          {
+            "item_name": "MOUTH-WASH-HEXIDINE",
+            "item_amount": 136.33,
+            "item_rate": 1.0,
+            "item_quantity": 125130.0
+          },
+          {
+            "item_name": "NEEDLE-DISPO",
+            "item_amount": 7.88,
+            "item_rate": 5.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "LANCET-ULTRA-SAFETY",
+            "item_amount": 19.69,
+            "item_rate": 5.0,
+            "item_quantity": 250705.0
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 13.07,
+            "item_rate": 1.0,
+            "item_quantity": 2410109.0
+          },
+          {
+            "item_name": "ISENS-GLUCOSTRIP XDO",
+            "item_amount": 42.7,
+            "item_rate": 5.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "INJ-AMIKAMAC",
+            "item_amount": 115.72,
+            "item_rate": 1.0,
+            "item_quantity": 18253039.0
+          },
+          {
+            "item_name": "IV-FLUID-NS",
+            "item_amount": 126.06,
+            "item_rate": 6.0,
+            "item_quantity": 2062372.0
+          },
+          {
+            "item_name": "IV-FLUID-DNS",
+            "item_amount": 40.8,
+            "item_rate": 34.0,
+            "item_quantity": 1078543.0
+          },
+          {
+            "item_name": "IV-FLUID-RL-SO",
+            "item_amount": 120.7,
+            "item_rate": 2.0,
+            "item_quantity": 1138318.0
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON",
+            "item_amount": 96.1,
+            "item_rate": 5.0,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "UNDERPAD-DIGNITY-MATTEY- G",
+            "item_amount": 433.32,
+            "item_rate": 433.32,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SPIROMETER-RESPIROMETER G",
+            "item_amount": 132.9,
+            "item_rate": 40.0,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "EXTENSION-SET-Q-SYTE-THREE",
+            "item_amount": 8482.12,
+            "item_rate": 8482.12,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BANDAGE-CREPE",
+            "item_amount": 26.25,
+            "item_rate": 1.0,
+            "item_quantity": 16.0
+          },
+          {
+            "item_name": "CATHETER-URETHERAL-K",
+            "item_amount": 8.15,
+            "item_rate": 1.0,
+            "item_quantity": 2507288.0
+          },
+          {
+            "item_name": "COVER-C-ARM-D",
+            "item_amount": 212.81,
+            "item_rate": 1.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "GLOVES-ORTHOPAEDIC",
+            "item_amount": 112.88,
+            "item_rate": 2.0,
+            "item_quantity": 25070015.0
+          },
+          {
+            "item_name": "GLOVES-POWDER-FREE",
+            "item_amount": 212.8,
+            "item_rate": 4.0,
+            "item_quantity": 25040115.0
+          },
+          {
+            "item_name": "GLOVES-SURGICAL",
+            "item_amount": 42.0,
+            "item_rate": 2.0,
+            "item_quantity": 3015.0
+          },
+          {
+            "item_name": "Printed by ‘on",
+            "item_amount": 7.0,
+            "item_rate": 2.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Guardian Name : Admit Dt. & Time",
+            "item_amount": 21.31,
+            "item_rate": 2025.0,
+            "item_quantity": 19.0
+          },
+          {
+            "item_name": "Address : Discharge Date",
+            "item_amount": 13.12,
+            "item_rate": 2025.0,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "GLOVES-SURGICAL",
+            "item_amount": 21.0,
+            "item_rate": 1.0,
+            "item_quantity": 2565123.0
+          },
+          {
+            "item_name": "GLOVES-SURGICAL",
+            "item_amount": 42.0,
+            "item_rate": 253207.0,
+            "item_quantity": 7.0
+          },
+          {
+            "item_name": "GOWN-SURGICAL-FULL-DISPO",
+            "item_amount": 590.62,
+            "item_rate": 2.0,
+            "item_quantity": 1483.0
+          },
+          {
+            "item_name": "HIV-KIT-SURGICAL-DISPO KT",
+            "item_amount": 1181.25,
+            "item_rate": 3.0,
+            "item_quantity": 2410.0
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 747.0,
+            "item_rate": 1.0,
+            "item_quantity": 782.0
+          },
+          {
+            "item_name": "INJ-TERMIN",
+            "item_amount": 35.53,
+            "item_rate": 1.0,
+            "item_quantity": 307258.0
+          },
+          {
+            "item_name": "INJ-TRENAXA",
+            "item_amount": 73.22,
+            "item_rate": 1.0,
+            "item_quantity": 2518.0
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON",
+            "item_amount": 40.69,
+            "item_rate": 1.0,
+            "item_quantity": 5209519.0
+          },
+          {
+            "item_name": "IV-SET-NOVOFUSION",
+            "item_amount": 241.88,
+            "item_rate": 1.0,
+            "item_quantity": 6188925.0
+          },
+          {
+            "item_name": "NEEDLE-DISPO",
+            "item_amount": 1.68,
+            "item_rate": 1.0,
+            "item_quantity": 36444.0
+          },
+          {
+            "item_name": "NEEDLE-SPINAL",
+            "item_amount": 91.64,
+            "item_rate": 1.0,
+            "item_quantity": 2501025.0
+          },
+          {
+            "item_name": "POP-BSN-GYPSONA",
+            "item_amount": 1012.5,
+            "item_rate": 4.0,
+            "item_quantity": 3.0
+          },
+          {
+            "item_name": "SHEET-DISPO-BLUE",
+            "item_amount": 210.0,
+            "item_rate": 2.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "SUCTION-SET-YANKAUR-VACCU- _ G",
+            "item_amount": 108.94,
+            "item_rate": 1.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "SUTURE-CENTICRYL",
+            "item_amount": 644.06,
+            "item_rate": 1.0,
+            "item_quantity": 277.0
+          },
+          {
+            "item_name": "SUTURE-CENTICRYL",
+            "item_amount": 1459.69,
+            "item_rate": 3.0,
+            "item_quantity": 88.0
+          },
+          {
+            "item_name": "SYRINGE-DISPO",
+            "item_amount": 16.93,
+            "item_rate": 3.0,
+            "item_quantity": 540103.0
+          },
+          {
+            "item_name": "SYRINGE-DISPO",
+            "item_amount": 5.36,
+            "item_rate": 2.0,
+            "item_quantity": 524022.0
+          },
+          {
+            "item_name": "SYRINGE-DISPO",
+            "item_amount": 30.52,
+            "item_rate": 1.0,
+            "item_quantity": 520506.0
+          },
+          {
+            "item_name": "SYRINGE-DISPO",
+            "item_amount": 7.01,
+            "item_rate": 2.0,
+            "item_quantity": 532054.0
+          },
+          {
+            "item_name": "SPONGE-RADIOACTIVE",
+            "item_amount": 180.0,
+            "item_rate": 2.0,
+            "item_quantity": 70.0
+          },
+          {
+            "item_name": "INJ-ROPIN-HEAVY",
+            "item_amount": 132.15,
+            "item_rate": 1.0,
+            "item_quantity": 1984006.0
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 13.94,
+            "item_rate": 1.0,
+            "item_quantity": 2410107.0
+          },
+          {
+            "item_name": "IV-FLUID-NS",
+            "item_amount": 124.48,
+            "item_rate": 2.0,
+            "item_quantity": 3061021.0
+          },
+          {
+            "item_name": "SUTURE-CENTISORB-PNW",
+            "item_amount": 749.06,
+            "item_rate": 217.0,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "IV-FLUID-RL",
+            "item_amount": 2035.11,
+            "item_rate": 2035.11,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-EMESET",
+            "item_amount": 25.44,
+            "item_rate": 2.0,
+            "item_quantity": 162.0
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 747.0,
+            "item_rate": 1.0,
+            "item_quantity": 782.0
+          },
+          {
+            "item_name": "INJ-METROGYL-IV",
+            "item_amount": 66.15,
+            "item_rate": 3.0,
+            "item_quantity": 250.0
+          },
+          {
+            "item_name": "INJ-STAFCURE",
+            "item_amount": 723.74,
+            "item_rate": 2.0,
+            "item_quantity": 18252410.0
+          },
+          {
+            "item_name": "IV-SET-TRANS-FLOW G",
+            "item_amount": 19.5,
+            "item_rate": 1.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "LANCET-ULTRA-SAFETY",
+            "item_amount": 19.69,
+            "item_rate": 5.0,
+            "item_quantity": 250705.0
+          },
+          {
+            "item_name": "ISENS-GLUCOSTRIP XDOSLL",
+            "item_amount": 42.7,
+            "item_rate": 5.0,
+            "item_quantity": 6.0
+          },
+          {
+            "item_name": "INJ-AMIKAMAC",
+            "item_amount": 115.72,
+            "item_rate": 1.0,
+            "item_quantity": 18253039.0
+          },
+          {
+            "item_name": "IV-FLUID-NS",
+            "item_amount": 5.0,
+            "item_rate": 105.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON",
+            "item_amount": 96.1,
+            "item_rate": 5.0,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "UNDERPAD-DIGNITY-MATTEY- —_ G",
+            "item_amount": 416.35,
+            "item_rate": 416.35,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-TRAMASURE",
+            "item_amount": 50.28,
+            "item_rate": 2.0,
+            "item_quantity": 31021.0
+          },
+          {
+            "item_name": "MASK-NEBULISER-ADULT G",
+            "item_amount": 56.65,
+            "item_rate": 1.0,
+            "item_quantity": 40.0
+          },
+          {
+            "item_name": "RESPULES-DUOLIN",
+            "item_amount": 128.55,
+            "item_rate": 5.0,
+            "item_quantity": 10068.0
+          },
+          {
+            "item_name": "IV-FLUID-DEXTROSE",
+            "item_amount": 40.57,
+            "item_rate": 1.0,
+            "item_quantity": 1018221.0
+          },
+          {
+            "item_name": "RESPULES-BUDECORT",
+            "item_amount": 1044.13,
+            "item_rate": 1044.13,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BANDAGE-CREPE",
+            "item_amount": 62.5,
+            "item_rate": 2.0,
+            "item_quantity": 17.0
+          },
+          {
+            "item_name": "GLOVES-POWDER-FREE",
+            "item_amount": 44.63,
+            "item_rate": 1.0,
+            "item_quantity": 7087.0
+          },
+          {
+            "item_name": "Printed by on",
+            "item_amount": 7.0,
+            "item_rate": 3.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "4",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Guardian Name Admit Dt. & Time —: iy-wov",
+            "item_amount": 21.31,
+            "item_rate": 2025.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Address Discharge Date",
+            "item_amount": 13.12,
+            "item_rate": 2025.0,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "GLOVES-SURGICAL",
+            "item_amount": 7.5,
+            "item_rate": 7.5,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "DRESSING-OPSITE-POST-OP",
+            "item_amount": 119.44,
+            "item_rate": 119.44,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BT-SET-ROMSONS G",
+            "item_amount": 39.42,
+            "item_rate": 2.0,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "SUPPOSITORY-GERBISA",
+            "item_amount": 1170.0,
+            "item_rate": 1170.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "IMPLANT-TWIN-LOCK-BCP-SCREW",
+            "item_amount": 30800.0,
+            "item_rate": 8.0,
+            "item_quantity": 7011062.0
+          },
+          {
+            "item_name": "IMPLANT-WASHER--TIT",
+            "item_amount": 770.0,
+            "item_rate": 1.0,
+            "item_quantity": 4089625.0
+          },
+          {
+            "item_name": "IMPLANT-TWIN-LOCK-BCP-VERO",
+            "item_amount": 803.72,
+            "item_rate": 803.72,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BT-SET-ROMSONS G",
+            "item_amount": 19.71,
+            "item_rate": 1.0,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 747.0,
+            "item_rate": 1.0,
+            "item_quantity": 782.0
+          },
+          {
+            "item_name": "UNDERPAD-DIGNITY-MATTEY- G",
+            "item_amount": 40.31,
+            "item_rate": 40.31,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "MASK-OXYGEN-ADULT G",
+            "item_amount": 3499.24,
+            "item_rate": 3499.24,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-EMESET",
+            "item_amount": 38.16,
+            "item_rate": 3.0,
+            "item_quantity": 162.0
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 2241.0,
+            "item_rate": 3.0,
+            "item_quantity": 782.0
+          },
+          {
+            "item_name": "INJ-METROGYL-IV",
+            "item_amount": 44.1,
+            "item_rate": 2.0,
+            "item_quantity": 250.0
+          },
+          {
+            "item_name": "INJ-RANTAC",
+            "item_amount": 6.81,
+            "item_rate": 1.0,
+            "item_quantity": 22412.0
+          },
+          {
+            "item_name": "INJ-STAFCURE",
+            "item_amount": 723.74,
+            "item_rate": 2.0,
+            "item_quantity": 18252410.0
+          },
+          {
+            "item_name": "INJ-TRAMASURE",
+            "item_amount": 25.14,
+            "item_rate": 1.0,
+            "item_quantity": 21.0
+          },
+          {
+            "item_name": "IV-SET-TRANS-FLOW G",
+            "item_amount": 19.5,
+            "item_rate": 1.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "NEEDLE-DISPO",
+            "item_amount": 6.3,
+            "item_rate": 4.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "INJ-AMIKAMAC-S",
+            "item_amount": 115.72,
+            "item_rate": 1.0,
+            "item_quantity": 18253039.0
+          },
+          {
+            "item_name": "IV-FLUID-NS",
+            "item_amount": 42.02,
+            "item_rate": 2.0,
+            "item_quantity": 2062406.0
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON",
+            "item_amount": 21.0,
+            "item_rate": 2.0,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON",
+            "item_amount": 38.44,
+            "item_rate": 2.0,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "UNDERPAD-DIGNITY-MATTEY- G",
+            "item_amount": 37.01,
+            "item_rate": 2.0,
+            "item_quantity": 2511400.0
+          },
+          {
+            "item_name": "RESPULES-BUDECORT",
+            "item_amount": 834.46,
+            "item_rate": 834.46,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 747.0,
+            "item_rate": 1.0,
+            "item_quantity": 782.0
+          },
+          {
+            "item_name": "| INJ-RANTAC",
+            "item_amount": 6.8,
+            "item_rate": 1.0,
+            "item_quantity": 22412.0
+          },
+          {
+            "item_name": "} INJ-TRAMASURE",
+            "item_amount": 25.14,
+            "item_rate": 1.0,
+            "item_quantity": 21.0
+          },
+          {
+            "item_name": "| UNDERPAD-DIGNITY-MATTEY- G",
+            "item_amount": 2858.87,
+            "item_rate": 2858.87,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-EMESET",
+            "item_amount": 38.16,
+            "item_rate": 3.0,
+            "item_quantity": 162.0
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 1494.0,
+            "item_rate": 2.0,
+            "item_quantity": 782.0
+          },
+          {
+            "item_name": "INJ-METROGYL-IV-S",
+            "item_amount": 66.15,
+            "item_rate": 3.0,
+            "item_quantity": 250.0
+          },
+          {
+            "item_name": "INJ-RANTAC-SOMG",
+            "item_amount": 13.61,
+            "item_rate": 2.0,
+            "item_quantity": 22412.0
+          },
+          {
+            "item_name": "INJ-STAFCURE",
+            "item_amount": 723.74,
+            "item_rate": 2.0,
+            "item_quantity": 18252410.0
+          },
+          {
+            "item_name": "INJ-TRAMASURE",
+            "item_amount": 75.42,
+            "item_rate": 3.0,
+            "item_quantity": 21.0
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON",
+            "item_amount": 40.69,
+            "item_rate": 5217743.0,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "LANCET-ULTRA-SAFETY",
+            "item_amount": 19.69,
+            "item_rate": 5.0,
+            "item_quantity": 250705.0
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 13.07,
+            "item_rate": 1.0,
+            "item_quantity": 2410109.0
+          },
+          {
+            "item_name": "ISENS-GLUCOSTRIP XDO",
+            "item_amount": 40.03,
+            "item_rate": 5.0,
+            "item_quantity": 5.0
+          },
+          {
+            "item_name": "INJ-AMIKAMAC-S",
+            "item_amount": 115.72,
+            "item_rate": 18253039.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Printed by on",
+            "item_amount": 7.0,
+            "item_rate": 4.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      },
+      {
+        "page_no": "5",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Bill Date",
+            "item_amount": 15.06,
+            "item_rate": 2025.0,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "Admit Dt. & Time",
+            "item_amount": 21.31,
+            "item_rate": 2025.0,
+            "item_quantity": 19.0
+          },
+          {
+            "item_name": "Discharge Date",
+            "item_amount": 13.12,
+            "item_rate": 2025.0,
+            "item_quantity": 24.0
+          },
+          {
+            "item_name": "No. Of Days",
+            "item_amount": 4.0,
+            "item_rate": 4.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "IV-FLUID-NS",
+            "item_amount": 126.06,
+            "item_rate": 6.0,
+            "item_quantity": 2062384.0
+          },
+          {
+            "item_name": "UNDERPAD-DIGNITY-MATTEY- G",
+            "item_amount": 56.47,
+            "item_rate": 56.47,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON",
+            "item_amount": 43.4,
+            "item_rate": 1.0,
+            "item_quantity": 5065445.0
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 19.5,
+            "item_rate": 19.5,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "IV-SET-TRANS-FLOW G",
+            "item_amount": 88.89,
+            "item_rate": 88.89,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "INJ-EMESET",
+            "item_amount": 25.44,
+            "item_rate": 2.0,
+            "item_quantity": 162.0
+          },
+          {
+            "item_name": "INJ-RANTAC",
+            "item_amount": 68.0,
+            "item_rate": 1.0,
+            "item_quantity": 22412.0
+          },
+          {
+            "item_name": "MASK-NEBULISER-ADULT G",
+            "item_amount": 475.3,
+            "item_rate": 475.3,
+            "item_quantity": 25.0
+          },
+          {
+            "item_name": "INJ-EMESET",
+            "item_amount": 25.44,
+            "item_rate": 2.0,
+            "item_quantity": 162.0
+          },
+          {
+            "item_name": "INJ-RANTAC-SOMG",
+            "item_amount": 6.81,
+            "item_rate": 1.0,
+            "item_quantity": 22412.0
+          },
+          {
+            "item_name": "INJ-TRAMASURE",
+            "item_amount": 25.14,
+            "item_rate": 1.0,
+            "item_quantity": 31021.0
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON",
+            "item_amount": 40.69,
+            "item_rate": 1.0,
+            "item_quantity": 5217743.0
+          },
+          {
+            "item_name": "NEEDLE-DISPO",
+            "item_amount": 9.45,
+            "item_rate": 6.0,
+            "item_quantity": 10.0
+          },
+          {
+            "item_name": "LANCET-ULTRA-SAFETY",
+            "item_amount": 27.57,
+            "item_rate": 7.0,
+            "item_quantity": 250705.0
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 13.07,
+            "item_rate": 1.0,
+            "item_quantity": 2410109.0
+          },
+          {
+            "item_name": "ISENS-GLUCOSTRIP XDOSLL",
+            "item_amount": 82.73,
+            "item_rate": 10.0,
+            "item_quantity": 6.0
+          },
+          {
+            "item_name": "IV-FLUID-NS",
+            "item_amount": 84.04,
+            "item_rate": 4.0,
+            "item_quantity": 2062384.0
+          },
+          {
+            "item_name": "IV-FLUID-RL-SOOML-NON-PVC",
+            "item_amount": 60.35,
+            "item_rate": 1.0,
+            "item_quantity": 1138318.0
+          },
+          {
+            "item_name": "IV-FLUID-DEXTROSE",
+            "item_amount": 40.57,
+            "item_rate": 1.0,
+            "item_quantity": 1018221.0
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON",
+            "item_amount": 21.0,
+            "item_rate": 2.0,
+            "item_quantity": 20.0
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON",
+            "item_amount": 114.84,
+            "item_rate": 114.84,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "TAPE-PAPER-MICROPORE",
+            "item_amount": 114.84,
+            "item_rate": 1.0,
+            "item_quantity": 72505.0
+          },
+          {
+            "item_name": "JINDAL PHARMACY CHARGES",
+            "item_amount": 2950.0,
+            "item_rate": 2950.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Nov- | JINDAL PHARMACY CHARGES",
+            "item_amount": 1069.0,
+            "item_rate": 1069.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "LABORATORY CHARGES",
+            "item_amount": 2820.0,
+            "item_rate": 2820.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "AUSTRALIA ANTIGEN HBS AG x S",
+            "item_amount": 250.0,
+            "item_rate": 205.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "BLEEDING TIME x HO",
+            "item_amount": 45.0,
+            "item_rate": 45.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "CBC COMPLETE BLOOD COUNT x V",
+            "item_amount": 280.0,
+            "item_rate": 13.33,
+            "item_quantity": 21.0
+          },
+          {
+            "item_name": "CLOTTING TIME x HO",
+            "item_amount": 45.0,
+            "item_rate": 2.81,
+            "item_quantity": 16.0
+          },
+          {
+            "item_name": "COMPLETE ABG x VWM",
+            "item_amount": 650.0,
+            "item_rate": 72.22,
+            "item_quantity": 9.0
+          },
+          {
+            "item_name": "HCV CARD TEST x $",
+            "item_amount": 440.0,
+            "item_rate": 204.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "HIV CARD TEST x $",
+            "item_amount": 260.0,
+            "item_rate": 203.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "LIVER FUNCTION TEST LFT x V",
+            "item_amount": 620.0,
+            "item_rate": 206.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "PTI x H",
+            "item_amount": 45.0,
+            "item_rate": 45.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "HB x HOO",
+            "item_amount": 60.0,
+            "item_rate": 60.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "PCV x HOO",
+            "item_amount": 105.0,
+            "item_rate": 105.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Printed by on",
+            "item_amount": 7.0,
+            "item_rate": 5.0,
+            "item_quantity": 2025.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 157
+  }
+}

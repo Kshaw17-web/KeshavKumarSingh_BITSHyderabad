@@ -1,0 +1,127 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "SI.No. Service Name Amount(Rs.)",
+            "item_amount": 2650.0,
+            "item_rate": 2650.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Drugs Investigations",
+            "item_amount": 3000.0,
+            "item_rate": 3.0,
+            "item_quantity": 1702.93
+          },
+          {
+            "item_name": "Medical Consumable Other Charges",
+            "item_amount": 2475.0,
+            "item_rate": 5.0,
+            "item_quantity": 4352.12
+          },
+          {
+            "item_name": "Procedures Room Rent",
+            "item_amount": 4000.0,
+            "item_rate": 7.0,
+            "item_quantity": 700.0
+          },
+          {
+            "item_name": "Surgery",
+            "item_amount": 17740.0,
+            "item_rate": 5.0,
+            "item_quantity": 8.0
+          },
+          {
+            "item_name": "G. che Bill Amount ;",
+            "item_amount": 36620.05,
+            "item_rate": 36620.05,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Deposit",
+            "item_amount": 10000.0,
+            "item_rate": 10000.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Company Credit Limit ;",
+            "item_amount": 29858.0,
+            "item_rate": 29858.0,
+            "item_quantity": 1.0
+          }
+        ]
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Consultation",
+            "item_amount": 800.0,
+            "item_rate": 800.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": ". Nishchal //",
+            "item_amount": 800.0,
+            "item_rate": 800.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": ". Dietician Consultation* // ,.~ )",
+            "item_amount": 19.0,
+            "item_rate": 250.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Nishchal // ~",
+            "item_amount": 800.0,
+            "item_rate": 800.0,
+            "item_quantity": 1.0
+          },
+          {
+            "item_name": "Drugs & “",
+            "item_amount": 76.88,
+            "item_rate": 38.44,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "MG/ ML INJ (Batch ules",
+            "item_amount": 1.0,
+            "item_rate": 0.01,
+            "item_quantity": 75.0
+          },
+          {
+            "item_name": "C",
+            "item_amount": 27.0,
+            "item_rate": 6.0,
+            "item_quantity": 30.0
+          },
+          {
+            "item_name": "MOXYNIC GM INJ // Vial (Batch No./ Lot No",
+            "item_amount": 302.62,
+            "item_rate": 151.31,
+            "item_quantity": 2.0
+          },
+          {
+            "item_name": "AQLO",
+            "item_amount": 27.0,
+            "item_rate": 7.0,
+            "item_quantity": 31.0
+          }
+        ]
+      }
+    ],
+    "total_item_count": 17
+  }
+}

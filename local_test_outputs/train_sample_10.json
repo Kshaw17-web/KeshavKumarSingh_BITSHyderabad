@@ -1,0 +1,349 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "1 Consultation(999311 )",
+            "item_amount": 79750.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1 Consultation(",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1 Consultation(999311 ) 79",
+            "item_amount": 750.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2  Equipment(999311 )",
+            "item_amount": 213250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2  Equipment(",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2  Equipment(999311 )",
+            "item_amount": 213.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2  Equipment(999311 ) 213",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "5 Medical Records(",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "7 Nutritional and Functional Assessment Charges(",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "7 Nutritional and Functional Assessment Charges(999311 )",
+            "item_amount": 600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "9 OT Consumables(999311 )",
+            "item_amount": 52517.96,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "9 OT Consumables(",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "9 OT Consumables(999311 ) 52",
+            "item_amount": 517.96,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "10 OT Pharmacy(999311 )",
+            "item_amount": 2244.37,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11. Pharmacy Consumables(999311 )",
+            "item_amount": 334504.78,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11. Pharmacy Consumables(",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11. Pharmacy Consumables(999311 )",
+            "item_amount": 334.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11. Pharmacy Consumables(999311 ) 334",
+            "item_amount": 504.78,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "13 Professional Charges(999311 )",
+            "item_amount": 102500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "13 Professional Charges(",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "13 Professional Charges(999311 )",
+            "item_amount": 102.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "13 Professional Charges(999311 ) 102",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "14  Profile(999311 )",
+            "item_amount": 131170.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "14  Profile(",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "14  Profile(999311 )",
+            "item_amount": 131.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "16 Ward Pharmacy(999311 )",
+            "item_amount": 569475.95,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "16 Ward Pharmacy(999311 )",
+            "item_amount": 569.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "16 Ward Pharmacy(999311 ) 569",
+            "item_amount": 475.95,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Final Bill",
+        "bill_items": [
+          {
+            "item_name": "/63.00",
+            "item_amount": 2209.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2",
+            "item_amount": 209.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Total Payable Amount",
+            "item_amount": 2209763.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "763.00",
+            "item_amount": 209.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Total Payable Amount 2,209",
+            "item_amount": 763.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "To Pay",
+            "item_amount": 2209763.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "To Pay 2",
+            "item_amount": 209.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "To Pay 2,209",
+            "item_amount": 763.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Net Payable",
+            "item_amount": 2209763.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Net Payable 2",
+            "item_amount": 209.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Net Payable 2,209",
+            "item_amount": 763.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Consultation(",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IP CONSULTATION 1.00 1,000.00 ft) 1,000.00",
+            "item_amount": 119631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1 19631 IP CONSULTATION 1.00",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1 19631 IP CONSULTATION 1.00 1,000.00 ft)",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1",
+            "item_amount": 19631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 44,
+    "reconciled_amount": 17260044.75
+  }
+}

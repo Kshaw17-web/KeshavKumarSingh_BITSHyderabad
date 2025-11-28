@@ -1,0 +1,573 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "0.",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00",
+            "item_amount": 62400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00 62",
+            "item_amount": 400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "0.00",
+            "item_amount": 15600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00 15",
+            "item_amount": 600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00 =",
+            "item_amount": 16060.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00 =: 16",
+            "item_amount": 60.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "#4442025 VENOUS BLOOD GAS 1.0",
+            "item_amount": 1320.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "#4442025 VENOUS BLOOD GAS 1.0 1,320.00 0.00 0.00",
+            "item_amount": 1320.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "#",
+            "item_amount": 4442025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "#4442025 VENOUS BLOOD GAS 1.0 1",
+            "item_amount": 320.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "#4442025 VENOUS BLOOD GAS 1.0 1,320.00 0.00 0.00 1",
+            "item_amount": 320.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "6.00 0.00 240.00",
+            "item_amount": 10240.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1NIV2025 BILIRUBIN TOTAL - SERUM 10 240.00 6.00 0.",
+            "item_amount": 240.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6.00 0.00 240.00",
+            "item_amount": 240.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1NIV2025 BILIRUBIN TOTAL - SERUM 10  6.00 0.00",
+            "item_amount": 240.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "18/1192025 URINE FOR KOH MOUNT 1.",
+            "item_amount": 600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "18/1192025 URINE FOR KOH MOUNT 1.0 600.00 0.00 6.",
+            "item_amount": 600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "18/",
+            "item_amount": 1192025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "18/1192025 URINE FOR KOH MOUNT 1.0",
+            "item_amount": 600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "18/1192025 URINE FOR KOH MOUNT 1.0 600.00 0.00 6.00",
+            "item_amount": 600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00",
+            "item_amount": 11160.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00 11",
+            "item_amount": 160.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "4",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "0,00",
+            "item_amount": 4740.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0,00 4",
+            "item_amount": 740.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00",
+            "item_amount": 32850.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00 32",
+            "item_amount": 850.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1192025 Critical Care Consumables 11.",
+            "item_amount": 650.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1192025 Critical Care Consumables 11.0 650,00 0,00 0.00",
+            "item_amount": 7150.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Critical Care Consumables 11.0 650,00 0,00 0.00 7,150.00",
+            "item_amount": 1192025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1192025 Critical Care Consumables 11.0",
+            "item_amount": 650.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1192025 Critical Care Consumables 11.0 650,00 0,00 0.00 7",
+            "item_amount": 150.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "5",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "92/1142025 LINEN CHARGES 1.",
+            "item_amount": 120.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "92/1142025 LINEN CHARGES 1.0 120.00 0.00 0.",
+            "item_amount": 120.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "92/",
+            "item_amount": 1142025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "92/1142025 LINEN CHARGES 1.0",
+            "item_amount": 120.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "92/1142025 LINEN CHARGES 1.0 120.00 0.00 0.00",
+            "item_amount": 120.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "TNIV2025 OXYGEN PER DAY 1.0",
+            "item_amount": 2400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "TNIV2025 OXYGEN PER DAY 1.0 2,400.00 0,00 0.00",
+            "item_amount": 2400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "TNIV2025 OXYGEN PER DAY 1.0 2",
+            "item_amount": 400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "TNIV2025 OXYGEN PER DAY 1.0 2,400.00 0,00 0.00 2",
+            "item_amount": 400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "6",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "14 AM",
+            "item_amount": 202503.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "7",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "T7AV2025 MONITOR CHARGES. 1.",
+            "item_amount": 800.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "T7AV2025 MONITOR CHARGES. 1.0 800.00 0,00 0.",
+            "item_amount": 800.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "T7AV2025 MONITOR CHARGES. 1.0",
+            "item_amount": 800.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "T7AV2025 MONITOR CHARGES. 1.0 800.00 0,00 0.00",
+            "item_amount": 800.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "8",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "0.",
+            "item_amount": 122900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00",
+            "item_amount": 122.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "0.00 122",
+            "item_amount": 900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "9",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "111172025 \u00ab== VASOF IK 24G",
+            "item_amount": 30228.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "111172025 \u00ab== VASOF IK 24G 30 228.00 0.00 0.",
+            "item_amount": 675.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "\u00ab== VASOF IK 24G 30 228.00 0.00 0.00 675.00",
+            "item_amount": 111172025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "111172025 \u00ab== VASOF IK 24G 30",
+            "item_amount": 228.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "111172025 \u00ab== VASOF IK 24G 30 228.00 0.00 0.00",
+            "item_amount": 675.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11/",
+            "item_amount": 1172025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11/",
+            "item_amount": 112025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11/112025 EXAMINATION GLOVES MEDIUM",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11/112025 EXAMINATION GLOVES MEDIUM 100 14.06 0.00 0.00 6=\u2014Ss\u00ab",
+            "item_amount": 140.6,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INFANT FEEDING TUBE SIZE 6 20 ~\u2014\u00ab6 1.00 0.00 000 ~\u2014 122.00",
+            "item_amount": 11112025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11112025 INFANT FEEDING TUBE SIZE 6 20 ~\u2014\u00ab6 1.00 0.00 000 ~\u2014",
+            "item_amount": 122.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "KLICK CLAMP 10 36.58 0.00 0.00 36.56",
+            "item_amount": 1112025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "10",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Patient Address Ble Date \u00bb 2aN",
+            "item_amount": 1112025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "BLOOD LANCET 20 20.00 0.00 p.00 40.00",
+            "item_amount": 41112025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11112025 \u00abPOWDER FREE GLOVES 7.5 oO 113,44 0.00 0.",
+            "item_amount": 113.44,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11112025 \u00abPOWDER FREE GLOVES 7.5 oO",
+            "item_amount": 113.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "11112025 \u00abPOWDER FREE GLOVES 7.5 oO 113,44 0.00 0.00",
+            "item_amount": 113.44,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 67,
+    "reconciled_amount": 175411848.48
+  }
+}

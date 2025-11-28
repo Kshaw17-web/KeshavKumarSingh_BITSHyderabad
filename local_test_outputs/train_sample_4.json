@@ -1,0 +1,214 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "1 Consultation",
+            "item_amount": 2650.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1 Consultation 2",
+            "item_amount": 650.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 Drugs",
+            "item_amount": 1702.93,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 Drugs 1",
+            "item_amount": 702.93,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "4 Medical Consumable",
+            "item_amount": 4352.12,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "4 Medical Consumable 4",
+            "item_amount": 352.12,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "5 Other Charges",
+            "item_amount": 2475.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "5 Other Charges 2",
+            "item_amount": 475.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "7 Room Rent",
+            "item_amount": 4000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "8 Surgery =o",
+            "item_amount": 17740.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "8 Surgery =o 17",
+            "item_amount": 740.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Grand Total : ra 5",
+            "item_amount": 36620.05,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Grand Total : ra 5 36",
+            "item_amount": 620.05,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Deposit",
+            "item_amount": 10000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Discount",
+            "item_amount": 3057.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Total Discount",
+            "item_amount": 3057.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Total Discount : 3",
+            "item_amount": 57.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Company Credit Limit",
+            "item_amount": 29858.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Company Credit Limit : 29",
+            "item_amount": 858.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Net Amount Paid by Company",
+            "item_amount": 29858.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Net Amount Paid by Company : 29",
+            "item_amount": 858.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "Sub Total : 2650.00 \u00ab %",
+            "item_amount": 2650.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "\u00ab % 2,650.00",
+            "item_amount": 2650.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Sub Total : 2 \u00ab % 2",
+            "item_amount": 650.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "C3DOL",
+            "item_amount": 6.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "AQLO",
+            "item_amount": 123.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 26,
+    "reconciled_amount": 156762.2
+  }
+}

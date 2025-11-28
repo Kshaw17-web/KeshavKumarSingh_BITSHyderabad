@@ -1,0 +1,37 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "\\G",
+            "item_amount": 201008.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "\\G2",
+            "item_amount": 1008.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 2,
+    "reconciled_amount": 202016.0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "s Order NO.2...cccccccccceccececcsssscscsccscescnsssensesesnceeeresevsecsnnennsonneseqesncssesserseneeseee e",
+            "item_amount": 217.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": ". .",
+            "item_amount": 190.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 2,
+    "reconciled_amount": 407.0
+  }
+}

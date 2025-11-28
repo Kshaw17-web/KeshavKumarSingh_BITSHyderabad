@@ -1,0 +1,216 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "1319631 IP CONSULTATION 1.00",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1319631 IP CONSULTATION 1.00 1,000.00 )",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IP CONSULTATION 1.00 1,000.00 ) 1,000.00",
+            "item_amount": 1319631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IP CONSULTATION 1.00 1,000.00 ) 1,000.00",
+            "item_amount": 1819631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "18 19631 IP CONSULTATION 1.00",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "18 19631 IP CONSULTATION 1.00 1,000.00 )",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "18",
+            "item_amount": 19631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "2819631 IP CONSULTATION mo 1.00",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2819631 IP CONSULTATION mo 1.00 1,000.00 )",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IP CONSULTATION mo 1.00 1,000.00 ) 1,000.00",
+            "item_amount": 2819631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2919631 IP CONSULTATION 1.00",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2919631 IP CONSULTATION 1.00 1,000.00 )",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "3019631 IP CONSULTATION ! 1.00",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "3019631 IP CONSULTATION ! 1.00 1,000.00 )",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IP CONSULTATION 1.00 1,000.00 ) 1,000.00",
+            "item_amount": 3719631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "37 19631 IP CONSULTATION 1.00",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "37 19631 IP CONSULTATION 1.00 1,000.00 )",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "37",
+            "item_amount": 19631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "4219631 IP CONSULTATION 1.00",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "4219631 IP CONSULTATION 1.00 1,000.00 )",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IP CONSULTATION 1.00 1,000.00 ) 1,000.00",
+            "item_amount": 4219631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IP CONSULTATION 1.00 1,000.00 ) 1,000.00",
+            "item_amount": 4519631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "45 19631 IP CONSULTATION 1.00",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "45 19631 IP CONSULTATION 1.00 1,000.00 )",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "45",
+            "item_amount": 19631.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 25,
+    "reconciled_amount": 18492679.0
+  }
+}

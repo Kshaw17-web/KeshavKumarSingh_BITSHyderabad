@@ -28,7 +28,7 @@ from src.schemas import (
     DataResponse,
     FullResponse
 )
-from src.preprocessing_helpers import preprocess_full_pipeline, detect_whiteout_and_lowconf
+from src.preprocessing_helpers import preprocess_image_local, detect_whiteout_and_lowconf, preprocess_full_pipeline
 
 # ---- Try to import extract_bill_data flexibly ----
 extract_bill_data = None
@@ -185,30 +185,53 @@ def convert_file_to_ocr_pages(file_path: Path) -> Tuple[List[str], List[Dict[str
             from PIL import Image
             images = [Image.open(file_path)]
 
+        preprocessed_images = []
         for idx, img in enumerate(images, start=1):
             try:
-                # Use new preprocessing pipeline
-                prepped_img, preproc_meta = preprocess_full_pipeline(img)
-                fraud_flags, fraud_meta = detect_whiteout_and_lowconf(prepped_img)
-                
-                # Merge fraud metadata into preprocessing metadata
-                preproc_meta.update(fraud_meta)
+                # Use preprocessing pipeline
+                prepped_img = preprocess_image_local(img)
+                preprocessed_images.append(prepped_img)
                 
                 # Run OCR on preprocessed image
                 text = pytesseract.image_to_string(prepped_img, lang="eng", config="--oem 3 --psm 6")
                 ocr_texts.append(text or "")
+                
+                # Basic preprocessing metadata
+                w, h = img.size
+                preproc_meta = {
+                    "width": w,
+                    "height": h,
+                    "preprocessed": True
+                }
                 preproc_metadata_list.append(preproc_meta)
-                fraud_flags_list.append(fraud_flags)
                 
                 logging.info("OCR page %d len=%d", idx, len(text or ""))
                 logging.info("OCR preview page %d: %s", idx, (text or "")[:300].replace("\n", " "))
-                logging.info("Preprocessing page %d: white_coverage=%.4f, fraud_flags=%d", 
-                           idx, preproc_meta.get("white_coverage", 0.0), len(fraud_flags))
             except Exception as e:
                 logging.exception("OCR failed on page %d: %s", idx, e)
                 ocr_texts.append("")
                 preproc_metadata_list.append({})
-                fraud_flags_list.append([])
+                preprocessed_images.append(img)  # Fallback to original
+        
+        # Detect fraud flags across all pages at once
+        try:
+            fraud_tuples = detect_whiteout_and_lowconf(preprocessed_images, ocr_texts)
+            # Convert tuples to dict format per page
+            fraud_flags_by_page: Dict[int, List[Dict[str, Any]]] = {}
+            for page_no, flag_type, score in fraud_tuples:
+                if page_no not in fraud_flags_by_page:
+                    fraud_flags_by_page[page_no] = []
+                fraud_flags_by_page[page_no].append({
+                    "type": flag_type,
+                    "score": score
+                })
+            
+            # Align fraud flags with pages
+            for idx in range(1, len(ocr_texts) + 1):
+                fraud_flags_list.append(fraud_flags_by_page.get(idx, []))
+        except Exception as e:
+            logging.exception("Fraud detection failed: %s", e)
+            fraud_flags_list = [[] for _ in ocr_texts]
     except HTTPException:
         raise
     except Exception as e:

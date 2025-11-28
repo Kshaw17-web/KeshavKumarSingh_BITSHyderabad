@@ -1,0 +1,1364 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Rabin}, 3",
+            "item_amount": 4600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Rabin}",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Rabin}, 3004",
+            "item_amount": 600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hisinalils) $3004 = K24A020",
+            "item_amount": 5251228.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hisinalils) $3004 = K24A020525 1228 IVSET1",
+            "item_amount": 1120.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hisinalils) $3004 = K24A020525 1228 IVSET1 1 120,00 0.",
+            "item_amount": 120.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hisinalils) $",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hisinalils) $3004 = K24A",
+            "item_amount": 20525.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hisinalils) $3004 = K24A020525",
+            "item_amount": 1228.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hisinalils) $3004 = K24A020525 1228 IVSET1 1",
+            "item_amount": 120.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hisinalils) $3004 = K24A020525 1228 IVSET1 1 120,00 0.00",
+            "item_amount": 120.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "iB",
+            "item_amount": 53004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "iB: 5 3004 \u00a9 DOB92404A 06/26 ZONEG 1200MG ( GLUTATHION",
+            "item_amount": 22450.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "iB: 5 3004 \u00a9 DOB92404A 06/26 ZONEG 1200MG ( GLUTATHION 2 2450.00 0.",
+            "item_amount": 4900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "iB: 5",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "iB: 5 3004 \u00a9 DOB",
+            "item_amount": 92404.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "iB: 5 3004 \u00a9 DOB92404A 06/26 ZONEG",
+            "item_amount": 1200.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "iB: 5 3004 \u00a9 DOB92404A 06/26 ZONEG 1200MG ( GLUTATHION 2",
+            "item_amount": 2450.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "iB: 5 3004 \u00a9 DOB92404A 06/26 ZONEG 1200MG ( GLUTATHION 2 2450.00 0.00",
+            "item_amount": 4900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "$ith",
+            "item_amount": 19018.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "$ith 1",
+            "item_amount": 9018.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "$ith 1 9018 = SN",
+            "item_amount": 312292.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ah",
+            "item_amount": 43004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ah 4 3004 \u00a9 D24AM020G 09/26 ESOMAN 40MG INJ",
+            "item_amount": 2430.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ah 4",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ah 4 3004 \u00a9 D24AM",
+            "item_amount": 20.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ah 4 3004 \u00a9 D24AM020G 09/26 ESOMAN 40MG INJ 2",
+            "item_amount": 430.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "P (Fi || 3002 T393L619 08/26 NEOMOL IV 100ML",
+            "item_amount": 3522.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "P (Fi || 3002 T393L619 08/26 NEOMOL IV 100ML 3 522.00 0",
+            "item_amount": 1566.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "P (Fi",
+            "item_amount": 3002.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "P (Fi || 3002 T",
+            "item_amount": 393.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "P (Fi || 3002 T393L",
+            "item_amount": 619.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "P (Fi || 3002 T393L619 08/26 NEOMOL IV",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "P (Fi || 3002 T393L619 08/26 NEOMOL IV 100ML 3",
+            "item_amount": 522.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "P (Fi || 3002 T393L619 08/26 NEOMOL IV 100ML 3 522.00 0,00",
+            "item_amount": 1566.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "\u2018i 2, 1, 9",
+            "item_amount": 1803250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "\u2018i 2, 1, 9018",
+            "item_amount": 325009.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ih ii); 3003 = PA",
+            "item_amount": 24114.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hike iy 3004 = BMT24-004A 03/26 VIMZOTECH INJ 1 1700.00 ~\u2014-0.",
+            "item_amount": 1700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hike iy 3004 = BMT24",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hike iy 3004 = BMT24-004A 03/26 VIMZOTECH INJ 1",
+            "item_amount": 1700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hike iy 3004 = BMT24-004A 03/26 VIMZOTECH INJ 1 1700.00 ~\u2014-0.00",
+            "item_amount": 1700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "; i i H) 3004 \u00a9 - 2520087 01/28 MUCAINE MINT GEL 200ML",
+            "item_amount": 1267.36,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "; i i H) 3004 \u00a9 - 2520087 01/28 MUCAINE MINT GEL 200ML 1 267.36 0.",
+            "item_amount": 267.36,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "; i i H) 3004 \u00a9",
+            "item_amount": 2520087.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "; i i H) 3004 \u00a9 - 2520087 01/28 MUCAINE MINT GEL",
+            "item_amount": 200.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "; i i H) 3004 \u00a9 - 2520087 01/28 MUCAINE MINT GEL 200ML 1 267.36 0.00",
+            "item_amount": 267.36,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Beis 3004 MPF252125 11/26 ARISTOZYME 200ML",
+            "item_amount": 1162.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Beis 3004 MPF252125 11/26 ARISTOZYME 200ML 1 162.00 \u2014 0.",
+            "item_amount": 162.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Beis 3004 MPF",
+            "item_amount": 252125.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Beis 3004 MPF252125 11/26 ARISTOZYME",
+            "item_amount": 200.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Beis 3004 MPF252125 11/26 ARISTOZYME 200ML 1",
+            "item_amount": 162.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Beis 3004 MPF252125 11/26 ARISTOZYME 200ML 1 162.00 \u2014 0.00",
+            "item_amount": 162.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hie q 3004 A2510871TM 01/27. APTIVATE SYP 1*200ML",
+            "item_amount": 1186.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0,
+            "confidence": null
+          },
+          {
+            "item_name": "Hie q 3004 A2510871TM 01/27. APTIVATE SYP 1*200ML 1 186.00 0.",
+            "item_amount": 186.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0,
+            "confidence": null
+          },
+          {
+            "item_name": "Hie q 3004 A",
+            "item_amount": 2510871.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0,
+            "confidence": null
+          },
+          {
+            "item_name": "Hie q 3004 A2510871TM 01/27. APTIVATE SYP 1*",
+            "item_amount": 200.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0,
+            "confidence": null
+          },
+          {
+            "item_name": "Hie q 3004 A2510871TM 01/27. APTIVATE SYP 1*200ML 1",
+            "item_amount": 186.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0,
+            "confidence": null
+          },
+          {
+            "item_name": "Hie q 3004 A2510871TM 01/27. APTIVATE SYP 1*200ML 1 186.00 0.00",
+            "item_amount": 186.0,
+            "item_rate": 200.0,
+            "item_quantity": 1.0,
+            "confidence": null
+          },
+          {
+            "item_name": "2 eR i 3004  SPA243770 11/26 OSOLAC 100ML",
+            "item_amount": 1129.15,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 eR i 3004  SPA243770 11/26 OSOLAC 100ML 1 129.15 0",
+            "item_amount": 129.15,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 eR i 3004  SPA243770 11/26 OSOLAC",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 eR i 3004  SPA243770 11/26 OSOLAC 100ML 1",
+            "item_amount": 129.15,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 eR i 3004  SPA243770 11/26 OSOLAC 100ML 1 129.15 0,00",
+            "item_amount": 129.15,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hi * 3004 \u00a9 2501002281 07/27 NS SOOML",
+            "item_amount": 2100.2,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hi * 3004 \u00a9 2501002281 07/27 NS SOOML 2 100.20 \u20140.",
+            "item_amount": 200.4,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hi * 3004 \u00a9",
+            "item_amount": 2501002281.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hi * 3004 \u00a9 2501002281 07/27 NS SOOML 2",
+            "item_amount": 100.2,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hi * 3004 \u00a9 2501002281 07/27 NS SOOML 2 100.20 \u20140.00",
+            "item_amount": 200.4,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "BAiseiity, 3004 = LSOD4174 06/27 NS 100ML 4 47.00 0.",
+            "item_amount": 188.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "BAiseiity",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "BAiseiity, 3004 = LSOD",
+            "item_amount": 4174.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1] ES SUB TOTAL",
+            "item_amount": 19109.2,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "HE Eh i1'0322.99 2.50 58.08 2.50 58.08 SGST AMT",
+            "item_amount": 783.78,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "AUB Gay i i91729.65 6.",
+            "item_amount": 703.78,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "AUB Gay i i91729.65 6.00 703.78 6.",
+            "item_amount": 703.78,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "AUB Gay i i",
+            "item_amount": 91729.65,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "AUB Gay i i91729.65 6.00",
+            "item_amount": 703.78,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "AUB Gay i i91729.65 6.00 703.78 6.00",
+            "item_amount": 703.78,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Behe: 0.00 9.00 0.00 9.00 0.00 NET AMT",
+            "item_amount": 20677.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "teal i ili",
+            "item_amount": 156.56,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "4} AS te Bile BALANCE AMT",
+            "item_amount": 20677.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Ket! i 3004 + D0892404A 06/26 ZONEG 1200MG ( GLUTATHION",
+            "item_amount": 22450.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ket! i 3004 + D0892404A 06/26 ZONEG 1200MG ( GLUTATHION 2 2450.00 0.",
+            "item_amount": 4900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ket! i",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ket! i 3004 + D",
+            "item_amount": 892404.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ket! i 3004 + D0892404A 06/26 ZONEG",
+            "item_amount": 1200.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ket! i 3004 + D0892404A 06/26 ZONEG 1200MG ( GLUTATHION 2",
+            "item_amount": 2450.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ket! i 3004 + D0892404A 06/26 ZONEG 1200MG ( GLUTATHION 2 2450.00 0.00",
+            "item_amount": 4900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ee I",
+            "item_amount": 9018.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ee I, 9018 \u00a9 SN",
+            "item_amount": 312292.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "HS) i, 3004 \u00a9 D24AM020G 09/26 ESOMAN 40MG INI",
+            "item_amount": 2430.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "HS) i, 3004 \u00a9 D24AM",
+            "item_amount": 20.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "HS) i, 3004 \u00a9 D24AM020G 09/26 ESOMAN 40MG INI 2",
+            "item_amount": 430.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "hey # 3002 \u00ab= T393L619 08/26 NEOMOLIV 100ML",
+            "item_amount": 3522.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "hey # 3002 \u00ab= T393L619 08/26 NEOMOLIV 100ML 3 522.00 0.",
+            "item_amount": 1566.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "hey # 3002 \u00ab= T",
+            "item_amount": 393.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "hey # 3002 \u00ab= T393L619 08/26 NEOMOLIV",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "hey # 3002 \u00ab= T393L619 08/26 NEOMOLIV 100ML 3",
+            "item_amount": 522.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ping i \u00a99",
+            "item_amount": 1803250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ping i \u00a9",
+            "item_amount": 9018.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ping i \u00a99018",
+            "item_amount": 325009.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Wea",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Wea 3004 \u00ab= PA",
+            "item_amount": 24114.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hey Hy, 3008 \u00ab= BMT24-004A 03/26 VIMZOTECH INI",
+            "item_amount": 11700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hey Hy, 3008 \u00ab= BMT24-004A 03/26 VIMZOTECH INI 1 1700.00 \u20140.",
+            "item_amount": 1700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hey Hy, 3008 \u00ab= BMT24",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hey Hy, 3008 \u00ab= BMT24-004A 03/26 VIMZOTECH INI 1",
+            "item_amount": 1700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hey Hy, 3008 \u00ab= BMT24-004A 03/26 VIMZOTECH INI 1 1700.00 \u20140.00",
+            "item_amount": 1700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ROY WLT",
+            "item_amount": 24031.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Pee 2501017",
+            "item_amount": 920427.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Pee",
+            "item_amount": 2501017092.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Pee 2501017092",
+            "item_amount": 427.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "bait i 3",
+            "item_amount": 425010.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "bait i 3004 2501002281 07/27 NS SOOML",
+            "item_amount": 2100.2,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "bait i 3004 2501002281 07/27 NS SOOML 2 100.20 0.",
+            "item_amount": 200.4,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "bait i 3004",
+            "item_amount": 2501002281.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "bait i 3004 2501002281 07/27 NS SOOML 2",
+            "item_amount": 100.2,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "bait i 3004 2501002281 07/27 NS SOOML 2 100.20 0.00",
+            "item_amount": 200.4,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "43\" 3004 LSOD4174 06/27 NS 100ML 3 47.00 0.",
+            "item_amount": 141.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "43\" 3004 LSOD",
+            "item_amount": 4174.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "43\" 3004 LSOD4174 06/27 NS",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "i",
+            "item_amount": 9018.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "i 9018 = PTDS",
+            "item_amount": 915.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Reap iit",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ee f \u00a93004 += $",
+            "item_amount": 102009.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Peat SUB TOTAL",
+            "item_amount": 1826.55,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "BAR|) 0.00 0.00 0.00 0.00 0.00 CGST AMT",
+            "item_amount": 750.6,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Meh) hi",
+            "item_amount": 1757.62,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Meh) hi, 1757.62 2.50 43.94 2.50 43.94 SGST AMT",
+            "item_amount": 750.6,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Mm Ssiee tid 1412.37 6.",
+            "item_amount": 684.74,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Mm Ssiee tid 1412.37 6.00 684.74 6.",
+            "item_amount": 684.74,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Mm Ssiee tid 1412.37 6.00",
+            "item_amount": 684.74,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Mm Ssiee tid 1412.37 6.00 684.74 6.00",
+            "item_amount": 684.74,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ria 0.00 9.00 0.00 9.00 0.00 NET AMT",
+            "item_amount": 19728.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hee BALANCE AMT",
+            "item_amount": 19728.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "a Al 3004 = D0892404A 06/26 ZONEG 1200MG ( GLUTATHION",
+            "item_amount": 22450.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "a Al 3004 = D0892404A 06/26 ZONEG 1200MG ( GLUTATHION 2 2450.00 0.",
+            "item_amount": 4900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "a Al",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "a Al 3004 = D",
+            "item_amount": 892404.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "a Al 3004 = D0892404A 06/26 ZONEG",
+            "item_amount": 1200.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "a Al 3004 = D0892404A 06/26 ZONEG 1200MG ( GLUTATHION 2",
+            "item_amount": 2450.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "a Al 3004 = D0892404A 06/26 ZONEG 1200MG ( GLUTATHION 2 2450.00 0.00",
+            "item_amount": 4900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hai t",
+            "item_amount": 9018.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hai t, | 9018 \u2014 SN",
+            "item_amount": 312292.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "is irae | 3004 = D24AM020G 09/26 ESOMAN 40MG INJ",
+            "item_amount": 2430.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "is irae | 3004 = D24AM020G 09/26 ESOMAN 40MG INJ 2 430.00 0.",
+            "item_amount": 860.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "is irae",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "is irae | 3004 = D24AM",
+            "item_amount": 20.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "is irae | 3004 = D24AM020G 09/26 ESOMAN 40MG INJ 2",
+            "item_amount": 430.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "is irae | 3004 = D24AM020G 09/26 ESOMAN 40MG INJ 2 430.00 0.00",
+            "item_amount": 860.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "nee i} ; 3002 T393L619 08/26 NEQMOLIV 100ML",
+            "item_amount": 1522.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "nee i} ; 3002 T393L619 08/26 NEQMOLIV 100ML 1 522.00 0.",
+            "item_amount": 522.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "nee i} ; 3002 T",
+            "item_amount": 393.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "nee i} ; 3002 T393L",
+            "item_amount": 619.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "nee i} ; 3002 T393L619 08/26 NEQMOLIV",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "nee i} ; 3002 T393L619 08/26 NEQMOLIV 100ML 1",
+            "item_amount": 522.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "nee i} ; 3002 T393L619 08/26 NEQMOLIV 100ML 1 522.00 0.00",
+            "item_amount": 522.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Aes if 9",
+            "item_amount": 1803250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Aes if",
+            "item_amount": 9018.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Aes if 9018",
+            "item_amount": 325009.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "i al\u2019) 3004 PA",
+            "item_amount": 24114.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Poi t | 3004 \u00ab= BMT24-004A 03/26 VIMZOTECH INJ",
+            "item_amount": 11700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Poi t | 3004 \u00ab= BMT24-004A 03/26 VIMZOTECH INJ 1 1700.00 0.",
+            "item_amount": 1700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Poi t",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Poi t | 3004 \u00ab= BMT24-004A 03/26 VIMZOTECH INJ 1",
+            "item_amount": 1700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Poi t | 3004 \u00ab= BMT24-004A 03/26 VIMZOTECH INJ 1 1700.00 0.00",
+            "item_amount": 1700.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "} S4i] 4), 3",
+            "item_amount": 425010.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "} S4i] 4), 3004 2501002281 07/27 NS SOOML",
+            "item_amount": 2100.2,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "} S4i] 4), 3004 2501002281 07/27 NS SOOML 2 100.20 0",
+            "item_amount": 200.4,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "} S4i] 4)",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "} S4i] 4), 3004",
+            "item_amount": 2501002281.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "} S4i] 4), 3004 2501002281 07/27 NS SOOML 2",
+            "item_amount": 100.2,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "} S4i] 4), 3004 2501002281 07/27 NS SOOML 2 100.20 0,00",
+            "item_amount": 200.4,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ee \u2018| 3008 = LSOD4174 06/27 NS 100ML 3 47.00 0.",
+            "item_amount": 141.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ee \u2018",
+            "item_amount": 3008.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ee \u2018| 3008 = LSOD",
+            "item_amount": 4174.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ee \u2018| 3008 = LSOD4174 06/27 NS",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ee \u2018| 3008 = LSOD4174 06/27 NS 100ML 3 47.00 0.00",
+            "item_amount": 141.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Sit) 3004 \u00a9 $",
+            "item_amount": 102009.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Th Hi | SUB TOTAL",
+            "item_amount": 17126.81,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hagiieh",
+            "item_amount": 721.92,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Hagiieh | 721.92 2.50 18.04 2.50 18,04 SGST AMT",
+            "item_amount": 720.86,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ha) 11348.33 6.",
+            "item_amount": 680.9,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ha) 11348.33 6.00 680.90 6.",
+            "item_amount": 680.9,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ha)",
+            "item_amount": 11348.33,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Ha) 11348.33 6.00 680.90 6.00",
+            "item_amount": 680.9,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Aviat |!) 0.00 9.00 0.00 9.00 0.00 NET AMT",
+            "item_amount": 18569.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "i et ty | BALANCE AMT",
+            "item_amount": 18569.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 189,
+    "reconciled_amount": 10026545149.54
+  }
+}

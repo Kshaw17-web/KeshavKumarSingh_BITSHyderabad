@@ -1,0 +1,636 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "1 MODULAR CUP 43MM",
+            "item_amount": 116500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1 MODULAR CUP 43MM 1",
+            "item_amount": 16500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1 MODULAR CUP 43MM 1 16500",
+            "item_amount": 16500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 IMTERNAL HEAD +1.5MM",
+            "item_amount": 17500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 IMTERNAL HEAD +1.5MM 1",
+            "item_amount": 7500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 IMTERNAL HEAD +1.5MM 1 7500",
+            "item_amount": 7500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "3 UNCEMENTED FEMORAL STEM 10MM",
+            "item_amount": 144500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "3 UNCEMENTED FEMORAL STEM 10MM 1",
+            "item_amount": 44500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "3 UNCEMENTED FEMORAL STEM 10MM 1 44500",
+            "item_amount": 44500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "TOTAL AMOUNT IN WORDS: SEVENTY ONE THOUSAND NINE SALES AMOUNT",
+            "item_amount": 68500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "NET AMOUNT",
+            "item_amount": 68500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "CGST 2.5%",
+            "item_amount": 1712.5,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": ". ITOTALRs. | _\u2014",
+            "item_amount": 71925.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "i 150.00",
+            "item_amount": 27150.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "P22B05 01/27 150 i 150.00",
+            "item_amount": 90183910.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "i 150.00",
+            "item_amount": 150.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "\u00ab t FOLEY CATHETER 14 NO 90183910 - P22B05 01/27 150 i",
+            "item_amount": 150.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 URO BAG 90183990 = 6090625C 02/",
+            "item_amount": 30349.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 URO BAG 90183990 = 6090625C 02/30 349",
+            "item_amount": 1349.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 URO BAG",
+            "item_amount": 90183990.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 URO BAG 90183990 =",
+            "item_amount": 6090625.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 URO BAG 90183990 = 6090625C 02/30",
+            "item_amount": 349.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 URO BAG 90183990 = 6090625C 02/30 349 1",
+            "item_amount": 349.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "4 NS EURO",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "4 NS EURO 500ML",
+            "item_amount": 30049099.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "4 NS EURO 500ML 30049099 = TASO4E",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "5 SAFE PORT RL",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "5 SAFE PORT RL 500 ML a = R1RC",
+            "item_amount": 382.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "= vo18 0 .",
+            "item_amount": 42019.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 INJECTION 3004",
+            "item_amount": 201221.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 INJECTION 3004201 221 5/",
+            "item_amount": 27628.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 INJECTION",
+            "item_amount": 3004201.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 INJECTION 3004201",
+            "item_amount": 221.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 INJECTION 3004201 221 5/27",
+            "item_amount": 628.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 INJECTION 3004201 221 5/27 628 Z",
+            "item_amount": 1256.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "7 a\u201c INJ PANTAKIND 40MG. = = A2IQX049 10/26 56.5",
+            "item_amount": 2113.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "7 a\u201c INJ PANTAKIND 40MG. = = A2IQX",
+            "item_amount": 49.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "7 a\u201c INJ PANTAKIND 40MG. = = A2IQX049 10/26 56.5 2",
+            "item_amount": 113.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "9 OMNIVAN 2ML",
+            "item_amount": 90183100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "9 OMNIVAN 2ML 90183100 - 25E31M",
+            "item_amount": 8202.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "10 OMNIVAN 10ML 90183100 - 25G18M8203 06/30 31.46",
+            "item_amount": 4125.84,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "10 OMNIVAN 10ML 90183100 - 25G18M",
+            "item_amount": 8203.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "10 OMNIVAN 10ML 90183100 - 25G18M8203 06/30 31.46 4",
+            "item_amount": 125.84,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ue rn 1% ERVESEE (ZY 90183990 = 4022425B 01/",
+            "item_amount": 30184.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ue rn 1% ERVESEE (ZY 90183990 = 4022425B 01/30 184",
+            "item_amount": 2368.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ue rn 1% ERVESEE (ZY",
+            "item_amount": 90183990.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ue rn 1% ERVESEE (ZY 90183990 =",
+            "item_amount": 4022425.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ue rn 1% ERVESEE (ZY 90183990 = 4022425B 01/30",
+            "item_amount": 184.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "ue rn 1% ERVESEE (ZY 90183990 = 4022425B 01/30 184 2",
+            "item_amount": 368.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "12 i BASE: \u00a3\u00a5 \u2018CONHULA 90183990 - 50241 12/",
+            "item_amount": 29198.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "12 i BASE: \u00a3\u00a5 \u2018CONHULA",
+            "item_amount": 90183990.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "12 i BASE: \u00a3\u00a5 \u2018CONHULA 90183990",
+            "item_amount": 50241.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "12 i BASE: \u00a3\u00a5 \u2018CONHULA 90183990 - 50241 12/29",
+            "item_amount": 198.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV FIX",
+            "item_amount": 30059040.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV FIX 30059040 = CF",
+            "item_amount": 323.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "14 VEIN-O LINE 10CM 901809099 \u201ca K24A01093612/28 347 \u201c",
+            "item_amount": 8347.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "14 VEIN-O LINE 10CM",
+            "item_amount": 901809099.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "14 VEIN-O LINE 10CM 901809099 \u201ca K24A",
+            "item_amount": 1093612.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "14 VEIN-O LINE 10CM 901809099 \u201ca K24A01093612/28 347 \u201c8",
+            "item_amount": 347.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SUB: 3814.65 TAX: 192.75 net amt",
+            "item_amount": 3433.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SUB",
+            "item_amount": 3814.65,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "net amt: 3,433.00",
+            "item_amount": 192.75,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SUB: 3814.65 TAX: 192.75 net amt: 3",
+            "item_amount": 433.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "3",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "V018221 5/27 62 R",
+            "item_amount": 30042019.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "30042019 - V",
+            "item_amount": 18221.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2 INJECTION 0 5/ 6 ne",
+            "item_amount": 628.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "3 PANTAKIND 40MG INJ",
+            "item_amount": 30049039.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "3 PANTAKIND 40MG INJ 30049039 - A2IQY",
+            "item_amount": 36.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "4 JUSTIN-AQ INT",
+            "item_amount": 30049069.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "5 PROPORT NS 100ML 30049099 = PT25NS2013AE06/28 47.92",
+            "item_amount": 4191.68,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "5 PROPORT NS",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "5 PROPORT NS 100ML",
+            "item_amount": 30049099.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "5 PROPORT NS 100ML 30049099 = PT25NS2013AE06/28 47.92 4",
+            "item_amount": 191.68,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 OMNIVAN 10ML",
+            "item_amount": 90183100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 OMNIVAN 10ML 90183100 = 25G18M",
+            "item_amount": 8203.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 a) OMNIVAN 2ML",
+            "item_amount": 90183100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "6 a) OMNIVAN 2ML 90183100 = 25E31M",
+            "item_amount": 8202.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "8 PREP RAZOR MEDI NORM - = AEO",
+            "item_amount": 524.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "3 TETANUS TOXOID INJ = =",
+            "item_amount": 2308.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "10 TRULON SN 3336 = = C250026 06/",
+            "item_amount": 29259.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "10 TRULON SN",
+            "item_amount": 3336.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "10 TRULON SN 3336 = = C",
+            "item_amount": 250026.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "10 TRULON SN 3336 = = C250026 06/29",
+            "item_amount": 259.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "10 TRULON SN 3336 = = C250026 06/29 259 i",
+            "item_amount": 259.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "f",
+            "item_amount": 204.64,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 85,
+    "reconciled_amount": 1729041360.58
+  }
+}

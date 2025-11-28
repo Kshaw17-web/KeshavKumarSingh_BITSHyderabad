@@ -1,0 +1,74 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Final Bill",
+        "bill_items": [
+          {
+            "item_name": "mm Total of CONSULTATION",
+            "item_amount": 2450.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "\\PATHOLOGY",
+            "item_amount": 999316.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "Total of PATHOLOGY",
+            "item_amount": 10098.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "PHARMACY CHARGE",
+            "item_amount": 999311.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "o in ___ Total of PHARMACY CHARGE",
+            "item_amount": 52868.25,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Grand Total",
+            "item_amount": 73420.25,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 6,
+    "reconciled_amount": 2137463.5
+  }
+}

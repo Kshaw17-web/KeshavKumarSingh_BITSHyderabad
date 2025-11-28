@@ -1,0 +1,207 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "13,818.40",
+            "item_amount": 15020.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Total 15,020.00",
+            "item_amount": 13818.4,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "13,818.40",
+            "item_amount": 20.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Total 15,020.00 13",
+            "item_amount": 818.4,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2,070.00",
+            "item_amount": 2250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Total 2,250.00",
+            "item_amount": 2070.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "2,070.00",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Total 2,250.00 2",
+            "item_amount": 70.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "chan pena DONOR HUMAN MILK) PROCESSING L/L1/25 No 300.",
+            "item_amount": 276.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "276.00",
+            "item_amount": 300.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "chan pena DONOR HUMAN MILK) PROCESSING L/L1/25 No 300.00",
+            "item_amount": 276.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "3",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "Total 711.",
+            "item_amount": 15711.15,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "711.15",
+            "item_amount": 711.15,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Total",
+            "item_amount": 711.15,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "STERILE WATER FOR INJECTIONS",
+            "item_amount": 107.61,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "DEXTROSE 10%",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "DEXTROSE 10% S",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "4",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "SYRINGE W/O NEEDLE 20ML L/L",
+            "item_amount": 160.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "5",
+        "page_type": "Pharmacy",
+        "bill_items": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "6",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "SYRINGE W/O NEEDLE 20ML L/L",
+            "item_amount": 160.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "DISPO SYRINGE 10ML WITHOUT",
+            "item_amount": 112.5,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 20,
+    "reconciled_amount": 53842.36
+  }
+}

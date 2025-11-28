@@ -1,0 +1,1438 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "Packed Cell (NAT Tested)",
+            "item_amount": 2500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Packed Cell (NAT Tested) 2",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "CT Trauma Screening(Head+Chest+Abdomen)",
+            "item_amount": 6900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "CT Trauma Screening(Head+Chest+Abdomen) 6",
+            "item_amount": 900.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Peripheral Angio (Lower Limb)",
+            "item_amount": 10200.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "Peripheral Angio (Lower Limb) 10",
+            "item_amount": 200.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "; BAG-URINE-ROMO-10 G25G",
+            "item_amount": 50.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-SURGICAL-6.5NO 25H",
+            "item_amount": 152.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-EMESET-4MG-2ML 5A",
+            "item_amount": 162.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABILYTE-FREEFLEX-SOOML 82TC789",
+            "item_amount": 1321.56,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABILYTE-FREEFLEX-SOOML 82TC",
+            "item_amount": 789.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABILYTE-FREEFLEX-SOOML 82TC789 1",
+            "item_amount": 321.56,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782",
+            "item_amount": 1747.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG",
+            "item_amount": 782.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782 1",
+            "item_amount": 747.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-OFRAMAX-1GM Eyco",
+            "item_amount": 18.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON-18G",
+            "item_amount": 5065445.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-SET-TRANS-FLOW G25H",
+            "item_amount": 10.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "JELLY-LOX-2%-30GM",
+            "item_amount": 11561.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "TUBE-UNICONNECT-WITH-Y- XMYT",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "CATHETER-FOLEYS-2WAY-14FR- B17A",
+            "item_amount": 101.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 2410109.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-1000ML-NON",
+            "item_amount": 3060982.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1V-FLUID-RL-500ML-NON-PVC- 1138318)",
+            "item_amount": 2120.7,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1V-FLUID-RL",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "1V-FLUID-RL-500ML-NON-PVC- 1138318) 2",
+            "item_amount": 120.7,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON-21G- G25H",
+            "item_amount": 20.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-BIOTAX-1GM FA",
+            "item_amount": 148.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-EMESET-4MG-2ML 5A",
+            "item_amount": 162.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-500ML-NON",
+            "item_amount": 1068529.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-METROGYL-IV-SOOMG",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-METROGYL-IV-SOOMG-100ML = yIIW",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-AMIKAMAC",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-AMIKAMAC-250MG",
+            "item_amount": 18253290.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-AMIKAMAC-250MG 18253290 2",
+            "item_amount": 122.1,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782",
+            "item_amount": 1747.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782 1",
+            "item_amount": 747.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782",
+            "item_amount": 32241.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782 3",
+            "item_amount": 2241.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-RANTAC-50MG-2ML XIR",
+            "item_amount": 22412.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-STAFCURE-1.5GM 18252410",
+            "item_amount": 2723.74,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-STAFCURE-1.5GM 18252410 2",
+            "item_amount": 723.74,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "TV-CANNULA-VENFLON-18G",
+            "item_amount": 5065445.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "MOUTH-WASH-HEXIDINE-160ML L25130",
+            "item_amount": 1136.33,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "MOUTH-WASH-HEXIDINE",
+            "item_amount": 160.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "MOUTH-WASH-HEXIDINE-160ML L",
+            "item_amount": 25130.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "LANCET-ULTRA-SAFETY",
+            "item_amount": 250705.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-100ML-NON- 2062372",
+            "item_amount": 6126.06,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-100ML-NON- 2062372 6",
+            "item_amount": 126.06,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "UNDERPAD-DIGNITY-MATTEY- G",
+            "item_amount": 2511400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SPIROMETER-RESPIROMETER G25G040",
+            "item_amount": 1132.9,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SPIROMETER-RESPIROMETER G25G040 1",
+            "item_amount": 132.9,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "CATHETER-URETHERAL-K",
+            "item_amount": 9025072.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "CATHETER-URETHERAL-K-90",
+            "item_amount": 2507288.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "COVER-C-ARM-D",
+            "item_amount": 3062506.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "COVER-C-ARM-D306 2506DD0",
+            "item_amount": 1212.81,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "COVER-C-ARM-D306 2506DD0 1",
+            "item_amount": 212.81,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-ORTHOPAEDIC-8NO 25070015",
+            "item_amount": 2112.88,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-ORTHOPAEDIC-8NO",
+            "item_amount": 25070015.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-ORTHOPAEDIC-8NO 25070015 2",
+            "item_amount": 112.88,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-POWDER-FREE-7NO- 25040115",
+            "item_amount": 4212.8,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-POWDER-FREE-7NO",
+            "item_amount": 25040115.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-POWDER-FREE-7NO- 25040115 4",
+            "item_amount": 212.8,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-SURGICAL-6.5NO 25H",
+            "item_amount": 3015.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "GLOVES-SURGICAL-7.5NO",
+            "item_amount": 2565123.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-SURGICAL-7NO",
+            "item_amount": 253207.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GOWN-SURGICAL-FULL-DISPO 25",
+            "item_amount": 1483.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "HIV-KIT-SURGICAL-DISPO KT2410",
+            "item_amount": 31181.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "HIV-KIT-SURGICAL-DISPO KT",
+            "item_amount": 2410.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "HIV-KIT-SURGICAL-DISPO KT2410 3",
+            "item_amount": 1181.25,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782",
+            "item_amount": 1747.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG",
+            "item_amount": 782.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782 1",
+            "item_amount": 747.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-TERMIN",
+            "item_amount": 300.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-TERMIN-300MG-10ML V",
+            "item_amount": 307258.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON-20G",
+            "item_amount": 5209519.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-SET-NOVOFUSION 6188925",
+            "item_amount": 1241.88,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-SET-NOVOFUSION",
+            "item_amount": 6188925.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-SET-NOVOFUSION 6188925 1",
+            "item_amount": 241.88,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "NEEDLE-DISPO-18NO-HMD",
+            "item_amount": 36444.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "NEEDLE-SPINAL-26G-BD",
+            "item_amount": 2501025.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "POP-BSN-GYPSONA-6INCH 25H003",
+            "item_amount": 41012.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "POP-BSN-GYPSONA-6INCH 25H",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "POP-BSN-GYPSONA-6INCH 25H003 4",
+            "item_amount": 1012.5,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SHEET-DISPO-BLUE- 100X150CM UNI/25/0",
+            "item_amount": 2210.0,
+            "item_rate": 150.0,
+            "item_quantity": 100.0,
+            "confidence": null
+          },
+          {
+            "item_name": "SHEET-DISPO-BLUE",
+            "item_amount": 100.0,
+            "item_rate": 150.0,
+            "item_quantity": 100.0,
+            "confidence": null
+          },
+          {
+            "item_name": "SHEET-DISPO-BLUE- 100X",
+            "item_amount": 150.0,
+            "item_rate": 150.0,
+            "item_quantity": 100.0,
+            "confidence": null
+          },
+          {
+            "item_name": "SHEET-DISPO-BLUE- 100X150CM UNI/25/0 2",
+            "item_amount": 210.0,
+            "item_rate": 150.0,
+            "item_quantity": 100.0,
+            "confidence": null
+          },
+          {
+            "item_name": "SUCTION-SET-YANKAUR-VACCU- G25E010",
+            "item_amount": 1108.94,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SUCTION-SET-YANKAUR-VACCU- G25E010 1",
+            "item_amount": 108.94,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SYRINGE-DISPO-2ML-HMD",
+            "item_amount": 524022.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SYRINGE-DISPO-S5OML-HMD",
+            "item_amount": 520506.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SPONGE-RADIOACTIVE-10X10- GS-70 2",
+            "item_amount": 180.0,
+            "item_rate": 10.0,
+            "item_quantity": 10.0,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-ROPIN-HEAVY 1984006",
+            "item_amount": 1132.15,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-ROPIN-HEAVY",
+            "item_amount": 1984006.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-ROPIN-HEAVY 1984006 1",
+            "item_amount": 132.15,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 2410107.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-1000ML-NON- 3061021L",
+            "item_amount": 2124.48,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-1000ML-NON",
+            "item_amount": 3061021.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-1000ML-NON- 3061021L 2",
+            "item_amount": 124.48,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SUTURE-CENTISORB-PNW",
+            "item_amount": 2382.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-RL",
+            "item_amount": 1000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-EMESET-4MG-2ML 5A",
+            "item_amount": 162.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-METROGYL-IV",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-METROGYL-IV-500MG-100ML yIIW",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-STAFCURE-1.5GM 18252410",
+            "item_amount": 2723.74,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-STAFCURE-1.5GM",
+            "item_amount": 18252410.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-100ML-NON",
+            "item_amount": 2062372.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "UNDERPAD-DIGNITY-MATTEY- G",
+            "item_amount": 2511400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-TRAMASURE",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-TRAMASURE-100MG-2ML &31Y",
+            "item_amount": 21.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "RESPULES-BUDECORT-1MG 5SA0887",
+            "item_amount": 5140.3,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "RESPULES-BUDECORT-1MG 5SA0887 5",
+            "item_amount": 140.3,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "BANDAGE-CREPE-6INCH",
+            "item_amount": 17.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "GLOVES-POWDER-FREE-6.5NO- .25H",
+            "item_amount": 7087.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "4",
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "GLOVES-SURGICAL-7.5NO",
+            "item_amount": 2515136.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "DRESSING-OPSITE-POST-OP- 202508",
+            "item_amount": 2905.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "DRESSING-OPSITE-POST-OP",
+            "item_amount": 202508.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "DRESSING-OPSITE-POST-OP- 202508 2",
+            "item_amount": 905.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "BT-SET-ROMSONS G25A",
+            "item_amount": 20.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SUPPOSITORY-GERBISA-10MG TA",
+            "item_amount": 498.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IMPLANT-TWIN-LOCK-BCP-SCREW- 07011062",
+            "item_amount": 830800.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IMPLANT-TWIN-LOCK-BCP-SCREW",
+            "item_amount": 7011062.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IMPLANT-TWIN-LOCK-BCP-SCREW- 07011062 8",
+            "item_amount": 30800.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IMPLANT-WASHER--TIT 04089625",
+            "item_amount": 1770.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IMPLANT-WASHER--TIT",
+            "item_amount": 4089625.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IMPLANT-WASHER--TIT 04089625 1",
+            "item_amount": 770.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IMPLANT-TWIN-LOCK-BCP-VERO- 01078825",
+            "item_amount": 119600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IMPLANT-TWIN-LOCK-BCP-VERO",
+            "item_amount": 1078825.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IMPLANT-TWIN-LOCK-BCP-VERO- 01078825 1",
+            "item_amount": 19600.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782",
+            "item_amount": 1747.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG",
+            "item_amount": 782.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782 1",
+            "item_amount": 747.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "UNDERPAD-DIGNITY-MATTEY- G",
+            "item_amount": 2511400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "MASK-OXYGEN-ADULT G25G",
+            "item_amount": 40.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-EMESET-4MG-2ML 5A",
+            "item_amount": 162.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782",
+            "item_amount": 32241.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-KABIMOL-FREEFLEX-100ML 82UG782 3",
+            "item_amount": 2241.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-METROGYL-IV",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-METROGYL-IV-500MG-100ML \u2014 YIIW",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-RANTAC-50MG-2ML XIR",
+            "item_amount": 22412.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-STAFCURE-1.5GM",
+            "item_amount": 18252410.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-STAFCURE-1.5GM 18252410 2",
+            "item_amount": 723.74,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-TRAMASURE",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-TRAMASURE-100MG-2ML E31Y",
+            "item_amount": 21.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-AMIKAMAC",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-1LO00ML-NON",
+            "item_amount": 2062406.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON-24G- G25B",
+            "item_amount": 20.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "RESPULES-BUDECORT-1MG 5SA",
+            "item_amount": 887.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "RESPULES-BUDECORT-1MG 5SA0887 5",
+            "item_amount": 140.3,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-RANTAC-50MG-2ML XIR",
+            "item_amount": 22412.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-METROGYL-IV-S00MG-100ML \u2014- y1TW",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-TRAMASURE-100MG-2ML E&31Y",
+            "item_amount": 21.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON-20G",
+            "item_amount": 5217743.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "LANCET-ULTRA-SAFETY",
+            "item_amount": 250705.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 2410109.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "5",
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "IV-FLUID-NS-0.9%-100ML-NON- 2062384",
+            "item_amount": 6126.06,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-100ML-NON",
+            "item_amount": 2062384.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-NS-0.9%-100ML-NON- 2062384 6",
+            "item_amount": 126.06,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "UNDERPAD-DIGNITY-MATTEY- G",
+            "item_amount": 2511400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-CANNULA-VENFLON-18G",
+            "item_amount": 5065445.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- = G",
+            "item_amount": 2410109.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-SET-TRANS-FLOW G25H",
+            "item_amount": 10.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-EMESET-4MG-2ML 5A",
+            "item_amount": 162.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-RANTAC-50MG-2ML XIR",
+            "item_amount": 22412.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "MASK-NEBULISER-ADULT G25F",
+            "item_amount": 40.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-RANTAC-SOMG-2ML _ XIR",
+            "item_amount": 22412.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-TRAMASURE",
+            "item_amount": 100.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "INJ-TRAMASURE-100MG-2ML E31Y",
+            "item_amount": 21.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "LANCET-ULTRA-SAFETY",
+            "item_amount": 250705.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-DRESSING-INTRA-SHIELD- G",
+            "item_amount": 2410109.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-RL",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "IV-FLUID-DEXTROSE-5%",
+            "item_amount": 500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "SYRINGE-ROMOJET-ROMSON-24G- G25B",
+            "item_amount": 20.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "TAPE-PAPER-MICROPORE-3INCH RO72505",
+            "item_amount": 1114.84,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "TAPE-PAPER-MICROPORE-3INCH RO",
+            "item_amount": 72505.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "TAPE-PAPER-MICROPORE-3INCH RO72505 1",
+            "item_amount": 114.84,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "AUSTRALIA ANTIGEN HBS AG x $",
+            "item_amount": 205250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "AUSTRALIA ANTIGEN HBS AG x $205",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "COMPLETE ABG x VWM",
+            "item_amount": 9650.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "HCV CARD TEST x $",
+            "item_amount": 204440.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "HCV CARD TEST x $204",
+            "item_amount": 440.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "LIVER FUNCTION TEST LFT x V",
+            "item_amount": 206620.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "LIVER FUNCTION TEST LFT x V",
+            "item_amount": 206.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "LIVER FUNCTION TEST LFT x V206",
+            "item_amount": 620.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "PTI x H",
+            "item_amount": 131230.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "PTI x H",
+            "item_amount": 131.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          },
+          {
+            "item_name": "PTI x H131",
+            "item_amount": 230.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "confidence": null
+          }
+        ],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 197,
+    "reconciled_amount": 213333847.16
+  }
+}

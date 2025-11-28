@@ -6,3 +6,5 @@ ocr_outputs/
 *.jpg
 *.jpeg
 *.log
+
+extractor_old/

@@ -14,9 +14,12 @@ layoutparser
 langdetect
 sentence-transformers
 torch
-transformers
+transformers>=4.30.0
 scikit-learn
 pytesseract
 aiohttp
 numpy
+# LayoutLMv3 dependencies (optional, falls back to heuristic if not available)
+# transformers>=4.30.0  # Already included above
+# torch  # Already included above
 

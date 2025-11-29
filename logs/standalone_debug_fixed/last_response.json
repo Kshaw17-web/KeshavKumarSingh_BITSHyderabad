@@ -1,0 +1,125 @@
+{
+  "source_file": "C:\\\\Users\\\\ksr20\\\\OneDrive\\\\Desktop\\\\Bajaj Finserv Datathon\\\\data\\\\raw\\\\training_samples\\\\TRAINING_SAMPLES\\\\train_sample_2.pdf",
+  "extraction_result": {
+    "pagewise_line_items": [
+      {
+        "page_no": 1,
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "))o Rahat 1 me ak rm a",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Ve oor atMAULAYTwtFPTA 71a ee e",
+            "item_amount": 7.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ifoscun EerzwiastTae 5 7G OW",
+            "item_amount": 786.0,
+            "item_rate": 5.0,
+            "item_quantity": 5,
+            "gst_percent": null
+          },
+          {
+            "item_name": "eee 3maee ams",
+            "item_amount": 306.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": null,
+            "item_amount": 5.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": null,
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          }
+        ],
+        "reported_total": null,
+        "final_total": 1106.0
+      },
+      {
+        "page_no": 2,
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "1 Woe e2ebmTikesintTaaL 1 a)t a t",
+            "item_amount": 2.0,
+            "item_rate": 2.0,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "A S6os weancerhat i",
+            "item_amount": 6.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1) repr watt",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": null,
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "reported_total": null,
+        "final_total": 10.0
+      },
+      {
+        "page_no": 3,
+        "page_type": "Bill Detail",
+        "bill_items": [
+          {
+            "item_name": "a a LDS. 5 ant Pd",
+            "item_amount": 5.0,
+            "item_rate": 5.0,
+            "item_quantity": 5,
+            "gst_percent": null
+          },
+          {
+            "item_name": "he Aa 4 on e ere mee",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "B sxametait",
+            "item_amount": 5.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "reported_total": null,
+        "final_total": 14.0
+      }
+    ],
+    "total_item_count": 13,
+    "reconciled_amount": 1130.0
+  },
+  "n_pages": 3
+}

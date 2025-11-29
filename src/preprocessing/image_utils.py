@@ -210,20 +210,69 @@ def preprocess_image_for_ocr(
     if not fast_mode:
         img_array = _deskew_image(img_array)
     
-    # Step 7: Fast CLAHE (OpenCV is faster than skimage)
-    try:
-        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-        img_array = clahe.apply(img_array)
-    except Exception:
-        pass
+    # Step 7: Adaptive preprocessing - try multiple methods
+    if not fast_mode:
+        try:
+            # Try OTSU threshold first (good for high contrast)
+            _, binary_otsu = cv2.threshold(img_array, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
+            
+            # Check if OTSU produced good results (not too dark/light)
+            otsu_mean = np.mean(binary_otsu)
+            if 50 < otsu_mean < 200:
+                # OTSU looks good, use it
+                img_array = binary_otsu
+            else:
+                # OTSU failed, try adaptive threshold
+                try:
+                    img_array = cv2.adaptiveThreshold(
+                        img_array, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+                        cv2.THRESH_BINARY_INV, 11, 2
+                    )
+                except Exception:
+                    # Fallback: use CLAHE
+                    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+                    img_array = clahe.apply(img_array)
+        except Exception:
+            # Fallback: Fast CLAHE (OpenCV is faster than skimage)
+            try:
+                clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+                img_array = clahe.apply(img_array)
+            except Exception:
+                pass
+    else:
+        # Fast mode: just CLAHE
+        try:
+            clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+            img_array = clahe.apply(img_array)
+        except Exception:
+            pass
     
-    # Step 8: Morphological closing (skip in fast mode)
+    # Step 8: Auto-binary for faded text (if image is still too light)
+    if not fast_mode:
+        try:
+            mean_brightness = np.mean(img_array)
+            if mean_brightness > 200:  # Very light/faded text
+                # Apply aggressive thresholding
+                _, img_array = cv2.threshold(img_array, 240, 255, cv2.THRESH_BINARY_INV)
+        except Exception:
+            pass
+    
+    # Step 9: Morphological closing (skip in fast mode)
     if not fast_mode:
         try:
             kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
             img_array = cv2.morphologyEx(img_array, cv2.MORPH_CLOSE, kernel, iterations=1)
         except Exception:
             pass
+    
+    # Step 10: Ensure minimum width for better OCR
+    h, w = img_array.shape[:2]
+    if w < 1200:
+        # Upscale to minimum width
+        scale = 1200 / w
+        new_w = 1200
+        new_h = int(h * scale)
+        img_array = cv2.resize(img_array, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
     
     # Save debug image if requested
     if save_debug_path:

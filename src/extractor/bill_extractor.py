@@ -835,7 +835,7 @@ def extract_bill_data_with_tsv(
             debug_dir.mkdir(parents=True, exist_ok=True)
         
         # Integration parameters
-        NUMERIC_CONF_THRESHOLD = 80    # if token.conf < this, try numeric re-ocr (raised for leaderboard)
+        NUMERIC_CONF_THRESHOLD = 60    # if token.conf < this, try numeric re-ocr (as per requirements)
         QUANTITY_MAX_REASONABLE = 100  # prefer qty <= 100; >100 may be mis-assigned
         
         # Process each page using improved extraction
@@ -883,9 +883,18 @@ def extract_bill_data_with_tsv(
                 parsed_items = []
                 
                 # 4) Parse each line using improved parse_row_from_columns
-                for ln in lines:
+                # First, try to detect and merge split lines (heuristic rule)
+                merged_lines = _merge_split_lines(lines)
+                
+                for ln in merged_lines:
                     cols = map_tokens_to_columns(ln, col_centers)
                     parsed = parse_row_from_columns(cols)
+                    
+                    # Heuristic: Detect structured rows like "CANNULA 22G 1 105.00 0.00 105.00"
+                    if not parsed.get("item_amount") or parsed.get("item_amount") == 0:
+                        structured_parsed = _parse_structured_row(ln)
+                        if structured_parsed and structured_parsed.get("item_amount"):
+                            parsed = structured_parsed
                     
                     # if parsed has numeric tokens with low confidences, attempt numeric re-ocr
                     try:
@@ -931,8 +940,8 @@ def extract_bill_data_with_tsv(
                         
                         parsed_items.append(parsed)
                 
-                # 6) Fallback: if no parsed_items found, run very simple rightmost-number heuristic
-                if len(parsed_items) == 0:
+                # 6) Fallback: if <3 parsed_items found, run very simple rightmost-number heuristic
+                if len(parsed_items) < 3:
                     # quick fallback: take each line and pick the rightmost numeric token as amount
                     for ln in lines:
                         tokens = [t['text'] for t in ln if t.get('text')]
@@ -1000,10 +1009,13 @@ def extract_bill_data_with_tsv(
                     except Exception:
                         pass
                 
+                # Auto-detect page_type
+                page_type = _detect_page_type_from_text(ocr_text_joined)
+                
                 # prepare schema part for this page
                 page_obj = {
                     "page_no": str(page_idx),
-                    "page_type": "Bill Detail",
+                    "page_type": page_type,
                     "bill_items": deduped,
                     "fraud_flags": [],
                     "reported_total": reported_total,

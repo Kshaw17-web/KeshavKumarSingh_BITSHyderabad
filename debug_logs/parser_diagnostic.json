@@ -1,0 +1,844 @@
+{
+  "num_lines": 52,
+  "centers": [
+    255.10000000000002,
+    762.7,
+    1164.9000000000005,
+    1839.4
+  ],
+  "probable_count": 27,
+  "rows": [
+    {
+      "columns": [
+        "oo",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "oo",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "REG oe",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "REG oe",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "aaa",
+        "",
+        "MEDICOS",
+        ""
+      ],
+      "parsed": {
+        "item_name": "aaa MEDICOS",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "ALL",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "ALL",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "",
+        "Le",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "Le",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "ti",
+        ". eee",
+        "PMS Ae ON",
+        "eee nn tn TT CS"
+      ],
+      "parsed": {
+        "item_name": "ti . eee PMS Ae ON eee nn tn TT CS",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "THSINGIE! HSN C. BATCH",
+        "EXP Description",
+        "",
+        "QTY ~~ RATE DISC. AMOUNT GST%"
+      ],
+      "parsed": {
+        "item_name": "THSINGIE! HSN C. BATCH EXP Description ~~ RATE DISC. AMOUNT GST%",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "EVE s GH in ee",
+        "",
+        "tt",
+        "OOD"
+      ],
+      "parsed": {
+        "item_name": "EVE s GH in ee tt OOD",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "i HIE, 3009 138257355",
+        "09/28 CANNULA",
+        "22 NO",
+        "1 105.00 0.00 105.00 5"
+      ],
+      "parsed": {
+        "item_name": "i HIE, 3009 138257355 09/28 CANNULA 22",
+        "item_amount": 105.0,
+        "item_rate": 105.0,
+        "item_quantity": 105,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "i H tl 3004 600",
+        "04/27 FIXER}",
+        "",
+        "1 35.00 0.00 33.00 5."
+      ],
+      "parsed": {
+        "item_name": "i H tl 3004 600 04/27 FIXER}",
+        "item_amount": 33.0,
+        "item_rate": 33.0,
+        "item_quantity": 33,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "daa 3004",
+        "K24A020525 1228 IVSETI",
+        "",
+        "1 420.00 0,00 120.00 5"
+      ],
+      "parsed": {
+        "item_name": "daa 3004 K24A020525 1228 IVSETI",
+        "item_amount": 120.0,
+        "item_rate": 120.0,
+        "item_quantity": 120,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "te ili, 3003",
+        "_D2372509A 07/27 ERIDOT",
+        "1.5GM (CEFTRIAXONE",
+        "3. 1999.00 0.00 5997.00 12"
+      ],
+      "parsed": {
+        "item_name": "te ili, 3003 _D2372509A 07/27 ERIDOT 1.5GM (CEFTRIAXONE",
+        "item_amount": 5997.0,
+        "item_rate": 5997.0,
+        "item_quantity": 3,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "al al 3004",
+        "BM1402503A 07/27. FLUTECH",
+        "2GM ( FLUCLOXACIL",
+        "2 1999.00 0.00 3998.00 12"
+      ],
+      "parsed": {
+        "item_name": "al al 3004 BM1402503A 07/27. FLUTECH 2GM ( FLUCLOXACIL",
+        "item_amount": 3998.0,
+        "item_rate": 3998.0,
+        "item_quantity": 2,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "t a It 3003 _",
+        "DOB9Z404A 06726 ZONEG",
+        "1200MG ( GLUTATHION",
+        "2 2450.00 0.00 4900.00 )"
+      ],
+      "parsed": {
+        "item_name": "t a It 3003 _ DOB9Z404A 06726 ZONEG 1200MG ( GLUTATHION 2 2450.00 0.00 4900.00 )",
+        "item_amount": 4900.0,
+        "item_rate": 0.0,
+        "item_quantity": 2,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "He i 9018 SN312292",
+        "0227 EMESET2MG",
+        "2ML INI.",
+        "3 13.35 0.00 40.05 12"
+      ],
+      "parsed": {
+        "item_name": "He i 9018 SN312292 0227 EMESET2MG 2ML INI.",
+        "item_amount": 40.05,
+        "item_rate": 40.05,
+        "item_quantity": 3,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "‘i i. 3004 «=.",
+        "D24AM020G 09/26 ESOMAN",
+        "40MG INJ",
+        "2 430.00 0.00 $60.00 12"
+      ],
+      "parsed": {
+        "item_name": "‘i i. 3004 «=. D24AM020G 09/26 ESOMAN 40MG INJ",
+        "item_amount": 60.0,
+        "item_rate": 60.0,
+        "item_quantity": 60,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "HSA; 3002 T393L619",
+        "08/26 NEOMOL",
+        "IV t0OML",
+        "3 522.00 0.00 1566.00 5"
+      ],
+      "parsed": {
+        "item_name": "HSA; 3002 T393L619 08/26 NEOMOL IV t0OML",
+        "item_amount": 1566.0,
+        "item_rate": 1566.0,
+        "item_quantity": 522,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "4h Ha",
+        ";",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "4h Ha ;",
+        "item_amount": 4.0,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "i|iies| 9018 0325009",
+        "04728",
+        "BUSCOGASTINJ IML",
+        "2 12.80 0,00 25.60 12"
+      ],
+      "parsed": {
+        "item_name": "i|iies| 9018 0325009 04728 BUSCOGASTINJ IML",
+        "item_amount": 25.6,
+        "item_rate": 25.6,
+        "item_quantity": 2,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "ue 3004 «= PA24114",
+        "09726 DYNAPAR",
+        "AQINJ",
+        "2 43.60 0.00 87.20 12"
+      ],
+      "parsed": {
+        "item_name": "ue 3004 «= PA24114 09726 DYNAPAR AQINJ",
+        "item_amount": 87.2,
+        "item_rate": 87.2,
+        "item_quantity": 2,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "AP2iNE| 3004",
+        "BMT24-004A 03/26",
+        "VIMZOTECH INI",
+        "4 1700.00 0.00 1700.00 12"
+      ],
+      "parsed": {
+        "item_name": "AP2iNE| 3004 BMT24-004A 03/26 VIMZOTECH INI",
+        "item_amount": 1700.0,
+        "item_rate": 1700.0,
+        "item_quantity": 4,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "ai i H | 3008.",
+        "2520087 01/28“",
+        "MUCAINE MINT GEL 200ML",
+        "4 267.36 0.00 267.36 12"
+      ],
+      "parsed": {
+        "item_name": "ai i H | 3008. 2520087 01/28“ MUCAINE MINT GEL 200ML",
+        "item_amount": 267.36,
+        "item_rate": 267.36,
+        "item_quantity": 4,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "wan Wl} 3008",
+        "MPF252125 11226 ARISTOZYME",
+        "200ML",
+        "1 162.00 0.00. 162.00 12"
+      ],
+      "parsed": {
+        "item_name": "wan Wl} 3008 MPF252125 11226 ARISTOZYME 200ML",
+        "item_amount": 162.0,
+        "item_rate": 162.0,
+        "item_quantity": 162,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "a i 3004 ©",
+        "A251087TM 01/27.",
+        "APTIVATE SYP 1*200ML",
+        "1 186.00 0.00 186.00 5"
+      ],
+      "parsed": {
+        "item_name": "a i 3004 © A251087TM 01/27. APTIVATE SYP 1*200ML",
+        "item_amount": 186.0,
+        "item_rate": 186.0,
+        "item_quantity": 186,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        ": ( ge 3008",
+        "SPA243770 11726 OSOLAC",
+        "100ML",
+        "1 129.15 0.00 129.15 5"
+      ],
+      "parsed": {
+        "item_name": ": ( ge 3008 SPA243770 11726 OSOLAC 100ML",
+        "item_amount": 129.15,
+        "item_rate": 129.15,
+        "item_quantity": 1,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "Halt Wr] 3004 ©",
+        "2501002281 07/27 NS SOOML",
+        "",
+        "2 100.20 0.00 200.40' 28"
+      ],
+      "parsed": {
+        "item_name": "Halt Wr] 3004 © 2501002281 07/27 NS SOOML",
+        "item_amount": 200.4,
+        "item_rate": 200.4,
+        "item_quantity": 2,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "migaiiiat: 3004",
+        "Ls004174 06/27 NS 100ML",
+        "",
+        "4 47.00 0.00 188.00 5"
+      ],
+      "parsed": {
+        "item_name": "migaiiiat: 3004 Ls004174 06/27 NS 100ML",
+        "item_amount": 188.0,
+        "item_rate": 188.0,
+        "item_quantity": 188,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "Hit | a 9018",
+        "PTDS915 95/30 2MLDS2ML",
+        "",
+        "5 7.00 0.00 35.00 5"
+      ],
+      "parsed": {
+        "item_name": "Hit | a 9018 PTDS915 95/30 2MLDS2ML",
+        "item_amount": 35.0,
+        "item_rate": 35.0,
+        "item_quantity": 35,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "| 3004 CSF",
+        "04/30 SMLDSSML",
+        "",
+        "3 10.00 0.00 30.00 5"
+      ],
+      "parsed": {
+        "item_name": "| 3004 CSF 04/30 SMLDSSML",
+        "item_amount": 30.0,
+        "item_rate": 30.0,
+        "item_quantity": 30,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "i me",
+        "",
+        "",
+        "."
+      ],
+      "parsed": {
+        "item_name": "i me .",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "nei Wi; 3004. $102009",
+        "03/30 J0ML",
+        "DS 10ML",
+        "3 15.00 0.00 45.00 5"
+      ],
+      "parsed": {
+        "item_name": "nei Wi; 3004. $102009 03/30 J0ML DS 10ML",
+        "item_amount": 45.0,
+        "item_rate": 45.0,
+        "item_quantity": 45,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "| le",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "| le",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "7 Bas ee",
+        "",
+        "ene",
+        "9.2"
+      ],
+      "parsed": {
+        "item_name": "7 Bas ee ene",
+        "item_amount": 7.0,
+        "item_rate": 7.0,
+        "item_quantity": 7,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "bets",
+        "",
+        "",
+        "SUB TOTAL: 49109.20"
+      ],
+      "parsed": {
+        "item_name": "bets SUB TOTAL:",
+        "item_amount": 49109.2,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "al i HIETAX ON",
+        "CGST% CGSTAMT",
+        "SGST% SGSTAMT",
+        "DISC. AMT: ent"
+      ],
+      "parsed": {
+        "item_name": "al i HIETAX ON CGST% CGSTAMT SGST% SGSTAMT DISC. AMT: ent",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "eT 0.00",
+        "0.00 0.00",
+        "0.00 0.00",
+        ": 783."
+      ],
+      "parsed": {
+        "item_name": "eT 0.00 0.00 0.00 0.00 0.00 :",
+        "item_amount": 783.0,
+        "item_rate": 0.0,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "i ; Hiit2392.99",
+        "2.50 58.08",
+        "2:50 58.08",
+        "SGST AMT: 783.78"
+      ],
+      "parsed": {
+        "item_name": "i ; Hiit2392.99 2.50 58.08 2:50 58.08 SGST AMT:",
+        "item_amount": 783.78,
+        "item_rate": 58.08,
+        "item_quantity": 250,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "Gas eil(it94729.65",
+        "6.00 703.78",
+        "6.00 703.78",
+        "ROUNDOFF AMT : 0,24"
+      ],
+      "parsed": {
+        "item_name": "Gas eil(it94729.65 6.00 703.78 6.00 703.78 ROUNDOFF AMT :",
+        "item_amount": 703.78,
+        "item_rate": 703.78,
+        "item_quantity": 6,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "igtetaise) 0.00",
+        "9.00 0.00",
+        "9.00 0.00",
+        "NET AMT : 20677.00"
+      ],
+      "parsed": {
+        "item_name": "igtetaise) 0.00 9.00 0.00 9.00 0.00 NET AMT :",
+        "item_amount": 20677.0,
+        "item_rate": 0.0,
+        "item_quantity": 9,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "ih (i,/156.56",
+        "14.00 21.92",
+        "14.00 21.92",
+        "PAID AMT : 0.00"
+      ],
+      "parsed": {
+        "item_name": "ih (i,/156.56 14.00 21.92 14.00 21.92 PAID AMT :",
+        "item_amount": 21.92,
+        "item_rate": 21.92,
+        "item_quantity": 14,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "i “He:",
+        "",
+        "",
+        "BALANCE AMT : 20677.00"
+      ],
+      "parsed": {
+        "item_name": "i “He: BALANCE AMT :",
+        "item_amount": 20677.0,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "bel REET:",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "bel REET:",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "a ZHHRE",
+        "",
+        "",
+        "‘"
+      ],
+      "parsed": {
+        "item_name": "a ZHHRE ‘",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "i it ie",
+        "",
+        "",
+        "7"
+      ],
+      "parsed": {
+        "item_name": "i it ie",
+        "item_amount": 7.0,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": true
+    },
+    {
+      "columns": [
+        "WE!",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "WE!",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "| HbR!",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "| HbR!",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "AREA",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "AREA",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "He REE",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "He REE",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "x Ht ini",
+        "",
+        "",
+        ";"
+      ],
+      "parsed": {
+        "item_name": "x Ht ini ;",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "PHASE Lai",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "PHASE Lai",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "ayy aH i",
+        "",
+        "",
+        ""
+      ],
+      "parsed": {
+        "item_name": "ayy aH i",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    },
+    {
+      "columns": [
+        "i ‘ IBA",
+        ":",
+        "",
+        ": :"
+      ],
+      "parsed": {
+        "item_name": "i ‘ IBA : : :",
+        "item_amount": null,
+        "item_rate": null,
+        "item_quantity": null,
+        "gst_percent": null
+      },
+      "probable": false
+    }
+  ]
+}

@@ -15,7 +15,8 @@ from typing import List, Dict, Any, Optional, Union
 
 from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, RedirectResponse
+from fastapi.staticfiles import StaticFiles
 
 # --- IMPORTS ---
 # Ensure these match your folder structure
@@ -46,6 +47,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Serve static files (for favicon, etc.)
+static_dir = Path("static")
+static_dir.mkdir(exist_ok=True)
+app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
 
 logger = logging.getLogger("uvicorn")
 MAX_WORKERS = min(8, os.cpu_count() or 4)

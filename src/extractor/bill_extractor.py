@@ -963,6 +963,25 @@ def extract_bill_data_with_tsv(
                 
                 final_total, method = reconcile_totals(deduped, reported_total)
                 
+                # Save parser diagnostic for this page
+                if run_log_dir:
+                    try:
+                        parser_diagnostic = {
+                            "page_no": page_idx,
+                            "raw_lines_count": len(lines),
+                            "column_centers": col_centers,
+                            "parsed_items_before_dedup": parsed_items,
+                            "deduped_items": deduped,
+                            "reported_total": reported_total,
+                            "final_total": final_total,
+                            "reconciliation_method": method
+                        }
+                        diagnostic_path = run_log_dir / f"{request_id or 'page'}_p{page_idx}_parser_diagnostic.json"
+                        with open(diagnostic_path, 'w', encoding='utf-8') as f:
+                            json.dump(parser_diagnostic, f, ensure_ascii=False, indent=2)
+                    except Exception:
+                        pass
+                
                 # prepare schema part for this page
                 page_obj = {
                     "page_no": str(page_idx),

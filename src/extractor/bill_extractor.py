@@ -877,7 +877,8 @@ def extract_bill_data_with_tsv(
                 
                 # 3) Group to lines and detect columns
                 lines = group_words_to_lines(ocr)
-                col_centers = detect_column_centers(lines, max_columns=6)
+                # Pass cv2_img for projection-based fallback if needed
+                col_centers = detect_column_centers(lines, max_columns=6, gray_img_array=cv2_img)
                 
                 parsed_items = []
                 

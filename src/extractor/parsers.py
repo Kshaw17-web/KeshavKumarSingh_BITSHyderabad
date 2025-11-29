@@ -14,6 +14,7 @@ Intended to be fed with pytesseract image_to_data(..., Output.DICT) output.
 from typing import List, Dict, Any, Optional
 
 import re
+import numpy as np
 
 # optional dependency for clustering; if sklearn not available, fallback to heuristic
 try:
@@ -86,7 +87,7 @@ def group_words_to_lines(ocr_dict: Dict[str, Any]) -> List[List[Dict[str, Any]]]
     return processed
 
 
-def detect_column_centers(all_lines: List[List[Dict[str, Any]]], max_columns: int = 5) -> List[float]:
+def detect_column_centers(all_lines: List[List[Dict[str, Any]]], max_columns: int = 5, gray_img_array: Optional[np.ndarray] = None) -> List[float]:
     """
     Return sorted x-centers for columns detected across all lines.
     
@@ -105,8 +106,6 @@ def detect_column_centers(all_lines: List[List[Dict[str, Any]]], max_columns: in
         >>> col_centers = detect_column_centers(lines, max_columns=4)
         >>> print(f"Detected {len(col_centers)} columns at x-positions: {col_centers}")
     """
-    import numpy as np
-    
     # Collect token centers
     centers = []
     for line in all_lines:
@@ -226,7 +225,94 @@ def detect_column_centers(all_lines: List[List[Dict[str, Any]]], max_columns: in
     arr = np.array(centers)
     k = min(max_columns, max(2, len(arr) // 10))
     quantiles = np.quantile(arr, np.linspace(0, 1, k + 1)[1:-1])
-    return sorted(list(quantiles))
+    result = sorted(list(quantiles))
+    
+    # If we still have too few centers (< 2), try projection-based method if image provided
+    if len(result) < 2 and gray_img_array is not None:
+        try:
+            projection_centers = detect_columns_by_projection(gray_img_array, min_peak_distance=40)
+            if len(projection_centers) >= 2:
+                return projection_centers
+        except Exception:
+            # Projection method failed, return quantile result
+            pass
+    
+    # Return what we have
+    return result
+
+
+def detect_columns_by_projection(gray_img_array, min_peak_distance=40):
+    """
+    Detect column centers using vertical projection profile on grayscale image.
+    
+    This function uses image projection to find column boundaries by detecting
+    peaks in the vertical projection profile (sum of dark pixels per x-coordinate).
+    
+    Args:
+        gray_img_array: numpy 2D array (dtype uint8, 0..255) representing grayscale image
+        min_peak_distance: Minimum distance between peaks in pixels (default: 40)
+    
+    Returns:
+        List of x-coordinates representing detected column centers (peaks)
+    
+    Example:
+        >>> import cv2
+        >>> img = cv2.imread("invoice.png", cv2.IMREAD_GRAYSCALE)
+        >>> col_centers = detect_columns_by_projection(img, min_peak_distance=50)
+        >>> print(f"Detected {len(col_centers)} columns")
+    """
+    if gray_img_array is None or gray_img_array.size == 0:
+        return []
+    
+    # Ensure it's a 2D array
+    if len(gray_img_array.shape) != 2:
+        return []
+    
+    # Compute vertical projection profile: sum of dark pixels per x-coordinate
+    # Invert so dark pixels (text) have higher values
+    col_profile = (255 - gray_img_array).sum(axis=0)
+    
+    # Normalize & find peaks
+    if SCIPY_AVAILABLE and find_peaks is not None:
+        try:
+            # Use percentile-based height threshold (50th percentile)
+            height_threshold = np.percentile(col_profile, 50)
+            peaks, _ = find_peaks(
+                col_profile,
+                distance=min_peak_distance,
+                height=height_threshold
+            )
+            return list(peaks.astype(float))
+        except Exception:
+            # scipy failed, fall through to simple peak detection
+            pass
+    
+    # Fallback: Simple peak detection
+    peaks = []
+    height_threshold = np.percentile(col_profile, 50)
+    
+    for i in range(min_peak_distance, len(col_profile) - min_peak_distance):
+        if col_profile[i] >= height_threshold:
+            # Check if it's a local maximum
+            is_peak = True
+            for j in range(max(0, i - min_peak_distance // 2), 
+                          min(len(col_profile), i + min_peak_distance // 2)):
+                if j != i and col_profile[j] > col_profile[i]:
+                    is_peak = False
+                    break
+            
+            if is_peak:
+                # Check if we already have a peak too close
+                too_close = False
+                for existing_peak in peaks:
+                    if abs(i - existing_peak) < min_peak_distance:
+                        too_close = True
+                        break
+                
+                if not too_close:
+                    peaks.append(float(i))
+    
+    return sorted(peaks)
 
 
 def map_tokens_to_columns(line_tokens: List[Dict[str, Any]], col_centers: List[float]) -> List[str]:

@@ -241,123 +241,65 @@ def extract_text_from_ocr_result(ocr_result: List[Tuple[int, str, List[Dict[str,
     return [text for _, text, _, _ in ocr_result]
 
 
-def ocr_image_to_tsv(cv2_img, request_id=None, page_no=None, save_debug_dir=None) -> Dict[str, Any]:
+def ocr_image_to_tsv(cv2_img, request_id=None, page_no=None, save_debug_dir=None):
     """
-    Run pytesseract.image_to_data and save debug outputs (JSON and TSV).
+    Run pytesseract.image_to_data on cv2 grayscale image and save debug artifacts.
     
-    Args:
-        cv2_img: OpenCV image (numpy array) or PIL Image
-        request_id: Request identifier for organizing debug files (optional)
-        page_no: Page number for filename (optional)
-        save_debug_dir: Base directory for saving debug files (default: 'logs')
-    
-    Returns:
-        Dictionary from pytesseract.image_to_data(..., output_type=Output.DICT)
-    
-    Example:
-        >>> import cv2
-        >>> img = cv2.imread('page.png')
-        >>> ocr_dict = ocr_image_to_tsv(img, request_id='req123', page_no=1)
-        >>> # Saves logs/req123/req123_p1_ocr.json and .tsv
+    Returns the Output.DICT result.
     """
     if not PYTESSERACT_AVAILABLE:
         raise RuntimeError("pytesseract is not installed. Install with: pip install pytesseract")
     
-    # Convert cv2 image to PIL if needed
-    if CV2_AVAILABLE and isinstance(cv2_img, np.ndarray):
-        # OpenCV image (BGR) -> PIL Image (RGB)
-        if len(cv2_img.shape) == 3:
-            img_pil = Image.fromarray(cv2.cvtColor(cv2_img, cv2.COLOR_BGR2RGB))
-        else:
-            img_pil = Image.fromarray(cv2_img)
-    elif isinstance(cv2_img, Image.Image):
-        img_pil = cv2_img
-    else:
-        raise ValueError(f"Unsupported image type: {type(cv2_img)}")
+    config = r'--oem 1 --psm 6 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ₹.%,-/()'
+    data = pytesseract.image_to_data(cv2_img, output_type=pytesseract.Output.DICT, config=config, lang='eng')
     
-    # Run pytesseract OCR
-    ocr_dict = pytesseract.image_to_data(img_pil, output_type=pytesseract.Output.DICT)
+    if save_debug_dir and request_id and page_no is not None:
+        p = Path(save_debug_dir)
+        p.mkdir(parents=True, exist_ok=True)
+        json_path = p / f"{request_id}_p{page_no}_ocr.json"
+        tsv_path = p / f"{request_id}_p{page_no}_ocr.tsv"
+        
+        try:
+            with open(json_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
+        
+        try:
+            header = ["level","page_num","block_num","par_num","line_num","word_num","left","top","width","height","conf","text"]
+            with open(tsv_path, "w", encoding="utf-8") as f:
+                f.write("\t".join(header) + "\n")
+                n = len(data.get('text', []))
+                for i in range(n):
+                    row = [str(data.get(k, [''])[i]) if k in data else "" for k in header]
+                    f.write("\t".join(row) + "\n")
+        except Exception:
+            pass
     
-    # Save debug files if request_id and page_no provided
-    if request_id is not None and page_no is not None:
-        if save_debug_dir is None:
-            save_debug_dir = "logs"
-        
-        debug_dir = Path(save_debug_dir) / str(request_id)
-        debug_dir.mkdir(parents=True, exist_ok=True)
-        
-        # Save JSON
-        json_path = debug_dir / f"{request_id}_p{page_no}_ocr.json"
-        with open(json_path, 'w', encoding='utf-8') as f:
-            json.dump(ocr_dict, f, ensure_ascii=False, indent=2)
-        
-        # Save TSV (tab-separated values)
-        tsv_path = debug_dir / f"{request_id}_p{page_no}_ocr.tsv"
-        with open(tsv_path, 'w', encoding='utf-8') as f:
-            # Write header
-            keys = list(ocr_dict.keys())
-            f.write('\t'.join(keys) + '\n')
-            
-            # Write data rows
-            n = len(ocr_dict.get('text', []))
-            for i in range(n):
-                row = [str(ocr_dict.get(k, [''])[i] if isinstance(ocr_dict.get(k), list) else ocr_dict.get(k, '')) for k in keys]
-                f.write('\t'.join(row) + '\n')
-    
-    return ocr_dict
+    return data
 
 
-def ocr_numeric_region(region_img) -> Optional[float]:
+def ocr_numeric_region(region_img):
     """
-    OCR a numeric region using specialized PSM mode and whitelist.
+    Re-run tesseract on a cropped region optimized for numeric parsing.
     
-    Uses '--psm 7' (single text line) with whitelist '0123456789.,₹'
-    to improve accuracy for numeric values. Returns cleaned float.
-    
-    Args:
-        region_img: OpenCV image (numpy array) or PIL Image containing numeric text
-    
-    Returns:
-        Float value if successful, None otherwise
-    
-    Example:
-        >>> import cv2
-        >>> region = cv2.imread('amount_region.png')
-        >>> amount = ocr_numeric_region(region)
-        >>> print(f"Extracted amount: {amount}")
+    region_img: cv2 grayscale image (numpy)
+    Returns cleaned float or None
     """
     if not PYTESSERACT_AVAILABLE:
         raise RuntimeError("pytesseract is not installed. Install with: pip install pytesseract")
     
-    # Convert cv2 image to PIL if needed
-    if CV2_AVAILABLE and isinstance(region_img, np.ndarray):
-        if len(region_img.shape) == 3:
-            img_pil = Image.fromarray(cv2.cvtColor(region_img, cv2.COLOR_BGR2RGB))
-        else:
-            img_pil = Image.fromarray(region_img)
-    elif isinstance(region_img, Image.Image):
-        img_pil = region_img
-    else:
-        raise ValueError(f"Unsupported image type: {type(region_img)}")
+    cfg = r'--oem 1 --psm 7 -c tessedit_char_whitelist=0123456789.,₹'
+    txt = pytesseract.image_to_string(region_img, config=cfg, lang='eng')
     
-    # Run OCR with numeric-specific config
-    config = '--psm 7 -c tessedit_char_whitelist=0123456789.,₹'
-    text = pytesseract.image_to_string(img_pil, config=config).strip()
-    
-    if not text:
+    if not txt:
         return None
     
-    # Clean and convert to float
-    # Remove currency symbols and commas
-    cleaned = text.replace('₹', '').replace('Rs', '').replace(',', '').strip()
-    
-    # Remove any remaining non-numeric characters except decimal point
-    cleaned = ''.join(c for c in cleaned if c.isdigit() or c == '.')
-    
-    if not cleaned or cleaned == '.':
-        return None
+    # basic cleaning
+    s = txt.strip().replace('₹', '').replace('Rs', '').replace(',', '')
+    s = ''.join(ch if (ch.isdigit() or ch in ".-") else "" for ch in s)
     
     try:
-        return float(cleaned)
-    except (ValueError, TypeError):
+        return float(s)
+    except Exception:
         return None

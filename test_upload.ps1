@@ -1,12 +1,9 @@
 # PowerShell script to test file upload to API
-# Usage: .\test_upload.ps1 "C:\temp\train_sample_2.pdf"
-
 param(
     [Parameter(Mandatory=$true)]
     [string]$FilePath
 )
 
-# Check if file exists
 if (-not (Test-Path $FilePath)) {
     Write-Host "ERROR: File not found: $FilePath" -ForegroundColor Red
     exit 1
@@ -14,41 +11,70 @@ if (-not (Test-Path $FilePath)) {
 
 Write-Host "Uploading: $FilePath" -ForegroundColor Green
 
-# Use Invoke-RestMethod (PowerShell native) instead of curl
 try {
     $uri = "http://127.0.0.1:8000/api/v1/hackrx/run"
     
-    # Create multipart form data
-    $form = @{
-        document = Get-Item -Path $FilePath
-    }
+    # Use Invoke-WebRequest for file upload (works in all PowerShell versions)
+    $fileBytes = [System.IO.File]::ReadAllBytes($FilePath)
+    $fileName = [System.IO.Path]::GetFileName($FilePath)
+    $boundary = [System.Guid]::NewGuid().ToString()
+    $LF = "`r`n"
     
-    $response = Invoke-RestMethod -Uri $uri -Method Post -Form $form -ContentType "multipart/form-data"
+    $bodyLines = @(
+        "--$boundary",
+        "Content-Disposition: form-data; name=`"document`"; filename=`"$fileName`"",
+        "Content-Type: application/pdf",
+        "",
+        [System.Text.Encoding]::GetEncoding("iso-8859-1").GetString($fileBytes),
+        "--$boundary--"
+    ) -join $LF
     
-    Write-Host "`n=== RESPONSE ===" -ForegroundColor Cyan
-    $response | ConvertTo-Json -Depth 10
+    $bodyBytes = [System.Text.Encoding]::GetEncoding("iso-8859-1").GetBytes($bodyLines)
     
-    if ($response.is_success) {
-        Write-Host "`n✓ SUCCESS!" -ForegroundColor Green
-        $itemCount = $response.data.total_item_count
-        $amount = $response.data.reconciled_amount
+    $response = Invoke-WebRequest -Uri $uri -Method Post -Body $bodyBytes -ContentType "multipart/form-data; boundary=$boundary"
+    
+    $jsonResponse = $response.Content | ConvertFrom-Json
+    
+    Write-Host ""
+    Write-Host "=== RESPONSE ===" -ForegroundColor Cyan
+    $jsonResponse | ConvertTo-Json -Depth 10
+    
+    if ($jsonResponse.is_success) {
+        Write-Host ""
+        Write-Host "SUCCESS!" -ForegroundColor Green
+        $itemCount = $jsonResponse.data.total_item_count
+        $amount = $jsonResponse.data.reconciled_amount
         Write-Host "Items extracted: $itemCount" -ForegroundColor Green
         Write-Host "Total amount: $amount" -ForegroundColor Green
     } else {
-        Write-Host "`n✗ FAILED" -ForegroundColor Red
-        Write-Host "Error: $($response.message)" -ForegroundColor Red
-        if ($response.traceback) {
-            Write-Host "`nTraceback (last 10 lines):" -ForegroundColor Yellow
-            $response.traceback -split "`n" | Select-Object -Last 10 | ForEach-Object { Write-Host $_ }
+        Write-Host ""
+        Write-Host "FAILED" -ForegroundColor Red
+        Write-Host "Error: $($jsonResponse.message)" -ForegroundColor Red
+        Write-Host "Error field: $($jsonResponse.error)" -ForegroundColor Red
+        if ($jsonResponse.traceback) {
+            Write-Host ""
+            Write-Host "Traceback (last 20 lines):" -ForegroundColor Yellow
+            $lines = $jsonResponse.traceback -split "`n"
+            $lines | Select-Object -Last 20 | ForEach-Object { Write-Host $_ }
+        }
+        if ($jsonResponse.traceback_file) {
+            Write-Host ""
+            Write-Host "Full traceback saved to: $($jsonResponse.traceback_file)" -ForegroundColor Yellow
         }
     }
-    
 } catch {
-    Write-Host "`nERROR: $_" -ForegroundColor Red
+    Write-Host ""
+    Write-Host "ERROR: $_" -ForegroundColor Red
     Write-Host $_.Exception.Message -ForegroundColor Red
     if ($_.ErrorDetails) {
-        Write-Host "Details: $($_.ErrorDetails.Message)" -ForegroundColor Yellow
+        Write-Host "Details:" -ForegroundColor Yellow
+        Write-Host $_.ErrorDetails.Message -ForegroundColor Yellow
+    }
+    if ($_.Exception.Response) {
+        $reader = New-Object System.IO.StreamReader($_.Exception.Response.GetResponseStream())
+        $responseBody = $reader.ReadToEnd()
+        Write-Host "Response body:" -ForegroundColor Yellow
+        Write-Host $responseBody -ForegroundColor Yellow
     }
     exit 1
 }
-

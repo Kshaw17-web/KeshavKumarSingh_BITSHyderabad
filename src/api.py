@@ -174,7 +174,7 @@ def hackrx_run(request: DocumentRequest):
                 if not is_summary_row(name):
                     all_valid_items.append(b_item)
 
-            final_pagewise_items.append(PagewiseItem(
+            final_pagewise_items.append(PagewiseLineItem(
                 page_no=page_no,
                 bill_items=clean_bill_items
             ))

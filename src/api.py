@@ -51,6 +51,14 @@ app.add_middleware(
 # Serve static files (for favicon, etc.)
 static_dir = Path("static")
 static_dir.mkdir(exist_ok=True)
+try:
+    app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
+except Exception:
+    pass  # Static files optional
+
+# Serve static files (for favicon, etc.)
+static_dir = Path("static")
+static_dir.mkdir(exist_ok=True)
 app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
 
 logger = logging.getLogger("uvicorn")
@@ -411,7 +419,20 @@ async def hackrx_run(
             try: temp_file.unlink()
             except: pass
 
+# --- ROOT ENDPOINT ---
+@app.get("/")
+async def root():
+    """Root endpoint - redirects to API docs."""
+    return RedirectResponse(url="/docs")
+
+# --- FAVICON ENDPOINT ---
+@app.get("/favicon.ico")
+async def favicon():
+    """Favicon endpoint - returns empty response to prevent 404."""
+    from fastapi.responses import Response
+    return Response(content=b"", media_type="image/x-icon")
+
 # Alias for backward compatibility if needed
 @app.post("/extract-bill-data")
-def simple_extract(payload: DocumentRequest):
-    return hackrx_run(payload)
+async def simple_extract(request: Request):
+    return await hackrx_run(request)

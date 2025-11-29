@@ -899,11 +899,17 @@ def extract_bill_data_with_tsv(
                     
                     # 5) Apply is_probable_item to filter
                     if is_probable_item(parsed):
-                        # Conservative quantity sanity: prefer qty <= QUANTITY_MAX_REASONABLE
+                        # Conservative quantity validation (already handled in parse_row_from_columns)
+                        # Additional check: ensure qty is valid integer < 100
                         qty = parsed.get("item_quantity")
-                        if qty and isinstance(qty, (int, float)) and qty > QUANTITY_MAX_REASONABLE:
-                            # if quantity seems unreasonably large, unset it
-                            parsed["item_quantity"] = None
+                        if qty is not None:
+                            if isinstance(qty, (int, float)):
+                                if qty <= 0 or qty > 100:
+                                    parsed["item_quantity"] = None
+                                # If rightmost token includes ".00" treat as amount not qty
+                                # (This is already checked in parse_row_from_columns, but double-check here)
+                                if not float(qty).is_integer():
+                                    parsed["item_quantity"] = None
                         
                         parsed_items.append(parsed)
                 

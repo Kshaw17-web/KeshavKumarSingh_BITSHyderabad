@@ -26,7 +26,13 @@ def clean_amount(text: str) -> float:
     if not text or not isinstance(text, str):
         return 0.0
     
-    # Step 1: Fix common OCR typos
+    # Step 1: Remove currency symbols and common prefixes FIRST
+    # This prevents OCR typo fixes from affecting currency symbols
+    currency_symbols = ['₹', 'Rs', 'rs', 'RS', '$', 'USD', 'EUR', '€', '£', 'INR']
+    for symbol in currency_symbols:
+        text = text.replace(symbol, '')
+    
+    # Step 2: Fix common OCR typos (only after removing currency symbols)
     # O, D, Q -> 0 (common OCR confusion)
     text = text.replace('O', '0').replace('o', '0')
     text = text.replace('D', '0').replace('d', '0')
@@ -44,11 +50,6 @@ def clean_amount(text: str) -> float:
     text = re.sub(r'(?<=\d)[l|I](?=\d)', '1', text)
     text = re.sub(r'^[l|I](?=\d)', '1', text)
     text = re.sub(r'(?<=\d)[l|I]$', '1', text)
-    
-    # Step 2: Remove currency symbols and common prefixes
-    currency_symbols = ['₹', 'Rs', 'rs', 'RS', '$', 'USD', 'EUR', '€', '£', 'INR']
-    for symbol in currency_symbols:
-        text = text.replace(symbol, '')
     
     # Step 3: Remove all whitespace
     text = text.replace(' ', '').replace('\t', '').replace('\n', '')

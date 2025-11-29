@@ -14,6 +14,7 @@ import numpy as np
 from src.utils.ocr_runner import run_ocr_parallel, extract_text_from_ocr_result, ocr_image_to_tsv, ocr_numeric_region
 from src.preprocessing.image_utils import preprocess_image_for_ocr, is_blank_page
 from src.preprocessing.fraud_filters import detect_fraud_flags, compute_unified_fraud_score
+from src.utils.text_utils import clean_amount, clean_item_name
 
 # Import parsers and cleanup
 from src.extractor.parsers import (
@@ -42,6 +43,22 @@ try:
 except ImportError:
     PIL_AVAILABLE = False
     Image = None
+
+# PaddleOCR import
+try:
+    from paddleocr import PaddleOCR
+    PADDLEOCR_AVAILABLE = True
+except ImportError:
+    PADDLEOCR_AVAILABLE = False
+    PaddleOCR = None
+
+# OpenCV import for image conversion
+try:
+    import cv2
+    CV2_AVAILABLE = True
+except ImportError:
+    CV2_AVAILABLE = False
+    cv2 = None
 
 # LayoutParser for structural extraction
 try:
@@ -1027,6 +1044,363 @@ def extract_bill_data_with_tsv(
                 "pagewise_line_items": pagewise_line_items,
                 "total_item_count": len(final_deduped),
                 "reconciled_amount": final_total
+            }
+        }
+        
+        # Save final output
+        if debug_dir:
+            output_path = debug_dir / "last_response.json"
+            try:
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    json.dump(response, f, ensure_ascii=False, indent=2)
+            except Exception:
+                pass
+        
+        return response
+        
+    except Exception as e:
+        # Return error response (no 5xx, just is_success: false)
+        error_response = {
+            "is_success": False,
+            "token_usage": {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0},
+            "data": {
+                "pagewise_line_items": [],
+                "total_item_count": 0,
+                "reconciled_amount": 0.0
+            },
+            "error": str(e)
+        }
+        
+        # Save error response too
+        if request_id:
+            debug_dir = Path("logs") / str(request_id)
+            debug_dir.mkdir(parents=True, exist_ok=True)
+            output_path = debug_dir / "last_response.json"
+            try:
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    json.dump(error_response, f, ensure_ascii=False, indent=2)
+            except Exception:
+                pass
+        
+        return error_response
+
+
+def extract_bill_data_paddleocr(
+    pages: Union[List["Image.Image"], List[np.ndarray]],
+    request_id: Optional[str] = None
+) -> Dict[str, Any]:
+    """
+    Extract bill data using PaddleOCR with line clustering and row parsing.
+    
+    This function uses PaddleOCR for better accuracy on Indian invoices:
+    1. Initialize PaddleOCR with angle classification
+    2. Run OCR on each page to get bounding boxes and text
+    3. Group detected text boxes into rows based on Y-coordinates
+    4. Parse each row to extract item name (left) and amount (right)
+    5. Apply forensic regex cleaning to fix OCR number errors
+    6. Return structured data matching HackRx schema
+    
+    Args:
+        pages: List of PIL Images or numpy arrays (one per page)
+        request_id: Request identifier for organizing debug files (optional)
+        
+    Returns:
+        Dictionary with HackRx-compatible structure:
+        {
+            "is_success": bool,
+            "token_usage": {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0},
+            "data": {
+                "pagewise_line_items": [...],
+                "total_item_count": int,
+                "reconciled_amount": float
+            },
+            "error": str (only if is_success=False)
+        }
+    """
+    try:
+        if not PADDLEOCR_AVAILABLE:
+            raise RuntimeError("PaddleOCR is not installed. Install with: pip install paddleocr")
+        
+        if not pages:
+            return {
+                "is_success": False,
+                "token_usage": {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0},
+                "data": {
+                    "pagewise_line_items": [],
+                    "total_item_count": 0,
+                    "reconciled_amount": 0.0
+                },
+                "error": "No pages provided"
+            }
+        
+        # Initialize PaddleOCR (singleton pattern for efficiency)
+        ocr_engine = PaddleOCR(use_angle_cls=True, lang='en', show_log=False)
+        
+        # Setup debug directory
+        debug_dir = None
+        if request_id:
+            debug_dir = Path("logs") / str(request_id)
+            debug_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Convert numpy arrays to PIL Images if needed, then to numpy for PaddleOCR
+        pagewise_line_items = []
+        all_bill_items = []
+        
+        for page_idx, page in enumerate(pages, start=1):
+            try:
+                # Convert to numpy array for PaddleOCR
+                if isinstance(page, np.ndarray):
+                    img_array = page.copy()
+                    # Ensure BGR format for PaddleOCR
+                    if len(img_array.shape) == 2:
+                        # Grayscale to BGR
+                        if CV2_AVAILABLE:
+                            img_array = cv2.cvtColor(img_array, cv2.COLOR_GRAY2BGR)
+                        else:
+                            img_array = np.stack([img_array] * 3, axis=-1)
+                    elif len(img_array.shape) == 3 and img_array.shape[2] == 3:
+                        # RGB to BGR
+                        img_array = img_array[:, :, ::-1]
+                elif isinstance(page, Image.Image):
+                    img_array = np.array(page)
+                    if len(img_array.shape) == 3 and img_array.shape[2] == 3:
+                        # RGB to BGR
+                        img_array = img_array[:, :, ::-1]
+                    elif len(img_array.shape) == 2:
+                        # Grayscale to BGR
+                        if CV2_AVAILABLE:
+                            img_array = cv2.cvtColor(img_array, cv2.COLOR_GRAY2BGR)
+                        else:
+                            img_array = np.stack([img_array] * 3, axis=-1)
+                else:
+                    raise TypeError(f"Unsupported page type: {type(page)}")
+                
+                # Run PaddleOCR
+                ocr_result = ocr_engine.ocr(img_array, cls=True)
+                
+                if not ocr_result or not ocr_result[0]:
+                    # Empty page
+                    pagewise_line_items.append({
+                        "page_no": str(page_idx),
+                        "bill_items": [],
+                        "page_type": "Bill Detail",
+                        "fraud_flags": [],
+                        "reported_total": None,
+                        "reconciliation_ok": None,
+                        "reconciliation_relative_error": None
+                    })
+                    continue
+                
+                # Extract OCR data: each item is [[[x1,y1], [x2,y2], [x3,y3], [x4,y4]], (text, confidence)]
+                ocr_boxes = []
+                for line in ocr_result[0]:
+                    if line and len(line) >= 2:
+                        box_coords = line[0]  # [[x1,y1], [x2,y2], [x3,y3], [x4,y4]]
+                        text_info = line[1]  # (text, confidence)
+                        
+                        if isinstance(text_info, (list, tuple)) and len(text_info) >= 1:
+                            text = text_info[0]
+                            confidence = text_info[1] if len(text_info) > 1 else 1.0
+                        else:
+                            text = str(text_info)
+                            confidence = 1.0
+                        
+                        # Calculate bounding box properties
+                        x_coords = [pt[0] for pt in box_coords]
+                        y_coords = [pt[1] for pt in box_coords]
+                        left = min(x_coords)
+                        top = min(y_coords)
+                        right = max(x_coords)
+                        bottom = max(y_coords)
+                        width = right - left
+                        height = bottom - top
+                        center_y = (top + bottom) / 2
+                        
+                        ocr_boxes.append({
+                            "text": text.strip(),
+                            "left": left,
+                            "top": top,
+                            "right": right,
+                            "bottom": bottom,
+                            "width": width,
+                            "height": height,
+                            "center_y": center_y,
+                            "confidence": confidence
+                        })
+                
+                if not ocr_boxes:
+                    # No text detected
+                    pagewise_line_items.append({
+                        "page_no": str(page_idx),
+                        "bill_items": [],
+                        "page_type": "Bill Detail",
+                        "fraud_flags": [],
+                        "reported_total": None,
+                        "reconciliation_ok": None,
+                        "reconciliation_relative_error": None
+                    })
+                    continue
+                
+                # Step 2: Line Clustering - Group boxes into rows by Y-coordinates
+                # Sort by center_y
+                ocr_boxes.sort(key=lambda x: x["center_y"])
+                
+                # Cluster into rows with tolerance (default 10px)
+                Y_TOLERANCE = 10
+                rows = []
+                current_row = [ocr_boxes[0]]
+                
+                for box in ocr_boxes[1:]:
+                    # Check if box belongs to current row (within Y tolerance)
+                    avg_y_current = sum(b["center_y"] for b in current_row) / len(current_row)
+                    if abs(box["center_y"] - avg_y_current) <= Y_TOLERANCE:
+                        current_row.append(box)
+                    else:
+                        # Start new row
+                        rows.append(current_row)
+                        current_row = [box]
+                
+                # Add last row
+                if current_row:
+                    rows.append(current_row)
+                
+                # Step 3: Row Parsing - Extract item name and amount from each row
+                page_bill_items = []
+                
+                for row in rows:
+                    # Sort boxes in row by x-coordinate (left to right)
+                    row.sort(key=lambda x: x["left"])
+                    
+                    if not row:
+                        continue
+                    
+                    # Detect if row looks like a bill item
+                    # Usually has text on the left and a number on the far right
+                    row_text = " ".join(box["text"] for box in row)
+                    
+                    # Skip obvious non-item rows (headers, totals, etc.)
+                    row_text_lower = row_text.lower()
+                    non_item_keywords = [
+                        "subtotal", "total", "discount", "gst", "tax", "invoice",
+                        "net amount", "amount due", "mrp", "balance", "paid",
+                        "grand total", "net total", "total amount"
+                    ]
+                    if any(keyword in row_text_lower for keyword in non_item_keywords):
+                        continue
+                    
+                    # Extract item name (left-most text) and amount (right-most numeric)
+                    item_name_parts = []
+                    amount_candidates = []
+                    
+                    for box in row:
+                        text = box["text"]
+                        # Check if text looks like a number/amount
+                        # Remove currency symbols and check if it's numeric-like
+                        text_clean = text.replace('₹', '').replace('Rs', '').replace('rs', '').replace(',', '').replace(' ', '')
+                        # Check if it contains digits and looks like an amount
+                        if re.search(r'\d', text_clean):
+                            # Try to parse as amount
+                            amount_value = clean_amount(text)
+                            if amount_value > 0:
+                                amount_candidates.append({
+                                    "text": text,
+                                    "value": amount_value,
+                                    "left": box["left"],
+                                    "right": box["right"]
+                                })
+                        else:
+                            # Likely part of item name
+                            item_name_parts.append(text)
+                    
+                    # If we found an amount, use the rightmost one
+                    if amount_candidates:
+                        # Sort by right position (rightmost first)
+                        amount_candidates.sort(key=lambda x: x["right"], reverse=True)
+                        amount_value = amount_candidates[0]["value"]
+                        amount_text = amount_candidates[0]["text"]
+                        
+                        # Item name is everything except the amount
+                        # Remove the amount text from item name parts
+                        item_name_text = " ".join(item_name_parts)
+                        # Clean item name
+                        item_name = clean_item_name(item_name_text)
+                        
+                        # Only add if we have a valid item name and amount
+                        if item_name and amount_value > 0:
+                            page_bill_items.append({
+                                "item_name": item_name,
+                                "item_amount": round(amount_value, 2),
+                                "item_rate": 0.0,  # Will be calculated if quantity available
+                                "item_quantity": 1.0  # Default to 1
+                            })
+                    elif item_name_parts:
+                        # No amount found, but we have text - might be item name only
+                        # Only add if it looks substantial (not just a single word or number)
+                        item_name_text = " ".join(item_name_parts)
+                        item_name = clean_item_name(item_name_text)
+                        if len(item_name.split()) >= 2:  # At least 2 words
+                            page_bill_items.append({
+                                "item_name": item_name,
+                                "item_amount": 0.0,
+                                "item_rate": 0.0,
+                                "item_quantity": 1.0
+                            })
+                
+                # Calculate page totals
+                page_total = sum(item.get("item_amount", 0.0) for item in page_bill_items)
+                
+                # Try to extract reported total from OCR text
+                all_text = " ".join(box["text"] for box in ocr_boxes)
+                reported_total = None
+                total_patterns = [
+                    r"(?:grand total|net amt|net amount|net total|total amount|total)\s*[:\s]*([₹\d,.\s]+)",
+                    r"total[:\s]+([₹\d,.\s]+)",
+                ]
+                for pattern in total_patterns:
+                    m = re.search(pattern, all_text, flags=re.I)
+                    if m:
+                        total_text = m.group(1)
+                        reported_total = clean_amount(total_text)
+                        if reported_total > 0:
+                            break
+                
+                # Add page to results
+                pagewise_line_items.append({
+                    "page_no": str(page_idx),
+                    "bill_items": page_bill_items,
+                    "page_type": "Bill Detail",
+                    "fraud_flags": [],
+                    "reported_total": reported_total,
+                    "reconciliation_ok": None if reported_total is None else abs(page_total - reported_total) / reported_total < 0.05,
+                    "reconciliation_relative_error": None if reported_total is None or reported_total == 0 else (page_total - reported_total) / reported_total
+                })
+                
+                all_bill_items.extend(page_bill_items)
+                
+            except Exception as e:
+                # Continue with empty page on error
+                pagewise_line_items.append({
+                    "page_no": str(page_idx),
+                    "bill_items": [],
+                    "page_type": "Bill Detail",
+                    "fraud_flags": [],
+                    "reported_total": None,
+                    "reconciliation_ok": None,
+                    "reconciliation_relative_error": None
+                })
+        
+        # Calculate final totals
+        total_item_count = len(all_bill_items)
+        reconciled_amount = sum(item.get("item_amount", 0.0) for item in all_bill_items)
+        
+        # Build response
+        response = {
+            "is_success": True,
+            "token_usage": {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0},
+            "data": {
+                "pagewise_line_items": pagewise_line_items,
+                "total_item_count": total_item_count,
+                "reconciled_amount": round(reconciled_amount, 2)
             }
         }
         

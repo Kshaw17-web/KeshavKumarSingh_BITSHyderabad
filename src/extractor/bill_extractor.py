@@ -892,12 +892,24 @@ def extract_bill_data_with_tsv(
                 except Exception:
                     pass
                 
-                # 2) OCR -> TSV dict
+                # 2) Detect handwriting to adjust OCR parameters
+                is_handwritten = False
+                try:
+                    from src.preprocessing.handwriting_detector import detect_handwriting
+                    is_handwritten, handwriting_confidence = detect_handwriting(cv2_img, threshold=0.3)
+                    if is_handwritten:
+                        logger.info(f"Page {page_idx}: Detected handwritten text (confidence: {handwriting_confidence:.2f})")
+                except Exception:
+                    # If detection fails, assume printed text
+                    pass
+                
+                # 2) OCR -> TSV dict (with handwriting-aware parameters)
                 ocr = ocr_image_to_tsv(
                     cv2_img,
                     request_id=request_id,
                     page_no=page_idx,
-                    save_debug_dir=str(run_log_dir)
+                    save_debug_dir=str(run_log_dir),
+                    is_handwritten=is_handwritten
                 )
                 
                 # 3) Group to lines and detect columns

@@ -194,6 +194,15 @@ def preprocess_image_for_ocr(
             return img_array
         return img  # Return as-is for blank pages
     
+    # Step 3.5: Detect handwriting early to adjust preprocessing
+    is_handwritten_detected = False
+    if enhance_for_handwritten and not fast_mode:
+        try:
+            from src.preprocessing.handwriting_detector import detect_handwriting
+            is_handwritten_detected, _ = detect_handwriting(img_array, threshold=0.3)
+        except Exception:
+            pass
+    
     # Step 4: Fast denoising (only if not in fast mode)
     if not fast_mode:
         try:
@@ -213,7 +222,8 @@ def preprocess_image_for_ocr(
         img_array = _deskew_image(img_array)
     
     # Step 7: Adaptive preprocessing - try multiple methods
-    if not fast_mode:
+    # Skip standard thresholding if handwritten text is detected (will be handled in Step 11)
+    if not fast_mode and not (enhance_for_handwritten and is_handwritten_detected):
         try:
             # Try OTSU threshold first (good for high contrast)
             _, binary_otsu = cv2.threshold(img_array, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
@@ -241,6 +251,13 @@ def preprocess_image_for_ocr(
                 img_array = clahe.apply(img_array)
             except Exception:
                 pass
+    elif not fast_mode and enhance_for_handwritten and is_handwritten_detected:
+        # For handwritten text, just apply CLAHE here, full processing in Step 11
+        try:
+            clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
+            img_array = clahe.apply(img_array)
+        except Exception:
+            pass
     else:
         # Fast mode: just CLAHE
         try:
@@ -250,7 +267,8 @@ def preprocess_image_for_ocr(
             pass
     
     # Step 8: Auto-binary for faded text (if image is still too light)
-    if not fast_mode:
+    # Skip for handwritten (will be handled in Step 11)
+    if not fast_mode and not (enhance_for_handwritten and is_handwritten_detected):
         try:
             mean_brightness = np.mean(img_array)
             if mean_brightness > 200:  # Very light/faded text
@@ -259,8 +277,8 @@ def preprocess_image_for_ocr(
         except Exception:
             pass
     
-    # Step 9: Morphological closing (skip in fast mode)
-    if not fast_mode:
+    # Step 9: Morphological closing (skip in fast mode and for handwritten)
+    if not fast_mode and not (enhance_for_handwritten and is_handwritten_detected):
         try:
             kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
             img_array = cv2.morphologyEx(img_array, cv2.MORPH_CLOSE, kernel, iterations=1)
@@ -268,7 +286,7 @@ def preprocess_image_for_ocr(
             pass
     
     # Step 10: Enhance for multilingual/handwritten (if enabled)
-    if enhance_for_multilingual and not fast_mode:
+    if enhance_for_multilingual and not fast_mode and not is_handwritten_detected:
         try:
             # Sharpen image for better character recognition (helps with multilingual)
             kernel_sharpen = np.array([[-1, -1, -1],
@@ -280,15 +298,49 @@ def preprocess_image_for_ocr(
         except Exception:
             pass
     
-    # Step 11: Enhance for handwritten text (if enabled)
-    if enhance_for_handwritten and not fast_mode:
+    # Step 11: Enhance for handwritten text (if enabled and detected)
+    if enhance_for_handwritten and not fast_mode and is_handwritten_detected:
         try:
-            # Apply additional contrast enhancement for handwritten text
-            # Handwritten text often has lower contrast
-            clahe_handwritten = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
+            # Enhanced preprocessing pipeline for handwritten text
+            # Handwritten text requires more aggressive preprocessing
+            
+            # 1. Advanced noise reduction (handwritten text has more noise)
+            # Use bilateral filter to preserve edges while reducing noise
+            img_array = cv2.bilateralFilter(img_array, 9, 75, 75)
+            
+            # 2. Enhanced CLAHE for handwritten text (more aggressive)
+            # Handwritten text often has variable contrast
+            clahe_handwritten = cv2.createCLAHE(clipLimit=4.0, tileGridSize=(10, 10))
             img_array = clahe_handwritten.apply(img_array)
+            
+            # 3. Morphological operations to enhance stroke connectivity
+            # Handwritten strokes can be broken, so we connect them slightly
+            kernel = np.ones((2, 2), np.uint8)
+            img_array = cv2.morphologyEx(img_array, cv2.MORPH_CLOSE, kernel, iterations=1)
+            
+            # 4. Adaptive thresholding optimized for handwritten text
+            # Handwritten text has variable thickness, so adaptive threshold works better
+            img_array = cv2.adaptiveThreshold(
+                img_array, 255, 
+                cv2.ADAPTIVE_THRESH_GAUSSIAN_C, 
+                cv2.THRESH_BINARY_INV, 
+                15,  # Block size - larger for handwritten
+                10   # C constant - adjusted for handwritten
+            )
+            
+            # 5. Invert back to normal (black text on white)
+            img_array = cv2.bitwise_not(img_array)
+            
+            # 6. Additional smoothing to reduce jagged edges in handwritten text
+            img_array = cv2.medianBlur(img_array, 3)
+            
         except Exception:
-            pass
+            # Fallback to basic CLAHE if advanced processing fails
+            try:
+                clahe_handwritten = cv2.createCLAHE(clipLimit=4.0, tileGridSize=(10, 10))
+                img_array = clahe_handwritten.apply(img_array)
+            except Exception:
+                pass
     
     # Step 12: Ensure minimum width for better OCR
     h, w = img_array.shape[:2]

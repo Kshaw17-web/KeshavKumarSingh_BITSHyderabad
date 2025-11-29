@@ -1,733 +1,1069 @@
 {
   "page_no": 5,
-  "raw_lines_count": 66,
+  "raw_lines_count": 448,
   "column_centers": [
-    234.0,
-    482.0,
-    704.0,
-    846.0,
-    1112.0,
-    1248.0
+    64.5,
+    212.5,
+    480.5,
+    843.5,
+    1017.5,
+    1248.5
   ],
   "parsed_items_before_dedup": [
     {
-      "item_name": "orate Tia) a ec O1ameeaoey nus rar",
-      "item_amount": 1.0,
+      "item_name": "orntzoe7",
+      "item_amount": 12.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "AML100nalHOMLVpMCL)8 tamsone 1eemna7 vena.00 tere",
-      "item_amount": 17.0,
-      "item_rate": 17.0,
+      "item_name": "13s",
+      "item_amount": 13.0,
+      "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "1e1toees4008 HIPPO1OMMLTEMIT40) 2 vow ne1noer mare Tus",
+      "item_name": "w200",
       "item_amount": 2.0,
-      "item_rate": 0.5,
-      "item_quantity": 2,
-      "gst_percent": null
-    },
-    {
-      "item_name": "7Wi1008s138 UPOMETER 1 am ovewaor amo 1872.00 -",
-      "item_amount": 1872.0,
-      "item_rate": 1872.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "Tenee1038 APBICL1OCeVOLVPMICLt LaAreaenes? none? ye) re e",
-      "item_amount": 100.0,
-      "item_rate": 1038.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "10Finean-Te SLPPEIDOL10000iaBU 1 Laldbal Cam mun iY",
-      "item_amount": 10000.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "eran W8CROMLLOOPLACHYOATeMIEEH) aso vena eso re)",
-      "item_amount": 0.0,
+      "item_name": "baies)10tapTEMTEAE)",
+      "item_amount": 81042.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "tinea HEPPOMMLATIENNTL40 sosace Creey ns am",
-      "item_amount": 40.0,
+      "item_name": "MERROLE200PUMERCCCty",
+      "item_amount": 6000.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "TUE PANTOPEED-4800(RRCLYIML) 2 PA voeend wom two",
-      "item_amount": -4800.0,
-      "item_rate": -4800.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "10a ABBOOMLSOOPLACHHYCITERCREET) 2 DOCN e.0ReOr7 pms nem",
-      "item_amount": 7.0,
-      "item_rate": 0.035,
-      "item_quantity": 2,
-      "gst_percent": null
-    },
-    {
-      "item_name": "teaoes-38 QODAN-ApcRdlIHWYPLUCOMATOIS1 few cveuneer rien.oo ree",
-      "item_amount": 1.0,
-      "item_rate": -38.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "soyiyeoas1880 NSDOOMLOMLYDFRSOOMEITEM185)2 Une owetom ws ma",
-      "item_amount": 0.11252,
-      "item_rate": 1880.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "i Lae POCAM-160hLLLUIOOMAZO) 1 ecntKhe nthe ome ne",
-      "item_amount": -160.0,
-      "item_rate": -160.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ere1720 UNDIRPADfOHOLEWTINT7am Fa oad ovowenee 0 tissoe",
-      "item_amount": 7.0,
-      "item_rate": 1720.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "sortunome17.00 sperm 1 ecead oeeane7 nam ra",
-      "item_amount": 1.0,
-      "item_rate": 7.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "2aviunoasTr38 AMEMCL10QMLFOMLYPRECMCLS Larmsonsa ovewacrr ee rare0",
-      "item_amount": 10.0,
-      "item_rate": 238.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "tanLaoes1728 AVL 1 Paste vowenz ree",
-      "item_amount": 1.0,
-      "item_rate": 12.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "sertunegs1790 Hib100ha,CALYDRBRSHEMTEMI177)2 .(besowos cums ms rane",
-      "item_amount": 100.1772,
-      "item_rate": 1790.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "taveaas7708 LOODTURNOBT mie tinea rane nee",
-      "item_amount": 7708.0,
+      "item_name": "tea918",
+      "item_amount": 4916.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "ayaaae1730 HOPPO1OMLTBAE146 Fy monn oyrecneg non nom",
+      "item_name": "e126",
+      "item_amount": 6.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "r4950C",
+      "item_amount": 740.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o19c2c77",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "raa30",
+      "item_amount": 73.39,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1oR20c7",
+      "item_amount": 10827.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "NIPROSMLTEIAT148)",
       "item_amount": 148.0,
-      "item_rate": 1146.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "DEXALAS-BdLPUSEXAMEETHASCHIE)1 woOUrsc1 cumeaoa nae nas",
-      "item_amount": 1.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "AMEMOL700KELMiMLVOMOL) 1 ASO MaOET lO tame",
-      "item_amount": 700.0,
+      "item_name": "e220",
+      "item_amount": 2250.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "aJ 2080881730 eT) 1 et) ouroeeeaT 138 fst -",
-      "item_amount": 238.0,
-      "item_rate": 138.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "2euRows1730 TASYSUDS-DYHAITINOOE) coeean7-26 owsraeao nen",
-      "item_amount": 7.0,
-      "item_rate": 21730.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "aonuoes1728 OORT8-00MMOI(HYOROCONTRBOME1 PLYa7 overs e799 ote",
-      "item_amount": 1100.0,
-      "item_rate": 7.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ryrumns138 PANTAD1mTARD 2 BRITIIGM ence 19 raz",
-      "item_amount": 2.0,
-      "item_rate": 9.5,
-      "item_quantity": 2,
-      "gst_percent": null
-    },
-    {
-      "item_name": "7s EXAMENATIONOLOWES-WHITE 6 on (oF nes Te",
-      "item_amount": 7.0,
-      "item_rate": 0.8571,
-      "item_quantity": 7,
-      "gst_percent": null
-    },
-    {
-      "item_name": "une HEPRSTEMEME1bell t fae omeoe cm mn",
-      "item_amount": 1.0,
-      "item_rate": 1.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "11)We0esu PLOWPGULATOR, t Lal oLOuEcR? rene rea",
-      "item_amount": 2130.0,
+      "item_name": "oucs2ee7",
+      "item_amount": 0.2027,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "TUUOS1538 fpessOig 4 wae 01a? rans rn",
-      "item_amount": 4.0,
-      "item_rate": 0.25,
-      "item_quantity": 4,
-      "gst_percent": null
-    },
-    {
-      "item_name": "Tinea ME100ML(ONLYORORNCRT177) 1ERBOOOS o1oemoee har oo",
-      "item_amount": 1.0,
-      "item_rate": 1.0,
+      "item_name": "23901GLTISE",
+      "item_amount": 23901.0,
+      "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "2ieses828 QOCAM4ONbLRUFPLUCOHAZCL)t comorecs ousaczr rie300 rises",
-      "item_amount": 300.0,
-      "item_rate": 2828.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "1a1520 - ALTPCME1OtelWt) zt OTHE o1e7Rom Lsetoal eis",
+      "item_name": "21876)",
       "item_amount": 187.0,
-      "item_rate": 11520.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "1huewes28 SarERCTGRES ,awoer evouecer oan rues",
-      "item_amount": 180.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "reese EMEDETma0U 1 dzene0 ovnoaoer nae ras",
-      "item_amount": 1.0,
-      "item_rate": 1.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ZV DEDCALAR-SitlAL(CDAMMETHASOMET)1 ADOULOOD O1LaCET nem om",
-      "item_amount": -1.0,
-      "item_rate": -1.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ryaestes AVEmaLBU 1 eer ovement Cry rust",
-      "item_amount": 1.0,
-      "item_rate": null,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "2Lh1SHe AMIEMICL100MLlidLCL) 1 THRIOT4 oUeee tao reas",
-      "item_amount": 4.0,
-      "item_rate": 4.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "sarees AXIROME108dBU 1 TRGO7A ora Tioeso cee",
-      "item_amount": 1.0,
-      "item_rate": 7.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "sarLeoessHects We10CRALROCRLAQHHYOTIMEES tenieu07 suv nase reso",
+      "item_name": "QOCAH-1DOLALINYPPLUICORAZOLE)",
       "item_amount": 10.0,
-      "item_rate": 10.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ess PAMTOPEED40b60)PUPAfl)) e CLOT feFeo) on",
-      "item_amount": 40660.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "LO DULCOPLINADULT.SUPPOSTFY 1 oer cao fens Tah",
-      "item_amount": 1.0,
-      "item_rate": null,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "eieseset8 TKAMNATIONGLOVERMMITRILELAREN)18 om o1aaaoee n7.10 cms",
-      "item_amount": 1.0,
-      "item_rate": 1.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "je wari.acas-1890 wearnics 1 qennm owners m8",
-      "item_amount": 2.0,
-      "item_rate": 8.0,
-      "item_quantity": 8,
-      "gst_percent": null
-    },
-    {
-      "item_name": "eartanesH140 8y-aCHTORVH9ecT)23, 1 - ounmenes nese rr)",
-      "item_amount": 1.0,
-      "item_rate": 0.1429,
-      "item_quantity": 7,
-      "gst_percent": null
-    },
-    {
-      "item_name": "SeTuaeste08 OACHOSToe BS Lopes fats na oS)",
+      "item_name": "Or01008",
       "item_amount": 1008.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "yo an AMMEMCL100M10hdLVBONCL)1 THaorsI4OLauuace? na00.00 ee)",
-      "item_amount": 4.0,
+      "item_name": "FORCAN100eWJLUCONATAL)",
+      "item_amount": 10004.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "LJ eee 1 whos Ome e008 re",
-      "item_amount": 0.08,
-      "item_rate": 8.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "oe nLanes2e0 UNOEEIPADSMOLIGTILA78tr 1 i? reo mao re",
-      "item_amount": 78.0,
-      "item_rate": 20.0,
+      "item_name": "UNDERPAD/52HCLEATEtat794H",
+      "item_amount": 51.0,
+      "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "Ll wut DeAELRSOLEDLAPINTTReith zt arr o1o1aoe7 7s Toe",
-      "item_amount": 117.0,
-      "item_rate": 117.0,
+      "item_name": "PALUNED-4OMGFUPANBU)",
+      "item_amount": 40.0,
+      "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "Leesa UNDIRPADROLENTINATeq 1 seme ovoeaea7 TRO cose",
+      "item_name": "O1sescr",
+      "item_amount": 12627.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e274",
+      "item_amount": 29.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PRPRCSMILATEN?169)",
+      "item_amount": 149.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2eBUTK2",
+      "item_amount": 222.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MERROBE500.BL14EHOPHet",
+      "item_amount": 14.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "NS10088,OMLYORESSINC.QUCEIt775",
+      "item_amount": 10088.775,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1azeacad",
+      "item_amount": 13.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e272",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "7ane.00",
+      "item_amount": 700.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1tatwer",
+      "item_amount": 1402.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "EASYGLICE-OYNAGTELN3",
+      "item_amount": 35.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RANTAG160MGTABS",
+      "item_amount": 16063.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "waai7gi0re",
+      "item_amount": 7210.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1Orzez8",
+      "item_amount": 18.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "t1500",
+      "item_amount": 15.9,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PeILTOCS1639",
+      "item_amount": 1639.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MPROSYRGE1HL",
       "item_amount": 1.0,
-      "item_rate": 7.0,
-      "item_quantity": 1,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e946",
+      "item_amount": 14.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "neyo9",
+      "item_amount": 10909.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ALTROUE(C821N",
+      "item_amount": 182.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1991S",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ess7nzs",
+      "item_amount": 2075.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2OMAVIDACTAMOSOLD",
+      "item_amount": 2050.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PAMLOS1839",
+      "item_amount": 11839.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SVALDOZE1843",
+      "item_amount": 19.45,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e106",
+      "item_amount": 10.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "weab32",
+      "item_amount": 542.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Q-06Dez7",
+      "item_amount": 6027.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "sczeco7",
+      "item_amount": 20.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FUAAVIBACTAMO.50K",
+      "item_amount": 501.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "EMESET2MLway",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e292",
+      "item_amount": 292.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e254",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ATTRONE1040u",
+      "item_amount": 104.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PAMTCAEO40MGFUFANIHJ)",
+      "item_amount": 400.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1aa2028",
+      "item_amount": 1728.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "F2NLICZS.1900",
+      "item_amount": 19.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Gotenzors1",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e260",
+      "item_amount": 60.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SvSETTOPvVENSEN220",
+      "item_amount": 91220.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1Dazczs",
+      "item_amount": 12.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e688",
+      "item_amount": 3658.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e928",
+      "item_amount": 928.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "raes.09",
+      "item_amount": 0.09,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ViLOGEZt26",
+      "item_amount": 82226.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ITEat3264)",
+      "item_amount": 3204.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1a7a9",
+      "item_amount": 19.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e710",
+      "item_amount": 1710.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OtDt2Gz?",
+      "item_amount": 27.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "s09",
+      "item_amount": 9.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FACEMASKFOUSCHS)3PLY",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e200",
+      "item_amount": 1200.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "temnes2442",
+      "item_amount": 57.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2of",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
       "gst_percent": null
     }
   ],
   "deduped_items": [
     {
-      "item_name": "orate Tia) a ec O1ameeaoey nus rar",
-      "item_amount": 1.0,
+      "item_name": "orntzoe7",
+      "item_amount": 12.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "AML100nalHOMLVpMCL)8 tamsone 1eemna7 vena.00 tere",
-      "item_amount": 17.0,
-      "item_rate": 17.0,
+      "item_name": "13s",
+      "item_amount": 13.0,
+      "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "1e1toees4008 HIPPO1OMMLTEMIT40) 2 vow ne1noer mare Tus",
+      "item_name": "w200",
       "item_amount": 2.0,
-      "item_rate": 0.5,
-      "item_quantity": 2,
-      "gst_percent": null
-    },
-    {
-      "item_name": "7Wi1008s138 UPOMETER 1 am ovewaor amo 1872.00 -",
-      "item_amount": 1872.0,
-      "item_rate": 1872.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "Tenee1038 APBICL1OCeVOLVPMICLt LaAreaenes? none? ye) re e",
-      "item_amount": 100.0,
-      "item_rate": 1038.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "10Finean-Te SLPPEIDOL10000iaBU 1 Laldbal Cam mun iY",
-      "item_amount": 10000.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "eran W8CROMLLOOPLACHYOATeMIEEH) aso vena eso re)",
-      "item_amount": 0.0,
+      "item_name": "baies)10tapTEMTEAE)",
+      "item_amount": 81042.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "tinea HEPPOMMLATIENNTL40 sosace Creey ns am",
-      "item_amount": 40.0,
+      "item_name": "MERROLE200PUMERCCCty",
+      "item_amount": 6000.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "TUE PANTOPEED-4800(RRCLYIML) 2 PA voeend wom two",
-      "item_amount": -4800.0,
-      "item_rate": -4800.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "10a ABBOOMLSOOPLACHHYCITERCREET) 2 DOCN e.0ReOr7 pms nem",
-      "item_amount": 7.0,
-      "item_rate": 0.035,
-      "item_quantity": 2,
-      "gst_percent": null
-    },
-    {
-      "item_name": "teaoes-38 QODAN-ApcRdlIHWYPLUCOMATOIS1 few cveuneer rien.oo ree",
-      "item_amount": 1.0,
-      "item_rate": -38.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "soyiyeoas1880 NSDOOMLOMLYDFRSOOMEITEM185)2 Une owetom ws ma",
-      "item_amount": 0.11252,
-      "item_rate": 1880.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "i Lae POCAM-160hLLLUIOOMAZO) 1 ecntKhe nthe ome ne",
-      "item_amount": -160.0,
-      "item_rate": -160.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ere1720 UNDIRPADfOHOLEWTINT7am Fa oad ovowenee 0 tissoe",
-      "item_amount": 7.0,
-      "item_rate": 1720.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "sortunome17.00 sperm 1 ecead oeeane7 nam ra",
-      "item_amount": 1.0,
-      "item_rate": 7.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "2aviunoasTr38 AMEMCL10QMLFOMLYPRECMCLS Larmsonsa ovewacrr ee rare0",
-      "item_amount": 10.0,
-      "item_rate": 238.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "tanLaoes1728 AVL 1 Paste vowenz ree",
-      "item_amount": 1.0,
-      "item_rate": 12.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "sertunegs1790 Hib100ha,CALYDRBRSHEMTEMI177)2 .(besowos cums ms rane",
-      "item_amount": 100.1772,
-      "item_rate": 1790.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "taveaas7708 LOODTURNOBT mie tinea rane nee",
-      "item_amount": 7708.0,
+      "item_name": "tea918",
+      "item_amount": 4916.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "ayaaae1730 HOPPO1OMLTBAE146 Fy monn oyrecneg non nom",
+      "item_name": "e126",
+      "item_amount": 6.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "r4950C",
+      "item_amount": 740.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o19c2c77",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "raa30",
+      "item_amount": 73.39,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1oR20c7",
+      "item_amount": 10827.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "NIPROSMLTEIAT148)",
       "item_amount": 148.0,
-      "item_rate": 1146.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "DEXALAS-BdLPUSEXAMEETHASCHIE)1 woOUrsc1 cumeaoa nae nas",
-      "item_amount": 1.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "AMEMOL700KELMiMLVOMOL) 1 ASO MaOET lO tame",
-      "item_amount": 700.0,
+      "item_name": "e220",
+      "item_amount": 2250.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "aJ 2080881730 eT) 1 et) ouroeeeaT 138 fst -",
-      "item_amount": 238.0,
-      "item_rate": 138.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "2euRows1730 TASYSUDS-DYHAITINOOE) coeean7-26 owsraeao nen",
-      "item_amount": 7.0,
-      "item_rate": 21730.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "aonuoes1728 OORT8-00MMOI(HYOROCONTRBOME1 PLYa7 overs e799 ote",
-      "item_amount": 1100.0,
-      "item_rate": 7.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ryrumns138 PANTAD1mTARD 2 BRITIIGM ence 19 raz",
-      "item_amount": 2.0,
-      "item_rate": 9.5,
-      "item_quantity": 2,
-      "gst_percent": null
-    },
-    {
-      "item_name": "7s EXAMENATIONOLOWES-WHITE 6 on (oF nes Te",
-      "item_amount": 7.0,
-      "item_rate": 0.8571,
-      "item_quantity": 7,
-      "gst_percent": null
-    },
-    {
-      "item_name": "une HEPRSTEMEME1bell t fae omeoe cm mn",
-      "item_amount": 1.0,
-      "item_rate": 1.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "11)We0esu PLOWPGULATOR, t Lal oLOuEcR? rene rea",
-      "item_amount": 2130.0,
+      "item_name": "oucs2ee7",
+      "item_amount": 0.2027,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "TUUOS1538 fpessOig 4 wae 01a? rans rn",
-      "item_amount": 4.0,
-      "item_rate": 0.25,
-      "item_quantity": 4,
-      "gst_percent": null
-    },
-    {
-      "item_name": "Tinea ME100ML(ONLYORORNCRT177) 1ERBOOOS o1oemoee har oo",
-      "item_amount": 1.0,
-      "item_rate": 1.0,
+      "item_name": "23901GLTISE",
+      "item_amount": 23901.0,
+      "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "2ieses828 QOCAM4ONbLRUFPLUCOHAZCL)t comorecs ousaczr rie300 rises",
-      "item_amount": 300.0,
-      "item_rate": 2828.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "1a1520 - ALTPCME1OtelWt) zt OTHE o1e7Rom Lsetoal eis",
+      "item_name": "21876)",
       "item_amount": 187.0,
-      "item_rate": 11520.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "1huewes28 SarERCTGRES ,awoer evouecer oan rues",
-      "item_amount": 180.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "reese EMEDETma0U 1 dzene0 ovnoaoer nae ras",
-      "item_amount": 1.0,
-      "item_rate": 1.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ZV DEDCALAR-SitlAL(CDAMMETHASOMET)1 ADOULOOD O1LaCET nem om",
-      "item_amount": -1.0,
-      "item_rate": -1.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ryaestes AVEmaLBU 1 eer ovement Cry rust",
-      "item_amount": 1.0,
-      "item_rate": null,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "2Lh1SHe AMIEMICL100MLlidLCL) 1 THRIOT4 oUeee tao reas",
-      "item_amount": 4.0,
-      "item_rate": 4.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "sarees AXIROME108dBU 1 TRGO7A ora Tioeso cee",
-      "item_amount": 1.0,
-      "item_rate": 7.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "sarLeoessHects We10CRALROCRLAQHHYOTIMEES tenieu07 suv nase reso",
+      "item_name": "QOCAH-1DOLALINYPPLUICORAZOLE)",
       "item_amount": 10.0,
-      "item_rate": 10.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "ess PAMTOPEED40b60)PUPAfl)) e CLOT feFeo) on",
-      "item_amount": 40660.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "LO DULCOPLINADULT.SUPPOSTFY 1 oer cao fens Tah",
-      "item_amount": 1.0,
-      "item_rate": null,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "eieseset8 TKAMNATIONGLOVERMMITRILELAREN)18 om o1aaaoee n7.10 cms",
-      "item_amount": 1.0,
-      "item_rate": 1.0,
-      "item_quantity": null,
-      "gst_percent": null
-    },
-    {
-      "item_name": "je wari.acas-1890 wearnics 1 qennm owners m8",
-      "item_amount": 2.0,
-      "item_rate": 8.0,
-      "item_quantity": 8,
-      "gst_percent": null
-    },
-    {
-      "item_name": "eartanesH140 8y-aCHTORVH9ecT)23, 1 - ounmenes nese rr)",
-      "item_amount": 1.0,
-      "item_rate": 0.1429,
-      "item_quantity": 7,
-      "gst_percent": null
-    },
-    {
-      "item_name": "SeTuaeste08 OACHOSToe BS Lopes fats na oS)",
+      "item_name": "Or01008",
       "item_amount": 1008.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "yo an AMMEMCL100M10hdLVBONCL)1 THaorsI4OLauuace? na00.00 ee)",
-      "item_amount": 4.0,
+      "item_name": "FORCAN100eWJLUCONATAL)",
+      "item_amount": 10004.0,
       "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "LJ eee 1 whos Ome e008 re",
-      "item_amount": 0.08,
-      "item_rate": 8.0,
-      "item_quantity": 1,
-      "gst_percent": null
-    },
-    {
-      "item_name": "oe nLanes2e0 UNOEEIPADSMOLIGTILA78tr 1 i? reo mao re",
-      "item_amount": 78.0,
-      "item_rate": 20.0,
+      "item_name": "UNDERPAD/52HCLEATEtat794H",
+      "item_amount": 51.0,
+      "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "Ll wut DeAELRSOLEDLAPINTTReith zt arr o1o1aoe7 7s Toe",
-      "item_amount": 117.0,
-      "item_rate": 117.0,
+      "item_name": "PALUNED-4OMGFUPANBU)",
+      "item_amount": 40.0,
+      "item_rate": null,
       "item_quantity": null,
       "gst_percent": null
     },
     {
-      "item_name": "Leesa UNDIRPADROLENTINATeq 1 seme ovoeaea7 TRO cose",
+      "item_name": "O1sescr",
+      "item_amount": 12627.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e274",
+      "item_amount": 29.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PRPRCSMILATEN?169)",
+      "item_amount": 149.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2eBUTK2",
+      "item_amount": 222.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MERROBE500.BL14EHOPHet",
+      "item_amount": 14.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "NS10088,OMLYORESSINC.QUCEIt775",
+      "item_amount": 10088.775,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1azeacad",
+      "item_amount": 13.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e272",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "7ane.00",
+      "item_amount": 700.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1tatwer",
+      "item_amount": 1402.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "EASYGLICE-OYNAGTELN3",
+      "item_amount": 35.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RANTAG160MGTABS",
+      "item_amount": 16063.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "waai7gi0re",
+      "item_amount": 7210.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1Orzez8",
+      "item_amount": 18.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "t1500",
+      "item_amount": 15.9,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PeILTOCS1639",
+      "item_amount": 1639.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MPROSYRGE1HL",
       "item_amount": 1.0,
-      "item_rate": 7.0,
-      "item_quantity": 1,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e946",
+      "item_amount": 14.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "neyo9",
+      "item_amount": 10909.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ALTROUE(C821N",
+      "item_amount": 182.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1991S",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ess7nzs",
+      "item_amount": 2075.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2OMAVIDACTAMOSOLD",
+      "item_amount": 2050.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PAMLOS1839",
+      "item_amount": 11839.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SVALDOZE1843",
+      "item_amount": 19.45,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e106",
+      "item_amount": 10.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "weab32",
+      "item_amount": 542.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Q-06Dez7",
+      "item_amount": 6027.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "sczeco7",
+      "item_amount": 20.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FUAAVIBACTAMO.50K",
+      "item_amount": 501.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "EMESET2MLway",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e292",
+      "item_amount": 292.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e254",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ATTRONE1040u",
+      "item_amount": 104.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PAMTCAEO40MGFUFANIHJ)",
+      "item_amount": 400.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1aa2028",
+      "item_amount": 1728.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "F2NLICZS.1900",
+      "item_amount": 19.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Gotenzors1",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e260",
+      "item_amount": 60.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SvSETTOPvVENSEN220",
+      "item_amount": 91220.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "o1Dazczs",
+      "item_amount": 12.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e688",
+      "item_amount": 3658.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e928",
+      "item_amount": 928.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "raes.09",
+      "item_amount": 0.09,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ViLOGEZt26",
+      "item_amount": 82226.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ITEat3264)",
+      "item_amount": 3204.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1a7a9",
+      "item_amount": 19.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e710",
+      "item_amount": 1710.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OtDt2Gz?",
+      "item_amount": 27.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "s09",
+      "item_amount": 9.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FACEMASKFOUSCHS)3PLY",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e200",
+      "item_amount": 1200.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "temnes2442",
+      "item_amount": 57.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2of",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
       "gst_percent": null
     }
   ],
   "reported_total": null,
-  "final_total": 66763.36972,
+  "final_total": 412534.8077,
   "reconciliation_method": "sum_of_all_line_items"
 }

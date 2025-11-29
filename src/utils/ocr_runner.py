@@ -241,16 +241,34 @@ def extract_text_from_ocr_result(ocr_result: List[Tuple[int, str, List[Dict[str,
     return [text for _, text, _, _ in ocr_result]
 
 
-def ocr_image_to_tsv(cv2_img, request_id=None, page_no=None, save_debug_dir=None):
+def ocr_image_to_tsv(cv2_img, request_id=None, page_no=None, save_debug_dir=None, is_handwritten=False):
     """
     Run pytesseract.image_to_data on cv2 grayscale image and save debug artifacts.
     
-    Returns the Output.DICT result.
+    Args:
+        cv2_img: Grayscale numpy array (cv2 format)
+        request_id: Optional request ID for logging
+        page_no: Optional page number for logging
+        save_debug_dir: Optional directory to save debug files
+        is_handwritten: If True, use OCR parameters optimized for handwritten text
+    
+    Returns:
+        Output.DICT result from pytesseract
     """
     if not PYTESSERACT_AVAILABLE:
         raise RuntimeError("pytesseract is not installed. Install with: pip install pytesseract")
     
-    config = r'--oem 1 --psm 6 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ₹.%,-/()'
+    # Use different PSM modes for handwritten vs printed text
+    if is_handwritten:
+        # PSM 11: Sparse text (good for handwritten)
+        # PSM 13: Raw line (alternative for handwritten)
+        # PSM 6: Uniform block (fallback)
+        # Try PSM 11 first, fallback to 6 if needed
+        config = r'--oem 1 --psm 11 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ₹.%,-/()'
+    else:
+        # PSM 6: Uniform block of text (good for printed bills)
+        config = r'--oem 1 --psm 6 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ₹.%,-/()'
+    
     data = pytesseract.image_to_data(cv2_img, output_type=pytesseract.Output.DICT, config=config, lang='eng')
     
     if save_debug_dir and request_id and page_no is not None:

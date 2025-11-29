@@ -290,15 +290,23 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
                     # treat as GST%
                     gst_percent = int(float(nxt))
 
-            # pick qty: scan left of amount, looking for a small integer (<=1000, preferably <=100)
+            # pick qty: scan left of amount, looking for a small integer
+            # Conservative: only accept if token has no decimals, length <= 3, and < 100
             for j in range(amount_idx - 1, -1, -1):
                 v = numerics[j]["float"]
+                raw_token = numerics[j]["raw"]
                 if v is None:
                     continue
-                if float(v).is_integer() and 0 < abs(int(v)) <= 1000:
-                    # prefer small integers and those < 100
-                    item_qty = int(float(v))
-                    break
+                # Check if token contains decimal places or .00 (treat as amount, not qty)
+                if '.' in raw_token or '.00' in raw_token:
+                    continue  # Skip decimals - these are amounts/rates, not quantities
+                # Only accept small integer quantities: length <= 3 and < 100
+                if float(v).is_integer():
+                    v_int = int(float(v))
+                    token_len = len(raw_token.replace(',', '').replace('₹', '').replace('Rs', '').strip())
+                    if 0 < v_int < 100 and token_len <= 3:
+                        item_qty = v_int
+                        break
 
             # pick rate: look for a decimal-like numeric just left of amount (or any decimal-like)
             rate_idx = None
@@ -350,6 +358,27 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
                         item_amount = v
                         # recompute qty/rate heuristics could be re-run, but skip for speed
                         break
+
+    # Post-process quantity: strict validation
+    # If rightmost token includes ".00" or has decimals, treat as amount not qty
+    if item_qty is not None:
+        # Check if the quantity came from a token with decimals
+        qty_token_found = False
+        for num_info in numerics:
+            if num_info["float"] == item_qty:
+                raw_token = num_info["raw"]
+                # If token contains decimal places or .00, it's an amount, not quantity
+                if '.' in raw_token or '.00' in raw_token:
+                    item_qty = None
+                    break
+                qty_token_found = True
+                break
+        
+        # Only accept small integer quantities: <= 0 or > 100 are invalid
+        if item_qty is not None:
+            if isinstance(item_qty, (int, float)):
+                if item_qty <= 0 or item_qty > 100:
+                    item_qty = None
 
     return {
         "item_name": item_name,

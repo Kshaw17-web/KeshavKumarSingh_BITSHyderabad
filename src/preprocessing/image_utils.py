@@ -132,11 +132,13 @@ def _deskew_image(img_array: np.ndarray) -> np.ndarray:
 
 def preprocess_image_for_ocr(
     img: "Image.Image",
-    max_side: int = 1024,
+    max_side: int = 2000,  # Increased for better OCR on complex bills
     target_dpi: int = 300,
     fast_mode: bool = False,
     return_cv2: bool = False,
-    save_debug_path: Optional[str] = None
+    save_debug_path: Optional[str] = None,
+    enhance_for_multilingual: bool = True,  # New: enhance for multilingual/handwritten
+    enhance_for_handwritten: bool = True    # New: enhance for handwritten text
 ) -> Union["Image.Image", np.ndarray]:
     """
     Optimized preprocessing pipeline with downsampling and caching.
@@ -265,10 +267,33 @@ def preprocess_image_for_ocr(
         except Exception:
             pass
     
-    # Step 10: Ensure minimum width for better OCR
+    # Step 10: Enhance for multilingual/handwritten (if enabled)
+    if enhance_for_multilingual and not fast_mode:
+        try:
+            # Sharpen image for better character recognition (helps with multilingual)
+            kernel_sharpen = np.array([[-1, -1, -1],
+                                      [-1,  9, -1],
+                                      [-1, -1, -1]])
+            img_array = cv2.filter2D(img_array, -1, kernel_sharpen)
+            # Normalize to prevent overflow
+            img_array = np.clip(img_array, 0, 255).astype(np.uint8)
+        except Exception:
+            pass
+    
+    # Step 11: Enhance for handwritten text (if enabled)
+    if enhance_for_handwritten and not fast_mode:
+        try:
+            # Apply additional contrast enhancement for handwritten text
+            # Handwritten text often has lower contrast
+            clahe_handwritten = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
+            img_array = clahe_handwritten.apply(img_array)
+        except Exception:
+            pass
+    
+    # Step 12: Ensure minimum width for better OCR
     h, w = img_array.shape[:2]
     if w < 1200:
-        # Upscale to minimum width
+        # Upscale to minimum width (critical for accuracy)
         scale = 1200 / w
         new_w = 1200
         new_h = int(h * scale)

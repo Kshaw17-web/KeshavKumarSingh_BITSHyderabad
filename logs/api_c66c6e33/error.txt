@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "C:\Users\ksr20\OneDrive\Desktop\Bajaj Finserv Datathon\src\api.py", line 254, in hackrx_run
+    temp_file = _handle_document_input(document_input)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksr20\OneDrive\Desktop\Bajaj Finserv Datathon\src\api.py", line 204, in _handle_document_input
+    raise ValueError(f"Unsupported document input type: {type(document_input)}")
+ValueError: Unsupported document input type: <class 'starlette.datastructures.UploadFile'>

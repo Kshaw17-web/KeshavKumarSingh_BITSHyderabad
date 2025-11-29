@@ -585,38 +585,57 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
 
 def is_probable_item(parsed_row: Dict[str, Optional[object]], conf_threshold: int = 40) -> bool:
     """
-    Consider a row an item if it has:
-    - a valid item_amount (float and > 0), OR
-    - a valid quantity (int > 0) and a rate (float > 0).
+    Optimized for leaderboard: Capture ALL line items while avoiding false positives.
     
-    Avoid rows that look like totals/headers.
+    CRITICAL REQUIREMENT: Don't miss any line-item entries!
+    
+    Strategy:
+    - Be LESS conservative to avoid missing items (critical requirement)
+    - Accept items with amount > 0 OR items with name + quantity/rate
+    - Reject only obvious non-items (exact summary keywords, invoice IDs, pure totals)
+    
+    Returns True if row is likely a bill line item.
     """
-    name = (parsed_row.get("item_name") or "").lower()
-    non_item_keywords = ["subtotal", "total", "discount", "gst", "tax", "invoice", "net amount", "amount due", "mrp", "balance", "paid"]
-    if any(k in name for k in non_item_keywords):
+    name = (parsed_row.get("item_name") or "").lower().strip()
+    
+    # Reject obvious non-items (but be careful - only exact matches)
+    # Only reject if name is EXACTLY a summary keyword (not if it contains it)
+    exact_non_items = ["subtotal", "sub total", "total", "grand total", "net amount", 
+                       "amount due", "balance", "paid", "invoice no", "invoice number",
+                       "gst", "cgst", "sgst", "igst", "tax", "vat", "discount"]
+    if name in exact_non_items:
+        return False
+    
+    # Reject if name is just a number or empty
+    if not name or name.replace(".", "").replace(",", "").strip().isdigit():
         return False
 
-    # Require at least one numeric amount > 0
+    # Require at least one numeric amount > 0 OR quantity+rate combo
     amt = parsed_row.get("item_amount")
-    if amt is None:
-        return False
+    qty = parsed_row.get("item_quantity")
+    rate = parsed_row.get("item_rate")
     
-    if not isinstance(amt, (int, float)):
-        return False
+    # Accept if has valid amount
+    if amt is not None and isinstance(amt, (int, float)) and amt > 0:
+        # Reject if amount looks like an invoice-id (very large integer > 100000)
+        if amt > 100000 and float(amt).is_integer():
+            return False
+        # Accept if amount is reasonable
+        return True
     
-    if amt <= 0:
-        return False
+    # Accept if has quantity AND rate (even without amount, might be valid)
+    if qty and rate and isinstance(qty, (int, float)) and isinstance(rate, (int, float)):
+        if qty > 0 and rate > 0:
+            return True
     
-    # Reject if amount looks like an invoice-id (very large integer and no decimal)
-    if amt > 100000 and float(amt).is_integer():
-        return False
+    # If no amount and no qty+rate, but has a substantial name, be lenient
+    # (might be item with missing amount due to OCR error)
+    if name and len(name.split()) >= 2:  # At least 2 words
+        # Only accept if name doesn't look like a summary row
+        if not any(exact_kw in name for exact_kw in exact_non_items):
+            return True
     
-    # Require at least 1 token in item_name if present
-    name_str = parsed_row.get("item_name") or ""
-    if len(name_str.split()) < 1:
-        return False
-
-    return True
+    return False
 
 
 if __name__ == "__main__":

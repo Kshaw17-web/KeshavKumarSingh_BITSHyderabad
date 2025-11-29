@@ -106,31 +106,59 @@ async def debug_exceptions(request: Request, exc: Exception):
     )
 
 # --- HELPER: ROW FILTERING ---
-def is_summary_row(item_name: str) -> bool:
+def is_summary_row(item_name: str, item_amount: float = None) -> bool:
     """
-    Prevents double counting.
+    Prevents double counting by identifying summary rows (sub-totals, taxes, grand totals).
+    
+    CRITICAL: According to problem statement:
+    - Final Total = sum of ALL individual line items
+    - Sub-totals should NOT be included in Final Total
+    - Taxes, discounts, etc. should NOT be included
+    
     Returns True if the row is likely a Sub Total, Tax, or Grand Total.
     """
+    if not item_name:
+        return False
+        
     item_name_lower = item_name.lower().replace(".", "").strip()
     
-    # Strict keywords that indicate a summary row
+    # Strict keywords that indicate a summary row (NOT a line item)
     summary_keywords = [
-        "total", "sub total", "subtotal", "net amount", "grand total", 
-        "tax", "vat", "gst", "cgst", "sgst", "discount", "advance", 
-        "balance", "net payable", "amount due"
+        "sub total", "subtotal", "net amount", "grand total", "total amount",
+        "tax", "vat", "gst", "cgst", "sgst", "igst", "discount", "advance", 
+        "balance", "net payable", "amount due", "round off", "rounding",
+        "service charge", "delivery charge", "packing charge"
     ]
     
-    # Precise check: "Total" is bad. "Total Knee Replacement" is good.
+    # Exact match check
     if item_name_lower in summary_keywords:
         return True
-        
+    
+    # Pattern checks - must be at start or end of line
     for k in summary_keywords:
-        # Check if line starts with keyword (e.g. "Total Amount")
-        if item_name_lower.startswith(k + " ") or item_name_lower.endswith(" " + k):
-             # Exception: Medical procedures starting with Total
-             if "replacement" in item_name_lower or "surgery" in item_name_lower:
-                 continue
-             return True
+        # Check if line starts with keyword (e.g. "Total Amount", "GST @ 18%")
+        if item_name_lower.startswith(k + " ") or item_name_lower.startswith(k + ":"):
+            # Exception: Medical procedures (e.g. "Total Knee Replacement")
+            if any(med_term in item_name_lower for med_term in ["replacement", "surgery", "procedure", "treatment"]):
+                continue
+            return True
+        # Check if line ends with keyword
+        if item_name_lower.endswith(" " + k) or item_name_lower.endswith(":" + k):
+            return True
+    
+    # Additional checks for tax patterns
+    tax_patterns = [
+        r"^gst\s*@?\s*\d+%",
+        r"^cgst\s*@?\s*\d+%",
+        r"^sgst\s*@?\s*\d+%",
+        r"^tax\s*@?\s*\d+%",
+        r"^vat\s*@?\s*\d+%"
+    ]
+    import re
+    for pattern in tax_patterns:
+        if re.match(pattern, item_name_lower):
+            return True
+    
     return False
 
 # --- HELPER: FRAUD RUNNER (INTERNAL ONLY) ---
@@ -314,9 +342,10 @@ async def hackrx_run(
                 if FRAUD_ENGINE_AVAILABLE:
                     ocr_future = executor.submit(extract_bill_data_with_tsv, images, request_id)
                 
-                # Submit Fraud Tasks (Fire and forget - purely for logging/console output)
-                for i, img in enumerate(images):
-                    executor.submit(run_internal_fraud_check, img, i + 1)
+                # Submit Fraud Check on first page only (optimize latency)
+                # Fraud detection is a differentiator but shouldn't slow down API
+                if images and FRAUD_ENGINE_AVAILABLE:
+                    executor.submit(run_internal_fraud_check, images[0], 1)
                 
                 # Wait for OCR (Timeout safe)
                 ocr_result = ocr_future.result(timeout=45) if ocr_future else {}
@@ -377,11 +406,17 @@ async def hackrx_run(
                     item_quantity=float(item.get("item_quantity") or 1.0)
                 )
                 
-                # Logic: Add to list, but check if it's a summary row
+                # Add all items to pagewise list (for complete record)
                 clean_bill_items.append(b_item)
                 
-                if not is_summary_row(name):
+                # CRITICAL: Final Total = sum of ALL individual line items
+                # Exclude: sub-totals, taxes, discounts, grand totals
+                # Include: all actual product/service line items
+                item_amount = float(item.get("item_amount") or 0.0)
+                if not is_summary_row(name, item_amount):
+                    # This is a valid line item - include in final total
                     all_valid_items.append(b_item)
+                # else: This is a summary row (sub-total, tax, etc.) - exclude from final total
 
             final_pagewise_items.append(PagewiseItem(
                 page_no=page_no,
@@ -389,10 +424,18 @@ async def hackrx_run(
             ))
 
         # 5. Calculate Final Totals
-        # "Total... without double counting" 
+        # CRITICAL: According to problem statement:
+        # - Final Total = sum of ALL individual line items
+        # - Do NOT include sub-totals, taxes, discounts, grand totals
+        # - Do NOT double count any entries
+        # 
+        # all_valid_items already excludes summary rows (sub-totals, taxes, etc.)
+        # This is the sum of all actual product/service line items
         reconciled_total = sum(item.item_amount for item in all_valid_items)
-        # Use total_item_count from extractor if available, otherwise count all items
-        total_count = data.get("total_item_count", len(clean_bill_items)) 
+        
+        # Use total_item_count from extractor (counts all items, including summary rows for record)
+        # But Final Total only includes line items (excludes summary rows)
+        total_count = data.get("total_item_count", len(all_valid_items)) 
 
         # 6. Construct Response
         return FullResponse(

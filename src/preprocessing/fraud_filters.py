@@ -1,6 +1,10 @@
 """
 Advanced document forensics fraud detection engine.
-Implements whiteout detection, overwriting detection, digital tampering, font inconsistency, and geometry tampering.
+Refined for Bajaj Finserv Datathon to handle specific fraud types:
+1. Whiteout/Whitener (Texture analysis with digital-file safeguards)
+2. Overwriting (Ink saturation + Gradient analysis)
+3. Font Inconsistency (Line height clustering)
+4. Digital Tampering (ELA & Metadata)
 """
 
 import numpy as np
@@ -16,7 +20,7 @@ except ImportError:
     cv2 = None
 
 try:
-    from PIL import Image, ImageChops, ImageFilter
+    from PIL import Image, ImageChops
     PIL_AVAILABLE = True
 except ImportError:
     PIL_AVAILABLE = False
@@ -29,54 +33,40 @@ except ImportError:
     PADDLEOCR_AVAILABLE = False
     PaddleOCR = None
 
-
 # Global OCR engine for font detection (lazy loaded)
 _ocr_engine = None
-
 
 def _get_ocr_engine():
     """Lazy load OCR engine for font detection."""
     global _ocr_engine
     if _ocr_engine is None and PADDLEOCR_AVAILABLE:
         try:
+            # optimize for structure/box detection rather than pure text accuracy
             _ocr_engine = PaddleOCR(use_angle_cls=True, lang="en", show_log=False)
         except Exception:
             _ocr_engine = None
     return _ocr_engine
 
-
 def _compute_ela_map(img: np.ndarray, quality: int = 85) -> np.ndarray:
-    """
-    Compute Error Level Analysis (ELA) map for tampering detection.
-    
-    Args:
-        img: Input image as numpy array
-        quality: JPEG compression quality for recompression
-        
-    Returns:
-        Normalized ELA map (0-1 float array)
-    """
+    """Compute Error Level Analysis (ELA) map for tampering detection."""
     if not PIL_AVAILABLE:
         return np.zeros_like(img, dtype=np.float32)
     
     try:
-        # Convert numpy to PIL
+        # Ensure we are working with RGB for ELA
         if len(img.shape) == 2:
-            pil_img = Image.fromarray(img, mode="L")
+            pil_img = Image.fromarray(img, mode="L").convert("RGB")
         else:
-            pil_img = Image.fromarray(img)
+            # Convert BGR (OpenCV) to RGB (PIL)
+            pil_img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
         
         # Save and reload with compression
         buf = BytesIO()
-        pil_img.convert("RGB").save(buf, format="JPEG", quality=quality)
+        pil_img.save(buf, format="JPEG", quality=quality)
         buf.seek(0)
         recompressed = Image.open(buf).convert("RGB")
         
-        # Convert original to RGB if needed
-        if len(img.shape) == 2:
-            orig = pil_img.convert("RGB")
-        else:
-            orig = Image.fromarray(img).convert("RGB")
+        orig = pil_img
         
         # Compute difference
         diff = ImageChops.difference(orig, recompressed)
@@ -88,162 +78,142 @@ def _compute_ela_map(img: np.ndarray, quality: int = 85) -> np.ndarray:
             return diff_arr / diff_arr.max()
         else:
             return diff_arr / 255.0
-    
+            
     except Exception:
-        return np.zeros_like(img, dtype=np.float32)
+        return np.zeros((img.shape[0], img.shape[1]), dtype=np.float32)
 
-
-def _detect_whiteout_regions(img_array: np.ndarray) -> Tuple[float, np.ndarray, List]:
+def _detect_whiteout_regions(img_gray: np.ndarray) -> Tuple[float, np.ndarray, List]:
     """
-    Enhanced whiteout/whitener detection.
-    
-    Detects:
-    - High brightness patches
-    - Low texture regions
-    - Contour gaps
-    
-    Returns:
-        Tuple of (whiteout_score, whiteout_mask, large_contours)
+    Refined Whitener Detection.
+    Check: High Brightness + Low Texture.
+    SAFEGUARD: Checks global background noise to ignore digital PDFs.
     """
     if not CV2_AVAILABLE:
-        return 0.0, np.zeros_like(img_array), []
+        return 0.0, np.zeros_like(img_gray), []
     
-    h, w = img_array.shape[:2]
+    h, w = img_gray.shape[:2]
     total_pixels = w * h
+
+    # SAFEGUARD: Detect "Digital PDF" vs "Scanned Paper"
+    # Scanned paper has noise (std_dev > 5). Digital backgrounds are flat (std_dev < 2).
+    bg_mean, bg_std = cv2.meanStdDev(img_gray)
+    is_digital_file = bg_std < 5.0
+
+    if is_digital_file:
+        # If it's a digital file, "whitener" is impossible/irrelevant. 
+        # Return 0 to prevent False Positives.
+        return 0.0, np.zeros_like(img_gray), []
+
+    # 1. High brightness detection (Whitener is usually brighter than the paper)
+    # Adaptive thresholding based on background mean
+    white_thresh = max(bg_mean[0][0] + 20, 240) # Ensure it's very bright
+    bright_mask = (img_gray >= white_thresh).astype(np.uint8) * 255
     
-    # 1. High brightness detection
-    white_threshold = 240
-    bright_mask = (img_array >= white_threshold).astype(np.uint8) * 255
-    bright_ratio = float(bright_mask.sum()) / (total_pixels * 255)
-    
-    # 2. Low texture detection (variance-based)
+    # 2. Low texture detection (Whitener creates a smooth patch on noisy paper)
+    # Calculate local variance
     kernel_size = 15
     kernel = np.ones((kernel_size, kernel_size), np.float32) / (kernel_size * kernel_size)
-    mean = cv2.filter2D(img_array.astype(np.float32), -1, kernel)
-    variance = cv2.filter2D((img_array.astype(np.float32) - mean) ** 2, -1, kernel)
+    mean = cv2.filter2D(img_gray.astype(np.float32), -1, kernel)
+    sq_mean = cv2.filter2D(img_gray.astype(np.float32)**2, -1, kernel)
+    variance = sq_mean - mean**2
+    
+    # Whitener patches are smooth (variance < 50 typically)
     low_texture_mask = (variance < 50).astype(np.uint8) * 255
     
-    # Combine bright and low-texture regions
+    # Combine: Must be Bright AND Smooth
     combined_mask = cv2.bitwise_and(bright_mask, low_texture_mask)
     
-    # 3. Find contours and detect gaps
+    # 3. Geometric Filtering: Whitener marks are blobs, not lines
     contours, _ = cv2.findContours(combined_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    large_contours = [c for c in contours if cv2.contourArea(c) > max(100, 0.002 * total_pixels)]
+    large_contours = []
     
-    # Calculate gap score (large white regions indicate whiteout)
-    gap_score = 0.0
-    if large_contours:
-        total_contour_area = sum(cv2.contourArea(c) for c in large_contours)
-        gap_score = total_contour_area / total_pixels
+    valid_mask = np.zeros_like(img_gray)
     
-    # Combined whiteout score
-    whiteout_score = min((bright_ratio * 0.4 + gap_score * 0.6) * 2.0, 1.0)
-    
-    return whiteout_score, combined_mask, large_contours
+    for c in contours:
+        area = cv2.contourArea(c)
+        # Filter noise (too small) and huge page borders (too big)
+        if 100 < area < (total_pixels * 0.10): 
+            # Check aspect ratio (whitener isn't usually a long thin line)
+            x,y,cw,ch = cv2.boundingRect(c)
+            aspect = float(cw)/ch
+            if 0.2 < aspect < 5.0:
+                large_contours.append(c)
+                cv2.drawContours(valid_mask, [c], -1, 255, -1)
 
+    # Calculate score based on area of suspected patches
+    whitener_area = np.sum(valid_mask > 0)
+    whitener_ratio = whitener_area / total_pixels
+    
+    # Heuristic score
+    score = min(whitener_ratio * 100.0, 1.0) # 1% of page covered = 100% suspicion
+    
+    return score, valid_mask, large_contours
 
-def _detect_overwriting(img_array: np.ndarray) -> Tuple[float, np.ndarray]:
+def _detect_overwriting(img_color: Optional[np.ndarray], img_gray: np.ndarray) -> Tuple[float, np.ndarray]:
     """
-    Detect overwriting (sharp dark strokes over faded background).
-    
-    Detects:
-    - Sharp dark strokes over faded background
-    - Stroke-width inconsistency
-    - Local contrast spikes
-    
-    Returns:
-        Tuple of (overwriting_score, overwriting_mask)
+    Refined Overwriting Detection.
+    1. Digital Edits: Sharp gradient detection.
+    2. Physical Edits (Pen): HSV Saturation check (Ink vs Toner).
     """
     if not CV2_AVAILABLE:
-        return 0.0, np.zeros_like(img_array)
+        return 0.0, np.zeros_like(img_gray)
     
-    h, w = img_array.shape[:2]
-    
-    # 1. Detect sharp dark strokes (high gradient magnitude in dark regions)
-    grad_x = cv2.Sobel(img_array, cv2.CV_64F, 1, 0, ksize=3)
-    grad_y = cv2.Sobel(img_array, cv2.CV_64F, 0, 1, ksize=3)
+    h, w = img_gray.shape[:2]
+    combined_mask = np.zeros_like(img_gray)
+
+    # --- Method A: Gradient Magnitude (For Digital/Copy-Paste Edits) ---
+    # Look for unnatural sharpness in dark regions
+    grad_x = cv2.Sobel(img_gray, cv2.CV_64F, 1, 0, ksize=3)
+    grad_y = cv2.Sobel(img_gray, cv2.CV_64F, 0, 1, ksize=3)
     gradient_magnitude = np.sqrt(grad_x**2 + grad_y**2)
     
-    # Dark regions with high gradient indicate overwriting
-    dark_mask = (img_array < 100).astype(np.uint8)
-    high_gradient = (gradient_magnitude > np.percentile(gradient_magnitude, 90)).astype(np.uint8)
-    overwriting_candidates = cv2.bitwise_and(dark_mask, high_gradient) * 255
+    # Thresholds
+    dark_mask = (img_gray < 150).astype(np.uint8) # Only look at text/ink
+    # Top 5% sharpest edges
+    high_grad_thresh = np.percentile(gradient_magnitude, 95) 
+    sharp_edges = (gradient_magnitude > high_grad_thresh).astype(np.uint8)
     
-    # 2. Stroke-width inconsistency detection
-    # Use distance transform to estimate stroke width
-    binary = cv2.threshold(img_array, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
-    dist_transform = cv2.distanceTransform(binary, cv2.DIST_L2, 5)
-    
-    # Find regions with inconsistent stroke width
-    stroke_width_mean = np.mean(dist_transform[dist_transform > 0]) if np.any(dist_transform > 0) else 0
-    stroke_width_std = np.std(dist_transform[dist_transform > 0]) if np.any(dist_transform > 0) else 0
-    
-    # Regions with high std relative to mean indicate inconsistency
-    if stroke_width_mean > 0:
-        inconsistency_mask = (dist_transform > stroke_width_mean + 2 * stroke_width_std).astype(np.uint8) * 255
-    else:
-        inconsistency_mask = np.zeros_like(img_array, dtype=np.uint8)
-    
-    # 3. Local contrast spikes
-    kernel = np.ones((5, 5), np.float32) / 25
-    local_mean = cv2.filter2D(img_array.astype(np.float32), -1, kernel)
-    local_contrast = np.abs(img_array.astype(np.float32) - local_mean)
-    high_contrast = (local_contrast > np.percentile(local_contrast, 95)).astype(np.uint8) * 255
-    
-    # Combine all indicators
-    combined_overwriting = cv2.bitwise_or(
-        overwriting_candidates,
-        cv2.bitwise_or(inconsistency_mask, high_contrast)
-    )
-    
-    # Calculate score
-    overwriting_ratio = float(combined_overwriting.sum()) / (w * h * 255)
-    overwriting_score = min(overwriting_ratio * 10.0, 1.0)
-    
-    return overwriting_score, combined_overwriting
+    digital_edit_mask = cv2.bitwise_and(dark_mask, sharp_edges) * 255
 
-
-def _detect_jpeg_ghost(img_array: np.ndarray) -> float:
-    """
-    Detect JPEG ghost artifacts (double compression indicators).
+    # --- Method B: Ink Saturation (For Pen Overwriting) ---
+    ink_score = 0.0
+    ink_mask = np.zeros_like(img_gray)
     
-    Returns:
-        JPEG ghost score (0-1)
-    """
-    if not CV2_AVAILABLE:
-        return 0.0
-    
-    try:
-        # Test multiple compression qualities
-        qualities = [95, 85, 75, 65]
-        differences = []
+    if img_color is not None and len(img_color.shape) == 3:
+        # Convert to HSV to separate Color from Intensity
+        hsv = cv2.cvtColor(img_color, cv2.COLOR_BGR2HSV)
+        s_channel = hsv[:, :, 1] # Saturation
         
-        for q in qualities:
-            # Compress and decompress
-            encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), q]
-            result, encimg = cv2.imencode('.jpg', img_array, encode_param)
-            if result:
-                decimg = cv2.imdecode(encimg, cv2.IMREAD_GRAYSCALE)
-                if decimg is not None:
-                    diff = np.abs(img_array.astype(float) - decimg.astype(float))
-                    differences.append(np.mean(diff))
+        # Black Toner/Carbon has near 0 saturation.
+        # Blue/Black Pens have higher saturation (often > 20).
+        # We detect "Colored" strokes on a "Grayscale" document.
         
-        if differences:
-            # High variance in differences indicates ghost artifacts
-            ghost_score = min(np.std(differences) / 50.0, 1.0)
-            return ghost_score
-    except Exception:
-        pass
-    
-    return 0.0
+        # Threshold for "Ink"
+        _, potential_ink = cv2.threshold(s_channel, 25, 255, cv2.THRESH_BINARY)
+        
+        # Clean up noise
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3,3))
+        ink_mask = cv2.morphologyEx(potential_ink, cv2.MORPH_OPEN, kernel)
+        
+        # Calculate ink score
+        ink_pixels = cv2.countNonZero(ink_mask)
+        if ink_pixels > 50: # Minimum threshold to ignore scanner noise
+            ink_score = min(ink_pixels / (w * h * 0.005), 1.0)
 
+    # Combine masks
+    combined_mask = cv2.bitwise_or(digital_edit_mask, ink_mask)
+    
+    # Final Score: Max of either method
+    grad_score = (np.sum(digital_edit_mask > 0) / (w * h)) * 100.0
+    final_score = max(min(grad_score, 1.0), ink_score)
+    
+    return final_score, combined_mask
 
 def _detect_font_inconsistency(img_array: np.ndarray) -> float:
     """
-    Detect font inconsistency by analyzing glyph shapes from OCR boxes.
-    
-    Returns:
-        Font inconsistency score (0-1)
+    Refined Font Inconsistency.
+    Uses 'Line Height Consistency' instead of Aspect Ratio.
+    Detects inserted lines that are slightly larger/smaller than the document standard.
     """
     if not CV2_AVAILABLE or not PADDLEOCR_AVAILABLE:
         return 0.0
@@ -259,148 +229,75 @@ def _detect_font_inconsistency(img_array: np.ndarray) -> float:
         if not result or len(result) == 0 or len(result[0]) == 0:
             return 0.0
         
-        # Extract bounding boxes and compute shape descriptors
-        boxes = []
+        # Extract heights of every text box
+        box_heights = []
         for line in result[0]:
-            if line and len(line) >= 1:
-                bbox = line[0]
-                if bbox and len(bbox) >= 4:
-                    boxes.append(bbox)
+            # line structure: [[[x1, y1], [x2, y2], [x3, y3], [x4, y4]], (text, conf)]
+            box = line[0] 
+            if len(box) >= 4:
+                # Calculate height: Average of left-height and right-height
+                h_left = abs(box[3][1] - box[0][1])
+                h_right = abs(box[2][1] - box[1][1])
+                avg_h = (h_left + h_right) / 2.0
+                if avg_h > 5: # Ignore tiny noise
+                    box_heights.append(avg_h)
         
-        if len(boxes) < 5:  # Need at least 5 boxes for comparison
-            return 0.0
-        
-        # Compute aspect ratios and areas for each box
-        aspect_ratios = []
-        areas = []
-        
-        for bbox in boxes:
-            # Convert bbox to rectangle
-            x_coords = [p[0] for p in bbox]
-            y_coords = [p[1] for p in bbox]
-            width = max(x_coords) - min(x_coords)
-            height = max(y_coords) - min(y_coords)
+        if len(box_heights) < 10: 
+            return 0.0 # Not enough text to judge consistency
             
-            if height > 0:
-                aspect_ratios.append(width / height)
-            if width > 0 and height > 0:
-                areas.append(width * height)
+        box_heights = np.array(box_heights)
         
-        if len(aspect_ratios) < 3:
-            return 0.0
+        # Determine the "Dominant" font size (Median is robust to outliers)
+        median_h = np.median(box_heights)
         
-        # High variance in aspect ratios or areas indicates font inconsistency
-        aspect_std = np.std(aspect_ratios) if aspect_ratios else 0
-        area_std = np.std(areas) if areas else 0
-        aspect_mean = np.mean(aspect_ratios) if aspect_ratios else 1
+        # Define tolerance: 15% variation is normal scanning noise. 
+        # Anything beyond 20% diff is suspicious.
+        lower_bound = median_h * 0.80
+        upper_bound = median_h * 1.20
         
-        # Normalize by mean to get coefficient of variation
-        if aspect_mean > 0:
-            aspect_cv = aspect_std / aspect_mean
-        else:
-            aspect_cv = 0
+        # Find outliers
+        outliers = box_heights[(box_heights < lower_bound) | (box_heights > upper_bound)]
         
-        area_mean = np.mean(areas) if areas else 1
-        if area_mean > 0:
-            area_cv = area_std / area_mean
-        else:
-            area_cv = 0
+        # Scoring Logic:
+        # If 100% are outliers? No, that just means variable font sizes (Header vs Body).
+        # We look for a *minority* of text that is inconsistent (Inserts).
+        # E.g., if 10-30% of text is a different size, it's suspicious.
         
-        # High coefficient of variation indicates inconsistency
-        inconsistency_score = min((aspect_cv + area_cv) / 2.0 * 2.0, 1.0)
+        total_boxes = len(box_heights)
+        outlier_count = len(outliers)
+        outlier_ratio = outlier_count / total_boxes
         
-        return inconsistency_score
+        # Penalize if outliers exist but aren't dominant (0.05 < ratio < 0.40)
+        if 0.05 < outlier_ratio < 0.40:
+            return min(outlier_ratio * 3.0, 1.0)
+            
+        return 0.0
     
     except Exception:
         return 0.0
 
-
-def _detect_geometry_tampering(img_array: np.ndarray) -> Tuple[float, np.ndarray]:
-    """
-    Detect geometry tampering (warped text lines, unnatural skew).
-    
-    Returns:
-        Tuple of (geometry_score, warping_mask)
-    """
+def _detect_jpeg_ghost(img_array: np.ndarray) -> float:
+    """Detect JPEG ghost artifacts (double compression)."""
     if not CV2_AVAILABLE:
-        return 0.0, np.zeros_like(img_array)
-    
-    h, w = img_array.shape[:2]
-    
-    # 1. Detect text lines using horizontal projections
-    # Binarize image
-    _, binary = cv2.threshold(img_array, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
-    
-    # Horizontal projection
-    horizontal_projection = np.sum(binary, axis=1)
-    
-    # Find text line regions (high projection values)
-    threshold = np.mean(horizontal_projection) + np.std(horizontal_projection)
-    text_line_mask = (horizontal_projection > threshold).astype(np.uint8)
-    
-    # 2. Detect warping by analyzing line straightness
-    # Use Hough transform to detect lines
-    lines = cv2.HoughLinesP(binary, 1, np.pi / 180, 100, minLineLength=w // 10, maxLineGap=10)
-    
-    if lines is None or len(lines) == 0:
-        return 0.0, np.zeros_like(img_array)
-    
-    # Calculate angles of detected lines
-    angles = []
-    for line in lines:
-        x1, y1, x2, y2 = line[0]
-        if abs(x2 - x1) > 0:
-            angle = math.degrees(math.atan2(y2 - y1, x2 - x1))
-            if -45 <= angle <= 45:  # Horizontal-ish lines
-                angles.append(angle)
-    
-    if len(angles) < 3:
-        return 0.0, np.zeros_like(img_array)
-    
-    # High variance in angles indicates warping
-    angle_std = np.std(angles)
-    angle_mean = np.mean(angles)
-    
-    # 3. Detect local skew anomalies
-    # Divide image into regions and check skew in each
-    region_size = min(200, w // 4, h // 4)
-    warping_regions = []
-    
-    for y in range(0, h, region_size):
-        for x in range(0, w, region_size):
-            region = binary[y:y+region_size, x:x+region_size]
-            if region.size == 0:
-                continue
-            
-            # Detect lines in region
-            region_lines = cv2.HoughLinesP(region, 1, np.pi / 180, 50, minLineLength=region_size // 5, maxLineGap=5)
-            if region_lines is not None and len(region_lines) > 0:
-                region_angles = []
-                for line in region_lines:
-                    x1, y1, x2, y2 = line[0]
-                    if abs(x2 - x1) > 0:
-                        angle = math.degrees(math.atan2(y2 - y1, x2 - x1))
-                        if -45 <= angle <= 45:
-                            region_angles.append(angle)
-                
-                if region_angles:
-                    region_angle_std = np.std(region_angles)
-                    if region_angle_std > 5:  # High local variance
-                        warping_regions.append((x, y, region_size, region_size))
-    
-    # Create warping mask
-    warping_mask = np.zeros_like(img_array, dtype=np.uint8)
-    for x, y, w_reg, h_reg in warping_regions:
-        warping_mask[y:y+h_reg, x:x+w_reg] = 255
-    
-    # Calculate geometry tampering score
-    warping_ratio = float(warping_mask.sum()) / (w * h * 255)
-    angle_anomaly = min(angle_std / 10.0, 1.0) if angle_std > 0 else 0.0
-    
-    geometry_score = min((warping_ratio * 0.5 + angle_anomaly * 0.5) * 2.0, 1.0)
-    
-    return geometry_score, warping_mask
-
+        return 0.0
+    try:
+        qualities = [95, 85, 75, 65]
+        differences = []
+        for q in qualities:
+            encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), q]
+            result, encimg = cv2.imencode('.jpg', img_array, encode_param)
+            if result:
+                decimg = cv2.imdecode(encimg, cv2.IMREAD_GRAYSCALE)
+                if decimg is not None:
+                    diff = np.abs(img_array.astype(float) - decimg.astype(float))
+                    differences.append(np.mean(diff))
+        
+        if differences:
+            # High variance in re-compression error indicates mismatched quantization
+            return min(np.std(differences) / 50.0, 1.0)
+    except Exception:
+        pass
+    return 0.0
 
 def detect_fraud_flags(
     img: Union["Image.Image", np.ndarray],
@@ -409,25 +306,8 @@ def detect_fraud_flags(
     use_fast_mode: bool = False
 ) -> Tuple[List[Dict[str, Any]], Dict[str, np.ndarray]]:
     """
-    Comprehensive fraud detection with unified scoring.
-    
-    Detects:
-    - Whiteout/whitener regions
-    - Overwriting
-    - Digital tampering (ELA, JPEG ghost, recompression)
-    - Font inconsistency
-    - Geometry tampering
-    
-    Args:
-        img: PIL Image or numpy array
-        save_debug_maps: Whether to save visualization maps
-        debug_output_dir: Directory to save debug maps (if save_debug_maps=True)
-        use_fast_mode: Use low-res pre-scan for batch processing (default False)
-        
-    Returns:
-        Tuple of (fraud_flags_list, debug_maps_dict)
-        fraud_flags_list: List of dicts with keys: flag_type, score (0-1), meta
-        debug_maps_dict: Dictionary of visualization maps (ELA, contours, masks, etc.)
+    Main Entry Point.
+    Orchestrates all checks and returns a unified report.
     """
     flags = []
     debug_maps = {}
@@ -436,201 +316,113 @@ def detect_fraud_flags(
         return flags, debug_maps
     
     try:
-        # Convert to numpy array
+        # Preprocessing: Ensure we have both Color (for Ink) and Grayscale (for Texture)
+        img_color = None
+        img_gray = None
+        
         if isinstance(img, Image.Image):
-            if img.mode != "L":
-                img_gray = img.convert("L")
+            if img.mode != "RGB":
+                img = img.convert("RGB")
+            img_color = np.array(img)
+            img_color = cv2.cvtColor(img_color, cv2.COLOR_RGB2BGR) # PIL is RGB, OpenCV is BGR
+            img_gray = cv2.cvtColor(img_color, cv2.COLOR_BGR2GRAY)
+        elif isinstance(img, np.ndarray):
+            if len(img.shape) == 3:
+                img_color = img
+                img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             else:
                 img_gray = img
-            img_array = np.array(img_gray)
-        else:
-            img_array = img
-            if len(img_array.shape) == 3:
-                img_array = cv2.cvtColor(img_array, cv2.COLOR_BGR2GRAY)
+                img_color = None # No color data available
         
-        # Fast mode: low-res pre-scan for batch processing
-        original_array = img_array.copy()
-        if use_fast_mode and img_array.shape[0] > 1000 or img_array.shape[1] > 1000:
-            # Resize to max 800px for fast processing
-            max_dim = 800
-            h_orig, w_orig = img_array.shape[:2]
-            if max(h_orig, w_orig) > max_dim:
-                scale = max_dim / max(h_orig, w_orig)
-                new_w = int(w_orig * scale)
-                new_h = int(h_orig * scale)
-                img_array = cv2.resize(img_array, (new_w, new_h), interpolation=cv2.INTER_AREA)
-        
-        h, w = img_array.shape[:2]
-        total_pixels = w * h
-        
-        # 1. Whiteout detection
-        whiteout_score, whiteout_mask, large_contours = _detect_whiteout_regions(img_array)
-        if whiteout_score > 0.1:
+        # Resize for performance if needed
+        if use_fast_mode:
+            h, w = img_gray.shape[:2]
+            if max(h, w) > 1000:
+                scale = 1000 / max(h, w)
+                img_gray = cv2.resize(img_gray, None, fx=scale, fy=scale)
+                if img_color is not None:
+                    img_color = cv2.resize(img_color, None, fx=scale, fy=scale)
+
+        # 1. Whitener Detection
+        whiteout_score, whiteout_mask, _ = _detect_whiteout_regions(img_gray)
+        if whiteout_score > 0.15:
             flags.append({
                 "flag_type": "whiteout_regions",
                 "score": whiteout_score,
-                "meta": {
-                    "n_large_regions": len(large_contours),
-                    "whiteout_ratio": float(whiteout_mask.sum()) / (total_pixels * 255)
-                }
+                "meta": {"detection_method": "texture_variance"}
             })
             debug_maps["whiteout_mask"] = whiteout_mask
-        
-        # 2. Overwriting detection
-        overwriting_score, overwriting_mask = _detect_overwriting(img_array)
-        if overwriting_score > 0.1:
+
+        # 2. Overwriting Detection (Ink + Digital)
+        overwriting_score, overwriting_mask = _detect_overwriting(img_color, img_gray)
+        if overwriting_score > 0.15:
             flags.append({
                 "flag_type": "overwriting",
                 "score": overwriting_score,
-                "meta": {
-                    "overwriting_ratio": float(overwriting_mask.sum()) / (total_pixels * 255)
-                }
+                "meta": {"detection_method": "ink_saturation_and_gradient"}
             })
             debug_maps["overwriting_mask"] = overwriting_mask
-        
-        # 3. Digital tampering - ELA
-        ela_map = _compute_ela_map(img_array)
-        ela_mean = float(np.mean(ela_map))
-        ela_high_ratio = float((ela_map > 0.06).sum()) / total_pixels
-        ela_std = float(np.std(ela_map))
-        
-        if ela_mean > 0.05 or ela_high_ratio > 0.015:
-            flags.append({
-                "flag_type": "ela_anomaly",
-                "score": min(ela_mean * 10.0, 1.0),
-                "meta": {
-                    "ela_mean": ela_mean,
-                    "ela_high_ratio": ela_high_ratio,
-                    "ela_std": ela_std
-                }
-            })
-            debug_maps["ela_heatmap"] = (ela_map * 255).astype(np.uint8)
-        
-        # 4. Digital tampering - JPEG ghost
-        jpeg_ghost_score = _detect_jpeg_ghost(img_array)
-        if jpeg_ghost_score > 0.2:
-            flags.append({
-                "flag_type": "jpeg_ghost",
-                "score": jpeg_ghost_score,
-                "meta": {"ghost_artifact_detected": True}
-            })
-        
-        # 5. Compression inconsistency
-        if ela_std > 0.08:
-            flags.append({
-                "flag_type": "compression_anomaly",
-                "score": min(ela_std * 5.0, 1.0),
-                "meta": {
-                    "ela_std": ela_std,
-                    "ela_mean": ela_mean
-                }
-            })
-        
-        # 6. Font inconsistency (skip in fast mode for speed)
-        font_score = 0.0
+
+        # 3. ELA (Digital Tampering)
+        if img_color is not None:
+            ela_map = _compute_ela_map(img_color)
+            ela_score = float(np.mean(ela_map)) * 10.0 # Scale up
+            if ela_score > 0.2:
+                flags.append({
+                    "flag_type": "ela_anomaly",
+                    "score": min(ela_score, 1.0),
+                    "meta": {"method": "error_level_analysis"}
+                })
+                debug_maps["ela_heatmap"] = (ela_map * 255).astype(np.uint8)
+
+        # 4. Font Inconsistency (Skip in fast mode)
         if not use_fast_mode:
-            font_score = _detect_font_inconsistency(img_array)
-            if font_score > 0.3:
+            font_score = _detect_font_inconsistency(img_color if img_color is not None else img_gray)
+            if font_score > 0.2:
                 flags.append({
                     "flag_type": "font_inconsistency",
                     "score": font_score,
-                    "meta": {"font_variation_detected": True}
+                    "meta": {"method": "line_height_clustering"}
                 })
-        
-        # 7. Geometry tampering (skip in fast mode)
-        geometry_score = 0.0
-        warping_mask = np.zeros_like(img_array, dtype=np.uint8)
-        if not use_fast_mode:
-            geometry_score, warping_mask = _detect_geometry_tampering(img_array)
-            if geometry_score > 0.2:
-                flags.append({
-                    "flag_type": "geometry_tampering",
-                    "score": geometry_score,
-                    "meta": {
-                        "warping_ratio": float(warping_mask.sum()) / (total_pixels * 255)
-                    }
-                })
-                debug_maps["warping_mask"] = warping_mask
-        
-        # 8. Contour gap detection (part of whiteout)
-        if large_contours:
-            # Draw contours for visualization
-            contour_map = np.zeros_like(img_array, dtype=np.uint8)
-            cv2.drawContours(contour_map, large_contours, -1, 255, 2)
-            debug_maps["contour_map"] = contour_map
-        
-        # Save debug maps if requested
-        if save_debug_maps and debug_output_dir:
-            _save_debug_maps(debug_maps, debug_output_dir)
-    
+
+        # 5. JPEG Ghost
+        ghost_score = _detect_jpeg_ghost(img_gray)
+        if ghost_score > 0.3:
+            flags.append({
+                "flag_type": "jpeg_ghost",
+                "score": ghost_score,
+                "meta": {"method": "double_compression_artifacts"}
+            })
+
     except Exception as e:
         flags.append({
-            "flag_type": "detection_error",
+            "flag_type": "error",
             "score": 0.0,
-            "meta": {"error": str(e)}
+            "meta": {"error_msg": str(e)}
         })
-    
+
     return flags, debug_maps
 
-
-def _save_debug_maps(debug_maps: Dict[str, np.ndarray], output_dir: str):
-    """Save debug visualization maps to disk."""
-    if not CV2_AVAILABLE:
-        return
-    
-    try:
-        output_path = Path(output_dir)
-        output_path.mkdir(parents=True, exist_ok=True)
-        
-        for map_name, map_array in debug_maps.items():
-            if map_array is not None and map_array.size > 0:
-                file_path = output_path / f"{map_name}.png"
-                cv2.imwrite(str(file_path), map_array)
-    except Exception:
-        pass
-
-
 def compute_unified_fraud_score(flags: List[Dict[str, Any]]) -> float:
-    """
-    Compute unified fraud score using weighted sum.
-    
-    Weights:
-    - whiteout_regions: 0.25
-    - overwriting: 0.20
-    - ela_anomaly: 0.20
-    - jpeg_ghost: 0.15
-    - font_inconsistency: 0.10
-    - geometry_tampering: 0.10
-    
-    Args:
-        flags: List of fraud flag dictionaries
+    """Weighted sum of all fraud indicators."""
+    if not flags:
+        return 0.0
         
-    Returns:
-        Unified fraud score (0-1)
-    """
     weights = {
-        "whiteout_regions": 0.25,
-        "overwriting": 0.20,
-        "ela_anomaly": 0.20,
-        "jpeg_ghost": 0.15,
-        "compression_anomaly": 0.10,
-        "font_inconsistency": 0.10,
-        "geometry_tampering": 0.10,
-        "edge_anomaly": 0.05
+        "whiteout_regions": 0.30,   # High priority (Visual tampering)
+        "overwriting": 0.25,        # High priority (Fraud)
+        "font_inconsistency": 0.20, # Medium priority (Inserts)
+        "ela_anomaly": 0.15,        # Low priority (Digital only)
+        "jpeg_ghost": 0.10          # Low priority (Hard to prove)
     }
     
-    weighted_sum = 0.0
+    total_score = 0.0
     total_weight = 0.0
     
-    for flag in flags:
-        flag_type = flag.get("flag_type", "")
-        score = flag.get("score", 0.0)
-        weight = weights.get(flag_type, 0.05)
+    for f in flags:
+        w = weights.get(f["flag_type"], 0.05)
+        total_score += f["score"] * w
+        total_weight += w
         
-        weighted_sum += score * weight
-        total_weight += weight
-    
-    if total_weight > 0:
-        return min(weighted_sum / total_weight, 1.0)
-    else:
-        return 0.0
+    if total_weight == 0: return 0.0
+    return min(total_score / total_weight, 1.0)

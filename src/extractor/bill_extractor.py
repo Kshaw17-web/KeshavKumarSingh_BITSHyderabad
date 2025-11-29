@@ -863,14 +863,17 @@ def extract_bill_data_with_tsv(
                 run_log_dir.mkdir(parents=True, exist_ok=True)
                 
                 # 1) Preprocess (returns cv2 array) - High quality mode for leaderboard
+                # Enhanced for multilingual and handwritten bills (differentiator)
                 save_debug_path = str(run_log_dir / f"{request_id or 'page'}_p{page_idx}_pre.png") if request_id else None
                 cv2_img = preprocess_image_for_ocr(
                     img,
-                    max_side=2000,
+                    max_side=2000,  # Higher resolution for complex bills
                     target_dpi=300,
                     fast_mode=False,
                     return_cv2=True,
-                    save_debug_path=save_debug_path
+                    save_debug_path=save_debug_path,
+                    enhance_for_multilingual=True,  # Differentiator: multilingual support
+                    enhance_for_handwritten=True   # Differentiator: handwritten support
                 )
                 
                 # Save preprocessed image (ensure it's saved)
@@ -1025,12 +1028,30 @@ def extract_bill_data_with_tsv(
                 # Auto-detect page_type
                 page_type = _detect_page_type_from_text(ocr_text_joined)
                 
+                # Run fraud detection on this page (Differentiator)
+                page_fraud_flags = []
+                try:
+                    from src.preprocessing.fraud_filters import detect_fraud_flags, compute_unified_fraud_score
+                    flags, _ = detect_fraud_flags(cv2_img, use_fast_mode=True)
+                    score = compute_unified_fraud_score(flags)
+                    if score > 0.1:  # Only include significant fraud indicators
+                        page_fraud_flags = [
+                            {
+                                "flag_type": flag.get("flag_type", "unknown"),
+                                "score": float(flag.get("score", 0.0)),
+                                "description": flag.get("description", "")
+                            }
+                            for flag in flags if flag.get("score", 0) > 0.1
+                        ]
+                except Exception:
+                    pass  # Fraud detection is optional
+                
                 # prepare schema part for this page
                 page_obj = {
                     "page_no": str(page_idx),
                     "page_type": page_type,
                     "bill_items": deduped,
-                    "fraud_flags": [],
+                    "fraud_flags": page_fraud_flags,  # Differentiator: fraud detection
                     "reported_total": reported_total,
                     "reconciliation_ok": (abs(final_total - (reported_total or final_total)) / (reported_total or final_total) if reported_total and reported_total > 0 else None),
                     "reconciliation_relative_error": None if reported_total is None or reported_total == 0 else (final_total - reported_total) / reported_total
@@ -1052,24 +1073,32 @@ def extract_bill_data_with_tsv(
                     "reconciliation_relative_error": None
                 })
         
-        # Final deduplication across all pages
-        final_deduped = dedupe_items(all_deduped_items, name_threshold=88)
+        # Final deduplication across all pages (prevent double counting)
+        # Use stricter threshold to avoid merging different items
+        final_deduped = dedupe_items(all_deduped_items, name_threshold=92)
         
-        # Final reconciliation (use total from all pages)
-        final_total, method = reconcile_totals(final_deduped, None)
+        # CRITICAL: Final Total = sum of ALL individual line items (per problem statement)
+        # Do NOT include sub-totals, taxes, or grand totals
+        # Calculate from deduplicated items
+        final_total = sum(item.get("item_amount", 0.0) for item in final_deduped if item.get("item_amount", 0.0) > 0)
+        
+        # Note: We don't use reconcile_totals here because:
+        # - Problem statement says: Final Total = sum of all individual line items
+        # - We should NOT adjust based on reported_total (that's for validation only)
+        method = "sum_of_all_line_items"
         
         # Update pagewise items with deduplicated items (simplified - in production, 
         # you might want to keep page-level items and dedupe only at final level)
         # For now, we'll keep pagewise structure but use deduped count
         
-        # Build response
+        # Build response with differentiator metadata
         response = {
             "is_success": True,
             "token_usage": {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0},
             "data": {
                 "pagewise_line_items": pagewise_line_items,
                 "total_item_count": len(final_deduped),
-                "reconciled_amount": final_total
+                "reconciled_amount": round(final_total, 2)  # Final Total = sum of all line items
             }
         }
         

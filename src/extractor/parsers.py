@@ -22,6 +22,14 @@ try:
 except Exception:
     SKLEARN_AVAILABLE = False
 
+# optional dependency for peak detection
+try:
+    from scipy.signal import find_peaks
+    SCIPY_AVAILABLE = True
+except Exception:
+    SCIPY_AVAILABLE = False
+    find_peaks = None
+
 
 def group_words_to_lines(ocr_dict: Dict[str, Any]) -> List[List[Dict[str, Any]]]:
     """
@@ -82,9 +90,8 @@ def detect_column_centers(all_lines: List[List[Dict[str, Any]]], max_columns: in
     """
     Return sorted x-centers for columns detected across all lines.
     
-    Uses k-means clustering if sklearn is available; otherwise uses quantile-based heuristics.
-    This function analyzes the horizontal positions of all tokens across all lines to identify
-    column boundaries, which is essential for parsing tabular data.
+    Uses k-means clustering if sklearn is available, with fallback to projection profile
+    and peak detection for complex layouts. This reduces columns collapsing on complex layouts.
     
     Args:
         all_lines: List of lines, where each line is a list of token dictionaries
@@ -98,6 +105,9 @@ def detect_column_centers(all_lines: List[List[Dict[str, Any]]], max_columns: in
         >>> col_centers = detect_column_centers(lines, max_columns=4)
         >>> print(f"Detected {len(col_centers)} columns at x-positions: {col_centers}")
     """
+    import numpy as np
+    
+    # Collect token centers
     centers = []
     for line in all_lines:
         for t in line:
@@ -106,15 +116,113 @@ def detect_column_centers(all_lines: List[List[Dict[str, Any]]], max_columns: in
     if len(centers) < 3:
         return []
     
+    # Try k-means first if available
     if SKLEARN_AVAILABLE:
-        k = min(max_columns, max(2, len(set([int(round(c)) for c in centers])) // 5))
-        k = max(2, k)
-        kmeans = KMeans(n_clusters=k, random_state=0).fit([[c] for c in centers])
-        col_centers = sorted([float(c[0]) for c in kmeans.cluster_centers_])
-        return col_centers
+        try:
+            k = min(max_columns, max(2, len(set([int(round(c)) for c in centers])) // 5))
+            k = max(2, k)
+            kmeans = KMeans(n_clusters=k, random_state=0, n_init=10).fit([[c] for c in centers])
+            col_centers = sorted([float(c[0]) for c in kmeans.cluster_centers_])
+            # Validate k-means result (check if clusters are reasonable)
+            if len(col_centers) >= 2 and col_centers[-1] - col_centers[0] > 50:
+                return col_centers
+        except Exception:
+            # k-means failed, fall through to projection profile
+            pass
     
-    # fallback heuristic: use quantiles
-    import numpy as np
+    # Fallback: Projection profile + peak detection
+    # Compute vertical projection profile (sum of token widths per x-position)
+    if not centers:
+        return []
+    
+    # Find the range of x positions
+    min_x = min(centers) - 50
+    max_x = max(centers) + 50
+    width = int(max_x - min_x) + 1
+    
+    # Create projection profile: for each x position, sum up token "ink" (width contribution)
+    projection = np.zeros(width, dtype=np.float32)
+    
+    for line in all_lines:
+        for t in line:
+            left = t['left']
+            token_width = t.get('width', 10)
+            # Add contribution to projection profile
+            start_idx = max(0, int(left - min_x))
+            end_idx = min(width, int(left - min_x + token_width))
+            if start_idx < end_idx:
+                projection[start_idx:end_idx] += 1.0
+    
+    # Smooth the projection profile slightly
+    if len(projection) > 10:
+        kernel = np.array([0.1, 0.2, 0.4, 0.2, 0.1])
+        projection = np.convolve(projection, kernel, mode='same')
+    
+    # Detect peaks in projection profile
+    peaks = []
+    
+    if SCIPY_AVAILABLE and find_peaks is not None:
+        try:
+            # Use scipy peak detection
+            # height: minimum peak height (at least 10% of max)
+            # distance: minimum distance between peaks (at least 50 pixels)
+            min_height = np.max(projection) * 0.1
+            min_distance = max(50, width // (max_columns * 2))
+            
+            detected_peaks, properties = find_peaks(
+                projection,
+                height=min_height,
+                distance=min_distance,
+                prominence=np.max(projection) * 0.05
+            )
+            
+            peaks = [float(p + min_x) for p in detected_peaks]
+        except Exception:
+            # scipy failed, use simple local maxima
+            pass
+    
+    # Fallback: Simple local maxima detection
+    if not peaks:
+        # Find local maxima manually
+        min_height = np.max(projection) * 0.1
+        min_distance = max(50, width // (max_columns * 2))
+        
+        for i in range(min_distance, len(projection) - min_distance):
+            if projection[i] >= min_height:
+                # Check if it's a local maximum
+                is_peak = True
+                for j in range(max(0, i - min_distance // 2), min(len(projection), i + min_distance // 2)):
+                    if j != i and projection[j] > projection[i]:
+                        is_peak = False
+                        break
+                
+                if is_peak:
+                    # Check if we already have a peak too close
+                    x_pos = float(i + min_x)
+                    too_close = False
+                    for existing_peak in peaks:
+                        if abs(x_pos - existing_peak) < min_distance:
+                            too_close = True
+                            break
+                    
+                    if not too_close:
+                        peaks.append(x_pos)
+                        if len(peaks) >= max_columns:
+                            break
+    
+    # Sort and limit to max_columns
+    peaks = sorted(peaks)
+    if len(peaks) > max_columns:
+        # Keep the strongest peaks
+        peak_strengths = [projection[int(p - min_x)] for p in peaks]
+        sorted_indices = sorted(range(len(peaks)), key=lambda i: peak_strengths[i], reverse=True)
+        peaks = [peaks[i] for i in sorted_indices[:max_columns]]
+        peaks = sorted(peaks)
+    
+    if peaks:
+        return peaks
+    
+    # Final fallback: use quantiles
     arr = np.array(centers)
     k = min(max_columns, max(2, len(arr) // 10))
     quantiles = np.quantile(arr, np.linspace(0, 1, k + 1)[1:-1])

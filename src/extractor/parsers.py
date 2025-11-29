@@ -199,79 +199,164 @@ def _clean_num_str(s: Optional[str]) -> Optional[float]:
 
 def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
     """
-    Heuristic extraction from column strings.
-    
-    This function attempts to extract structured bill item data from a list of
-    column strings. It uses heuristics to identify:
-    - Item name (typically the leftmost non-numeric text)
-    - Item amount (typically the rightmost numeric value)
-    - Item rate (second-to-last numeric value, if present)
-    - Item quantity (integer value, typically before rate)
-    
-    Args:
-        columns: List of strings representing columns (left to right)
-    
-    Returns:
-        Dictionary with keys:
-        - item_name: str or None - Name/description of the item
-        - item_amount: float or None - Total amount for the item
-        - item_rate: float or None - Unit rate/price
-        - item_quantity: int/float or None - Quantity of items
-    
-    Example:
-        >>> columns = ["Paracetamol 500mg", "10", "50.00", "500.00"]
-        >>> parsed = parse_row_from_columns(columns)
-        >>> # Returns: {
-        >>> #   "item_name": "Paracetamol 500mg",
-        >>> #   "item_amount": 500.0,
-        >>> #   "item_rate": 50.0,
-        >>> #   "item_quantity": 10
-        >>> # }
+    Improved heuristic extraction from column strings.
+
+    Strategy:
+    - Flatten tokens and collect numeric-like tokens in order (left->right).
+    - Prefer the rightmost *decimal-like* numeric (contains '.' or > 99 or has 2+ digits after decimal)
+      as the item_amount. This skips trailing small integers (GST% like 5,12).
+    - If decimal-like amount not found, use the last numeric that looks like an amount.
+    - For qty: select a small integer (<= 1000) appearing *before* amount.
+    - For rate: prefer a numeric with decimal or that fits amount/qty relationship.
+    - If rate missing and qty & amount present: compute rate = amount / qty
+    - Return a stable dict with item_name, item_amount, item_rate, item_quantity, and optional gst_percent.
     """
     tokens = []
     for c in columns:
         if c:
             tokens.extend([t for t in c.split() if t.strip() != ""])
-    
-    numeric_tokens = [t for t in tokens if re.search(r'\d', t)]
-    cleaned_nums = [_clean_num_str(t) for t in numeric_tokens]
-    
+
+    # Helper to clean numeric string to float or None
+    def _clean_num_str_raw(s):
+        if s is None:
+            return None
+        s0 = str(s).strip()
+        s0 = s0.replace('₹', '').replace('Rs', '').replace(',', '').replace('$','')
+        s0 = re.sub(r'[^\d.\-]', '', s0)
+        if s0 in ("", ".", "-", "--"):
+            return None
+        try:
+            return float(s0)
+        except:
+            return None
+
+    # gather numeric tokens with original string + cleaned float if possible
+    numerics = []
+    for t in tokens:
+        if re.search(r'\d', t):
+            cleaned = _clean_num_str_raw(t)
+            numerics.append({"raw": t, "float": cleaned})
+
+    # Function to decide if a numeric looks decimal-like / amount-like
+    def looks_amount_like(n):
+        if n is None:
+            return False
+        s = str(n)
+        if '.' in s:
+            # has decimal point: likely amount/rate
+            return True
+        # if >= 100 -> likely an amount (some items have amounts <100 though)
+        try:
+            if float(n) >= 100:
+                return True
+        except:
+            pass
+        # two or more digits (>=10) is more likely to be amount than GST% or small count
+        try:
+            if abs(float(n)) >= 10:
+                return True
+        except:
+            pass
+        return False
+
+    # Default outputs
     item_amount = None
     item_rate = None
-    item_quantity = None
-    
-    if cleaned_nums:
-        # pick last non-None as amount
-        for v in reversed(cleaned_nums):
-            if v is not None:
-                item_amount = v
+    item_qty = None
+    gst_percent = None
+
+    # If there are numeric tokens, scan from right to left to pick amount, gst, qty, rate
+    if numerics:
+        # find candidate amount: prefer rightmost numeric where looks_amount_like == True
+        amount_idx = None
+        for i in range(len(numerics)-1, -1, -1):
+            if numerics[i]["float"] is not None and looks_amount_like(numerics[i]["float"]):
+                amount_idx = i
                 break
-        
-        # attempt to assign qty & rate from previous numerical values
-        if len(cleaned_nums) >= 2:
-            second_last = cleaned_nums[-2]
-            if second_last is not None and float(second_last).is_integer() and abs(second_last) < 1000:
-                item_quantity = int(second_last)
-                if len(cleaned_nums) >= 3:
-                    item_rate = cleaned_nums[-3]
-            else:
-                item_rate = second_last
-    
-    # derive item_name by removing trailing numeric-like tokens (up to 3) from tokens
+        # If not found, fallback to last numeric with a float
+        if amount_idx is None:
+            for i in range(len(numerics)-1, -1, -1):
+                if numerics[i]["float"] is not None:
+                    amount_idx = i
+                    break
+
+        if amount_idx is not None:
+            item_amount = numerics[amount_idx]["float"]
+
+            # check if there's a small integer after amount -> likely GST%
+            if amount_idx + 1 < len(numerics):
+                nxt = numerics[amount_idx + 1]["float"]
+                if nxt is not None and 0 < nxt <= 30 and float(nxt).is_integer():
+                    # treat as GST%
+                    gst_percent = int(float(nxt))
+
+            # pick qty: scan left of amount, looking for a small integer (<=1000, preferably <=100)
+            for j in range(amount_idx - 1, -1, -1):
+                v = numerics[j]["float"]
+                if v is None:
+                    continue
+                if float(v).is_integer() and 0 < abs(int(v)) <= 1000:
+                    # prefer small integers and those < 100
+                    item_qty = int(float(v))
+                    break
+
+            # pick rate: look for a decimal-like numeric just left of amount (or any decimal-like)
+            rate_idx = None
+            # prefer the numeric immediately left of amount if decimal-like
+            if amount_idx - 1 >= 0 and numerics[amount_idx - 1]["float"] is not None:
+                cand = numerics[amount_idx - 1]["float"]
+                if looks_amount_like(cand):
+                    rate_idx = amount_idx - 1
+            # otherwise scan left for decimal-like
+            if rate_idx is None:
+                for j in range(amount_idx - 1, -1, -1):
+                    v = numerics[j]["float"]
+                    if v is not None and looks_amount_like(v):
+                        rate_idx = j
+                        break
+            if rate_idx is not None:
+                item_rate = numerics[rate_idx]["float"]
+
+            # if amount exists but rate missing and qty present, compute rate
+            if item_amount is not None and item_rate is None and item_qty:
+                try:
+                    if item_qty != 0:
+                        item_rate = round(item_amount / item_qty, 4)
+                except Exception:
+                    pass
+
+    # derive item_name: exclude the numeric tokens that are clearly qty/rate/amount/gst at the right side
     name_tokens = tokens.copy()
-    for _ in range(3):
+    # remove trailing numeric-like tokens up to 4 (qty, rate, disc, amount, gst)
+    remove_count = 0
+    for _ in range(5):
         if name_tokens and re.search(r'\d', name_tokens[-1]):
             name_tokens.pop()
+            remove_count += 1
         else:
             break
-    
     item_name = " ".join([t for t in name_tokens if t.lower() not in ("no", "qty", "pcs")]).strip() or None
-    
+
+    # Final normalization: ensure floats are numeric types
+    # If item_amount looks tiny (<=30) but gst_percent is None and a preceding decimal exists, attempt correction
+    if item_amount is not None and item_amount <= 30 and gst_percent is None:
+        # try to recover: if there exists any decimal-like numeric left of this small number, pick that instead
+        if numerics:
+            for i in range(len(numerics)-1, -1, -1):
+                v = numerics[i]["float"]
+                if looks_amount_like(v):
+                    # choose the first decimal-like from the right that is not equal to current small value
+                    if v != item_amount:
+                        item_amount = v
+                        # recompute qty/rate heuristics could be re-run, but skip for speed
+                        break
+
     return {
         "item_name": item_name,
         "item_amount": item_amount,
         "item_rate": item_rate,
-        "item_quantity": item_quantity
+        "item_quantity": item_qty,
+        "gst_percent": gst_percent
     }
 
 

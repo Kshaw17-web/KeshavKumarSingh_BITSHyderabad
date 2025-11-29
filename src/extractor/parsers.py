@@ -510,16 +510,27 @@ def is_probable_item(parsed_row: Dict[str, Optional[object]], conf_threshold: in
     if any(k in name for k in non_item_keywords):
         return False
 
+    # Require at least one numeric amount > 0
     amt = parsed_row.get("item_amount")
-    qty = parsed_row.get("item_quantity")
-    rate = parsed_row.get("item_rate")
+    if amt is None:
+        return False
+    
+    if not isinstance(amt, (int, float)):
+        return False
+    
+    if amt <= 0:
+        return False
+    
+    # Reject if amount looks like an invoice-id (very large integer and no decimal)
+    if amt > 100000 and float(amt).is_integer():
+        return False
+    
+    # Require at least 1 token in item_name if present
+    name_str = parsed_row.get("item_name") or ""
+    if len(name_str.split()) < 1:
+        return False
 
-    if amt is not None and isinstance(amt, (int, float)) and amt > 0:
-        return True
-    if qty and rate and isinstance(rate, (int, float)) and rate > 0:
-        return True
-
-    return False
+    return True
 
 
 if __name__ == "__main__":

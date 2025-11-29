@@ -150,20 +150,31 @@ def run_internal_fraud_check(image, page_idx):
         logger.error(f"Fraud check error: {e}")
 
 # --- HELPER: Handle file upload or URL ---
-def _handle_document_input(document_input: Union[str, UploadFile, Path]) -> Path:
+async def _handle_document_input(document_input: Union[str, UploadFile, Path]) -> Path:
     """
     Handle document input: can be URL, local file path, or UploadFile.
     Returns Path to temporary file.
     """
     import tempfile
     
-    # If it's an UploadFile
-    if isinstance(document_input, UploadFile):
+    # Check if it's an UploadFile (from starlette.datastructures)
+    # Use string check to handle both FastAPI and starlette types
+    input_type_str = str(type(document_input))
+    is_upload_file = "UploadFile" in input_type_str or hasattr(document_input, 'filename')
+    
+    if is_upload_file:
         # Save to temp file
-        suffix = Path(document_input.filename).suffix if document_input.filename else ".pdf"
+        filename = getattr(document_input, 'filename', 'document.pdf')
+        suffix = Path(filename).suffix if filename else ".pdf"
         temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=suffix)
         try:
-            shutil.copyfileobj(document_input.file, temp_file)
+            # Read file content (async for UploadFile)
+            if hasattr(document_input, 'read'):
+                content = await document_input.read()
+                temp_file.write(content)
+            else:
+                # Fallback: try to copy file object
+                shutil.copyfileobj(document_input.file, temp_file)
             temp_file.close()
             return Path(temp_file.name)
         except Exception as e:
@@ -251,7 +262,7 @@ async def hackrx_run(
     try:
         # 1. Handle document input (file upload, URL, or local path)
         try:
-            temp_file = _handle_document_input(document_input)
+            temp_file = await _handle_document_input(document_input)
         except Exception as e:
             logger.error(f"Document handling error: {e}", exc_info=True)
             error_log_dir = Path("logs") / request_id

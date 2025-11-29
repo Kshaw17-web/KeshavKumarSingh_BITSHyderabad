@@ -815,6 +815,19 @@ def extract_bill_data_with_tsv(
                 "error": "No pages provided"
             }
         
+        # Validate pages are valid images
+        if not PIL_AVAILABLE:
+            return {
+                "is_success": False,
+                "token_usage": {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0},
+                "data": {
+                    "pagewise_line_items": [],
+                    "total_item_count": 0,
+                    "reconciled_amount": 0.0
+                },
+                "error": "PIL/Pillow not available"
+            }
+        
         # Convert numpy arrays to PIL Images if needed
         pil_images = []
         for page in pages:

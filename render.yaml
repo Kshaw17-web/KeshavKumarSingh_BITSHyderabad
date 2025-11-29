@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: bajaj-datathon-api
+    env: docker
+    plan: starter
+    repo: https://github.com/Kshaw17-web/KeshavKumarSingh_BITSHyderabad
+    branch: main
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: TESSERACT_CMD
+        value: /usr/bin/tesseract
+      - key: POPPLER_PATH
+        value: /usr/bin

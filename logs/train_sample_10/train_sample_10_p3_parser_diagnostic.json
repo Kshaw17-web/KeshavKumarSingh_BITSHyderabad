@@ -1,0 +1,151 @@
+{
+  "page_no": 3,
+  "raw_lines_count": 31,
+  "column_centers": [
+    89.0,
+    239.0,
+    715.0,
+    1086.0,
+    1302.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "8L.GServiceServiceName AllasCode Dr.NameStartDateEndDateQty/DurationRefTastffDie(%)Amount()",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "410me CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PCONBULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 1000.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "71een PCONSULTATION 1.00 1,000.00 it)",
+      "item_amount": 1000.0,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PCONSULTATION 1.00 1,000.00 it)",
+      "item_amount": 1000.0,
+      "item_rate": 1000.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "P-CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DisclaimerAlltheabovedatesindicatedasDate4Timeoftheentryonly Page3of90",
+      "item_amount": 390.0,
+      "item_rate": 4.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "8L.GServiceServiceName AllasCode Dr.NameStartDateEndDateQty/DurationRefTastffDie(%)Amount()",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "410me CONSULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PCONBULTATION",
+      "item_amount": 1000.0,
+      "item_rate": 1000.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "71een PCONSULTATION 1.00 1,000.00 it)",
+      "item_amount": 1000.0,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DisclaimerAlltheabovedatesindicatedasDate4Timeoftheentryonly Page3of90",
+      "item_amount": 390.0,
+      "item_rate": 4.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 3398.0,
+  "reconciliation_method": "sum_of_all_line_items"
+}

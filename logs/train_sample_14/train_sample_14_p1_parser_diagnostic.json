@@ -1,0 +1,390 @@
+{
+  "page_no": 1,
+  "raw_lines_count": 41,
+  "column_centers": [
+    69.0,
+    203.0,
+    729.0,
+    942.0,
+    1141.0,
+    1334.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "IPNo BMNo",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FOOMCHARGES",
+      "item_amount": 45000.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1CUROOMRENTCHARGES 21N1/2026105893",
+      "item_amount": 45000.0,
+      "item_rate": 0.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DSESDIONCHARGES SubToul",
+      "item_amount": 100.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "i REGISTRATIONFEES",
+      "item_amount": 100.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CONSULTATIONCHARGES",
+      "item_amount": 27000.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DFLUAINIVAS-NEPHROLOGISTFEES2411/202517256",
+      "item_amount": 6000.0,
+      "item_rate": 70.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "fe DA.GOWTHAMCONSULTATIONFEES 2411/202517268",
+      "item_amount": 76000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "B .DALMOHANKANNANCONSULTATIONFEES24/11/202517256",
+      "item_amount": 5000.0,
+      "item_rate": 20.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "E MahendraRaghavanconsulationfoos",
+      "item_amount": 6000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "LABORATORYCHARGES",
+      "item_amount": 23030.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "i PUSCULTURE8SENSITIVITY 198/11/202508-541",
+      "item_amount": 700.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CompleteBibodCount",
+      "item_amount": 450.0,
+      "item_rate": 0.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "is PenalFunotionTeat(RFT) 19H1/202610434",
+      "item_amount": 70.0,
+      "item_rate": 70.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1100.00 0.00 1100.c0)",
+      "item_amount": 1100.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ProoalditoninPCT 19N1202622171",
+      "item_amount": 72800.0,
+      "item_rate": 0.0,
+      "item_quantity": 6,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ELECTROLYTES(NA,K8CL) 19/11/202622174",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": 8,
+      "gst_percent": null
+    },
+    {
+      "item_name": "C-ReectiveProtein(CRP)",
+      "item_amount": 570.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "p UrineCulure%Senetivity-Aerobic 2041/202507391",
+      "item_amount": 570.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RenelFunctionTest(RET) 2oni202607391-",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CompieteBioodCount 20/11/202607391",
+      "item_amount": 450.0,
+      "item_rate": 0.0,
+      "item_quantity": 12,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CompleteBloodCount 2int02507191-",
+      "item_amount": 460.0,
+      "item_rate": 0.0,
+      "item_quantity": 14,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RenalFunationTest(AFT) 21N1202607191",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": 48,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BMEARSTUDY a 21N1/2025077191",
+      "item_amount": 2400.0,
+      "item_rate": 0.0,
+      "item_quantity": 16,
+      "gst_percent": null
+    },
+    {
+      "item_name": "cea 21N1/2025105893",
+      "item_amount": 300.0,
+      "item_rate": 100.0,
+      "item_quantity": 17,
+      "gst_percent": null
+    },
+    {
+      "item_name": "C-ReactveProtein(CAP)",
+      "item_amount": 570.0,
+      "item_rate": 0.0,
+      "item_quantity": 18,
+      "gst_percent": null
+    },
+    {
+      "item_name": "URICACID-SERUM",
+      "item_amount": 300.0,
+      "item_rate": 0.0,
+      "item_quantity": 19,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "IPNo BMNo",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FOOMCHARGES",
+      "item_amount": 45000.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1CUROOMRENTCHARGES 21N1/2026105893",
+      "item_amount": 45000.0,
+      "item_rate": 0.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DSESDIONCHARGES SubToul",
+      "item_amount": 100.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "i REGISTRATIONFEES",
+      "item_amount": 100.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CONSULTATIONCHARGES",
+      "item_amount": 27000.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DFLUAINIVAS-NEPHROLOGISTFEES2411/202517256",
+      "item_amount": 6000.0,
+      "item_rate": 70.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "fe DA.GOWTHAMCONSULTATIONFEES 2411/202517268",
+      "item_amount": 76000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "B .DALMOHANKANNANCONSULTATIONFEES24/11/202517256",
+      "item_amount": 5000.0,
+      "item_rate": 20.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "E MahendraRaghavanconsulationfoos",
+      "item_amount": 6000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "LABORATORYCHARGES",
+      "item_amount": 23030.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "i PUSCULTURE8SENSITIVITY 198/11/202508-541",
+      "item_amount": 700.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CompleteBibodCount",
+      "item_amount": 450.0,
+      "item_rate": 0.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "is PenalFunotionTeat(RFT) 19H1/202610434",
+      "item_amount": 70.0,
+      "item_rate": 70.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1100.00 0.00 1100.c0)",
+      "item_amount": 1100.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ProoalditoninPCT 19N1202622171",
+      "item_amount": 72800.0,
+      "item_rate": 0.0,
+      "item_quantity": 6,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ELECTROLYTES(NA,K8CL) 19/11/202622174",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": 8,
+      "gst_percent": null
+    },
+    {
+      "item_name": "C-ReectiveProtein(CRP)",
+      "item_amount": 570.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "p UrineCulure%Senetivity-Aerobic 2041/202507391",
+      "item_amount": 570.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RenelFunctionTest(RET) 2oni202607391-",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CompieteBioodCount 20/11/202607391",
+      "item_amount": 450.0,
+      "item_rate": 0.0,
+      "item_quantity": 12,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CompleteBloodCount 2int02507191-",
+      "item_amount": 460.0,
+      "item_rate": 0.0,
+      "item_quantity": 14,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RenalFunationTest(AFT) 21N1202607191",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": 48,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BMEARSTUDY a 21N1/2025077191",
+      "item_amount": 2400.0,
+      "item_rate": 0.0,
+      "item_quantity": 16,
+      "gst_percent": null
+    },
+    {
+      "item_name": "cea 21N1/2025105893",
+      "item_amount": 300.0,
+      "item_rate": 100.0,
+      "item_quantity": 17,
+      "gst_percent": null
+    },
+    {
+      "item_name": "URICACID-SERUM",
+      "item_amount": 300.0,
+      "item_rate": 0.0,
+      "item_quantity": 19,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 315608.0,
+  "reconciliation_method": "sum_of_all_line_items"
+}

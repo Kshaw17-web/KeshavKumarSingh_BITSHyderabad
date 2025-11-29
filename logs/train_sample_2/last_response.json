@@ -10,8 +10,197 @@
       {
         "page_no": "1",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "09/28CANNU",
+            "item_amount": 105.0,
+            "item_rate": 928.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "-XER 13800 sms",
+            "item_amount": 13800.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "re (CEFTRIAKONE",
+            "item_amount": 5997.0,
+            "item_rate": 4.0,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "mie so BRAOBROA o127FLI GLUTATILION 3 13.35 aco",
+            "item_amount": 360.0,
+            "item_rate": 1.6667,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ily q BM14 ee se i",
+            "item_amount": 14.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "a pore DOSg2404A ae SESE s",
+            "item_amount": 2404.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "i 0826DYNAP, es",
+            "item_amount": 8720.0,
+            "item_rate": 826.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "UE ie ons LIVI",
+            "item_amount": 1700.0,
+            "item_rate": 4.0,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "tif Bi)3004 19 INDML",
+            "item_amount": 267.36,
+            "item_rate": 0.6316,
+            "item_quantity": 19,
+            "gst_percent": null
+          },
+          {
+            "item_name": "rt 3002sTIGMS car ss",
+            "item_amount": 86053.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ra framneen,ESGauaenny 1820000 Tm8",
+            "item_amount": 8.0,
+            "item_rate": 1820000.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "0e7TM ig APTI 200ML",
+            "item_amount": 188.0,
+            "item_rate": 16.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "fale E 2.15 0.00 200,40 2B",
+            "item_amount": 200.4,
+            "item_rate": 200.4,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Hea A284 oumAFTIVATESY z",
+            "item_amount": 284.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BAPRIEH3004 oral cs a",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Te sa",
+            "item_amount": 0.9,
+            "item_rate": 1.2,
+            "item_quantity": 5,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BPIBKE)300s2s0v002z0 ws a",
+            "item_amount": 0.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "it Se)Weeen aie",
+            "item_amount": 318.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Hel araaoeg GA010MLDs",
+            "item_amount": 45.0,
+            "item_rate": 10.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Tray3004 oe",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ii",
+            "item_amount": 19109.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "aie i Ceasers TBa78",
+            "item_amount": 78.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "oon 2 Z",
+            "item_amount": 0.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "it COST%CGETAM b.00 68.08 ROUNDO AMT",
+            "item_amount": 68.08,
+            "item_rate": 68.08,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ld a 0.00 0.00 cred ose BAIDAMT",
+            "item_amount": 20877.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "i Ul",
+            "item_amount": 1400.0,
+            "item_rate": 21.92,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -19,8 +208,176 @@
       {
         "page_no": "2",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "itt H3004D2372800A 01E)ERIDOT1.5GM(CEFTRIAXONE 31908.009.00 5997.00 1z",
+            "item_amount": 12.0,
+            "item_rate": 5997.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "re) 3004BM14025004",
+            "item_amount": 8.0,
+            "item_rate": 8.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "yin i 3004DOBR2404A O826-ZONEG1200MG(GLUTATHION",
+            "item_amount": 4900.0,
+            "item_rate": 4900.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "OA7EMESET2MG2MLDN",
+            "item_amount": 40.08,
+            "item_rate": 0.6667,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "eb B3004)-D24AM020G 08/26ESOMAN40MdINJ",
+            "item_amount": 860.0,
+            "item_rate": 6.0,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "(Baa l) j3002TSesLS10 64/26NEDMOLIV100ML a",
+            "item_amount": 4.0,
+            "item_rate": 1866.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Wet sos0328009 Ovz8BUSCOQASTINSIML",
+            "item_amount": 120.0,
+            "item_rate": 1.0,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "092DYNAPARAQIN)",
+            "item_amount": 12.0,
+            "item_rate": 2430000.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "0426VIMZOTECHINT",
+            "item_amount": 1700.0,
+            "item_rate": 1700.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "seit WLT24031 04726DROTININJ2ML",
+            "item_amount": 28.5,
+            "item_rate": 5.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "aif 28010170e2 0W27)-RLS0OML 4 74.00 2.00 MDO",
+            "item_amount": 2.0,
+            "item_rate": 3.0,
+            "item_quantity": 4,
+            "gst_percent": null
+          },
+          {
+            "item_name": "0727NSSOML 2 100,200.00 200.40 a",
+            "item_amount": 200.4,
+            "item_rate": 100.2,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BANE)3008)LSOD4174 06/27-NS100ML",
+            "item_amount": 141.0,
+            "item_rate": 1.6667,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ATAGe)DOePTOSOIE 0550IMLDS2ML. 5 7D0at0",
+            "item_amount": 35.0,
+            "item_rate": 1.0,
+            "item_quantity": 5,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BRAHE200489COF 0430SMLDSSML",
+            "item_amount": 30.0,
+            "item_rate": 2.6667,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BE 3soog8102000 ov30JOMLDS10ML",
+            "item_amount": 45.0,
+            "item_rate": 1.0,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BEGECH0.00 0,00 0.00 0.00 0.00 CGSTAMT",
+            "item_amount": 750.6,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PeeHWh1757.62 250 43.94 250 43.94 SGSTAMT",
+            "item_amount": 780.0,
+            "item_rate": 43.94,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Beehoe4i237 6.00 6a4-Td 600 084.74 ROUNDOFFAMT",
+            "item_amount": 84.74,
+            "item_rate": 84.74,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "to 6.00 0.00 8.00 0.00 NETAMT",
+            "item_amount": 19728.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Beom166.56 14.00 21,02 14.00 21.82 PAIDANT",
+            "item_amount": 21.82,
+            "item_rate": 21.82,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Se ee. nee",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "if ie",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -28,14 +385,196 @@
       {
         "page_no": "3",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "SQM(CEFTRIAXONE -",
+            "item_amount": 12.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ERIDOT 5997.00 r2",
+            "item_amount": 12.0,
+            "item_rate": 5997.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Das72500A a199a00 ee",
+            "item_amount": 31990.0,
+            "item_rate": 72500.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "FLUTECH FLUCLOXACIL",
+            "item_amount": 3998.0,
+            "item_rate": 1908.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "D08e24044 s THION",
+            "item_amount": 4900.0,
+            "item_rate": 0.0,
+            "item_quantity": 5,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Prag ae",
+            "item_amount": 2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BATCH",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "a 3008 ovz7 Sy s %",
+            "item_amount": 727.0,
+            "item_rate": 3008.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "i 2H a",
+            "item_amount": 2.0,
+            "item_rate": 1.5,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "HEALS 3004 N40MGINJ",
+            "item_amount": 228.0,
+            "item_rate": 114.0,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "03264VIMZOTECH",
+            "item_amount": 3264.0,
+            "item_rate": 3264.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "eig)3xcoseaton ol e3 as",
+            "item_amount": 3.0,
+            "item_rate": 3.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "a s 0925DYNAPARAQINL 1 00.20.00 t4l.00 Py",
+            "item_amount": 41.0,
+            "item_rate": 4.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "My ie 114 TABISTAB",
+            "item_amount": 30.0,
+            "item_rate": 0.2,
+            "item_quantity": 30,
+            "gst_percent": null
+          },
+          {
+            "item_name": "L",
+            "item_amount": 10.0,
+            "item_rate": 10.0,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "E 02009 Z",
+            "item_amount": 2.0,
+            "item_rate": 7.5,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "i iE ison DS2ML",
+            "item_amount": 2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Bta2 174 2ML ML",
+            "item_amount": 174.0,
+            "item_rate": 174.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "mia) 15 LDS1oML. b.00",
+            "item_amount": 0.0,
+            "item_rate": 1.0,
+            "item_quantity": 15,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ay 3004",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "cast. S03T%sasT DISC.AMT e",
+            "item_amount": 888.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "HERTEl3004 - )",
+            "item_amount": 3004.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ids",
+            "item_amount": 2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "it 3 a",
+            "item_amount": 2192.0,
+            "item_rate": 0.3333,
+            "item_quantity": 9,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ity 1 BALANCE",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
       }
     ],
-    "total_item_count": 0,
-    "reconciled_amount": 0
+    "total_item_count": 74,
+    "reconciled_amount": 252003.88
   }
 }

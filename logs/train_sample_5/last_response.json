@@ -10,8 +10,71 @@
       {
         "page_no": "1",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "ODULARGUP43MM",
+            "item_amount": 18500.0,
+            "item_rate": 18500.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "UNCEMENTEDFEMORALSTEM10MM",
+            "item_amount": 44600.0,
+            "item_rate": 14866.6667,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TOTALAMOUNTINWORDSS YONETHOUSANDNINE SALESAMOUNT",
+            "item_amount": 68500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NETAMOUNT",
+            "item_amount": 68500.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "DRUGLICENCENO IGST5%",
+            "item_amount": 5.0,
+            "item_rate": 5.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1)Theuser/surgeonshouldvertfythesuitabilityoftheproductsInallrespectsbeforeusage",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "3)Subfect.to Jurisdictiononly",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "F",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -19,8 +82,134 @@
       {
         "page_no": "2",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "(",
+            "item_amount": 2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "FOLEYCATHETER148O 90183910 i) P223B08 01/27",
+            "item_amount": 180.0,
+            "item_rate": 180.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "UROBAG 90183990 ad 6090625C02/30",
+            "item_amount": 349.0,
+            "item_rate": 349.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "MEOMOL100IV 30049069 a 7383L110906/27",
+            "item_amount": 574.0,
+            "item_rate": 574.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "WSKURO500HL 30049099 J TASO4EOOS12/26",
+            "item_amount": 98.48,
+            "item_rate": 98.48,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "SAYEPORTRL500ML o S RIRC382 06/26",
+            "item_amount": 64.89,
+            "item_rate": 64.89,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Tasection 30042019 v018221 05/27 628 z",
+            "item_amount": 1236.0,
+            "item_rate": 206.0,
+            "item_quantity": 6,
+            "gst_percent": null
+          },
+          {
+            "item_name": "O INJPANTAKIND40NQ. S a)",
+            "item_amount": 113.0,
+            "item_rate": 56.5,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "e JUSTIN-AQIMJ 30049069 a BDWO2AIA01/27",
+            "item_amount": 46.4,
+            "item_rate": 23.2,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "OMNIVAN2ML 90183100 o 23231M820204/30",
+            "item_amount": 2.0,
+            "item_rate": 14.52,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "OMMNIVAN10HL 90183100 o 25G18M820306/30",
+            "item_amount": 128.84,
+            "item_rate": 32.21,
+            "item_quantity": 4,
+            "gst_percent": null
+          },
+          {
+            "item_name": "a1 SET) (rv 90183990 a 4027425B01/30",
+            "item_amount": 368.0,
+            "item_rate": 184.0,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "na any 90183990 2 350241 12/29",
+            "item_amount": 198.0,
+            "item_rate": 198.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "a3 IvFix 30059040 2 cy323 04/28",
+            "item_amount": 935.0,
+            "item_rate": 935.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "VEIN-OLIME10CH 901809099 - K24A01099612/28",
+            "item_amount": 347.0,
+            "item_rate": 347.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "suBr3814.65 TAKs192.75 METAMT",
+            "item_amount": 3433.0,
+            "item_rate": 192.75,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "361.46 0.18",
+            "item_amount": 6.18,
+            "item_rate": 361.46,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -28,14 +217,133 @@
       {
         "page_no": "3",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "-",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "td S5 - -",
+            "item_amount": 5.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "- - MRMMusbers .BILLDARH22/10/20250512PM",
+            "item_amount": 0.221020250512,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "- vo18221",
+            "item_amount": 7.0,
+            "item_rate": 628.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TMJECTION 30042019 05/27",
+            "item_amount": 628.0,
+            "item_rate": 628.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "- 1 08/27",
+            "item_amount": 7.0,
+            "item_rate": 827.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "INJECTION 30042019 vo1s22 s/",
+            "item_amount": 628.0,
+            "item_rate": 628.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PANTAKIND40MGINT 30049939 - A2Igro36",
+            "item_amount": 57.48,
+            "item_rate": 57.48,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "JUSTIN-aQIMT 30049069 5 BDWLOALA",
+            "item_amount": 76.2,
+            "item_rate": 25.4,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "a) PROPORTMS100NL 30049099 -",
+            "item_amount": 191.68,
+            "item_rate": 47.92,
+            "item_quantity": 4,
+            "gst_percent": null
+          },
+          {
+            "item_name": "CMRIVAN10ML 90193100 -",
+            "item_amount": 62.92,
+            "item_rate": 31.46,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "O OMNIVAM26L 90183100 -",
+            "item_amount": 58.08,
+            "item_rate": 14.52,
+            "item_quantity": 4,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PRERRAZORWEDIWORK- 5 4K0524 04/27",
+            "item_amount": 72.0,
+            "item_rate": 72.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TETANUBTOXOIDINJ a - 2308c 02/26943.08 Fi",
+            "item_amount": 226943.08,
+            "item_rate": 1.4533,
+            "item_quantity": 9,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TRULOMBR3336 - - 250026 06/29",
+            "item_amount": 259.0,
+            "item_rate": 259.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "SUBr2046.44 AX3176.91RMD10.21 wetMer",
+            "item_amount": 1842.0,
+            "item_rate": 2046.44,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
       }
     ],
-    "total_item_count": 0,
-    "reconciled_amount": 0
+    "total_item_count": 41,
+    "reconciled_amount": 439033.45
   }
 }

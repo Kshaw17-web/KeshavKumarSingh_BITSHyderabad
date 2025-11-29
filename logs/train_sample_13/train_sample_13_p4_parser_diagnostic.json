@@ -1,0 +1,75 @@
+{
+  "page_no": 4,
+  "raw_lines_count": 19,
+  "column_centers": [
+    170.0,
+    765.0,
+    934.0,
+    1048.0,
+    1246.0,
+    1417.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "BalDete",
+      "item_amount": 15.08,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Trsurence 4 non",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "HoiderName1 - EpPoRyN. muoreeee",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GLOVES-SURGI -7/SNO 2505. Ey 2. - MO - -",
+      "item_amount": 2505.0,
+      "item_rate": 2505.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "BalDete",
+      "item_amount": 15.08,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Trsurence 4 non",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "HoiderName1 - EpPoRyN. muoreeee",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GLOVES-SURGI -7/SNO 2505. Ey 2. - MO - -",
+      "item_amount": 2505.0,
+      "item_rate": 2505.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 2525.08,
+  "reconciliation_method": "sum_of_all_line_items"
+}

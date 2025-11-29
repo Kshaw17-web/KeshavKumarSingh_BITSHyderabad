@@ -1,0 +1,334 @@
+{
+  "page_no": 8,
+  "raw_lines_count": 35,
+  "column_centers": [
+    188.5,
+    321.5,
+    908.5,
+    1127.5,
+    1253.5,
+    1375.5
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "2ot2025GRBS 4.0110.00 o00",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "20S CRBS",
+      "item_amount": 720.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MONITORCHARGES",
+      "item_amount": 860.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZMtOZS OXYGENPERDAY 1O2.400.00 a0 O00",
+      "item_amount": 400.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GRBS",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2tnt2025 GRBS",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZHtt2025 NEBULISATION 20 150.00 O00",
+      "item_amount": 150.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OISTARYSERVICES-NICU",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CABS 20 110,00. on",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OIETARYSERVICES-PRIVATEWARD",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RAO infectionPreverdiveNeasures(JPM) 30 200.00 ao",
+      "item_amount": 500.0,
+      "item_rate": 0.0,
+      "item_quantity": 30,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RAV WARDCONSUMABSLESPERDAY 30 200.00 ac",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": 30,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RAUMISGRBS 12110,00 o.09 a.00 tH.00",
+      "item_amount": 1.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BAUD GRES 20 110,00 an 0.00 m0",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZNO CIETARYSERVICES-PRIVATEWARD 40 660,00 0.00 0.00 OOO",
+      "item_amount": 660.0,
+      "item_rate": 0.0,
+      "item_quantity": 40,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2120s GRAS 19 110.00 a8",
+      "item_amount": 0.0,
+      "item_rate": 12.5,
+      "item_quantity": 8,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZA120zs Ote-AcousisEmiveion 101,070.00 om ano",
+      "item_amount": 407.0,
+      "item_rate": 101070.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "wsHie2586GRES",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZAR GREE 20 410.00 on",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "240s CHETARYSERVICES-PRIVATEWARD 10 600.00 0.00 0.00 SL",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1010.00 aod a.00",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "24n1025-VACCINATION 401,800.00 am",
+      "item_amount": 600.0,
+      "item_rate": 401800.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "VWA12026 BLOODLANCET a0",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "2ot2025GRBS 4.0110.00 o00",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "20S CRBS",
+      "item_amount": 720.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MONITORCHARGES",
+      "item_amount": 860.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZMtOZS OXYGENPERDAY 1O2.400.00 a0 O00",
+      "item_amount": 400.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GRBS",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": 40,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZHtt2025 NEBULISATION 20 150.00 O00",
+      "item_amount": 150.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OISTARYSERVICES-NICU",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CABS 20 110,00. on",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OIETARYSERVICES-PRIVATEWARD",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RAO infectionPreverdiveNeasures(JPM) 30 200.00 ao",
+      "item_amount": 500.0,
+      "item_rate": 0.0,
+      "item_quantity": 30,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RAV WARDCONSUMABSLESPERDAY 30 200.00 ac",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": 30,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RAUMISGRBS 12110,00 o.09 a.00 tH.00",
+      "item_amount": 1.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BAUD GRES 20 110,00 an 0.00 m0",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZNO CIETARYSERVICES-PRIVATEWARD 40 660,00 0.00 0.00 OOO",
+      "item_amount": 660.0,
+      "item_rate": 0.0,
+      "item_quantity": 40,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2120s GRAS 19 110.00 a8",
+      "item_amount": 0.0,
+      "item_rate": 12.5,
+      "item_quantity": 8,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZA120zs Ote-AcousisEmiveion 101,070.00 om ano",
+      "item_amount": 407.0,
+      "item_rate": 101070.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "wsHie2586GRES",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ZAR GREE 20 410.00 on",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "240s CHETARYSERVICES-PRIVATEWARD 10 600.00 0.00 0.00 SL",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1010.00 aod a.00",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "24n1025-VACCINATION 401,800.00 am",
+      "item_amount": 600.0,
+      "item_rate": 401800.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "VWA12026 BLOODLANCET a0",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 8798.0,
+  "reconciliation_method": "sum_of_all_line_items"
+}

@@ -10,8 +10,141 @@
       {
         "page_no": "1",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "a7",
+            "item_amount": 7.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "CompanyState1",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Druge",
+            "item_amount": 1702.93,
+            "item_rate": 851.465,
+            "item_quantity": 2,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Investigations -",
+            "item_amount": 3000.0,
+            "item_rate": 1000.0,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "MedicalConsumabie",
+            "item_amount": 4352.12,
+            "item_rate": 1088.03,
+            "item_quantity": 4,
+            "gst_percent": null
+          },
+          {
+            "item_name": "OtherCharges",
+            "item_amount": 2475.0,
+            "item_rate": 495.0,
+            "item_quantity": 5,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Procedures ny",
+            "item_amount": 700.0,
+            "item_rate": 116.6667,
+            "item_quantity": 6,
+            "gst_percent": null
+          },
+          {
+            "item_name": "RoomRent",
+            "item_amount": 4000.0,
+            "item_rate": 571.4286,
+            "item_quantity": 7,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Surgery Bs s",
+            "item_amount": 17749.0,
+            "item_rate": 2218.625,
+            "item_quantity": 8,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ob - we",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "e Gibad Tomi,--2e",
+            "item_amount": 36620.05,
+            "item_rate": 36620.05,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "es 4 fs Ba Anda",
+            "item_amount": 36620.05,
+            "item_rate": 9155.0125,
+            "item_quantity": 4,
+            "gst_percent": null
+          },
+          {
+            "item_name": "iDepostts",
+            "item_amount": 10000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "SPE i,Diecount",
+            "item_amount": 3057.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TotalDiecount",
+            "item_amount": 3057.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "CompaerryCreditLinmitr",
+            "item_amount": 29858.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NetAmountrefundedtopatient/-",
+            "item_amount": 6294.95,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NetAmountPeidbyCompeny",
+            "item_amount": 29858.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -19,14 +152,98 @@
       {
         "page_no": "2",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "61.ItemName -DeteQty-Unit.UnitPrice Amount(Ra.)",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1Nishchai",
+            "item_amount": 800.0,
+            "item_rate": 800.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Ansnd(General6",
+            "item_amount": 6.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "2Mishchsi",
+            "item_amount": 800.0,
+            "item_rate": 800.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "(GeneralSurgery) g9",
+            "item_amount": 9.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "eee? e110",
+            "item_amount": 250.0,
+            "item_rate": 83.3333,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "4Nishchal",
+            "item_amount": 800.0,
+            "item_rate": 4.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Anand(General8",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Droge z 3S?t",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "5DOLENTIAFAST",
+            "item_amount": 76.88,
+            "item_rate": 5.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "7SMG/1MLINJ(Batch a ules",
+            "item_amount": 751.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
       }
     ],
-    "total_item_count": 0,
-    "reconciled_amount": 0
+    "total_item_count": 29,
+    "reconciled_amount": 192866.98
   }
 }

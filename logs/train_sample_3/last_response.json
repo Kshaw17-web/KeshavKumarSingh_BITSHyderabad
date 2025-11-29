@@ -10,14 +10,105 @@
       {
         "page_no": "1",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "zs",
+            "item_amount": 2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "a2",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "S 5S",
+            "item_amount": 5.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "A",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "e133 SI",
+            "item_amount": 133.0,
+            "item_rate": 26.6,
+            "item_quantity": 5,
+            "gst_percent": null
+          },
+          {
+            "item_name": "- I",
+            "item_amount": 5.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "a 2 Oo zz",
+            "item_amount": 2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Z eoPA8",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "sk",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "C 4 g als",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "L ap -2",
+            "item_amount": -2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "U",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 0.8392487046632124,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
       }
     ],
-    "total_item_count": 0,
-    "reconciled_amount": 0
+    "total_item_count": 12,
+    "reconciled_amount": 183.0
   }
 }

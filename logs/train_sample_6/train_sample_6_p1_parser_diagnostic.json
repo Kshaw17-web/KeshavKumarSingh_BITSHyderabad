@@ -1,0 +1,284 @@
+{
+  "page_no": 1,
+  "raw_lines_count": 32,
+  "column_centers": [
+    95.0,
+    273.0,
+    761.0,
+    1049.0,
+    1255.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "PMRNo. IPDNo. AdmissionDate 121-10-2025 003833PM",
+      "item_amount": 3833.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "omy Name ? WardType 8 s",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SINGLEAC 210r2025-28/10/2026",
+      "item_amount": 19280.0,
+      "item_rate": 19280.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DRLANISHKUMARJAIN zino2025-2a/072025",
+      "item_amount": 2.0,
+      "item_rate": 600.0035,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DRVAMSHINAGENDRA zior2025-27/10/2025",
+      "item_amount": 7200.0,
+      "item_rate": 2400.0,
+      "item_quantity": 3,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DRVENUGOPAL 220202528/10/2025",
+      "item_amount": 2400.0,
+      "item_rate": 600.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DRDEVABANISRINIVASA zenano26-22Nor2028 1200.004 Phot",
+      "item_amount": 1200.001,
+      "item_rate": 240.0008,
+      "item_quantity": 5,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e DRABHINAY 2810202528/10/2025 1800.001 ssonbo",
+      "item_amount": 1800.001,
+      "item_rate": 2810202528102025.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "T HIVlll(TRHDOT) zeno202s-22/10/2025",
+      "item_amount": 30.0,
+      "item_rate": 300.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BLEEDINGTIMECLOTTINGTIME znonnszHorz02s 100.001 en",
+      "item_amount": 100.001,
+      "item_rate": 12.5001,
+      "item_quantity": 8,
+      "gst_percent": null
+    },
+    {
+      "item_name": "X-RAYCHESTPAVIEW z2i2o25-22/10/2025 300.001 Kos",
+      "item_amount": 300.001,
+      "item_rate": 150.0005,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "10HBSAG zno22s2240/2026",
+      "item_amount": 200.0,
+      "item_rate": 200.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "11.--SERUMELECTROLYTES(NAt,Kt,CL-) 22NO2025221002026 460.001 46(008)",
+      "item_amount": 46008.0,
+      "item_rate": 460.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "z2no2025-22Mor2025",
+      "item_amount": 690.0,
+      "item_rate": 500.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13--BLECTROCARDIOGRAM(ECG) 22n2025-22/10/2025 200,001 aohoal",
+      "item_amount": 200.001,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "44-COMPLETEBLOODPICTURE z2Non0zs-22NO2025",
+      "item_amount": 250.09,
+      "item_rate": 260.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18COMPLETEURINEEXAMINATION 22h0R02822N2025",
+      "item_amount": 100.0,
+      "item_rate": 100.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18SERUMCREATININE 2200252202025 200.001 2000)",
+      "item_amount": 2000.0,
+      "item_rate": 200.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "17.sUREA",
+      "item_amount": 200.0,
+      "item_rate": 200.001,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "PMRNo. IPDNo. AdmissionDate 121-10-2025 003833PM",
+      "item_amount": 3833.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "omy Name ? WardType 8 s",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SINGLEAC 210r2025-28/10/2026",
+      "item_amount": 19280.0,
+      "item_rate": 19280.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DRLANISHKUMARJAIN zino2025-2a/072025",
+      "item_amount": 2.0,
+      "item_rate": 600.0035,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DRVAMSHINAGENDRA zior2025-27/10/2025",
+      "item_amount": 7200.0,
+      "item_rate": 2400.0,
+      "item_quantity": 3,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DRVENUGOPAL 220202528/10/2025",
+      "item_amount": 2400.0,
+      "item_rate": 600.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DRDEVABANISRINIVASA zenano26-22Nor2028 1200.004 Phot",
+      "item_amount": 1200.001,
+      "item_rate": 240.0008,
+      "item_quantity": 5,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e DRABHINAY 2810202528/10/2025 1800.001 ssonbo",
+      "item_amount": 1800.001,
+      "item_rate": 2810202528102025.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "T HIVlll(TRHDOT) zeno202s-22/10/2025",
+      "item_amount": 30.0,
+      "item_rate": 300.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BLEEDINGTIMECLOTTINGTIME znonnszHorz02s 100.001 en",
+      "item_amount": 100.001,
+      "item_rate": 12.5001,
+      "item_quantity": 8,
+      "gst_percent": null
+    },
+    {
+      "item_name": "X-RAYCHESTPAVIEW z2i2o25-22/10/2025 300.001 Kos",
+      "item_amount": 300.001,
+      "item_rate": 150.0005,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "10HBSAG zno22s2240/2026",
+      "item_amount": 200.0,
+      "item_rate": 200.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "11.--SERUMELECTROLYTES(NAt,Kt,CL-) 22NO2025221002026 460.001 46(008)",
+      "item_amount": 46008.0,
+      "item_rate": 460.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "z2no2025-22Mor2025",
+      "item_amount": 690.0,
+      "item_rate": 500.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13--BLECTROCARDIOGRAM(ECG) 22n2025-22/10/2025 200,001 aohoal",
+      "item_amount": 200.001,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "44-COMPLETEBLOODPICTURE z2Non0zs-22NO2025",
+      "item_amount": 250.09,
+      "item_rate": 260.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18COMPLETEURINEEXAMINATION 22h0R02822N2025",
+      "item_amount": 100.0,
+      "item_rate": 100.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18SERUMCREATININE 2200252202025 200.001 2000)",
+      "item_amount": 2000.0,
+      "item_rate": 200.001,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "17.sUREA",
+      "item_amount": 200.0,
+      "item_rate": 200.001,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 85801.095,
+  "reconciliation_method": "sum_of_all_line_items"
+}

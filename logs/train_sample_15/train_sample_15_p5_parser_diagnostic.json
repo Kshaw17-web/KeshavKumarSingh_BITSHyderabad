@@ -1,0 +1,411 @@
+{
+  "page_no": 5,
+  "raw_lines_count": 37,
+  "column_centers": [
+    187.5,
+    321.5,
+    909.5,
+    1131.5,
+    1257.5,
+    1373.5
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "Puterthemst BAlNo",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PatentAddress falDaie 12AN1otes",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PayarName 3 GedNo",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "T24anas MONITORCHARGES",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "124Lates SYRINGEPUNP 10 450,00 0.9 ano",
+      "item_amount": 450.0,
+      "item_rate": 45.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "wA20eS ORBS 19 110,00 029 o.n0",
+      "item_amount": 410.0,
+      "item_rate": 0.0,
+      "item_quantity": 29,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RAs NEBULSSATION",
+      "item_amount": 900.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "WQS TINTTIALASSESSMENTCHARGES 10 900,00 0.00 pike) 0n.00",
+      "item_amount": 0.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TA1a023 LINENCHARGES 10 12000 0,00 Do",
+      "item_amount": 120.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Ventiatorlaltielion",
+      "item_amount": 23000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "72nU20ae GRES",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "A2Neas NEBULIGATION",
+      "item_amount": 300.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "T2ites ORBS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "42112025NEBULIGATION",
+      "item_amount": 150.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OIETARYSERVICES-NICU 10 500.00 ano",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GRES 40 TO",
+      "item_amount": 440.0,
+      "item_rate": 0.0,
+      "item_quantity": 40,
+      "gst_percent": null
+    },
+    {
+      "item_name": "phRte.ivi.) NEBULISATION 4a 180.00 0.00 0,00 Ou",
+      "item_amount": 180.0,
+      "item_rate": 0.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AWW2026 MONITORCHARGES, 1.0 B00.00 0,00 0,00 e0a.00",
+      "item_amount": 80000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "pRETFciv1.J OXYGENPERDAY",
+      "item_amount": 2400.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TANU2ES Grea 19110,00 0.00 aoo",
+      "item_amount": 100.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "pRGSEy-173-) NEBULIGATION",
+      "item_amount": 160.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AMIVIMS GRES 19 110,00 0.00 O00",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": 19,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TT2026 GRBS 10 110,00 O60",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": 60,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ses Gres",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BRiahtvatrse) NEBULISATION 20 490.00 0M",
+      "item_amount": 300.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TM1202s Non-imesiveVoriiedion(NIV) 104806.00 Of0 of)",
+      "item_amount": 45000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "NEBULISATION 10 4.00 om",
+      "item_amount": 160.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MONITORCHARGES, 1.0 00.00 om",
+      "item_amount": 80000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "Puterthemst BAlNo",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PatentAddress falDaie 12AN1otes",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PayarName 3 GedNo",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "T24anas MONITORCHARGES",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "124Lates SYRINGEPUNP 10 450,00 0.9 ano",
+      "item_amount": 450.0,
+      "item_rate": 45.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "wA20eS ORBS 19 110,00 029 o.n0",
+      "item_amount": 410.0,
+      "item_rate": 0.0,
+      "item_quantity": 29,
+      "gst_percent": null
+    },
+    {
+      "item_name": "RAs NEBULSSATION",
+      "item_amount": 900.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "WQS TINTTIALASSESSMENTCHARGES 10 900,00 0.00 pike) 0n.00",
+      "item_amount": 0.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TA1a023 LINENCHARGES 10 12000 0,00 Do",
+      "item_amount": 120.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Ventiatorlaltielion",
+      "item_amount": 23000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "72nU20ae GRES",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "A2Neas NEBULIGATION",
+      "item_amount": 300.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "T2ites ORBS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "42112025NEBULIGATION",
+      "item_amount": 150.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OIETARYSERVICES-NICU 10 500.00 ano",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GRES 40 TO",
+      "item_amount": 440.0,
+      "item_rate": 0.0,
+      "item_quantity": 40,
+      "gst_percent": null
+    },
+    {
+      "item_name": "phRte.ivi.) NEBULISATION 4a 180.00 0.00 0,00 Ou",
+      "item_amount": 180.0,
+      "item_rate": 0.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AWW2026 MONITORCHARGES, 1.0 B00.00 0,00 0,00 e0a.00",
+      "item_amount": 80000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "pRETFciv1.J OXYGENPERDAY",
+      "item_amount": 2400.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TANU2ES Grea 19110,00 0.00 aoo",
+      "item_amount": 100.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "pRGSEy-173-) NEBULIGATION",
+      "item_amount": 160.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AMIVIMS GRES 19 110,00 0.00 O00",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": 19,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TT2026 GRBS 10 110,00 O60",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": 60,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ses Gres",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BRiahtvatrse) NEBULISATION 20 490.00 0M",
+      "item_amount": 300.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TM1202s Non-imesiveVoriiedion(NIV) 104806.00 Of0 of)",
+      "item_amount": 45000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "NEBULISATION 10 4.00 om",
+      "item_amount": 160.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MONITORCHARGES, 1.0 00.00 om",
+      "item_amount": 80000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 236026.0,
+  "reconciliation_method": "sum_of_all_line_items"
+}

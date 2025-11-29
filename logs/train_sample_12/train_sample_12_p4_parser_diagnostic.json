@@ -1,0 +1,397 @@
+{
+  "page_no": 4,
+  "raw_lines_count": 39,
+  "column_centers": [
+    181.0,
+    429.0,
+    612.0,
+    914.0,
+    1126.0,
+    1270.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "POLYVOLPRO150ML(REF-14516)",
+      "item_amount": 678.76,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "POLYMED 05/11/20252512671BApe-30 2NO",
+      "item_amount": 678.76,
+      "item_rate": 339.38,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "INTRACATHNO-26POLYMED",
+      "item_amount": 339.38,
+      "item_rate": -26.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "On 05/11/20253184325EApr-30 2NO",
+      "item_amount": 339.38,
+      "item_rate": 169.69,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Well)",
+      "item_amount": 3040625406.25,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "wy yDUnN SRINGETeBD 05/11/20255150422May-30 4NO Py",
+      "item_amount": 96.0,
+      "item_rate": 24.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DISPOSYRINGESMLWITHOUT",
+      "item_amount": 57.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "6NO",
+      "item_amount": 57.0,
+      "item_rate": 9.5,
+      "item_quantity": 6,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SYRINGEW/ONEEDLE20MLL/L",
+      "item_amount": 160.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "-30 2NO",
+      "item_amount": 160.0,
+      "item_rate": 80.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(BD)SYW2 Ape",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FACEMASKSTERILEREGAL-",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "pragma 05/11/2025308/250901Aug-28 2NO",
+      "item_amount": 2.0,
+      "item_rate": 4.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(SG865) GLOVES6.5(SURGICARE)y5/11/202525G8047-Jun-30 3no.272-82979-g9",
+      "item_amount": 865.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(SGs7) CLOVEST(SURGICARE) 05/11/202525H0152KKJul-30",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "EXAMINATIONNITRILEGLOVES",
+      "item_amount": 32.34,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Jul-30",
+      "item_amount": 32.34,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Ste CATEETERNOS(LOr) 05/11/20254ML1S Oct-29 LNO 0-00",
+      "item_amount": 70.0,
+      "item_rate": -29.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "4NO",
+      "item_amount": 4.0,
+      "item_rate": 3.74,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FRIENDSUNDERPADCARE",
+      "item_amount": 206.25,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ceooen 05/11/2025-220INGLEPC LNO",
+      "item_amount": 206.25,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(10PCS)",
+      "item_amount": 108.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "INTRACATHNO-26POLYMED",
+      "item_amount": 169.69,
+      "item_rate": -26.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OWN 06/11/20253184325EApr-30 1NO",
+      "item_amount": 169.69,
+      "item_rate": 169.69,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ane",
+      "item_amount": 297375937.5,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Be VP ERCULINISYRINGELec27.BD 06/11/20255150422May-30 2NO CD",
+      "item_amount": 48.0,
+      "item_rate": 24.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Page15of33",
+      "item_amount": 15033.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "POLYVOLPRO150ML(REF-14516)",
+      "item_amount": 678.76,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "POLYMED 05/11/20252512671BApe-30 2NO",
+      "item_amount": 678.76,
+      "item_rate": 339.38,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "INTRACATHNO-26POLYMED",
+      "item_amount": 339.38,
+      "item_rate": -26.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "On 05/11/20253184325EApr-30 2NO",
+      "item_amount": 339.38,
+      "item_rate": 169.69,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Well)",
+      "item_amount": 3040625406.25,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "wy yDUnN SRINGETeBD 05/11/20255150422May-30 4NO Py",
+      "item_amount": 96.0,
+      "item_rate": 24.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DISPOSYRINGESMLWITHOUT",
+      "item_amount": 57.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "6NO",
+      "item_amount": 57.0,
+      "item_rate": 9.5,
+      "item_quantity": 6,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SYRINGEW/ONEEDLE20MLL/L",
+      "item_amount": 160.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "-30 2NO",
+      "item_amount": 160.0,
+      "item_rate": 80.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(BD)SYW2 Ape",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FACEMASKSTERILEREGAL-",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "pragma 05/11/2025308/250901Aug-28 2NO",
+      "item_amount": 2.0,
+      "item_rate": 4.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(SG865) GLOVES6.5(SURGICARE)y5/11/202525G8047-Jun-30 3no.272-82979-g9",
+      "item_amount": 865.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(SGs7) CLOVEST(SURGICARE) 05/11/202525H0152KKJul-30",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "EXAMINATIONNITRILEGLOVES",
+      "item_amount": 32.34,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Jul-30",
+      "item_amount": 32.34,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Ste CATEETERNOS(LOr) 05/11/20254ML1S Oct-29 LNO 0-00",
+      "item_amount": 70.0,
+      "item_rate": -29.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "4NO",
+      "item_amount": 4.0,
+      "item_rate": 3.74,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FRIENDSUNDERPADCARE",
+      "item_amount": 206.25,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ceooen 05/11/2025-220INGLEPC LNO",
+      "item_amount": 206.25,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(10PCS)",
+      "item_amount": 108.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "INTRACATHNO-26POLYMED",
+      "item_amount": 169.69,
+      "item_rate": -26.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OWN 06/11/20253184325EApr-30 1NO",
+      "item_amount": 169.69,
+      "item_rate": 169.69,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ane",
+      "item_amount": 297375937.5,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Be VP ERCULINISYRINGELec27.BD 06/11/20255150422May-30 2NO CD",
+      "item_amount": 48.0,
+      "item_rate": 24.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Page15of33",
+      "item_amount": 15033.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 3338020873.59,
+  "reconciliation_method": "sum_of_all_line_items"
+}

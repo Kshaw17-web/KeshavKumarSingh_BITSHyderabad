@@ -1,0 +1,131 @@
+{
+  "page_no": 3,
+  "raw_lines_count": 16,
+  "column_centers": [
+    43.0,
+    171.0,
+    665.0,
+    953.0,
+    1117.0,
+    1315.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "DietChames 20N1/202614212 3 170.00 0.00",
+      "item_amount": 510.0,
+      "item_rate": 0.0,
+      "item_quantity": 3,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BALLING",
+      "item_amount": 19000.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ECHOSCREENING 2141/20261058",
+      "item_amount": 3000.0,
+      "item_rate": 0.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "fe LAPMONITORCAMERALIGHTUSED 24111/202517-25",
+      "item_amount": 8000.0,
+      "item_rate": 0.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "is UROLOGYLASERMACHINECHARGES 24/11/20261725",
+      "item_amount": 8000.0,
+      "item_rate": 0.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "IMAIDCherges SubTotml",
+      "item_amount": 200.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "i MADCHARGES 24/11/20261725 i",
+      "item_amount": 200.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AmountinWorde ?Fupeestarolakhninstyitvethousendsevenhundredendsbcty4ourOnty",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "DietChames 20N1/202614212 3 170.00 0.00",
+      "item_amount": 510.0,
+      "item_rate": 0.0,
+      "item_quantity": 3,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BALLING",
+      "item_amount": 19000.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ECHOSCREENING 2141/20261058",
+      "item_amount": 3000.0,
+      "item_rate": 0.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "fe LAPMONITORCAMERALIGHTUSED 24111/202517-25",
+      "item_amount": 8000.0,
+      "item_rate": 0.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "is UROLOGYLASERMACHINECHARGES 24/11/20261725",
+      "item_amount": 8000.0,
+      "item_rate": 0.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "IMAIDCherges SubTotml",
+      "item_amount": 200.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "i MADCHARGES 24/11/20261725 i",
+      "item_amount": 200.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AmountinWorde ?Fupeestarolakhninstyitvethousendsevenhundredendsbcty4ourOnty",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 38914.0,
+  "reconciliation_method": "sum_of_all_line_items"
+}

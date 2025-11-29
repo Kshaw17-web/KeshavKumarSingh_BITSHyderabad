@@ -1,0 +1,215 @@
+{
+  "page_no": 3,
+  "raw_lines_count": 43,
+  "column_centers": [
+    181.0,
+    424.0,
+    914.0,
+    1154.0,
+    1269.0,
+    1404.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "STERILEWATERFORINJECTIONS 3 ha",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "STERILEWATERFORINJECTIONS",
+      "item_amount": 107.61,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Srgoont 04/11/2025111253397Jum-28 1VIAL",
+      "item_amount": 107.61,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AQUAPLUSNS100MLIV 04/11/20252501041356Jul-27",
+      "item_amount": 44.9,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AMITAX100MGINJECTION 04/11/2025L465011Apr-27 1VIAL",
+      "item_amount": 36.0,
+      "item_rate": 36.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DEXSTROSE2107SDOMICLELUIL) 04/11/202530250779Feb-28 1BOTILE Suet)",
+      "item_amount": 37.36,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DEXTROSEs02550OMICIELUIL) 04/11/202530250779Mar-28 BOTTLE Suet)",
+      "item_amount": 37.36,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AMITAX100MGINJECTION 0S/11/2025LA6S011Apr-27 1VIAL",
+      "item_amount": 36.0,
+      "item_rate": 36.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "STERILEWATERFORINJECTIONS",
+      "item_amount": 107.61,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SOOM 05/11/20251H253397Jun-28 LVIAL",
+      "item_amount": 107.61,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AQUAPLUSNS100MLIV 05/11/20252501041333Jul-27",
+      "item_amount": 44.9,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SMOFLIPID20%250MLIV 05/11/202516T11802Jul-26",
+      "item_amount": 20250.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MULTIMIN10MLINJECTION O5/11/2025M25A63May26n",
+      "item_amount": 32.81,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(plseesatestsMeSSEOSTEINEOD 06/11/202530250779-Feb-28 BOTTLE Bue",
+      "item_amount": 37.36,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SMOFLIPID20%250MLIV 06/11/202516TT1802Ful-26",
+      "item_amount": 20250.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Page10of33",
+      "item_amount": 10033.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "STERILEWATERFORINJECTIONS 3 ha",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "STERILEWATERFORINJECTIONS",
+      "item_amount": 107.61,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Srgoont 04/11/2025111253397Jum-28 1VIAL",
+      "item_amount": 107.61,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AQUAPLUSNS100MLIV 04/11/20252501041356Jul-27",
+      "item_amount": 44.9,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "AMITAX100MGINJECTION 04/11/2025L465011Apr-27 1VIAL",
+      "item_amount": 36.0,
+      "item_rate": 36.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DEXSTROSE2107SDOMICLELUIL) 04/11/202530250779Feb-28 1BOTILE Suet)",
+      "item_amount": 37.36,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DEXTROSEs02550OMICIELUIL) 04/11/202530250779Mar-28 BOTTLE Suet)",
+      "item_amount": 37.36,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SOOM 05/11/20251H253397Jun-28 LVIAL",
+      "item_amount": 107.61,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SMOFLIPID20%250MLIV 05/11/202516T11802Jul-26",
+      "item_amount": 20250.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MULTIMIN10MLINJECTION O5/11/2025M25A63May26n",
+      "item_amount": 32.81,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(plseesatestsMeSSEOSTEINEOD 06/11/202530250779-Feb-28 BOTTLE Bue",
+      "item_amount": 37.36,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Page10of33",
+      "item_amount": 10033.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 30834.62,
+  "reconciliation_method": "sum_of_all_line_items"
+}

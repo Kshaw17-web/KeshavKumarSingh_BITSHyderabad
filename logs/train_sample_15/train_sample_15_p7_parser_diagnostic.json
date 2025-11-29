@@ -1,0 +1,341 @@
+{
+  "page_no": 7,
+  "raw_lines_count": 39,
+  "column_centers": [
+    185.0,
+    322.0,
+    908.0,
+    1130.0,
+    1256.0,
+    1372.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "PadentAddress BaiDala 52A12025",
+      "item_amount": 220.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1e1UzEZs)GRBS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "THivat25-DTETARYSERVICES-NICU",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "171172025-GRBS",
+      "item_amount": 220.0,
+      "item_rate": 0.08,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Y7n2025MONITORCHARGES. 10gone0 0,00 0.00 apes",
+      "item_amount": 0.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "17711205-SYRUINGEPUNP",
+      "item_amount": 450.9,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "v7i12025-GABS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1000.0 o.00",
+      "item_amount": 500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1eN12025-GRES",
+      "item_amount": 72000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "yaia025-MONTORCHARGES",
+      "item_amount": 800.0,
+      "item_rate": 0.9,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BN025SYRINGEPUMP 10astL00",
+      "item_amount": 450.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "wi12025-GREBS",
+      "item_amount": 110.0,
+      "item_rate": 1.2222,
+      "item_quantity": 90,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1enve025GRES 10110.00 anu ood",
+      "item_amount": 410.0,
+      "item_rate": 10110.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Wwiw202ssGRES",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1-80.00 0.0 0.09 Boa.00",
+      "item_amount": 800.0,
+      "item_rate": 0.09,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1etU2028SYTUNGEPUNP",
+      "item_amount": 450.0,
+      "item_rate": 0.9,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "iwryz02sCDIBTARYSERVICES-NICU",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "iwr202848-GRAS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "teriv202566GRBS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "POR OXYGENPERHOUR",
+      "item_amount": 100.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "zoniza23SYRINGEPUMP 1.0450,00 0.00 a0",
+      "item_amount": 160.06,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DIETARYSERVICES-NICU",
+      "item_amount": 500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Proo?of3t",
+      "item_amount": 3.0,
+      "item_rate": 3.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "PadentAddress BaiDala 52A12025",
+      "item_amount": 220.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1e1UzEZs)GRBS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "THivat25-DTETARYSERVICES-NICU",
+      "item_amount": 600.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "171172025-GRBS",
+      "item_amount": 220.0,
+      "item_rate": 0.08,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Y7n2025MONITORCHARGES. 10gone0 0,00 0.00 apes",
+      "item_amount": 0.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "17711205-SYRUINGEPUNP",
+      "item_amount": 450.9,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "v7i12025-GABS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1000.0 o.00",
+      "item_amount": 500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1eN12025-GRES",
+      "item_amount": 72000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "yaia025-MONTORCHARGES",
+      "item_amount": 800.0,
+      "item_rate": 0.9,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BN025SYRINGEPUMP 10astL00",
+      "item_amount": 450.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "wi12025-GREBS",
+      "item_amount": 110.0,
+      "item_rate": 1.2222,
+      "item_quantity": 90,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1enve025GRES 10110.00 anu ood",
+      "item_amount": 410.0,
+      "item_rate": 10110.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Wwiw202ssGRES",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1-80.00 0.0 0.09 Boa.00",
+      "item_amount": 800.0,
+      "item_rate": 0.09,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1etU2028SYTUNGEPUNP",
+      "item_amount": 450.0,
+      "item_rate": 0.9,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "iwryz02sCDIBTARYSERVICES-NICU",
+      "item_amount": 800.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "iwr202848-GRAS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "teriv202566GRBS",
+      "item_amount": 110.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "POR OXYGENPERHOUR",
+      "item_amount": 100.0,
+      "item_rate": 0.0,
+      "item_quantity": 10,
+      "gst_percent": null
+    },
+    {
+      "item_name": "zoniza23SYRINGEPUMP 1.0450,00 0.00 a0",
+      "item_amount": 160.06,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DIETARYSERVICES-NICU",
+      "item_amount": 500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Proo?of3t",
+      "item_amount": 3.0,
+      "item_rate": 3.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 79233.96,
+  "reconciliation_method": "sum_of_all_line_items"
+}

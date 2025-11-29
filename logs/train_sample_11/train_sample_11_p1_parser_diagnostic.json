@@ -1,0 +1,117 @@
+{
+  "page_no": 1,
+  "raw_lines_count": 21,
+  "column_centers": [
+    164.0,
+    339.0,
+    747.0,
+    914.0,
+    1203.0,
+    1332.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "363 CASHBILL as",
+      "item_amount": 363.0,
+      "item_rate": 121.0,
+      "item_quantity": 3,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tema -2D) 1104s",
+      "item_amount": 1940.0,
+      "item_rate": 276.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Thankyou) Total210fo4",
+      "item_amount": 2104.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "-oate.ten81286",
+      "item_amount": 0.6024,
+      "item_rate": 267.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PtName - vecee-DPNamOs....eee pococsce6l",
+      "item_amount": 6.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "7PARTICULARS SchNameofMfg.BatchNo.Exp.vtRs. Ps",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "LH OMarel-S004( nie",
+      "item_amount": 8006.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "363 CASHBILL as",
+      "item_amount": 363.0,
+      "item_rate": 121.0,
+      "item_quantity": 3,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tema -2D) 1104s",
+      "item_amount": 1940.0,
+      "item_rate": 276.0,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Thankyou) Total210fo4",
+      "item_amount": 2104.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "-oate.ten81286",
+      "item_amount": 0.6024,
+      "item_rate": 267.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PtName - vecee-DPNamOs....eee pococsce6l",
+      "item_amount": 6.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "7PARTICULARS SchNameofMfg.BatchNo.Exp.vtRs. Ps",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "LH OMarel-S004( nie",
+      "item_amount": 8006.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": 210.0,
+  "final_total": 12426.6024,
+  "reconciliation_method": "sum_of_all_line_items"
+}

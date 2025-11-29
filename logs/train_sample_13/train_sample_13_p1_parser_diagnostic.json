@@ -1,0 +1,103 @@
+{
+  "page_no": 1,
+  "raw_lines_count": 18,
+  "column_centers": [
+    138.5,
+    280.5,
+    766.5,
+    973.5,
+    1188.5,
+    1339.5
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "i IPDBal(F) 5s",
+      "item_amount": 5.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Empanement- 5 No.-OFDays -",
+      "item_amount": 5.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tneurence 3 a RoomNo. een",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "HSNCoda( SetviceDesctiptiont",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DeHoeesf H AEEESAnecthedteciicalCore 1 7, 7,f7%",
+      "item_amount": 7.0,
+      "item_rate": 1.1,
+      "item_quantity": 7,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tinted ) feseraeNoz025 Pagetof7",
+      "item_amount": 17.0,
+      "item_rate": 25.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "i IPDBal(F) 5s",
+      "item_amount": 5.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Empanement- 5 No.-OFDays -",
+      "item_amount": 5.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tneurence 3 a RoomNo. een",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "HSNCoda( SetviceDesctiptiont",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "DeHoeesf H AEEESAnecthedteciicalCore 1 7, 7,f7%",
+      "item_amount": 7.0,
+      "item_rate": 1.1,
+      "item_quantity": 7,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tinted ) feseraeNoz025 Pagetof7",
+      "item_amount": 17.0,
+      "item_rate": 25.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 41.0,
+  "reconciliation_method": "sum_of_all_line_items"
+}

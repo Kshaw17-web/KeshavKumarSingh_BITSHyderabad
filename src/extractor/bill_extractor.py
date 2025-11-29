@@ -338,6 +338,15 @@ def _classify_page_type(text: str) -> str:
     return "Bill Detail"
 
 
+def _merge_split_lines(lines: List[List[Dict[str, Any]]]) -> List[List[Dict[str, Any]]]:
+    """
+    Merge lines that appear to be split (e.g., item name on one line, amount on next).
+    For now, return original lines (no merging) to avoid breaking extraction.
+    TODO: Implement smart line merging if needed.
+    """
+    return lines
+
+
 def _extract_items_from_text(text: str) -> List[Dict[str, Any]]:
     """
     Enhanced item extraction using regex + semantic similarity.
@@ -899,62 +908,70 @@ def extract_bill_data_with_tsv(
                 parsed_items = []
                 
                 # 4) Parse each line using improved parse_row_from_columns
-                # First, try to detect and merge split lines (heuristic rule)
-                merged_lines = _merge_split_lines(lines)
+                # Note: Line merging disabled for now - use original lines
+                # TODO: Implement _merge_split_lines if needed for split items
+                merged_lines = lines  # Use original lines
                 
-                for ln in merged_lines:
-                    cols = map_tokens_to_columns(ln, col_centers)
-                    parsed = parse_row_from_columns(cols)
-                    
-                    # Heuristic: Detect structured rows like "CANNULA 22G 1 105.00 0.00 105.00"
-                    if not parsed.get("item_amount") or parsed.get("item_amount") == 0:
-                        structured_parsed = _parse_structured_row(ln)
-                        if structured_parsed and structured_parsed.get("item_amount"):
-                            parsed = structured_parsed
-                    
-                    # if parsed has numeric tokens with low confidences, attempt numeric re-ocr
+                for ln_idx, ln in enumerate(merged_lines):
                     try:
-                        # get token confidences from 'ln' tokens
-                        right_numeric = None
-                        for t in reversed(ln):
-                            if any(ch.isdigit() for ch in t.get("text", "")):
-                                right_numeric = t
-                                break
+                        cols = map_tokens_to_columns(ln, col_centers)
+                        parsed = parse_row_from_columns(cols)
                         
-                        if right_numeric and right_numeric.get("conf", 100) < NUMERIC_CONF_THRESHOLD:
-                            # crop area from preprocessed image
-                            l = max(0, int(right_numeric["left"]) - 4)
-                            t = max(0, int(right_numeric["top"]) - 4)
-                            r = int(right_numeric["left"] + right_numeric["width"] + 4)
-                            b = int(right_numeric["top"] + right_numeric["height"] + 4)
+                        # Heuristic: Detect structured rows like "CANNULA 22G 1 105.00 0.00 105.00"
+                        if not parsed.get("item_amount") or parsed.get("item_amount") == 0:
+                            structured_parsed = _parse_structured_row(ln)
+                            if structured_parsed and structured_parsed.get("item_amount"):
+                                parsed = structured_parsed
+                        
+                        # if parsed has numeric tokens with low confidences, attempt numeric re-ocr
+                        try:
+                            # get token confidences from 'ln' tokens
+                            right_numeric = None
+                            for t in reversed(ln):
+                                if any(ch.isdigit() for ch in t.get("text", "")):
+                                    right_numeric = t
+                                    break
                             
-                            try:
-                                # cv2_img (grayscale) -> crop array then pass to ocr_numeric_region
-                                crop = cv2_img[t:b, l:r]
-                                val = ocr_numeric_region(crop)
-                                if val is not None:
-                                    # Overwrite item_amount if parse thinks it's numeric spot
-                                    parsed['item_amount'] = val
-                            except Exception:
-                                pass
-                    except Exception:
-                        pass
-                    
-                    # 5) Apply is_probable_item to filter
-                    if is_probable_item(parsed):
-                        # Conservative quantity validation (already handled in parse_row_from_columns)
-                        # Additional check: ensure qty is valid integer < 100
-                        qty = parsed.get("item_quantity")
-                        if qty is not None:
-                            if isinstance(qty, (int, float)):
-                                if qty <= 0 or qty > 100:
-                                    parsed["item_quantity"] = None
-                                # If rightmost token includes ".00" treat as amount not qty
-                                # (This is already checked in parse_row_from_columns, but double-check here)
-                                if not float(qty).is_integer():
-                                    parsed["item_quantity"] = None
+                            if right_numeric and right_numeric.get("conf", 100) < NUMERIC_CONF_THRESHOLD:
+                                # crop area from preprocessed image
+                                l = max(0, int(right_numeric["left"]) - 4)
+                                t = max(0, int(right_numeric["top"]) - 4)
+                                r = int(right_numeric["left"] + right_numeric["width"] + 4)
+                                b = int(right_numeric["top"] + right_numeric["height"] + 4)
+                                
+                                try:
+                                    # cv2_img (grayscale) -> crop array then pass to ocr_numeric_region
+                                    crop = cv2_img[t:b, l:r]
+                                    val = ocr_numeric_region(crop)
+                                    if val is not None:
+                                        # Overwrite item_amount if parse thinks it's numeric spot
+                                        parsed['item_amount'] = val
+                                except Exception:
+                                    pass
+                        except Exception:
+                            pass
                         
-                        parsed_items.append(parsed)
+                        # 5) Apply is_probable_item to filter
+                        if is_probable_item(parsed):
+                            # Conservative quantity validation (already handled in parse_row_from_columns)
+                            # Additional check: ensure qty is valid integer < 100
+                            qty = parsed.get("item_quantity")
+                            if qty is not None:
+                                if isinstance(qty, (int, float)):
+                                    if qty <= 0 or qty > 100:
+                                        parsed["item_quantity"] = None
+                                    # If rightmost token includes ".00" treat as amount not qty
+                                    # (This is already checked in parse_row_from_columns, but double-check here)
+                                    if not float(qty).is_integer():
+                                        parsed["item_quantity"] = None
+                            
+                            parsed_items.append(parsed)
+                    except Exception as parse_err:
+                        # Log parse errors but continue
+                        import logging
+                        logger = logging.getLogger(__name__)
+                        logger.debug(f"Parse error on line {ln_idx}: {parse_err}")
+                        continue
                 
                 # 6) Fallback: if <3 parsed_items found, run very simple rightmost-number heuristic
                 if len(parsed_items) < 3:
@@ -1019,7 +1036,9 @@ def extract_bill_data_with_tsv(
                     except:
                         reported_total = None
                 
-                final_total, method = reconcile_totals(deduped, reported_total)
+                # Calculate final_total from deduped items (sum of all line items)
+                final_total = sum(item.get("item_amount", 0.0) for item in deduped if item.get("item_amount", 0.0) > 0)
+                method = "sum_of_all_line_items"
                 
                 # Save parser diagnostic for this page
                 if run_log_dir:
@@ -1040,8 +1059,16 @@ def extract_bill_data_with_tsv(
                     except Exception:
                         pass
                 
-                # Auto-detect page_type
-                page_type = _detect_page_type_from_text(ocr_text_joined)
+                # Auto-detect page_type (use simple detection)
+                page_type = "Bill Detail"  # Default
+                try:
+                    ocr_text_lower = ocr_text_joined.lower()
+                    if any(kw in ocr_text_lower for kw in ['pharmacy', 'medicines', 'drugs', 'prescription']):
+                        page_type = "Pharmacy"
+                    elif any(kw in ocr_text_lower for kw in ['final bill', 'grand total', 'net payable', 'amount payable']):
+                        page_type = "Final Bill"
+                except Exception:
+                    pass  # Use default
                 
                 # Run fraud detection on this page (Differentiator)
                 page_fraud_flags = []
@@ -1077,6 +1104,18 @@ def extract_bill_data_with_tsv(
                 total_reconciled += final_total
                 
             except Exception as e:
+                # Log error but continue with empty page
+                import logging
+                logger = logging.getLogger(__name__)
+                logger.error(f"Error processing page {page_idx}: {e}", exc_info=True)
+                # Save error to debug directory
+                if run_log_dir:
+                    try:
+                        error_file = run_log_dir / f"{request_id or 'page'}_p{page_idx}_error.txt"
+                        import traceback
+                        error_file.write_text(traceback.format_exc(), encoding="utf-8")
+                    except Exception:
+                        pass
                 # Continue with empty page on error
                 pagewise_line_items.append({
                     "page_no": str(page_idx),

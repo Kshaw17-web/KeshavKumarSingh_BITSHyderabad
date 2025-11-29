@@ -1,0 +1,200 @@
+{
+  "page_no": 1,
+  "raw_lines_count": 33,
+  "column_centers": [
+    106.0,
+    673.0,
+    1140.0,
+    1280.0,
+    1400.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "InterimBillBillofSuppty aE",
+      "item_amount": 2026.0,
+      "item_rate": 106.6316,
+      "item_quantity": 19,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TRASCorporate(1))",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "8L.No Service ounrti",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1Consultation(000311)",
+      "item_amount": 79760.0,
+      "item_rate": 1000311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "3sInvaateeProcedures(999311)",
+      "item_amount": 35720.0,
+      "item_rate": 3999311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "6MedicalRecords(909311)",
+      "item_amount": 600.0,
+      "item_rate": 6909311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "7WNutritionalandFunctionalAssesementChargee(990311)",
+      "item_amount": 600.0,
+      "item_rate": 7990311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "9OTConsumablec(999311)",
+      "item_amount": 62517.96,
+      "item_rate": 9999311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "10OTPharmacy(099311)",
+      "item_amount": 2244.37,
+      "item_rate": 10099311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "11-PharmacyConsumabies(996311)",
+      "item_amount": 334604.78,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "12Phystotherapy(999311)",
+      "item_amount": 22500.0,
+      "item_rate": 12999311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18WardPhermacy(999311)",
+      "item_amount": 560475.95,
+      "item_rate": 18999311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Page1of90",
+      "item_amount": 190.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "InterimBillBillofSuppty aE",
+      "item_amount": 2026.0,
+      "item_rate": 106.6316,
+      "item_quantity": 19,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TRASCorporate(1))",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "8L.No Service ounrti",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1Consultation(000311)",
+      "item_amount": 79760.0,
+      "item_rate": 1000311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "3sInvaateeProcedures(999311)",
+      "item_amount": 35720.0,
+      "item_rate": 3999311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "6MedicalRecords(909311)",
+      "item_amount": 600.0,
+      "item_rate": 6909311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "7WNutritionalandFunctionalAssesementChargee(990311)",
+      "item_amount": 600.0,
+      "item_rate": 7990311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "9OTConsumablec(999311)",
+      "item_amount": 62517.96,
+      "item_rate": 9999311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "10OTPharmacy(099311)",
+      "item_amount": 2244.37,
+      "item_rate": 10099311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "11-PharmacyConsumabies(996311)",
+      "item_amount": 334604.78,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "12Phystotherapy(999311)",
+      "item_amount": 22500.0,
+      "item_rate": 12999311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18WardPhermacy(999311)",
+      "item_amount": 560475.95,
+      "item_rate": 18999311.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Page1of90",
+      "item_amount": 190.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 1101248.06,
+  "reconciliation_method": "sum_of_all_line_items"
+}

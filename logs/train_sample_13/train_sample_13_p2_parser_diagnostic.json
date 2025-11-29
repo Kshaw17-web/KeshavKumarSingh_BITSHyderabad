@@ -1,0 +1,117 @@
+{
+  "page_no": 2,
+  "raw_lines_count": 26,
+  "column_centers": [
+    168.5,
+    430.5,
+    634.5,
+    1019.5,
+    1189.5,
+    1370.5
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "BalNo. % BaDate YN",
+      "item_amount": 15.06,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(PatientNamer Age/Genter 3 oa",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GuardanName ee a AdmitDe8Tine2ISNORADS20h",
+      "item_amount": 8220.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "socccano4 -TPRIRRSSgseTOOONLMORGaasOpesLR ToesefssessecdcccseeesssnsPevsseeeeeseeeecoes",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PLUTD-AeS-t.98t-SDOML-C 1.068529 jf - eee",
+      "item_amount": 1.068529,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "UBARDAgEeresnCHb6k",
+      "item_amount": 6.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GLOWES-SURGICAL-6.SNO",
+      "item_amount": 24005.0,
+      "item_rate": 24005.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "BalNo. % BaDate YN",
+      "item_amount": 15.06,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "(PatientNamer Age/Genter 3 oa",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GuardanName ee a AdmitDe8Tine2ISNORADS20h",
+      "item_amount": 8220.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "socccano4 -TPRIRRSSgseTOOONLMORGaasOpesLR ToesefssessecdcccseeesssnsPevsseeeeeseeeecoes",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PLUTD-AeS-t.98t-SDOML-C 1.068529 jf - eee",
+      "item_amount": 1.068529,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "UBARDAgEeresnCHb6k",
+      "item_amount": 6.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GLOWES-SURGICAL-6.SNO",
+      "item_amount": 24005.0,
+      "item_rate": 24005.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 32254.128529,
+  "reconciliation_method": "sum_of_all_line_items"
+}

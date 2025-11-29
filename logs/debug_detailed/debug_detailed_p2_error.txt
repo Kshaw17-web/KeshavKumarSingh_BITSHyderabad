@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\ksr20\OneDrive\Desktop\Bajaj Finserv Datathon\src\extractor\bill_extractor.py", line 1063, in extract_bill_data_with_tsv
+    page_type = _detect_page_type_from_text(ocr_text_joined)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_detect_page_type_from_text' is not defined

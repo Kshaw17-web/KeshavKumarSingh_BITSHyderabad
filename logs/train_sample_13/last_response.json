@@ -10,8 +10,57 @@
       {
         "page_no": "1",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "i IPDBal(F) 5s",
+            "item_amount": 5.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Empanement- 5 No.-OFDays -",
+            "item_amount": 5.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Tneurence 3 a RoomNo. een",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "HSNCoda( SetviceDesctiptiont",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "DeHoeesf H AEEESAnecthedteciicalCore 1 7, 7,f7%",
+            "item_amount": 7.0,
+            "item_rate": 1.1,
+            "item_quantity": 7,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Tinted ) feseraeNoz025 Pagetof7",
+            "item_amount": 17.0,
+            "item_rate": 25.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -19,8 +68,64 @@
       {
         "page_no": "2",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "BalNo. % BaDate YN",
+            "item_amount": 15.06,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "(PatientNamer Age/Genter 3 oa",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "GuardanName ee a AdmitDe8Tine2ISNORADS20h",
+            "item_amount": 8220.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "socccano4 -TPRIRRSSgseTOOONLMORGaasOpesLR ToesefssessecdcccseeesssnsPevsseeeeeseeeecoes",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PLUTD-AeS-t.98t-SDOML-C 1.068529 jf - eee",
+            "item_amount": 1.068529,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "UBARDAgEeresnCHb6k",
+            "item_amount": 6.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "GLOWES-SURGICAL-6.SNO",
+            "item_amount": 24005.0,
+            "item_rate": 24005.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -28,8 +133,85 @@
       {
         "page_no": "3",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "IPDBal(F)",
+            "item_amount": 7.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "GuordianNeme a AddknitDe.8.Tirvi",
+            "item_amount": -21.31,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Consuttaint 8 Bmp.jPolicy f N",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "IN-KABIMOL-FREERx-100 bmig7igar eS",
+            "item_amount": 7.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "EPEErta 2680 SANS Jeeeeeeneecaeennmeneeeelweeeee",
+            "item_amount": 2680.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "77777CRORBSGrpSONA-QINET77777ZeHo037 4 eee oT",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PMieeseic-INTRASHIED.gago7 ae WOEESS2",
+            "item_amount": -0.7,
+            "item_rate": -0.7,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NNNIRDOUEo3.c08 an )EEEEEESI",
+            "item_amount": 3.08,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "5ssigsaiseSSRUMLORabetyna",
+            "item_amount": 5.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BANDA.GE-CREPE-GINCI",
+            "item_amount": 2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -37,8 +219,43 @@
       {
         "page_no": "4",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "BalDete",
+            "item_amount": 15.08,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Trsurence 4 non",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "HoiderName1 - EpPoRyN. muoreeee",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "GLOVES-SURGI -7/SNO 2505. Ey 2. - MO - -",
+            "item_amount": 2505.0,
+            "item_rate": 2505.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -46,14 +263,49 @@
       {
         "page_no": "5",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "GuardienNeme we AceritDt..8Theve png",
+            "item_amount": 21.31,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TT7eRoneniagaeRSRnfe",
+            "item_amount": 7.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PE-PAPER-MEGROPOREINGH ROTZ505 q (48 Ce enennemneneeeananan",
+            "item_amount": 148.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PItxHizt",
+            "item_amount": 250.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
       }
     ],
-    "total_item_count": 0,
-    "reconciled_amount": 0
+    "total_item_count": 31,
+    "reconciled_amount": 37962.6
   }
 }

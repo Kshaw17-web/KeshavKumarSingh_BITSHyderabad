@@ -1,0 +1,283 @@
+{
+  "page_no": 3,
+  "raw_lines_count": 35,
+  "column_centers": [
+    187.0,
+    934.0,
+    1127.0,
+    1260.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "Psyerfamoi BedNo",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "T31uR25-RRUIRUBINDIRECT-SERUM",
+      "item_amount": 80240.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13r142025BILIRUBINTOTAL.-SERUM a",
+      "item_amount": 90240.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "tstyeu2SCRPCREACTIVEPROTEIN (",
+      "item_amount": 8.0,
+      "item_rate": 2.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13ivaws)-RENALRUNCTIONTESTGFT) 100Ta00t aco8yan0",
+      "item_amount": 200.0,
+      "item_rate": 10000.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18142025-BLOONGULTUREAND-SeNSITIVITY",
+      "item_amount": 1880.0,
+      "item_rate": 1400.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13e12025THYRODOMEFREE(FT4) 100d",
+      "item_amount": 800.0,
+      "item_rate": 100.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13412025THYROAD/STIMULATINGHORMMONEL 19m",
+      "item_amount": 88630.0,
+      "item_rate": -15.7895,
+      "item_quantity": 19,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1eiuz02sORPGREACTIVEPROTEIN OT",
+      "item_amount": 0.0,
+      "item_rate": 102.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "161172026URINGFORKOHMOUNT",
+      "item_amount": 60.0,
+      "item_rate": 8800.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1enV2025PLATELETCOUNT-BLOOD as",
+      "item_amount": 24000.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1712025OGCLATRLOOD-STOOL",
+      "item_amount": 12000.0,
+      "item_rate": 10120000.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ferv20es-CRPC-REACTIVEPROTEIN 49nd",
+      "item_amount": 0.0,
+      "item_rate": 49.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "40pao0 om5n.00",
+      "item_amount": 890.0,
+      "item_rate": 400.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "zorti2025-PLATELETCOUNT-BLOOD a boo-24n.00",
+      "item_amount": 8240.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1iH12025MRAYCHESTAP 40s oo4Rd.00",
+      "item_amount": 0.0048,
+      "item_rate": 0.1,
+      "item_quantity": 40,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Witz025X-RAYCHESTAP 4048000 D090",
+      "item_amount": 480.0,
+      "item_rate": 4048000.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1iH12023--BDECHOCARDIOGRAPHY",
+      "item_amount": 1800.0,
+      "item_rate": 0.9,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Pagesof21",
+      "item_amount": 24120251.52,
+      "item_rate": 21.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "Psyerfamoi BedNo",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "T31uR25-RRUIRUBINDIRECT-SERUM",
+      "item_amount": 80240.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13r142025BILIRUBINTOTAL.-SERUM a",
+      "item_amount": 90240.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "tstyeu2SCRPCREACTIVEPROTEIN (",
+      "item_amount": 8.0,
+      "item_rate": 2.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13ivaws)-RENALRUNCTIONTESTGFT) 100Ta00t aco8yan0",
+      "item_amount": 200.0,
+      "item_rate": 10000.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18142025-BLOONGULTUREAND-SeNSITIVITY",
+      "item_amount": 1880.0,
+      "item_rate": 1400.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13e12025THYRODOMEFREE(FT4) 100d",
+      "item_amount": 800.0,
+      "item_rate": 100.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "13412025THYROAD/STIMULATINGHORMMONEL 19m",
+      "item_amount": 88630.0,
+      "item_rate": -15.7895,
+      "item_quantity": 19,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1eiuz02sORPGREACTIVEPROTEIN OT",
+      "item_amount": 0.0,
+      "item_rate": 102.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "161172026URINGFORKOHMOUNT",
+      "item_amount": 60.0,
+      "item_rate": 8800.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1enV2025PLATELETCOUNT-BLOOD as",
+      "item_amount": 24000.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1712025OGCLATRLOOD-STOOL",
+      "item_amount": 12000.0,
+      "item_rate": 10120000.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ferv20es-CRPC-REACTIVEPROTEIN 49nd",
+      "item_amount": 0.0,
+      "item_rate": 49.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "40pao0 om5n.00",
+      "item_amount": 890.0,
+      "item_rate": 400.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "zorti2025-PLATELETCOUNT-BLOOD a boo-24n.00",
+      "item_amount": 8240.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1iH12025MRAYCHESTAP 40s oo4Rd.00",
+      "item_amount": 0.0048,
+      "item_rate": 0.1,
+      "item_quantity": 40,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Witz025X-RAYCHESTAP 4048000 D090",
+      "item_amount": 480.0,
+      "item_rate": 4048000.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1iH12023--BDECHOCARDIOGRAPHY",
+      "item_amount": 1800.0,
+      "item_rate": 0.9,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Pagesof21",
+      "item_amount": 24120251.52,
+      "item_rate": 21.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 24429723.5248,
+  "reconciliation_method": "sum_of_all_line_items"
+}

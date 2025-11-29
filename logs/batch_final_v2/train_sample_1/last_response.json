@@ -1,0 +1,282 @@
+{
+  "file": "data\\raw\\training_samples\\TRAINING_SAMPLES\\train_sample_1.pdf",
+  "page_results": [
+    {
+      "page_no": 1,
+      "items": [
+        {
+          "item_name": "D.0.A. t DOLD",
+          "item_amount": 3.0,
+          "item_rate": null,
+          "item_quantity": null,
+          "gst_percent": null
+        },
+        {
+          "item_name": "2Dechocardiography",
+          "item_amount": 1180.0,
+          "item_rate": 1180.0,
+          "item_quantity": null,
+          "gst_percent": null
+        },
+        {
+          "item_name": "2 1S11/2025R1O20 USGWholeAbdomenInctudingPelvisand",
+          "item_amount": 640.0,
+          "item_rate": 320.0,
+          "item_quantity": 2,
+          "gst_percent": null
+        },
+        {
+          "item_name": "XRayChestLateral(onefilm)",
+          "item_amount": 184.0,
+          "item_rate": 184.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "L 15/1/2025 BEDCHARGEGENBRALWARD",
+          "item_amount": 1500.0,
+          "item_rate": 1500.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "BEDCHARGEGENERALWARD",
+          "item_amount": 1500.0,
+          "item_rate": 750.0,
+          "item_quantity": 2,
+          "gst_percent": null
+        },
+        {
+          "item_name": "BEDCHARGEGENERALWARD",
+          "item_amount": 1300.0,
+          "item_rate": 433.3333,
+          "item_quantity": 3,
+          "gst_percent": null
+        },
+        {
+          "item_name": "i, 13/11/2025CNO02 ConsultattonforInpatients",
+          "item_amount": 700.0,
+          "item_rate": 350.0,
+          "item_quantity": null,
+          "gst_percent": null
+        },
+        {
+          "item_name": "ConeultationforInpatients",
+          "item_amount": 700.0,
+          "item_rate": 16117202502.0,
+          "item_quantity": null,
+          "gst_percent": null
+        },
+        {
+          "item_name": "3. 17/1)2025CNOO2 ConsultationforInpatients",
+          "item_amount": 700.0,
+          "item_rate": 350.0,
+          "item_quantity": 2.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "ConsultationforInpatients",
+          "item_amount": 330.0,
+          "item_rate": 350.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "BLOODCULTURESENSITIVITY",
+          "item_amount": 368.0,
+          "item_rate": 368.0,
+          "item_quantity": 1,
+          "gst_percent": null
+        },
+        {
+          "item_name": "BLOODSUGARRANDOM(RBS)",
+          "item_amount": 32.0,
+          "item_rate": 32.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "CBC",
+          "item_amount": 740.0,
+          "item_rate": 740.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        }
+      ],
+      "reported_total": null,
+      "final_total": 9877.0
+    },
+    {
+      "page_no": 2,
+      "items": [
+        {
+          "item_name": "DENGUEIGMAND.IGG",
+          "item_amount": 640.0,
+          "item_rate": 640.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "DENGUENSANTIGEN",
+          "item_amount": 320.0,
+          "item_rate": 320.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "ESR(ERYTHROCYTHSED.RATE)",
+          "item_amount": 80.0,
+          "item_rate": 6111202510.0,
+          "item_quantity": null,
+          "gst_percent": null
+        },
+        {
+          "item_name": "GLYCOSYLATED HAEMOGLOBIN",
+          "item_amount": 240.0,
+          "item_rate": 240.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "HBsAg",
+          "item_amount": 240.0,
+          "item_rate": 240.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "HEPATITISCVIRUS(HCV)",
+          "item_amount": 400.0,
+          "item_rate": 400.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "HIVLANDI",
+          "item_amount": 308.0,
+          "item_rate": 308.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "C-REACTIVEPROTEIN(CRP)",
+          "item_amount": 240.0,
+          "item_rate": 240.0,
+          "item_quantity": 2.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "LIPIDPROFILE",
+          "item_amount": 392.0,
+          "item_rate": 392.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "LIVERFUNCTIONTEST(LFT)",
+          "item_amount": 400.0,
+          "item_rate": 400.0,
+          "item_quantity": 2.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "MPANTIGEN(MALARIARAPIDCARD",
+          "item_amount": 232.0,
+          "item_rate": 232.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "PROCALCITONIN",
+          "item_amount": 2070.0,
+          "item_rate": 2070.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "RFT/KIDNBYFUNCTIONTEST(kf)",
+          "item_amount": 400.0,
+          "item_rate": 400.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "SERUMAMYLASE",
+          "item_amount": 240.0,
+          "item_rate": 240.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "SERUMLIPASE",
+          "item_amount": 320.0,
+          "item_rate": 320.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "SERUMVITAMINB-12LEVEL",
+          "item_amount": 480.0,
+          "item_rate": 480.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "TYPHIDOTIgGIgM",
+          "item_amount": 320.0,
+          "item_rate": 320.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "VITAMIND3ASSAY",
+          "item_amount": 800.0,
+          "item_rate": 800.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "WIDALTEST",
+          "item_amount": 56.0,
+          "item_rate": 56.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "KIDNEYFUNTIONTEST(KFT)",
+          "item_amount": 400.0,
+          "item_rate": 400.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "cac",
+          "item_amount": 240.0,
+          "item_rate": 240.0,
+          "item_quantity": 1.0,
+          "gst_percent": null
+        },
+        {
+          "item_name": "GrasdTotal",
+          "item_amount": 734270.25,
+          "item_rate": null,
+          "item_quantity": null,
+          "gst_percent": null
+        },
+        {
+          "item_name": "NetAusountPayable",
+          "item_amount": 73420.15,
+          "item_rate": null,
+          "item_quantity": null,
+          "gst_percent": null
+        }
+      ],
+      "reported_total": 73420.25,
+      "final_total": 816508.4
+    }
+  ],
+  "n_pages": 2,
+  "total_item_count": 37,
+  "reconciled_amount": 826385.4,
+  "error": null
+}

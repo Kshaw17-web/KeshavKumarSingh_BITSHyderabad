@@ -448,6 +448,23 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
         except:
             return None
     
+    # Helper to check if a token looks like a date code (not a rate)
+    def _is_date_code(token_str):
+        """Check if token looks like a date code (e.g., '61S/11/2025LBO10', '15/11/2025LB270')"""
+        if not token_str:
+            return False
+        # Contains slashes with digits (date pattern)
+        if '/' in token_str and re.search(r'\d+/\d+', token_str):
+            return True
+        # Very long numeric string (>8 digits) likely a date code or invoice number
+        digits_only = ''.join(c for c in token_str if c.isdigit())
+        if len(digits_only) > 8:
+            return True
+        # Pattern like "2025LBO10" or "LB270" (alphanumeric code)
+        if re.search(r'\d+[A-Z]+\d+', token_str) or re.search(r'[A-Z]+\d+', token_str):
+            return True
+        return False
+    
     # Helper to extract rate and quantity from "rate x quantity" format
     def _extract_rate_qty(token):
         """Extract rate and quantity from tokens like '640.00x1.00' or '350.00x2.00' or '184,00x1.00'"""
@@ -595,17 +612,21 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
                         break
 
             # pick rate: look for a decimal-like numeric just left of amount (or any decimal-like)
+            # BUT exclude date codes and invoice numbers
             rate_idx = None
             # prefer the numeric immediately left of amount if decimal-like
             if amount_idx - 1 >= 0 and numerics[amount_idx - 1]["float"] is not None:
                 cand = numerics[amount_idx - 1]["float"]
-                if looks_amount_like(cand):
+                raw_cand = numerics[amount_idx - 1]["raw"]
+                # Reject if it looks like a date code (e.g., "6111202510" from "61S/11/2025LBO10")
+                if looks_amount_like(cand) and not _is_date_code(raw_cand):
                     rate_idx = amount_idx - 1
             # otherwise scan left for decimal-like
             if rate_idx is None:
                 for j in range(amount_idx - 1, -1, -1):
                     v = numerics[j]["float"]
-                    if v is not None and looks_amount_like(v):
+                    raw_v = numerics[j]["raw"]
+                    if v is not None and looks_amount_like(v) and not _is_date_code(raw_v):
                         rate_idx = j
                         break
             if rate_idx is not None:
@@ -761,24 +782,86 @@ def is_probable_item(parsed_row: Dict[str, Optional[object]], conf_threshold: in
     
     # Reject common header patterns (these are NOT bill items)
     header_patterns = [
-        "bill no", "billno", "bill date", "billedate",
-        "patient name", "patiestname", "patientname",
+        "bill no", "billno", "bill date", "billedate", "biedate",
+        "patient name", "patiestname", "patientname", "patiest",
         "reg no", "regno", "registration",
-        "ipd no", "ipdno",
-        "mobile no", "mobileno", "phone",
-        "age", "sex", "gender",
+        "ipd no", "ipdno", "ip no", "ipno", "ipno bmno", "bmno", "bm no",
+        "mobile no", "mobileno", "phone", "mebile",
+        "age", "sex", "gender", "agebex", "age/bex", "age bex",
         "address", "admission date", "discharge date",
-        "doctor", "dr.", "consulting",
+        "doctor", "dr.", "consulting", "commlt", "doctorname", "doctor name",
+        "discharge date", "discharge time", "dischargedatetime",
         "category", "tegery",
         "sno", "sl no", "serial no",
         "particulars", "description", "item",
-        "qty", "quantity", "rate", "amount", "total"
+        "qty", "quantity", "rate", "amount", "total",
+        "department", "ward", "roony", "bed",
+        "husband", "hesband", "nases",
+        "subtotal", "sub total", "subtotml", "sub totml"
     ]
     name_lower = name.lower()
-    # Check if name matches header patterns (exact or starts with)
+    # Check if name matches header patterns (exact or starts with/ends with/contains)
     for pattern in header_patterns:
-        if name_lower == pattern or name_lower.startswith(pattern + " ") or name_lower.endswith(" " + pattern):
+        if (name_lower == pattern or 
+            name_lower.startswith(pattern + " ") or 
+            name_lower.endswith(" " + pattern) or
+            name_lower.startswith(pattern + ".") or
+            " " + pattern + " " in " " + name_lower + " "):
             return False
+    
+    # Reject patterns that look like header fields (e.g., "IPNo BMNo", "Age/Bex", "DoctorMaree DischargeDaimTime")
+    # These often have specific patterns: short words, abbreviations, or field labels
+    header_field_patterns = [
+        r'^[a-z]{1,3}\s+[a-z]{1,3}\s*$',  # Very short words like "IPNo BMNo"
+        r'^[a-z]+/[a-z]+$',  # Patterns like "Age/Bex"
+        r'^[a-z]+\s*[a-z]+\s*(date|time|name|no|id)$',  # Field labels
+        r'^(doctor|patient|discharge|admission)\s*[a-z]+\s*(date|time|name)',  # Doctor/Patient fields
+    ]
+    for pattern in header_field_patterns:
+        if re.match(pattern, name_lower):
+            return False
+    
+    # Reject if name contains only header-like abbreviations (2-3 short words, all caps or mixed)
+    words = name_lower.split()
+    if len(words) <= 3:
+        # Check if all words are very short (1-4 chars) and look like abbreviations
+        if all(len(w) <= 4 for w in words):
+            # Common header abbreviations
+            header_abbrevs = ['ip', 'no', 'bm', 'age', 'sex', 'reg', 'id', 'ipd', 'uhid', 'mrn',
+                             'dr', 'doc', 'dis', 'adm', 'disch', 'date', 'time', 'name', 'addr']
+            if all(w in header_abbrevs or w.replace('/', '').replace('-', '') in header_abbrevs for w in words):
+                return False
+    
+    # Reject if name is just a date pattern or code (e.g., "1Hi1/2025RIOOL", "15/11/2025LB270")
+    name_no_spaces = name.replace(' ', '')
+    if re.match(r'^[\d/]+[A-Z]+\d+$', name_no_spaces) or re.match(r'^\d+[/-]\d+[/-]\d+', name):
+        return False
+    
+    # Reject if name looks like "Amount in Words" or similar summary text
+    if (re.search(r'amount\s*in\s*words', name_lower) or 
+        re.search(r'words?\s*only', name_lower) or
+        re.search(r'amountinword', name_lower) or  # OCR variant: "AmountinWorde"
+        re.search(r'rupees?\s*only', name_lower)):
+        return False
+    
+    # Reject if name is very short and looks like a code/header (e.g., "D.0.A.", "L", "t")
+    if len(name.strip()) <= 3:
+        # Check if it's just digits, single letter, or pattern like "D.0.A"
+        if (name.strip().isdigit() or 
+            re.match(r'^[A-Z]\.?\d*\.?$', name.strip()) or
+            re.match(r'^[a-z]$', name.strip()) or
+            name.strip() in ['t', 'L', 'i', 'j', '.']):
+            return False
+    
+    # Reject patterns like "D.0.A. t DOLD" or "Department Ward/RoonyBed1"
+    if re.search(r'\b(d\.0\.a|dold|department|ward|roony|bed)\b', name_lower):
+        return False
+    
+    # Reject if name contains only header-like words
+    header_words = ['d', '0', 'a', 't', 'l', 'i', 'j', 'department', 'ward', 'roony', 'bed']
+    name_words = name_lower.split()
+    if len(name_words) <= 3 and all(w in header_words or len(w) <= 2 for w in name_words):
+        return False
 
     # Require at least one numeric amount > 0 OR quantity+rate combo
     amt = parsed_row.get("item_amount")

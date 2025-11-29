@@ -9,18 +9,144 @@
     "pagewise_line_items": [
       {
         "page_no": "1",
-        "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "InterimBillBillofSuppty aE",
+            "item_amount": 2026.0,
+            "item_rate": 106.6316,
+            "item_quantity": 19,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TRASCorporate(1))",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "8L.No Service ounrti",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1Consultation(000311)",
+            "item_amount": 79760.0,
+            "item_rate": 1000311.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "3sInvaateeProcedures(999311)",
+            "item_amount": 35720.0,
+            "item_rate": 3999311.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "6MedicalRecords(909311)",
+            "item_amount": 600.0,
+            "item_rate": 6909311.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "7WNutritionalandFunctionalAssesementChargee(990311)",
+            "item_amount": 600.0,
+            "item_rate": 7990311.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "9OTConsumablec(999311)",
+            "item_amount": 62517.96,
+            "item_rate": 9999311.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "10OTPharmacy(099311)",
+            "item_amount": 2244.37,
+            "item_rate": 10099311.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "11-PharmacyConsumabies(996311)",
+            "item_amount": 334604.78,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "12Phystotherapy(999311)",
+            "item_amount": 22500.0,
+            "item_rate": 12999311.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "18WardPhermacy(999311)",
+            "item_amount": 560475.95,
+            "item_rate": 18999311.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Page1of90",
+            "item_amount": 190.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
       },
       {
         "page_no": "2",
-        "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "page_type": "Pharmacy",
+        "bill_items": [
+          {
+            "item_name": "AuthortartionAmount(1",
+            "item_amount": 1.0,
+            "item_rate": 1.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "OutstandingAmount 29nOTeoAN",
+            "item_amount": 9907.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "DisclaimerAlltheabovedatesindicatedasDate8Timeoftheentryonly Page2of90",
+            "item_amount": 290.0,
+            "item_rate": 8.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 0.3094559585492228,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -28,14 +154,56 @@
       {
         "page_no": "3",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "8L.GServiceServiceName AllasCode Dr.NameStartDateEndDateQty/DurationRefTastffDie(%)Amount()",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "410me CONSULTATION",
+            "item_amount": 1000.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PCONBULTATION",
+            "item_amount": 1000.0,
+            "item_rate": 1000.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "71een PCONSULTATION 1.00 1,000.00 it)",
+            "item_amount": 1000.0,
+            "item_rate": 1.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "DisclaimerAlltheabovedatesindicatedasDate4Timeoftheentryonly Page3of90",
+            "item_amount": 390.0,
+            "item_rate": 4.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
       }
     ],
-    "total_item_count": 0,
-    "reconciled_amount": 0
+    "total_item_count": 21,
+    "reconciled_amount": 1114844.06
   }
 }

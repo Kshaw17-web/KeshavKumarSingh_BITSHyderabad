@@ -1,0 +1,284 @@
+{
+  "page_no": 10,
+  "raw_lines_count": 36,
+  "column_centers": [
+    186.5,
+    913.5,
+    1132.5,
+    1259.5,
+    1382.5
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "PelstNeme BitNo",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PatiectAddres.. BaDats 2PANWHIZE",
+      "item_amount": 2242.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "uRN Spadalty",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TAs BLOODLANCET 20 70.00 0.00 DO",
+      "item_amount": 40.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tiams)-DISPOSABLESYRINGESMLHIAD",
+      "item_amount": 1034.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "tNSAPRION(PLASTIC)",
+      "item_amount": 4800.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ao4240 o.00",
+      "item_amount": 4378.0,
+      "item_rate": 0.99,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "qyivangsINFANTFEEDINGTUBESZE5 10D og o08--8",
+      "item_amount": 5.0,
+      "item_rate": 5.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "41Menes)TISSUEPAPERCFOLD 1066.00 co",
+      "item_amount": 6.0,
+      "item_rate": 1066.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "107.18 0.00 008-S.18",
+      "item_amount": 18.0,
+      "item_rate": 107.18,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TWN2025POWWOERFREE.GLOVES7.5 11136 ano 0otsed",
+      "item_amount": 68118.44,
+      "item_rate": 11136.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "yVg028BLOODLANCET 2%62000 e.00",
+      "item_amount": 8500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1ie028-CSPOSABLESYRINGE4M. 19aST ana 0.00 os?",
+      "item_amount": 19.0,
+      "item_rate": 19.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1112088DISPOSABLESYRINGE.6MLHAD",
+      "item_amount": 2.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ieen2sEXAMINATIONGLOVESMEDIUM ao14.08 ac",
+      "item_amount": 6448.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "11112028sDEXTROSE10% 19-72 om ooo0sbar2",
+      "item_amount": 2.0,
+      "item_rate": 11112028.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1110006RSYOOML 2-2t.o0",
+      "item_amount": 8642.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "inet om",
+      "item_amount": 6131.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1i1i028MBZOLAMSMGSNE. 131.69 oo",
+      "item_amount": 91.03,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "PelstNeme BitNo",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PatiectAddres.. BaDats 2PANWHIZE",
+      "item_amount": 2242.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "uRN Spadalty",
+      "item_amount": 1.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TAs BLOODLANCET 20 70.00 0.00 DO",
+      "item_amount": 40.0,
+      "item_rate": 0.0,
+      "item_quantity": 20,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tiams)-DISPOSABLESYRINGESMLHIAD",
+      "item_amount": 1034.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "tNSAPRION(PLASTIC)",
+      "item_amount": 4800.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ao4240 o.00",
+      "item_amount": 4378.0,
+      "item_rate": 0.99,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "qyivangsINFANTFEEDINGTUBESZE5 10D og o08--8",
+      "item_amount": 5.0,
+      "item_rate": 5.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "41Menes)TISSUEPAPERCFOLD 1066.00 co",
+      "item_amount": 6.0,
+      "item_rate": 1066.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "107.18 0.00 008-S.18",
+      "item_amount": 18.0,
+      "item_rate": 107.18,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TWN2025POWWOERFREE.GLOVES7.5 11136 ano 0otsed",
+      "item_amount": 68118.44,
+      "item_rate": 11136.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "yVg028BLOODLANCET 2%62000 e.00",
+      "item_amount": 8500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1ie028-CSPOSABLESYRINGE4M. 19aST ana 0.00 os?",
+      "item_amount": 19.0,
+      "item_rate": 19.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1112088DISPOSABLESYRINGE.6MLHAD",
+      "item_amount": 2.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ieen2sEXAMINATIONGLOVESMEDIUM ao14.08 ac",
+      "item_amount": 6448.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "11112028sDEXTROSE10% 19-72 om ooo0sbar2",
+      "item_amount": 2.0,
+      "item_rate": 11112028.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1110006RSYOOML 2-2t.o0",
+      "item_amount": 8642.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "inet om",
+      "item_amount": 6131.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1i1i028MBZOLAMSMGSNE. 131.69 oo",
+      "item_amount": 91.03,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 110485.47,
+  "reconciliation_method": "sum_of_all_line_items"
+}

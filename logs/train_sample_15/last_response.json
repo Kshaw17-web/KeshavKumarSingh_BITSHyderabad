@@ -10,8 +10,169 @@
       {
         "page_no": "1",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "PatenNeme BalNo",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PatientAddreas GllDatia ZAT2S",
+            "item_amount": 220.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Oockr 8 WaedTypa",
+            "item_amount": 8.0,
+            "item_rate": 1.0,
+            "item_quantity": 8,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TRNAS ADMISSIONCHARGE TO 260.00 on oc",
+            "item_amount": 200.0,
+            "item_rate": 260.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "THIV20ZS ACU 10400,00 Opa",
+            "item_amount": 4800.0,
+            "item_rate": 20.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "RICU 4,800.00 On",
+            "item_amount": 4800.0,
+            "item_rate": 12412025.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "VN12025 NICU",
+            "item_amount": 4200.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "MINTO MICU",
+            "item_amount": 4900.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "sEH1an2s NICU",
+            "item_amount": 4200.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "piatz.t7s.) ICU",
+            "item_amount": 4800.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "APNE NICU",
+            "item_amount": 4400.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Bliebtyatrs-) NICU",
+            "item_amount": 4200.0,
+            "item_rate": 2.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NICU 104,800.00 0,00 0.00 ABI000",
+            "item_amount": 400.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "2uT2025 NICU",
+            "item_amount": 4800.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "2N225 PRIVATEWARD",
+            "item_amount": 66.32,
+            "item_rate": 10320.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "T1028 NURSINGCHARGES,-NICU 1.01,200.08 0.00 O00",
+            "item_amount": 1200.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NURSINGCHARGES.-NICU 1,01,200,00 and OT",
+            "item_amount": 1200.0,
+            "item_rate": 22025.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NURSINGCHARGES.-NICU 101,200.00 om",
+            "item_amount": 1200.9,
+            "item_rate": 101200.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NUREINGCHARGES,-NICU 101,200.00 0.00 ODT",
+            "item_amount": 1200.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NURSINGOHARGES,-NICY 1.014,200,00 0.00 O00",
+            "item_amount": 1200.9,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1eH1Ates NURSINGCHARGES,-NICU",
+            "item_amount": 1208.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Pogo1of21",
+            "item_amount": 224120251.82,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -19,8 +180,134 @@
       {
         "page_no": "2",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "MIAN Speciality",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "THIV2025-NURCHHGCHARGES.-NICU",
+            "item_amount": 1200.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TAeH2025-NURSINGCHARGIS.-NICU",
+            "item_amount": 4200.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "20rt2025NURRSINGCHARGES,-NICU 101,200.00 an",
+            "item_amount": 0.001200009,
+            "item_rate": 101200.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ZVIV028)-NUIRSINGCHARGES.-NICU",
+            "item_amount": 81200.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "23412025NURGINGCHARGES.-PRIVATEWARD 10-BOL00",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "241020254-NURSINGCHARGESL-PRIVATEWARD 10-800.00 and",
+            "item_amount": 800.09,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "T2028 IVCANNULISATION f 10-2000",
+            "item_amount": 250.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "T112025-RYLE.STUBEINSERTION 10s",
+            "item_amount": 300.0,
+            "item_rate": 30.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "100-3oa.0",
+            "item_amount": 300.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "q1yanesIVCANNULIBATION 1906-2sao0",
+            "item_amount": 250.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "18112084-RYLESTUBEINSERTION 10-so000",
+            "item_amount": 300.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1e1u2028)sNVCANNULISATION 10-260.00 0,00 on",
+            "item_amount": 250.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "biraby.sri-) DoubleOcoupancy/AttenderStey 102600.00 0.00 OTs)",
+            "item_amount": 50000.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "20M VCANNULIBATION 1.0 PALM",
+            "item_amount": 250.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1iM122023--BLOOD-GROUPINGABO 1.0180.00 0.00 ooo",
+            "item_amount": 780.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PagaZol21",
+            "item_amount": 5102.0,
+            "item_rate": 21.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -28,8 +315,148 @@
       {
         "page_no": "3",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "Psyerfamoi BedNo",
+            "item_amount": 4.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "T31uR25-RRUIRUBINDIRECT-SERUM",
+            "item_amount": 80240.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "13r142025BILIRUBINTOTAL.-SERUM a",
+            "item_amount": 90240.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "tstyeu2SCRPCREACTIVEPROTEIN (",
+            "item_amount": 8.0,
+            "item_rate": 2.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "13ivaws)-RENALRUNCTIONTESTGFT) 100Ta00t aco8yan0",
+            "item_amount": 200.0,
+            "item_rate": 10000.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "18142025-BLOONGULTUREAND-SeNSITIVITY",
+            "item_amount": 1880.0,
+            "item_rate": 1400.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "13e12025THYRODOMEFREE(FT4) 100d",
+            "item_amount": 800.0,
+            "item_rate": 100.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "13412025THYROAD/STIMULATINGHORMMONEL 19m",
+            "item_amount": 88630.0,
+            "item_rate": -15.7895,
+            "item_quantity": 19,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1eiuz02sORPGREACTIVEPROTEIN OT",
+            "item_amount": 0.0,
+            "item_rate": 102.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "161172026URINGFORKOHMOUNT",
+            "item_amount": 60.0,
+            "item_rate": 8800.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1enV2025PLATELETCOUNT-BLOOD as",
+            "item_amount": 24000.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1712025OGCLATRLOOD-STOOL",
+            "item_amount": 12000.0,
+            "item_rate": 10120000.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ferv20es-CRPC-REACTIVEPROTEIN 49nd",
+            "item_amount": 0.0,
+            "item_rate": 49.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "40pao0 om5n.00",
+            "item_amount": 890.0,
+            "item_rate": 400.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "zorti2025-PLATELETCOUNT-BLOOD a boo-24n.00",
+            "item_amount": 8240.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1iH12025MRAYCHESTAP 40s oo4Rd.00",
+            "item_amount": 0.0048,
+            "item_rate": 0.1,
+            "item_quantity": 40,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Witz025X-RAYCHESTAP 4048000 D090",
+            "item_amount": 480.0,
+            "item_rate": 90.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1iH12023--BDECHOCARDIOGRAPHY",
+            "item_amount": 1800.0,
+            "item_rate": 0.9,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Pagesof21",
+            "item_amount": 24120251.52,
+            "item_rate": 21.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -37,8 +464,99 @@
       {
         "page_no": "4",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "PeteatNeme2/ BMX",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Dector 3 WeardTypa",
+            "item_amount": 3.0,
+            "item_rate": 2.6667,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "vonuz0zs--ECHO.SCREENINGS",
+            "item_amount": 1400.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "106800000 a.00asa.00",
+            "item_amount": 6000.0,
+            "item_rate": 12025.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1n12028-VENTILATORPERDAY 10450000a.no",
+            "item_amount": 4500.0,
+            "item_rate": 10450000.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1n12025GRAS",
+            "item_amount": 190.0,
+            "item_rate": 19000000.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "10onegn 000Bo.b0",
+            "item_amount": 885.0,
+            "item_rate": 10.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1wti2GRBS",
+            "item_amount": 86140.0,
+            "item_rate": 10100090.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "MnU2025GRBS",
+            "item_amount": 80.0,
+            "item_rate": 1911000000.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TWMU2025CiifcalCara.Coneumadtes",
+            "item_amount": 718.0,
+            "item_rate": 2025.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "iuiwan2sGRBS 101180808 aoo811000",
+            "item_amount": 6110.0,
+            "item_rate": 101180808.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Pogedof2t",
+            "item_amount": 2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -46,8 +564,211 @@
       {
         "page_no": "5",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "Puterthemst BAlNo",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PatentAddress falDaie 12AN1otes",
+            "item_amount": 2.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PayarName 3 GedNo",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "T24anas MONITORCHARGES",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "124Lates SYRINGEPUNP 10 450,00 0.9 ano",
+            "item_amount": 450.0,
+            "item_rate": 45.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "wA20eS ORBS 19 110,00 029 o.n0",
+            "item_amount": 410.0,
+            "item_rate": 0.0,
+            "item_quantity": 29,
+            "gst_percent": null
+          },
+          {
+            "item_name": "RAs NEBULSSATION",
+            "item_amount": 900.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "WQS TINTTIALASSESSMENTCHARGES 10 900,00 0.00 pike) 0n.00",
+            "item_amount": 0.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TA1a023 LINENCHARGES 10 12000 0,00 Do",
+            "item_amount": 120.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Ventiatorlaltielion",
+            "item_amount": 23000.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "72nU20ae GRES",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "A2Neas NEBULIGATION",
+            "item_amount": 300.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "T2ites ORBS",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "42112025NEBULIGATION",
+            "item_amount": 150.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "OIETARYSERVICES-NICU 10 500.00 ano",
+            "item_amount": 600.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "GRES 40 TO",
+            "item_amount": 440.0,
+            "item_rate": 0.0,
+            "item_quantity": 40,
+            "gst_percent": null
+          },
+          {
+            "item_name": "phRte.ivi.) NEBULISATION 4a 180.00 0.00 0,00 Ou",
+            "item_amount": 180.0,
+            "item_rate": 0.0,
+            "item_quantity": 4,
+            "gst_percent": null
+          },
+          {
+            "item_name": "AWW2026 MONITORCHARGES, 1.0 B00.00 0,00 0,00 e0a.00",
+            "item_amount": 80000.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "pRETFciv1.J OXYGENPERDAY",
+            "item_amount": 2400.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TANU2ES Grea 19110,00 0.00 aoo",
+            "item_amount": 100.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "pRGSEy-173-) NEBULIGATION",
+            "item_amount": 160.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "AMIVIMS GRES 19 110,00 0.00 O00",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 19,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TT2026 GRBS 10 110,00 O60",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 60,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ses Gres",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BRiahtvatrse) NEBULISATION 20 490.00 0M",
+            "item_amount": 300.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TM1202s Non-imesiveVoriiedion(NIV) 104806.00 Of0 of)",
+            "item_amount": 45000.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "NEBULISATION 10 4.00 om",
+            "item_amount": 160.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "MONITORCHARGES, 1.0 00.00 om",
+            "item_amount": 80000.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -55,8 +776,120 @@
       {
         "page_no": "6",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "PatertNeme SMNo",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PatentAddres1 BaOato 72ANVAO",
+            "item_amount": 72.0,
+            "item_rate": 1.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "eabbrasrs.) SYRINGEPUMP",
+            "item_amount": 45000.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "141u2028(OIGTARYSERVIGES-NICU",
+            "item_amount": 40500.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Uwii2025GRES",
+            "item_amount": 0.0011,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1anim028-REBULISATIOH",
+            "item_amount": 10180.0,
+            "item_rate": 10180.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "15172025GABS 2010.00 0.90 00086-2000",
+            "item_amount": 220.0,
+            "item_rate": 2010.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "IBiy2m2s)6-sNEBULISATION 30(180,00 0.b0",
+            "item_amount": 460.0,
+            "item_rate": 4.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "18112005SYRINGEPULIP",
+            "item_amount": 84500.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "16n12025ATTENDINGDELIVERYCHARGE",
+            "item_amount": 868.0,
+            "item_rate": 1612025.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "weesGRBS",
+            "item_amount": 0.0011,
+            "item_rate": 0.9,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "witi2075-ORBS",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "yeii202s-sMONTTORCHARGEA",
+            "item_amount": 600.0,
+            "item_rate": 10800.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1wiNe2ssSYRINGEPUUIP",
+            "item_amount": 480.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "18112025-GRES",
+            "item_amount": 10.0,
+            "item_rate": 0.99,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -64,8 +897,176 @@
       {
         "page_no": "7",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "PadentAddress BaiDala 52A12025",
+            "item_amount": 220.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1e1UzEZs)GRBS",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "THivat25-DTETARYSERVICES-NICU",
+            "item_amount": 600.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "171172025-GRBS",
+            "item_amount": 220.0,
+            "item_rate": 0.08,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Y7n2025MONITORCHARGES. 10gone0 0,00 0.00 apes",
+            "item_amount": 0.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "17711205-SYRUINGEPUNP",
+            "item_amount": 450.9,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "v7i12025-GABS",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1000.0 o.00",
+            "item_amount": 500.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1eN12025-GRES",
+            "item_amount": 72000.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "yaia025-MONTORCHARGES",
+            "item_amount": 800.0,
+            "item_rate": 0.9,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BN025SYRINGEPUMP 10astL00",
+            "item_amount": 450.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "wi12025-GREBS",
+            "item_amount": 110.0,
+            "item_rate": 1.2222,
+            "item_quantity": 90,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1enve025GRES 10110.00 anu ood",
+            "item_amount": 410.0,
+            "item_rate": 10110.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Wwiw202ssGRES",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1-80.00 0.0 0.09 Boa.00",
+            "item_amount": 800.0,
+            "item_rate": 0.09,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1etU2028SYTUNGEPUNP",
+            "item_amount": 450.0,
+            "item_rate": 0.9,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "iwryz02sCDIBTARYSERVICES-NICU",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "iwr202848-GRAS",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "teriv202566GRBS",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "POR OXYGENPERHOUR",
+            "item_amount": 100.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "zoniza23SYRINGEPUMP 1.0450,00 0.00 a0",
+            "item_amount": 160.06,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "DIETARYSERVICES-NICU",
+            "item_amount": 500.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Proo?of3t",
+            "item_amount": 3.0,
+            "item_rate": 3.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -73,8 +1074,169 @@
       {
         "page_no": "8",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "2ot2025GRBS 4.0110.00 o00",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "20S CRBS",
+            "item_amount": 720.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "MONITORCHARGES",
+            "item_amount": 860.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ZMtOZS OXYGENPERDAY 1O2.400.00 a0 O00",
+            "item_amount": 400.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "GRBS",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 40,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ZHtt2025 NEBULISATION 20 150.00 O00",
+            "item_amount": 150.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "OISTARYSERVICES-NICU",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "CABS 20 110,00. on",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "OIETARYSERVICES-PRIVATEWARD",
+            "item_amount": 600.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "RAO infectionPreverdiveNeasures(JPM) 30 200.00 ao",
+            "item_amount": 500.0,
+            "item_rate": 0.0,
+            "item_quantity": 30,
+            "gst_percent": null
+          },
+          {
+            "item_name": "RAV WARDCONSUMABSLESPERDAY 30 200.00 ac",
+            "item_amount": 800.0,
+            "item_rate": 0.0,
+            "item_quantity": 30,
+            "gst_percent": null
+          },
+          {
+            "item_name": "RAUMISGRBS 12110,00 o.09 a.00 tH.00",
+            "item_amount": 1.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "BAUD GRES 20 110,00 an 0.00 m0",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ZNO CIETARYSERVICES-PRIVATEWARD 40 660,00 0.00 0.00 OOO",
+            "item_amount": 660.0,
+            "item_rate": 0.0,
+            "item_quantity": 40,
+            "gst_percent": null
+          },
+          {
+            "item_name": "2120s GRAS 19 110.00 a8",
+            "item_amount": 0.0,
+            "item_rate": 12.5,
+            "item_quantity": 8,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ZA120zs Ote-AcousisEmiveion 101,070.00 om ano",
+            "item_amount": 407.0,
+            "item_rate": 101070.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "wsHie2586GRES",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ZAR GREE 20 410.00 on",
+            "item_amount": 220.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "240s CHETARYSERVICES-PRIVATEWARD 10 600.00 0.00 0.00 SL",
+            "item_amount": 600.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1010.00 aod a.00",
+            "item_amount": 110.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "24n1025-VACCINATION 401,800.00 am",
+            "item_amount": 600.0,
+            "item_rate": 401800.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "VWA12026 BLOODLANCET a0",
+            "item_amount": 600.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -82,8 +1244,183 @@
       {
         "page_no": "9",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "PatontNene GNo",
+            "item_amount": 3.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "RN 8 Speciality",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Decker 3 ViaedTypa",
+            "item_amount": 3.0,
+            "item_rate": 0.3333,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "THIY202S OHPOSABLESYRINGE5OMLHND Ww",
+            "item_amount": 87.18,
+            "item_rate": 0.9,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "THVY202S DISPOSASLESYRINGESMLHiaD 3 1041 ago 0.00 0m",
+            "item_amount": 30.0,
+            "item_rate": 0.0,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TWAS TESTSTRIPS 3D 28.08 o.oo 0.00 B424",
+            "item_amount": 424.0,
+            "item_rate": 0.0,
+            "item_quantity": 3,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TWIVaRRs DISPOSABLESYRINGE1044LHIAD 20 1219 aca",
+            "item_amount": 2438.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "raahty.0..)",
+            "item_amount": 1241.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "EXAMINATIONGLOVESMEDIUM",
+            "item_amount": 140.5,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Wiiawes INFANTFEEDINGTUBESIZE4",
+            "item_amount": 122.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "T2028 KUCKCLAMP 10 wa 00 abd Foes",
+            "item_amount": 0.0,
+            "item_rate": 10.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TWAN2025 LEUKOBAND10CM45M",
+            "item_amount": 108.8,
+            "item_rate": 0.0,
+            "item_quantity": 9,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TWA POWDERFREEGLOVES7.5 2.0 naa 0.00 o.po",
+            "item_amount": 278.88,
+            "item_rate": 2.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TVI12028 SLKOTIONCATHETER8 a0 T3e4",
+            "item_amount": 22732.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "SUAGICALBLADE72 10 Lt.-2 6,00 DOO B62",
+            "item_amount": 602.0,
+            "item_rate": 10.3333,
+            "item_quantity": 6,
+            "gst_percent": null
+          },
+          {
+            "item_name": "HHO THREEWAYSTOPCOCK",
+            "item_amount": 182.8,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TWAI2025 UNDERPAD",
+            "item_amount": 140.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "V2023 VETNO-LINE100CM",
+            "item_amount": 7.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "WAR VIENOLINE10CM 1.0 MAT4",
+            "item_amount": 64.74,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "THA TESTSTRIPS 1 2608 0.00 ooo",
+            "item_amount": 2205.0,
+            "item_rate": 0.0,
+            "item_quantity": 1,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Tui2028 BLOODLANCET 10 20.00 0.00 aco",
+            "item_amount": 2000.0,
+            "item_rate": 0.0,
+            "item_quantity": 10,
+            "gst_percent": null
+          },
+          {
+            "item_name": "qwiuas UISPOBABLESYRING?10M1,HIAD Ww",
+            "item_amount": 12.179,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "wwivmzsRreayrapEATORRCUT 1atieca0.ga",
+            "item_amount": 6118.08,
+            "item_rate": 10.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "EXAMINATIONGLOVESMEDIUAL 20 14.08 om O00",
+            "item_amount": 12.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
@@ -91,14 +1428,154 @@
       {
         "page_no": "10",
         "page_type": "Bill Detail",
-        "bill_items": [],
-        "fraud_flags": [],
+        "bill_items": [
+          {
+            "item_name": "PelstNeme BitNo",
+            "item_amount": 8.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "PatiectAddres.. BaDats 2PANWHIZE",
+            "item_amount": 2242.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "uRN Spadalty",
+            "item_amount": 1.0,
+            "item_rate": null,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TAs BLOODLANCET 20 70.00 0.00 DO",
+            "item_amount": 40.0,
+            "item_rate": 0.0,
+            "item_quantity": 20,
+            "gst_percent": null
+          },
+          {
+            "item_name": "Tiams)-DISPOSABLESYRINGESMLHIAD",
+            "item_amount": 1034.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "tNSAPRION(PLASTIC)",
+            "item_amount": 4800.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ao4240 o.00",
+            "item_amount": 4378.0,
+            "item_rate": 0.99,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "qyivangsINFANTFEEDINGTUBESZE5 10D og o08--8",
+            "item_amount": 5.0,
+            "item_rate": 5.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "41Menes)TISSUEPAPERCFOLD 1066.00 co",
+            "item_amount": 6.0,
+            "item_rate": 1066.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "107.18 0.00 008-S.18",
+            "item_amount": 18.0,
+            "item_rate": 107.18,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "TWN2025POWWOERFREE.GLOVES7.5 11136 ano 0otsed",
+            "item_amount": 68118.44,
+            "item_rate": 11136.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "yVg028BLOODLANCET 2%62000 e.00",
+            "item_amount": 8500.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1ie028-CSPOSABLESYRINGE4M. 19aST ana 0.00 os?",
+            "item_amount": 19.0,
+            "item_rate": 19.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1112088DISPOSABLESYRINGE.6MLHAD",
+            "item_amount": 2.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "ieen2sEXAMINATIONGLOVESMEDIUM ao14.08 ac",
+            "item_amount": 6448.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "11112028sDEXTROSE10% 19-72 om ooo0sbar2",
+            "item_amount": 2.0,
+            "item_rate": 11112028.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1110006RSYOOML 2-2t.o0",
+            "item_amount": 8642.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "inet om",
+            "item_amount": 6131.0,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          },
+          {
+            "item_name": "1i1i028MBZOLAMSMGSNE. 131.69 oo",
+            "item_amount": 91.03,
+            "item_rate": 0.0,
+            "item_quantity": null,
+            "gst_percent": null
+          }
+        ],
+        "fraud_flags": [
+          {
+            "flag_type": "overwriting",
+            "score": 1.0,
+            "description": ""
+          }
+        ],
         "reported_total": null,
         "reconciliation_ok": null,
         "reconciliation_relative_error": null
       }
     ],
-    "total_item_count": 0,
-    "reconciled_amount": 0
+    "total_item_count": 201,
+    "reconciled_amount": 249507813.15
   }
 }

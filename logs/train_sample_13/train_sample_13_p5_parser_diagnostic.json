@@ -1,0 +1,75 @@
+{
+  "page_no": 5,
+  "raw_lines_count": 24,
+  "column_centers": [
+    162.0,
+    343.0,
+    758.0,
+    983.0,
+    1183.0,
+    1325.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "GuardienNeme we AceritDt..8Theve png",
+      "item_amount": 21.31,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TT7eRoneniagaeRSRnfe",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PE-PAPER-MEGROPOREINGH ROTZ505 q (48 Ce enennemneneeeananan",
+      "item_amount": 148.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PItxHizt",
+      "item_amount": 250.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "GuardienNeme we AceritDt..8Theve png",
+      "item_amount": 21.31,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "TT7eRoneniagaeRSRnfe",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PE-PAPER-MEGROPOREINGH ROTZ505 q (48 Ce enennemneneeeananan",
+      "item_amount": 148.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PItxHizt",
+      "item_amount": 250.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 426.31,
+  "reconciliation_method": "sum_of_all_line_items"
+}

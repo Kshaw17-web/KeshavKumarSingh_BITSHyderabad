@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\ksr20\OneDrive\Desktop\Bajaj Finserv Datathon\src\extractor\bill_extractor.py", line 1021, in extract_bill_data_with_tsv
+    if is_probable_item(fallback_item):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ksr20\OneDrive\Desktop\Bajaj Finserv Datathon\src\extractor\parsers.py", line 821, in is_probable_item
+    if re.match(pattern, name_lower):
+       ^^
+UnboundLocalError: cannot access local variable 're' where it is not associated with a value

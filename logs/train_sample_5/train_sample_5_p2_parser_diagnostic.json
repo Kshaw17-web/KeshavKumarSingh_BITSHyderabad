@@ -1,0 +1,257 @@
+{
+  "page_no": 2,
+  "raw_lines_count": 29,
+  "column_centers": [
+    31.5,
+    160.5,
+    641.5,
+    938.5,
+    1170.5,
+    1309.5
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "(",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FOLEYCATHETER148O 90183910 i) P223B08 01/27",
+      "item_amount": 180.0,
+      "item_rate": 180.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "UROBAG 90183990 ad 6090625C02/30",
+      "item_amount": 349.0,
+      "item_rate": 349.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MEOMOL100IV 30049069 a 7383L110906/27",
+      "item_amount": 574.0,
+      "item_rate": 574.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "WSKURO500HL 30049099 J TASO4EOOS12/26",
+      "item_amount": 98.48,
+      "item_rate": 98.48,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SAYEPORTRL500ML o S RIRC382 06/26",
+      "item_amount": 64.89,
+      "item_rate": 64.89,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tasection 30042019 v018221 05/27 628 z",
+      "item_amount": 1236.0,
+      "item_rate": 206.0,
+      "item_quantity": 6,
+      "gst_percent": null
+    },
+    {
+      "item_name": "O INJPANTAKIND40NQ. S a)",
+      "item_amount": 113.0,
+      "item_rate": 56.5,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e JUSTIN-AQIMJ 30049069 a BDWO2AIA01/27",
+      "item_amount": 46.4,
+      "item_rate": 23.2,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OMNIVAN2ML 90183100 o 23231M820204/30",
+      "item_amount": 2.0,
+      "item_rate": 14.52,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OMMNIVAN10HL 90183100 o 25G18M820306/30",
+      "item_amount": 128.84,
+      "item_rate": 32.21,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "a1 SET) (rv 90183990 a 4027425B01/30",
+      "item_amount": 368.0,
+      "item_rate": 184.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "na any 90183990 2 350241 12/29",
+      "item_amount": 198.0,
+      "item_rate": 198.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "a3 IvFix 30059040 2 cy323 04/28",
+      "item_amount": 935.0,
+      "item_rate": 935.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "VEIN-OLIME10CH 901809099 - K24A01099612/28",
+      "item_amount": 347.0,
+      "item_rate": 347.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "suBr3814.65 TAKs192.75 METAMT",
+      "item_amount": 3433.0,
+      "item_rate": 192.75,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "361.46 0.18",
+      "item_amount": 6.18,
+      "item_rate": 361.46,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "(",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "FOLEYCATHETER148O 90183910 i) P223B08 01/27",
+      "item_amount": 180.0,
+      "item_rate": 180.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "UROBAG 90183990 ad 6090625C02/30",
+      "item_amount": 349.0,
+      "item_rate": 349.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "MEOMOL100IV 30049069 a 7383L110906/27",
+      "item_amount": 574.0,
+      "item_rate": 574.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "WSKURO500HL 30049099 J TASO4EOOS12/26",
+      "item_amount": 98.48,
+      "item_rate": 98.48,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "SAYEPORTRL500ML o S RIRC382 06/26",
+      "item_amount": 64.89,
+      "item_rate": 64.89,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Tasection 30042019 v018221 05/27 628 z",
+      "item_amount": 1236.0,
+      "item_rate": 206.0,
+      "item_quantity": 6,
+      "gst_percent": null
+    },
+    {
+      "item_name": "O INJPANTAKIND40NQ. S a)",
+      "item_amount": 113.0,
+      "item_rate": 56.5,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "e JUSTIN-AQIMJ 30049069 a BDWO2AIA01/27",
+      "item_amount": 46.4,
+      "item_rate": 23.2,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OMNIVAN2ML 90183100 o 23231M820204/30",
+      "item_amount": 2.0,
+      "item_rate": 14.52,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "OMMNIVAN10HL 90183100 o 25G18M820306/30",
+      "item_amount": 128.84,
+      "item_rate": 32.21,
+      "item_quantity": 4,
+      "gst_percent": null
+    },
+    {
+      "item_name": "a1 SET) (rv 90183990 a 4027425B01/30",
+      "item_amount": 368.0,
+      "item_rate": 184.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "na any 90183990 2 350241 12/29",
+      "item_amount": 198.0,
+      "item_rate": 198.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "a3 IvFix 30059040 2 cy323 04/28",
+      "item_amount": 935.0,
+      "item_rate": 935.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "VEIN-OLIME10CH 901809099 - K24A01099612/28",
+      "item_amount": 347.0,
+      "item_rate": 347.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "suBr3814.65 TAKs192.75 METAMT",
+      "item_amount": 3433.0,
+      "item_rate": 192.75,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "361.46 0.18",
+      "item_amount": 6.18,
+      "item_rate": 361.46,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 8081.79,
+  "reconciliation_method": "sum_of_all_line_items"
+}

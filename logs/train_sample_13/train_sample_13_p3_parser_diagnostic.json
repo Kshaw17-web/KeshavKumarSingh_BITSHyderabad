@@ -1,0 +1,159 @@
+{
+  "page_no": 3,
+  "raw_lines_count": 25,
+  "column_centers": [
+    157.0,
+    283.0,
+    727.0,
+    859.0,
+    1188.0,
+    1415.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "IPDBal(F)",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GuordianNeme a AddknitDe.8.Tirvi",
+      "item_amount": -21.31,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Consuttaint 8 Bmp.jPolicy f N",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "IN-KABIMOL-FREERx-100 bmig7igar eS",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "EPEErta 2680 SANS Jeeeeeeneecaeennmeneeeelweeeee",
+      "item_amount": 2680.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "77777CRORBSGrpSONA-QINET77777ZeHo037 4 eee oT",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PMieeseic-INTRASHIED.gago7 ae WOEESS2",
+      "item_amount": -0.7,
+      "item_rate": -0.7,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "NNNIRDOUEo3.c08 an )EEEEEESI",
+      "item_amount": 3.08,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "5ssigsaiseSSRUMLORabetyna",
+      "item_amount": 5.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BANDA.GE-CREPE-GINCI",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "IPDBal(F)",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "GuordianNeme a AddknitDe.8.Tirvi",
+      "item_amount": -21.31,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Consuttaint 8 Bmp.jPolicy f N",
+      "item_amount": 8.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "IN-KABIMOL-FREERx-100 bmig7igar eS",
+      "item_amount": 7.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "EPEErta 2680 SANS Jeeeeeeneecaeennmeneeeelweeeee",
+      "item_amount": 2680.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "77777CRORBSGrpSONA-QINET77777ZeHo037 4 eee oT",
+      "item_amount": 4.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PMieeseic-INTRASHIED.gago7 ae WOEESS2",
+      "item_amount": -0.7,
+      "item_rate": -0.7,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "NNNIRDOUEo3.c08 an )EEEEEESI",
+      "item_amount": 3.08,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "5ssigsaiseSSRUMLORabetyna",
+      "item_amount": 5.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BANDA.GE-CREPE-GINCI",
+      "item_amount": 2.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 2716.08,
+  "reconciliation_method": "sum_of_all_line_items"
+}

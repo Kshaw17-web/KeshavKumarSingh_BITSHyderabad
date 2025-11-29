@@ -1,0 +1,229 @@
+{
+  "page_no": 6,
+  "raw_lines_count": 37,
+  "column_centers": [
+    186.5,
+    320.5,
+    910.5,
+    1131.5,
+    1257.5,
+    1368.5
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "PatertNeme SMNo",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PatentAddres1 BaOato 72ANVAO",
+      "item_amount": 72.0,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "eabbrasrs.) SYRINGEPUMP",
+      "item_amount": 45000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "141u2028(OIGTARYSERVIGES-NICU",
+      "item_amount": 40500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Uwii2025GRES",
+      "item_amount": 0.0011,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1anim028-REBULISATIOH",
+      "item_amount": 10180.0,
+      "item_rate": 10180.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "15172025GABS 2010.00 0.90 00086-2000",
+      "item_amount": 220.0,
+      "item_rate": 2010.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "IBiy2m2s)6-sNEBULISATION 30(180,00 0.b0",
+      "item_amount": 460.0,
+      "item_rate": 4.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18112005SYRINGEPULIP",
+      "item_amount": 84500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "16n12025ATTENDINGDELIVERYCHARGE",
+      "item_amount": 868.0,
+      "item_rate": 1612025.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "weesGRBS",
+      "item_amount": 0.0011,
+      "item_rate": 0.9,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "witi2075-ORBS",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "yeii202s-sMONTTORCHARGEA",
+      "item_amount": 600.0,
+      "item_rate": 10800.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1wiNe2ssSYRINGEPUUIP",
+      "item_amount": 480.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18112025-GRES",
+      "item_amount": 10.0,
+      "item_rate": 0.99,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "PatertNeme SMNo",
+      "item_amount": 3.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "PatentAddres1 BaOato 72ANVAO",
+      "item_amount": 72.0,
+      "item_rate": 1.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "eabbrasrs.) SYRINGEPUMP",
+      "item_amount": 45000.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "141u2028(OIGTARYSERVIGES-NICU",
+      "item_amount": 40500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "Uwii2025GRES",
+      "item_amount": 0.0011,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1anim028-REBULISATIOH",
+      "item_amount": 10180.0,
+      "item_rate": 10180.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "15172025GABS 2010.00 0.90 00086-2000",
+      "item_amount": 220.0,
+      "item_rate": 2010.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "IBiy2m2s)6-sNEBULISATION 30(180,00 0.b0",
+      "item_amount": 460.0,
+      "item_rate": 4.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18112005SYRINGEPULIP",
+      "item_amount": 84500.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "16n12025ATTENDINGDELIVERYCHARGE",
+      "item_amount": 868.0,
+      "item_rate": 1612025.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "weesGRBS",
+      "item_amount": 0.0011,
+      "item_rate": 0.9,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "witi2075-ORBS",
+      "item_amount": 220.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "yeii202s-sMONTTORCHARGEA",
+      "item_amount": 600.0,
+      "item_rate": 10800.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "1wiNe2ssSYRINGEPUUIP",
+      "item_amount": 480.0,
+      "item_rate": 0.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "18112025-GRES",
+      "item_amount": 10.0,
+      "item_rate": 0.99,
+      "item_quantity": null,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 183113.0022,
+  "reconciliation_method": "sum_of_all_line_items"
+}

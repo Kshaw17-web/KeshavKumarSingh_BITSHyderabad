@@ -1,0 +1,208 @@
+{
+  "page_no": 1,
+  "raw_lines_count": 29,
+  "column_centers": [
+    66.0,
+    197.0,
+    651.0,
+    897.0,
+    1066.0,
+    1342.0
+  ],
+  "parsed_items_before_dedup": [
+    {
+      "item_name": "2Dechocardiography",
+      "item_amount": 1180.0,
+      "item_rate": 1180.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2 1S11/2025R1O20 USGWholeAbdomenInctudingPelvisand",
+      "item_amount": 640.0,
+      "item_rate": 320.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "XRayChestLateral(onefilm)",
+      "item_amount": 184.0,
+      "item_rate": 184.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "L 15/1/2025 BEDCHARGEGENBRALWARD",
+      "item_amount": 1500.0,
+      "item_rate": 1500.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BEDCHARGEGENERALWARD",
+      "item_amount": 1500.0,
+      "item_rate": 750.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BEDCHARGEGENERALWARD",
+      "item_amount": 1300.0,
+      "item_rate": 433.3333,
+      "item_quantity": 3,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BEDCHARGEGENERALWARD",
+      "item_amount": 1500.0,
+      "item_rate": null,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "i, 13/11/2025CNO02 ConsultattonforInpatients",
+      "item_amount": 700.0,
+      "item_rate": 350.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ConeultationforInpatients",
+      "item_amount": 700.0,
+      "item_rate": 2.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "3. 17/1)2025CNOO2 ConsultationforInpatients",
+      "item_amount": 700.0,
+      "item_rate": 350.0,
+      "item_quantity": 2.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ConsultationforInpatients",
+      "item_amount": 330.0,
+      "item_rate": 350.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BLOODCULTURESENSITIVITY",
+      "item_amount": 368.0,
+      "item_rate": 368.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BLOODSUGARRANDOM(RBS)",
+      "item_amount": 32.0,
+      "item_rate": 32.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CBC",
+      "item_amount": 740.0,
+      "item_rate": 740.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    }
+  ],
+  "deduped_items": [
+    {
+      "item_name": "2Dechocardiography",
+      "item_amount": 1180.0,
+      "item_rate": 1180.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "2 1S11/2025R1O20 USGWholeAbdomenInctudingPelvisand",
+      "item_amount": 640.0,
+      "item_rate": 320.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "XRayChestLateral(onefilm)",
+      "item_amount": 184.0,
+      "item_rate": 184.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "L 15/1/2025 BEDCHARGEGENBRALWARD",
+      "item_amount": 1500.0,
+      "item_rate": 1500.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BEDCHARGEGENERALWARD",
+      "item_amount": 1500.0,
+      "item_rate": 750.0,
+      "item_quantity": 2,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BEDCHARGEGENERALWARD",
+      "item_amount": 1300.0,
+      "item_rate": 433.3333,
+      "item_quantity": 3,
+      "gst_percent": null
+    },
+    {
+      "item_name": "i, 13/11/2025CNO02 ConsultattonforInpatients",
+      "item_amount": 700.0,
+      "item_rate": 350.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ConeultationforInpatients",
+      "item_amount": 700.0,
+      "item_rate": 2.0,
+      "item_quantity": null,
+      "gst_percent": null
+    },
+    {
+      "item_name": "3. 17/1)2025CNOO2 ConsultationforInpatients",
+      "item_amount": 700.0,
+      "item_rate": 350.0,
+      "item_quantity": 2.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "ConsultationforInpatients",
+      "item_amount": 330.0,
+      "item_rate": 350.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BLOODCULTURESENSITIVITY",
+      "item_amount": 368.0,
+      "item_rate": 368.0,
+      "item_quantity": 1,
+      "gst_percent": null
+    },
+    {
+      "item_name": "BLOODSUGARRANDOM(RBS)",
+      "item_amount": 32.0,
+      "item_rate": 32.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    },
+    {
+      "item_name": "CBC",
+      "item_amount": 740.0,
+      "item_rate": 740.0,
+      "item_quantity": 1.0,
+      "gst_percent": null
+    }
+  ],
+  "reported_total": null,
+  "final_total": 9874.0,
+  "reconciliation_method": "sum_of_all_line_items"
+}

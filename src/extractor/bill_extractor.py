@@ -818,7 +818,7 @@ def extract_bill_data_with_tsv(
             debug_dir.mkdir(parents=True, exist_ok=True)
         
         # Integration parameters
-        NUMERIC_CONF_THRESHOLD = 60    # if token.conf < this, try numeric re-ocr
+        NUMERIC_CONF_THRESHOLD = 80    # if token.conf < this, try numeric re-ocr (raised for leaderboard)
         QUANTITY_MAX_REASONABLE = 100  # prefer qty <= 100; >100 may be mis-assigned
         
         # Process each page using improved extraction
@@ -878,7 +878,7 @@ def extract_bill_data_with_tsv(
                                 right_numeric = t
                                 break
                         
-                        if right_numeric and (isinstance(right_numeric.get("conf"), (int, float)) and right_numeric.get("conf") < NUMERIC_CONF_THRESHOLD):
+                        if right_numeric and right_numeric.get("conf", 100) < NUMERIC_CONF_THRESHOLD:
                             # crop area from preprocessed image
                             l = max(0, int(right_numeric["left"]) - 4)
                             t = max(0, int(right_numeric["top"]) - 4)

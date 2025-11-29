@@ -11,7 +11,7 @@ from typing import List, Dict, Any, Optional, Tuple, Union
 import numpy as np
 
 # Import new utilities
-from src.utils.ocr_runner import run_ocr_parallel, extract_text_from_ocr_result, ocr_image_to_tsv
+from src.utils.ocr_runner import run_ocr_parallel, extract_text_from_ocr_result, ocr_image_to_tsv, ocr_numeric_region
 from src.preprocessing.image_utils import preprocess_image_for_ocr, is_blank_page
 from src.preprocessing.fraud_filters import detect_fraud_flags, compute_unified_fraud_score
 
@@ -817,84 +817,175 @@ def extract_bill_data_with_tsv(
             debug_dir = Path("logs") / str(request_id)
             debug_dir.mkdir(parents=True, exist_ok=True)
         
-        # Process each page
+        # Integration parameters
+        NUMERIC_CONF_THRESHOLD = 60    # if token.conf < this, try numeric re-ocr
+        QUANTITY_MAX_REASONABLE = 100  # prefer qty <= 100; >100 may be mis-assigned
+        
+        # Process each page using improved extraction
         all_bill_items = []
         pagewise_line_items = []
+        all_deduped_items = []
+        total_reconciled = 0.0
         
         for page_idx, img in enumerate(pil_images, start=1):
             try:
-                # Preprocess image and get cv2 grayscale
-                save_debug_path = None
-                if debug_dir:
-                    save_debug_path = str(debug_dir / f"p{page_idx}_pre.png")
+                run_log_dir = debug_dir if debug_dir else Path("logs") / (request_id or "default")
+                run_log_dir.mkdir(parents=True, exist_ok=True)
                 
+                # 1) Preprocess (returns cv2 array)
+                save_debug_path = str(run_log_dir / f"{request_id or 'page'}_p{page_idx}_pre.png") if request_id else None
                 cv2_img = preprocess_image_for_ocr(
                     img,
                     return_cv2=True,
                     save_debug_path=save_debug_path
                 )
                 
-                # Run OCR with TSV output
-                ocr_dict = ocr_image_to_tsv(
+                # Save preprocessed image (ensure it's saved)
+                try:
+                    if isinstance(cv2_img, np.ndarray):
+                        Image.fromarray(cv2_img).save(run_log_dir / f"{request_id or 'page'}_p{page_idx}_pre.png")
+                except Exception:
+                    pass
+                
+                # 2) OCR -> TSV dict
+                ocr = ocr_image_to_tsv(
                     cv2_img,
                     request_id=request_id,
                     page_no=page_idx,
-                    save_debug_dir=str(debug_dir) if debug_dir else None
+                    save_debug_dir=str(run_log_dir)
                 )
                 
-                # Use parsers.py functions
-                lines = group_words_to_lines(ocr_dict)
-                col_centers = detect_column_centers(lines)
+                # 3) Group to lines and detect columns
+                lines = group_words_to_lines(ocr)
+                col_centers = detect_column_centers(lines, max_columns=6)
                 
-                # Parse each line
-                page_items = []
-                for line_tokens in lines:
-                    columns = map_tokens_to_columns(line_tokens, col_centers)
-                    parsed_row = parse_row_from_columns(columns)
+                parsed_items = []
+                
+                # 4) Parse each line using improved parse_row_from_columns
+                for ln in lines:
+                    cols = map_tokens_to_columns(ln, col_centers)
+                    parsed = parse_row_from_columns(cols)
                     
-                    # Filter probable items
-                    if is_probable_item(parsed_row):
-                        page_items.append({
-                            "item_name": parsed_row.get("item_name") or "UNKNOWN",
-                            "item_amount": parsed_row.get("item_amount") or 0.0,
-                            "item_rate": parsed_row.get("item_rate"),
-                            "item_quantity": parsed_row.get("item_quantity")
-                        })
+                    # if parsed has numeric tokens with low confidences, attempt numeric re-ocr
+                    try:
+                        # get token confidences from 'ln' tokens
+                        right_numeric = None
+                        for t in reversed(ln):
+                            if any(ch.isdigit() for ch in t.get("text", "")):
+                                right_numeric = t
+                                break
+                        
+                        if right_numeric and (isinstance(right_numeric.get("conf"), (int, float)) and right_numeric.get("conf") < NUMERIC_CONF_THRESHOLD):
+                            # crop area from preprocessed image
+                            l = max(0, int(right_numeric["left"]) - 4)
+                            t = max(0, int(right_numeric["top"]) - 4)
+                            r = int(right_numeric["left"] + right_numeric["width"] + 4)
+                            b = int(right_numeric["top"] + right_numeric["height"] + 4)
+                            
+                            try:
+                                # cv2_img (grayscale) -> crop array then pass to ocr_numeric_region
+                                crop = cv2_img[t:b, l:r]
+                                val = ocr_numeric_region(crop)
+                                if val is not None:
+                                    # Overwrite item_amount if parse thinks it's numeric spot
+                                    parsed['item_amount'] = val
+                            except Exception:
+                                pass
+                    except Exception:
+                        pass
+                    
+                    # 5) Apply is_probable_item to filter
+                    if is_probable_item(parsed):
+                        # Conservative quantity sanity: prefer qty <= QUANTITY_MAX_REASONABLE
+                        qty = parsed.get("item_quantity")
+                        if qty and isinstance(qty, (int, float)) and qty > QUANTITY_MAX_REASONABLE:
+                            # if quantity seems unreasonably large, unset it
+                            parsed["item_quantity"] = None
+                        
+                        parsed_items.append(parsed)
                 
-                # Add to pagewise items
-                pagewise_line_items.append({
+                # 6) Fallback: if no parsed_items found, run very simple rightmost-number heuristic
+                if len(parsed_items) == 0:
+                    # quick fallback: take each line and pick the rightmost numeric token as amount
+                    for ln in lines:
+                        tokens = [t['text'] for t in ln if t.get('text')]
+                        if not tokens:
+                            continue
+                        
+                        # search right to left for token with digit
+                        amt = None
+                        amt_token_idx = None
+                        for i in range(len(tokens)-1, -1, -1):
+                            s = tokens[i]
+                            if any(ch.isdigit() for ch in s):
+                                # clean numeric like 1,234.56 and decimals
+                                s_clean = s.replace('₹', '').replace(',', '').replace('$', '')
+                                s_clean = ''.join(ch for ch in s_clean if (ch.isdigit() or ch in ".-"))
+                                try:
+                                    amt = float(s_clean)
+                                    amt_token_idx = i
+                                    break
+                                except:
+                                    amt = None
+                        
+                        if amt is not None:
+                            name = " ".join(tokens[:amt_token_idx]) if amt_token_idx is not None and amt_token_idx > 0 else " ".join(tokens)
+                            parsed_items.append({
+                                "item_name": name,
+                                "item_amount": amt,
+                                "item_rate": None,
+                                "item_quantity": None
+                            })
+                
+                # 7) Deduplicate & reconcile (per page)
+                deduped = dedupe_items(parsed_items, name_threshold=88)
+                
+                # Try to extract a reported_total from pages: scan ocr text for 'Total|Net Amt|Grand Total' patterns
+                reported_total = None
+                ocr_text_joined = " ".join([tok for tok in ocr.get('text', []) if tok])
+                m = re.search(r"(?:grand total|net amt|net amount|net total|total amount|total)\s*[:\s]*([₹\d,.\s]+)", ocr_text_joined, flags=re.I)
+                if m:
+                    s = m.group(1)
+                    s = s.replace('₹', '').replace(',', '')
+                    try:
+                        reported_total = float("".join(ch for ch in s if (ch.isdigit() or ch in ".-")))
+                    except:
+                        reported_total = None
+                
+                final_total, method = reconcile_totals(deduped, reported_total)
+                
+                # prepare schema part for this page
+                page_obj = {
                     "page_no": str(page_idx),
                     "page_type": "Bill Detail",
-                    "bill_items": page_items
-                })
+                    "bill_items": deduped,
+                    "fraud_flags": [],
+                    "reported_total": reported_total,
+                    "reconciliation_ok": (abs(final_total - (reported_total or final_total)) / (reported_total or final_total) if reported_total and reported_total > 0 else None),
+                    "reconciliation_relative_error": None if reported_total is None or reported_total == 0 else (final_total - reported_total) / reported_total
+                }
                 
-                # Collect all items for deduplication
-                all_bill_items.extend(page_items)
+                pagewise_line_items.append(page_obj)
+                all_deduped_items.extend(deduped)
+                total_reconciled += final_total
                 
             except Exception as e:
                 # Continue with empty page on error
                 pagewise_line_items.append({
                     "page_no": str(page_idx),
                     "page_type": "Bill Detail",
-                    "bill_items": []
+                    "bill_items": [],
+                    "fraud_flags": [],
+                    "reported_total": None,
+                    "reconciliation_ok": None,
+                    "reconciliation_relative_error": None
                 })
         
-        # Deduplicate items
-        deduped_items = dedupe_items(all_bill_items)
+        # Final deduplication across all pages
+        final_deduped = dedupe_items(all_deduped_items, name_threshold=88)
         
-        # Reconcile totals (extract reported_total from pages if available)
-        extracted_total = None
-        # Try to find reported total in last page's bill_items (common pattern)
-        if pagewise_line_items:
-            last_page = pagewise_line_items[-1]
-            # Look for "total" items
-            for item in last_page.get("bill_items", []):
-                name = (item.get("item_name") or "").lower()
-                if "total" in name or "amount" in name:
-                    extracted_total = item.get("item_amount")
-                    break
-        
-        final_total, method = reconcile_totals(deduped_items, extracted_total)
+        # Final reconciliation (use total from all pages)
+        final_total, method = reconcile_totals(final_deduped, None)
         
         # Update pagewise items with deduplicated items (simplified - in production, 
         # you might want to keep page-level items and dedupe only at final level)
@@ -906,7 +997,7 @@ def extract_bill_data_with_tsv(
             "token_usage": {"total_tokens": 0, "input_tokens": 0, "output_tokens": 0},
             "data": {
                 "pagewise_line_items": pagewise_line_items,
-                "total_item_count": len(deduped_items),
+                "total_item_count": len(final_deduped),
                 "reconciled_amount": final_total
             }
         }

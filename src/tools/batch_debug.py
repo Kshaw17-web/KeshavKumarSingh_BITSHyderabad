@@ -40,11 +40,27 @@ def process_pdf(pdf_path: Path, out_dir: Path):
 
     try:
         # Use the full extractor pipeline
-        pages = load_pdf_to_images(pdf_path, dpi=300)
-        result["n_pages"] = len(pages)
+        try:
+            pages = load_pdf_to_images(pdf_path, dpi=300)
+            result["n_pages"] = len(pages)
+        except Exception as e:
+            result["error"] = f"PDF loading failed: {str(e)}"
+            return result
+        
+        if not pages:
+            result["error"] = "No pages extracted from PDF"
+            return result
         
         # Run extraction using the TSV-based pipeline
-        extraction_result = extract_bill_data_with_tsv(pages, request_id=pdf_name)
+        try:
+            extraction_result = extract_bill_data_with_tsv(pages, request_id=pdf_name)
+        except Exception as e:
+            import traceback
+            result["error"] = f"Extraction failed: {str(e)}"
+            # Save error traceback
+            error_file = req_dir / "error.txt"
+            error_file.write_text(traceback.format_exc(), encoding="utf-8")
+            return result
         
         if not extraction_result.get("is_success", True):
             result["error"] = extraction_result.get("error", "Extraction failed")

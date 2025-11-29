@@ -609,6 +609,27 @@ def is_probable_item(parsed_row: Dict[str, Optional[object]], conf_threshold: in
     # Reject if name is just a number or empty
     if not name or name.replace(".", "").replace(",", "").strip().isdigit():
         return False
+    
+    # Reject common header patterns (these are NOT bill items)
+    header_patterns = [
+        "bill no", "billno", "bill date", "billedate",
+        "patient name", "patiestname", "patientname",
+        "reg no", "regno", "registration",
+        "ipd no", "ipdno",
+        "mobile no", "mobileno", "phone",
+        "age", "sex", "gender",
+        "address", "admission date", "discharge date",
+        "doctor", "dr.", "consulting",
+        "category", "tegery",
+        "sno", "sl no", "serial no",
+        "particulars", "description", "item",
+        "qty", "quantity", "rate", "amount", "total"
+    ]
+    name_lower = name.lower()
+    # Check if name matches header patterns (exact or starts with)
+    for pattern in header_patterns:
+        if name_lower == pattern or name_lower.startswith(pattern + " ") or name_lower.endswith(" " + pattern):
+            return False
 
     # Require at least one numeric amount > 0 OR quantity+rate combo
     amt = parsed_row.get("item_amount")

@@ -13,6 +13,13 @@ import json
 import csv
 import traceback
 
+import sys
+from pathlib import Path
+
+# Add project root to path
+project_root = Path(__file__).parent.parent.parent
+sys.path.insert(0, str(project_root))
+
 from pdf2image import convert_from_path
 from PIL import Image
 import numpy as np
@@ -116,7 +123,11 @@ def main():
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    pdf_files = list(in_dir.glob("*.pdf"))
+    # Find PDFs recursively (handles subdirectories like TRAINING_SAMPLES)
+    pdf_files = list(in_dir.rglob("*.pdf"))
+    if not pdf_files:
+        print(f"ERROR: No PDF files found in {in_dir}")
+        return
 
     summary_rows = []
 
@@ -131,13 +142,24 @@ def main():
                 reported_total = page_res.get("reported_total")
                 break
         
+        # Get fraud flags info
+        fraud_info = []
+        for page_res in res.get("page_results", []):
+            flags = page_res.get("fraud_flags", [])
+            if flags:
+                fraud_info.extend([f.get("flag_type", "unknown") for f in flags])
+        
         summary_rows.append(
             {
                 "filename": pdf.name,
+                "n_pages": res.get("n_pages", 0),
                 "item_count": res.get("total_item_count", 0),
                 "reported_total": reported_total or 0.0,
                 "reconciled_total": res.get("reconciled_amount", 0.0),
+                "fraud_flags": ", ".join(set(fraud_info)) if fraud_info else "None",
+                "fraud_count": res.get("total_fraud_flags", 0),
                 "extraction_success": res.get("error") is None and res.get("total_item_count", 0) > 0,
+                "error": res.get("error", "")
             }
         )
 
@@ -148,29 +170,39 @@ def main():
             f,
             fieldnames=[
                 "filename",
+                "n_pages",
                 "item_count",
                 "reported_total",
                 "reconciled_total",
+                "fraud_flags",
+                "fraud_count",
                 "extraction_success",
+                "error",
             ],
         )
         writer.writeheader()
         writer.writerows(summary_rows)
 
     # Print table summary
-    print("\n" + "=" * 80)
-    print("BATCH PROCESSING SUMMARY")
-    print("=" * 80)
-    print(f"{'Filename':<40} {'Items':<8} {'Reported':<12} {'Reconciled':<12} {'Success':<8}")
-    print("-" * 80)
+    print("\n" + "=" * 100)
+    print("BATCH PROCESSING SUMMARY - TRAINING SAMPLES TEST")
+    print("=" * 100)
+    print(f"{'Filename':<30} {'Pages':<6} {'Items':<7} {'Reported':<12} {'Reconciled':<12} {'Fraud':<8} {'Success':<8}")
+    print("-" * 100)
     for row in summary_rows:
         success_str = "✓" if row["extraction_success"] else "✗"
-        print(f"{row['filename']:<40} {row['item_count']:<8} {row['reported_total']:<12.2f} {row['reconciled_total']:<12.2f} {success_str:<8}")
-    print("=" * 80)
-    print(f"\nTotal files processed: {len(summary_rows)}")
-    print(f"Successful extractions: {sum(1 for r in summary_rows if r['extraction_success'])}")
-    print(f"Total items extracted: {sum(r['item_count'] for r in summary_rows)}")
-    print(f"\n=== SUMMARY WRITTEN TO {csv_path} ===")
+        fraud_str = f"{row['fraud_count']} flags" if row['fraud_count'] > 0 else "None"
+        print(f"{row['filename']:<30} {row['n_pages']:<6} {row['item_count']:<7} {row['reported_total']:<12.2f} {row['reconciled_total']:<12.2f} {fraud_str:<8} {success_str:<8}")
+    print("=" * 100)
+    print(f"\n📊 STATISTICS:")
+    print(f"   Total files processed: {len(summary_rows)}")
+    print(f"   Successful extractions: {sum(1 for r in summary_rows if r['extraction_success'])}")
+    print(f"   Failed extractions: {sum(1 for r in summary_rows if not r['extraction_success'])}")
+    print(f"   Total items extracted: {sum(r['item_count'] for r in summary_rows)}")
+    print(f"   Total fraud flags detected: {sum(r['fraud_count'] for r in summary_rows)}")
+    print(f"   Files with fraud detected: {sum(1 for r in summary_rows if r['fraud_count'] > 0)}")
+    print(f"\n📁 Detailed results saved to: {out_dir}")
+    print(f"📄 Summary CSV: {csv_path}")
 
 
 if __name__ == "__main__":

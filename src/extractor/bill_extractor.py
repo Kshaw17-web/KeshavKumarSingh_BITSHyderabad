@@ -964,6 +964,14 @@ def extract_bill_data_with_tsv(
                         if not tokens:
                             continue
                         
+                        # Skip if line looks like a header (contains common header keywords)
+                        line_text = " ".join(tokens).lower()
+                        header_keywords = ["bill no", "patient", "reg no", "ipd", "mobile", "age", "sex", 
+                                          "address", "doctor", "category", "sno", "sl no", "particulars",
+                                          "qty", "quantity", "rate", "amount", "total", "date"]
+                        if any(kw in line_text for kw in header_keywords):
+                            continue
+                        
                         # search right to left for token with digit
                         amt = None
                         amt_token_idx = None
@@ -975,19 +983,26 @@ def extract_bill_data_with_tsv(
                                 s_clean = ''.join(ch for ch in s_clean if (ch.isdigit() or ch in ".-"))
                                 try:
                                     amt = float(s_clean)
-                                    amt_token_idx = i
-                                    break
+                                    # Only accept reasonable amounts (not invoice IDs or small numbers)
+                                    if 1.0 <= amt <= 1000000:  # Between 1 and 1 million
+                                        amt_token_idx = i
+                                        break
                                 except:
                                     amt = None
                         
-                        if amt is not None:
-                            name = " ".join(tokens[:amt_token_idx]) if amt_token_idx is not None and amt_token_idx > 0 else " ".join(tokens)
-                            parsed_items.append({
-                                "item_name": name,
-                                "item_amount": amt,
-                                "item_rate": None,
-                                "item_quantity": None
-                            })
+                        if amt is not None and amt_token_idx is not None:
+                            name = " ".join(tokens[:amt_token_idx]) if amt_token_idx > 0 else " ".join(tokens)
+                            # Only add if name is substantial (not just a number or single character)
+                            if name and len(name.strip()) > 2 and not name.strip().isdigit():
+                                # Check if it's a probable item before adding
+                                fallback_item = {
+                                    "item_name": name.strip(),
+                                    "item_amount": amt,
+                                    "item_rate": None,
+                                    "item_quantity": None
+                                }
+                                if is_probable_item(fallback_item):
+                                    parsed_items.append(fallback_item)
                 
                 # 7) Deduplicate & reconcile (per page)
                 deduped = dedupe_items(parsed_items, name_threshold=88)

@@ -1,0 +1,104 @@
+{
+  "is_success": true,
+  "token_usage": {
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "data": {
+    "pagewise_line_items": [
+      {
+        "page_no": "1",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "2",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "3",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "4",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "5",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "6",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "7",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "8",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "9",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      },
+      {
+        "page_no": "10",
+        "page_type": "Bill Detail",
+        "bill_items": [],
+        "fraud_flags": [],
+        "reported_total": null,
+        "reconciliation_ok": null,
+        "reconciliation_relative_error": null
+      }
+    ],
+    "total_item_count": 0,
+    "reconciled_amount": 0
+  }
+}

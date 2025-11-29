@@ -1,0 +1,197 @@
+[
+  {
+    "filename": "train_sample_1.pdf",
+    "pages": 2,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_10.pdf",
+    "pages": 3,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_11.pdf",
+    "pages": 1,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_12.pdf",
+    "pages": 6,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_13.pdf",
+    "pages": 5,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_14.pdf",
+    "pages": 6,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_15.pdf",
+    "pages": 10,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_2.pdf",
+    "pages": 3,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_3.pdf",
+    "pages": 1,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_4.pdf",
+    "pages": 2,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_5.pdf",
+    "pages": 3,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_6.pdf",
+    "pages": 3,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_7.pdf",
+    "pages": 1,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_8.pdf",
+    "pages": 1,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  },
+  {
+    "filename": "train_sample_9.pdf",
+    "pages": 3,
+    "items_extracted": 0,
+    "reconciled_total": 0.0,
+    "success": false,
+    "fraud_flags": "None",
+    "issues": [
+      "No OCR output found"
+    ],
+    "has_ocr": false,
+    "root_cause": "OCR failed or no text detected"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "file": "data\\raw\\training_samples\\TRAINING_SAMPLES\\train_sample_5.pdf",
+  "page_results": [
+    {
+      "page_no": 1,
+      "items": [],
+      "reported_total": null,
+      "final_total": 0
+    },
+    {
+      "page_no": 2,
+      "items": [],
+      "reported_total": null,
+      "final_total": 0
+    },
+    {
+      "page_no": 3,
+      "items": [],
+      "reported_total": null,
+      "final_total": 0
+    }
+  ],
+  "n_pages": 3,
+  "total_item_count": 0,
+  "reconciled_amount": 0.0,
+  "error": null
+}

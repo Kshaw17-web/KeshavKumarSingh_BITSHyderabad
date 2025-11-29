@@ -360,37 +360,29 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
     }
 
 
-def is_probable_item(parsed_row: Dict[str, Optional[object]]) -> bool:
+def is_probable_item(parsed_row: Dict[str, Optional[object]], conf_threshold: int = 40) -> bool:
     """
-    Basic filter to decide if a parsed_row is an item row.
+    Consider a row an item if it has:
+    - a valid item_amount (float and > 0), OR
+    - a valid quantity (int > 0) and a rate (float > 0).
     
-    This function applies heuristics to determine if a parsed row represents
-    an actual bill item (as opposed to headers, footers, totals, etc.).
-    
-    Args:
-        parsed_row: Dictionary from parse_row_from_columns() with keys:
-                   item_name, item_amount, item_rate, item_quantity
-    
-    Returns:
-        True if the row is likely a bill item, False otherwise
-    
-    Example:
-        >>> parsed = parse_row_from_columns(["Paracetamol", "500.00"])
-        >>> if is_probable_item(parsed):
-        >>>     print("This is a bill item")
+    Avoid rows that look like totals/headers.
     """
-    if parsed_row.get("item_amount") is not None:
-        return True
-    
     name = (parsed_row.get("item_name") or "").lower()
-    if not name:
-        return False
-    
-    non_item_keywords = ["subtotal", "total", "discount", "gst", "tax", "invoice", "net amount", "amount due", "mrp"]
+    non_item_keywords = ["subtotal", "total", "discount", "gst", "tax", "invoice", "net amount", "amount due", "mrp", "balance", "paid"]
     if any(k in name for k in non_item_keywords):
         return False
-    
-    return True
+
+    amt = parsed_row.get("item_amount")
+    qty = parsed_row.get("item_quantity")
+    rate = parsed_row.get("item_rate")
+
+    if amt is not None and isinstance(amt, (int, float)) and amt > 0:
+        return True
+    if qty and rate and isinstance(rate, (int, float)) and rate > 0:
+        return True
+
+    return False
 
 
 if __name__ == "__main__":

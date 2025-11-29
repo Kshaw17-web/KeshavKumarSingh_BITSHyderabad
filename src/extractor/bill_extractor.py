@@ -550,8 +550,8 @@ def extract_bill_data(
                 preprocessed_images.append(img)  # Keep original for blank pages
                 continue
             
-            # Fast preprocessing (skip expensive ops in fast mode)
-            preprocessed = preprocess_image_for_ocr(img, max_side=1024, fast_mode=use_fast_mode)
+            # High-quality preprocessing for better OCR accuracy
+            preprocessed = preprocess_image_for_ocr(img, max_side=2000, target_dpi=300, fast_mode=False)
             preprocessed_images.append(preprocessed)
         except Exception:
             preprocessed_images.append(img)
@@ -832,10 +832,13 @@ def extract_bill_data_with_tsv(
                 run_log_dir = debug_dir if debug_dir else Path("logs") / (request_id or "default")
                 run_log_dir.mkdir(parents=True, exist_ok=True)
                 
-                # 1) Preprocess (returns cv2 array)
+                # 1) Preprocess (returns cv2 array) - High quality mode for leaderboard
                 save_debug_path = str(run_log_dir / f"{request_id or 'page'}_p{page_idx}_pre.png") if request_id else None
                 cv2_img = preprocess_image_for_ocr(
                     img,
+                    max_side=2000,
+                    target_dpi=300,
+                    fast_mode=False,
                     return_cv2=True,
                     save_debug_path=save_debug_path
                 )

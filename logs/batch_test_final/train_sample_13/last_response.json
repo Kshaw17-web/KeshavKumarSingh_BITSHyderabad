@@ -1,0 +1,39 @@
+{
+  "file": "data\\raw\\training_samples\\TRAINING_SAMPLES\\train_sample_13.pdf",
+  "page_results": [
+    {
+      "page_no": 1,
+      "items": [],
+      "reported_total": null,
+      "final_total": 0
+    },
+    {
+      "page_no": 2,
+      "items": [],
+      "reported_total": null,
+      "final_total": 0
+    },
+    {
+      "page_no": 3,
+      "items": [],
+      "reported_total": null,
+      "final_total": 0
+    },
+    {
+      "page_no": 4,
+      "items": [],
+      "reported_total": null,
+      "final_total": 0
+    },
+    {
+      "page_no": 5,
+      "items": [],
+      "reported_total": null,
+      "final_total": 0
+    }
+  ],
+  "n_pages": 5,
+  "total_item_count": 0,
+  "reconciled_amount": 0.0,
+  "error": null
+}

@@ -394,6 +394,14 @@ def _clean_num_str(s: Optional[str]) -> Optional[float]:
 def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
     """
     Improved heuristic extraction from column strings.
+    
+    Handles Indian hospital bill format:
+    - Pattern: [serial] [date/code] [item_name] [rate]x[quantity] [total]
+    - Example: "1. 1Hi1/2025RIOOL 2Dechocardiography 1180.00x1.00 1180.00"
+    - Example: "4.15/11/2025LB270 DENGUEIGMAND.IGG 640.00x1,00 640.00"
+    """
+    """
+    Improved heuristic extraction from column strings.
 
     Strategy:
     - Flatten tokens and collect numeric-like tokens in order (left->right).
@@ -415,7 +423,23 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
         if s is None:
             return None
         s0 = str(s).strip()
-        s0 = s0.replace('₹', '').replace('Rs', '').replace(',', '').replace('$','')
+        # Handle "rate x quantity" format (e.g., "640.00x1.00" or "350.00x2.00")
+        if 'x' in s0.lower():
+            # Split on 'x' and take the first part as rate
+            parts = s0.lower().split('x')
+            if len(parts) >= 2:
+                s0 = parts[0].strip()  # Take rate part
+        s0 = s0.replace('₹', '').replace('Rs', '').replace('$','')
+        
+        # Handle comma as decimal separator (European format: "184,00")
+        # If comma appears and no dot, or comma is after digits near end, it's likely decimal
+        if ',' in s0 and '.' not in s0:
+            # European format: "184,00" -> "184.00"
+            s0 = s0.replace(',', '.')
+        elif ',' in s0:
+            # Indian format: "1,500.00" -> remove comma (thousand separator)
+            s0 = s0.replace(',', '')
+        
         s0 = re.sub(r'[^\d.\-]', '', s0)
         if s0 in ("", ".", "-", "--"):
             return None
@@ -423,13 +447,55 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
             return float(s0)
         except:
             return None
+    
+    # Helper to extract rate and quantity from "rate x quantity" format
+    def _extract_rate_qty(token):
+        """Extract rate and quantity from tokens like '640.00x1.00' or '350.00x2.00' or '184,00x1.00'"""
+        if 'x' in token.lower():
+            parts = token.lower().split('x')
+            if len(parts) >= 2:
+                try:
+                    rate_str = parts[0].strip().replace('₹', '').replace('Rs', '')
+                    qty_str = parts[1].strip().replace('₹', '').replace('Rs', '')
+                    
+                    # Handle comma as decimal separator (European format: "184,00")
+                    # If comma appears after digits and before end, it's likely a decimal separator
+                    if ',' in rate_str and '.' not in rate_str:
+                        # European format: "184,00" -> "184.00"
+                        rate_str = rate_str.replace(',', '.')
+                    elif ',' in rate_str:
+                        # Indian format: "1,500.00" -> remove comma
+                        rate_str = rate_str.replace(',', '')
+                    
+                    if ',' in qty_str and '.' not in qty_str:
+                        qty_str = qty_str.replace(',', '.')
+                    elif ',' in qty_str:
+                        qty_str = qty_str.replace(',', '')
+                    
+                    rate = float(''.join(c for c in rate_str if c.isdigit() or c in '.-'))
+                    qty = float(''.join(c for c in qty_str if c.isdigit() or c in '.-'))
+                    if 0 < rate <= 1000000 and 0 < qty <= 1000:  # Reasonable ranges
+                        return rate, qty
+                except:
+                    pass
+        return None, None
 
     # gather numeric tokens with original string + cleaned float if possible
+    # Also check for "rate x quantity" format
     numerics = []
+    rate_qty_tokens = []  # Track tokens with "rate x quantity" format
+    
     for t in tokens:
         if re.search(r'\d', t):
-            cleaned = _clean_num_str_raw(t)
-            numerics.append({"raw": t, "float": cleaned})
+            # Check if this is a "rate x quantity" token
+            rate, qty = _extract_rate_qty(t)
+            if rate is not None and qty is not None:
+                rate_qty_tokens.append({"raw": t, "rate": rate, "quantity": qty})
+                # Also add rate as a numeric (for amount detection)
+                numerics.append({"raw": t, "float": rate, "is_rate_qty": True})
+            else:
+                cleaned = _clean_num_str_raw(t)
+                numerics.append({"raw": t, "float": cleaned, "is_rate_qty": False})
 
     # Function to decide if a numeric looks decimal-like / amount-like
     def looks_amount_like(n):
@@ -459,23 +525,49 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
     item_qty = None
     gst_percent = None
 
+    # First, check if we have "rate x quantity" tokens (common in hospital bills)
+    if rate_qty_tokens:
+        # Use the rightmost rate x quantity token
+        rq_token = rate_qty_tokens[-1]
+        item_rate = rq_token["rate"]
+        item_qty = rq_token["quantity"]
+        # Calculate amount if not explicitly found
+        if item_rate and item_qty:
+            item_amount = item_rate * item_qty
+
     # If there are numeric tokens, scan from right to left to pick amount, gst, qty, rate
     if numerics:
         # find candidate amount: prefer rightmost numeric where looks_amount_like == True
+        # Skip "rate x quantity" tokens (we already handled those)
         amount_idx = None
         for i in range(len(numerics)-1, -1, -1):
+            # Skip rate x quantity tokens (they're not the final amount)
+            if numerics[i].get("is_rate_qty", False):
+                continue
             if numerics[i]["float"] is not None and looks_amount_like(numerics[i]["float"]):
                 amount_idx = i
                 break
-        # If not found, fallback to last numeric with a float
+        # If not found, fallback to last numeric with a float (but not rate x quantity)
         if amount_idx is None:
             for i in range(len(numerics)-1, -1, -1):
+                if numerics[i].get("is_rate_qty", False):
+                    continue
                 if numerics[i]["float"] is not None:
                     amount_idx = i
                     break
 
         if amount_idx is not None:
-            item_amount = numerics[amount_idx]["float"]
+            candidate_amount = numerics[amount_idx]["float"]
+            # Prefer the rightmost amount over calculated amount (if we have rate x qty)
+            if item_amount is None:
+                item_amount = candidate_amount
+            elif candidate_amount > 0:
+                # If amounts are close, use the rightmost one (it's likely the total)
+                if abs(candidate_amount - item_amount) / max(candidate_amount, item_amount) < 0.2:
+                    item_amount = candidate_amount
+                elif candidate_amount > item_amount * 0.9:
+                    # Rightmost amount is likely the total, prefer it
+                    item_amount = candidate_amount
 
             # check if there's a small integer after amount -> likely GST%
             if amount_idx + 1 < len(numerics):
@@ -526,18 +618,75 @@ def parse_row_from_columns(columns: List[str]) -> Dict[str, Optional[object]]:
                         item_rate = round(item_amount / item_qty, 4)
                 except Exception:
                     pass
+            
+            # If we have rate x qty but amount is different, prefer the explicit amount
+            # (the rightmost amount is usually the total, which is what we want)
+            if item_rate and item_qty and item_amount:
+                calculated = item_rate * item_qty
+                # If amounts are close (within 20%), use the explicit amount
+                if abs(calculated - item_amount) / max(calculated, item_amount) < 0.2:
+                    # They match, keep as is
+                    pass
+                else:
+                    # Use the explicit amount (rightmost), recalculate rate if needed
+                    if item_qty > 0:
+                        item_rate = round(item_amount / item_qty, 4)
+            
+            # If we have rate x qty but amount is different, prefer the explicit amount
+            # (the rightmost amount is usually the total, which is what we want)
+            if item_rate and item_qty and item_amount:
+                calculated = item_rate * item_qty
+                # If amounts are close (within 10%), use the explicit amount
+                if abs(calculated - item_amount) / max(calculated, item_amount) < 0.1:
+                    # They match, keep as is
+                    pass
+                else:
+                    # Use the explicit amount (rightmost), recalculate rate if needed
+                    if item_qty > 0:
+                        item_rate = round(item_amount / item_qty, 4)
 
     # derive item_name: exclude the numeric tokens that are clearly qty/rate/amount/gst at the right side
     name_tokens = tokens.copy()
-    # remove trailing numeric-like tokens up to 4 (qty, rate, disc, amount, gst)
-    remove_count = 0
-    for _ in range(5):
-        if name_tokens and re.search(r'\d', name_tokens[-1]):
-            name_tokens.pop()
-            remove_count += 1
+    
+    # Remove serial numbers at the start (e.g., "1.", "2.", "4.")
+    if name_tokens and re.match(r'^\d+[.,]?$', name_tokens[0].strip()):
+        name_tokens.pop(0)
+    
+    # Remove date/code patterns (e.g., "1Hi1/2025RIOOL", "15/11/2025LB270")
+    # These usually come after serial numbers
+    if name_tokens:
+        first_token = name_tokens[0]
+        # Pattern: contains digits, slashes, or alphanumeric codes
+        if re.search(r'\d+[/-]\d+', first_token) or (len(first_token) > 5 and re.search(r'\d+[A-Z]+\d+', first_token)):
+            name_tokens.pop(0)
+    
+    # remove trailing numeric-like tokens up to 5 (rate x qty, amount, gst)
+    # Also remove "rate x quantity" format tokens
+    removed = 0
+    for _ in range(6):  # Increased to handle rate x qty tokens
+        if not name_tokens:
+            break
+        last_token = name_tokens[-1]
+        # Remove if it's numeric or "rate x quantity" format
+        if re.search(r'\d', last_token):
+            # Check if it's "rate x quantity" format
+            if 'x' in last_token.lower():
+                name_tokens.pop()
+                removed += 1
+            elif re.search(r'\d+[.,]\d+', last_token) or last_token.replace(',', '').replace('.', '').isdigit():
+                name_tokens.pop()
+                removed += 1
+            else:
+                break
         else:
             break
-    item_name = " ".join([t for t in name_tokens if t.lower() not in ("no", "qty", "pcs")]).strip() or None
+    
+    # Clean up item name
+    item_name = " ".join([t for t in name_tokens if t.lower() not in ("no", "qty", "pcs", ".", ",")]).strip() or None
+    
+    # Remove leading/trailing special characters
+    if item_name:
+        item_name = re.sub(r'^[.,\s]+|[.,\s]+$', '', item_name)
 
     # Final normalization: ensure floats are numeric types
     # If item_amount looks tiny (<=30) but gst_percent is None and a preceding decimal exists, attempt correction

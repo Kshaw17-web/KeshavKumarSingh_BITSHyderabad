@@ -1,0 +1,15 @@
+{
+  "file": "data\\raw\\training_samples\\TRAINING_SAMPLES\\train_sample_11.pdf",
+  "page_results": [
+    {
+      "page_no": 1,
+      "items": [],
+      "reported_total": null,
+      "final_total": 0
+    }
+  ],
+  "n_pages": 1,
+  "total_item_count": 0,
+  "reconciled_amount": 0.0,
+  "error": null
+}

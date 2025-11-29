@@ -190,7 +190,7 @@ def main():
     print(f"{'Filename':<30} {'Pages':<6} {'Items':<7} {'Reported':<12} {'Reconciled':<12} {'Fraud':<8} {'Success':<8}")
     print("-" * 100)
     for row in summary_rows:
-        success_str = "✓" if row["extraction_success"] else "✗"
+        success_str = "OK" if row["extraction_success"] else "FAIL"
         fraud_str = f"{row['fraud_count']} flags" if row['fraud_count'] > 0 else "None"
         print(f"{row['filename']:<30} {row['n_pages']:<6} {row['item_count']:<7} {row['reported_total']:<12.2f} {row['reconciled_total']:<12.2f} {fraud_str:<8} {success_str:<8}")
     print("=" * 100)
